@@ -1,0 +1,102 @@
+// Default typography for the theme.
+
+@import 'latto.subtheme.variables.scss';
+
+body {
+  color: $theme-primary-color;
+  font-family: $theme-font-family;
+  font-size: $default-font-size;
+  line-height: $theme-line-height;
+}
+
+// Colors for ::selection
+// -------------------------
+@include selection($theme-selection-color, $theme-selection-background);
+
+// Headers
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  a {
+    &:link {
+      color: rgba($theme-primary-color, .75);
+      text-decoration: none;
+    }
+    &:visited {
+      color: rgba($theme-primary-color, .85);
+    }    
+    &:hover {
+      color: $theme-primary-color;
+    }
+  }
+}
+
+h1 {
+  color: $theme-primary-color;
+}
+
+h3 {
+  line-height: $theme-line-height * 1.25;
+}
+
+// Links
+// -------------------------
+
+a {
+  &:link {
+    color: $link-color;
+    text-decoration: none;
+  }
+  &:visited {
+    color: darken($link-color, 15%);
+  }  
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: $link-color-hover;
+  }  
+  &:active {
+    color: darken($link-color, 50%);
+  }  
+}
+
+b,
+strong {
+  // Custom styling for bold and strong text goes here.
+}
+
+em {
+  // Custom styling for emphasized text goes here.
+}
+
+
+// Size classes.
+// -------------------------
+
+.small {
+  font-size: $default-font-size*.5;
+}
+
+.medium {
+  font-size: $default-font-size*.75;
+}
+
+.big {
+  font-size: $default-font-size*1.25;
+}
+
+.bigger {
+  font-size: $default-font-size*1.375;
+}
+
+.biggest {
+  font-size: $default-font-size*1.5;
+}

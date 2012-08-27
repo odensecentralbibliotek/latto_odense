@@ -1,0 +1,44 @@
+// Various mixins to make our life easier
+
+$prefixes: ("-webkit-","-moz-", "-o-", "");
+
+// Adds trailing margin
+@mixin append-bottom($amount: $default-spacing) {
+  margin-bottom: $amount;
+}
+
+// Adds leading maring
+@mixin prepend-top($amount: $default-spacing) {
+  margin-top: $amount;
+}
+
+// Mixin this to an hr to make a horizontal ruler across a column.
+@mixin colruler($border-color: $gray) {
+  background: $border-color;
+  color: $border-color;
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 0.1em;
+  border: none;
+  @include prepend-top($default-spacing/2);
+  @include append-bottom($default-spacing/2);
+ }
+ 
+ // RGBa background (https://gist.github.com/1949202)
+@mixin rgba-background($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $rgba;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+}
+
+@mixin selection($color, $background) {
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      color: $color;
+      background: $background;
+    }
+  }
+}

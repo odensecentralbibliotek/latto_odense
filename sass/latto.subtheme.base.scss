@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Base styling
+   ========================================================================== */
+
+@import 'latto.mixins.scss';
+@import 'compass/css3/box-sizing';
+@import 'compass/css3/box-shadow';
+
+body {
+  background: $theme-background;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: transparent;
+  overflow: hidden;
+  padding-bottom: $default-spacing * 2;
+  padding-top: $default-spacing * 2;
+}
+
+header .grid-inner {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  position: relative;
+  background: $theme-tertiary-color;
+}
+.logo img {
+  width: 150px;
+}
+
+.form-actions {
+    background-color: transparent;
+    border-top: 0px solid transparent;
+}
+.logo {
+  float: left;
+  margin-right: $default-spacing;
+  margin-left: $default-spacing / 2;  
+}
+
+.site-name {
+  color: $theme-primary-color;
+  float: left;
+  font-size: 150%;
+  line-height: 100%;
+  margin-left: $default-spacing / 2;
+}
+
+.site-slogan {
+  clear: left;
+  color: $gray-light;
+  margin-left: $default-spacing / 2;
+}
+
+/* ==========================================================================
+   Theme specific grid styling
+   ========================================================================== */
+
+.grid-content {
+  .grid-inner {
+    @include rgba-background($theme-background-color, .75);
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    padding: $default-spacing;
+  }
+}
+
+
+/* ==========================================================================
+   Basic elements
+   ========================================================================== */
+
+/* Paragraphs
+   ========================================================================== */
+
+p {
+  margin-bottom: $default-spacing / 3;
+}
+
+/* Default horizontal ruler styles
+   ========================================================================== */
+
+hr {
+  @include colruler();
+  &.primary {
+    @include colruler($theme-primary-color);
+  }
+  &.secondary {
+    @include colruler($theme-secondary-color);
+  }
+  &.tertiary {
+    @include colruler($theme-tertiary-color);
+  }
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.nav-wrapper {
+  margin-top: 0px;
+  padding-left: $default-spacing / 2;
+  padding-right: $default-spacing / 2;
+}
+
+
+/* ==========================================================================
+   List styling
+   ========================================================================== */
+
+ul {
+  li {
+    h3 {
+      margin-bottom: $default-spacing / 4;      
+    }
+    p {
+      margin-bottom: $default-spacing / 4;
+    }
+  }
+  &.date-list {
+    .date-wrapper {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
+      display: inline-block;
+      margin-top : $default-spacing / 5;
+      margin-right: $default-spacing / 2;
+      min-width: 60px;
+
+      color: $gray;
+      font-size: $default-font-size * .9;
+      text-align: center;
+      vertical-align: top;
+      .day {
+        background-color: $theme-tertiary-color;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+      }
+      .date-wrapper-inner {
+        background: $theme-background;
+        border: 1px solid lighten($black, 85%);
+        .date {
+          font-size: $default-font-size * 1.5;
+          margin-top: $default-spacing / 4;
+        }
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }
+  &.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      border-bottom: 1px solid $gray-lighter;
+      padding-bottom: $list-item-spacing * 1.5;
+      margin-bottom: $list-item-spacing * 1.5;
+      &div.subheading {
+        margin-top: $list-item-spacing;
+        margin-bottom: $list-item-spacing;
+        span, a { 
+          margin-right: $list-item-spacing / 2;
+          &.label {
+            color: $white;  
+          }
+        }
+        &span.date {
+          color: $theme-primary-color;
+        }
+      }
+      &img {       
+        height: auto;
+        width: 100%;
+      }
+      &.last {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &.floated {
+    li {
+      &img {
+        display: inline-block;
+        padding-right: $list-item-spacing;
+        width: $list-picture-width;
+        @include box-sizing(border-box);
+      }
+      &div.content {
+        display: inline-block;
+        vertical-align: top;
+        width: 100 - $list-picture-width;
+        @include box-sizing(border-box);
+      }
+    }
+  }
+
+  &.simple {
+    li {
+      &img, &div.subheading, &div.content {
+        display: none;
+      }
+    }
+  }
+
+  &.nav {
+    &.nav-inline {
+      @include border-radius(4px);
+      @include rgba-background($navbar-background-color,.75);
+
+      border-left: 1px solid rgba($navbar-background-color, .5);
+      border-right: 1px solid rgba($white, .2);
+      margin: 0;
+      li {
+        @include rgba-background($navbar-background-color, .25);
+        border-left: 1px solid rgba($white, .2);
+        border-right: 1px solid rgba($navbar-background-color, .75);
+        display: table-cell;
+        a {
+          color: $navbar-text-color;
+          display: block;
+          padding: $navbar-item-spacing;
+          text-decoration: none;
+          &:hover {
+            color: lighten($navbar-text-color, 75%);
+          }
+        }
+        &.first {
+          border-left: 0;
+        }
+        &.last {
+          border-right: 1px solid rgba($navbar-background-color, .5);
+        }
+        &.active {
+          border-left: 0;
+          border-right: 0;
+          @include rgba-background($navbar-background-color, .5);
+        }
+      }
+    }
+  }
+}
+
+.label-info,
+.badge-info {
+  background-color: $theme-tertiary-color;
+}
+
+
+footer .grid-inner {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-wrapper {
+  display: inline-block;
+  min-width: 67%;
+  position: absolute;
+}
+
+.panel-pane.pane-block.pane-search-form {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    background: $theme-tertiary-color;
+    margin-bottom: 30px;
+    min-height: 160px;
+}
+.grid-11-left {
+    -moz-box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+    margin-right: -73%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 73%;
+    word-wrap: break-word;
+}
+.panel-pane.pane-block.pane-user-login {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    background: $theme-tertiary-color;    
+    margin-bottom: 30px;
+}

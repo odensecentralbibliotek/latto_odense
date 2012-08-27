@@ -1,0 +1,15 @@
+;----------// Theme Information
+  name        = latto odense
+  description = Subtheme for Ding2tal based on the latto theme.
+  core        = 7.x
+  release     = 7.x-1.x
+  screenshot  = screenshot.png
+  base theme  = latto
+
+;----------// Panels
+  plugins[panels][layouts] = layouts/panels
+
+  stylesheets[all][] = css/latto.subtheme.styles.css
+;----------// Page manager
+  api[page_manager][pages_default][version] = 1
+  api[page_manager][pages_default][path] = pages
