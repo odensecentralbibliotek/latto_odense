@@ -15,7 +15,6 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'user_login_block':
-      $form['name']['#prefix'] = '<span class="login-text">' . t('Log in:') . '</span>';
       unset($form['name']['#title']);
       $form['name']['#attributes']['placeholder'] = t('cpr. or card no.');
       unset($form['pass']['#title']);
@@ -31,4 +30,27 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
+
+/**
+ * Implements HOOK_theme().
+ */
+/*
+function latto_odense_theme() {
+  return array(
+    'nomarkup' => array(
+      'render element' => 'element',
+    ),
+  );
+}
+
+function theme_nomarkup($variables){
+  $output = '';
+    //Render the items.
+    foreach ($variables['items'] as $delta => $item){
+  $output .= drupal_render($item);
+ }
+  return $output;
+  }
+  
+*/
 ?>

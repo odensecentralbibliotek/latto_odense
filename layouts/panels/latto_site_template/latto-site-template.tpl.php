@@ -24,7 +24,7 @@
 
   <?php if (!empty($content['footer'])): ?>
     <footer class="grid-full">
-      <div class="grid-inner">
+      <div class="grid-inner clearfix">
         <?php print render($content['footer']); ?>
       </div>
     </footer>

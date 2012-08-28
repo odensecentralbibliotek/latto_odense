@@ -15,8 +15,8 @@ body {
 header {
   background: transparent;
   overflow: hidden;
-  padding-bottom: $default-spacing * 2;
-  padding-top: $default-spacing * 2;
+  padding-bottom: $default-spacing;
+  padding-top: $default-spacing;
 }
 
 header .grid-inner {
@@ -32,6 +32,7 @@ header .grid-inner {
 .form-actions {
     background-color: transparent;
     border-top: 0px solid transparent;
+    padding: 0px;
 }
 .logo {
   float: left;
@@ -45,6 +46,7 @@ header .grid-inner {
   font-size: 150%;
   line-height: 100%;
   margin-left: $default-spacing / 2;
+  margin-top:  44px;
 }
 
 .site-slogan {
@@ -254,38 +256,105 @@ ul {
 
 
 footer .grid-inner {
+  margin-top: $default-spacing * 2 ;
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
-}
+  background-color: $gray-lighter;
+  }
+
+.pane-menu-menu-footer-menu-1 .menu, .pane-menu-menu-footer-menu-2 .menu, .pane-menu-menu-footer-menu-3 .menu{
+  border-right: 2px solid white;
+  bottom: 5px;   
+  min-height: 100px;
+  top: 30px;
+  }
+.menu{
+    list-style-type: none;
+     }
+.menu a{
+    color: $black!important;
+    margin: 0;
+    padding: 30px 0 15px 5px;
+    text-transform: uppercase;
+ }  
 
 .nav-wrapper {
   display: inline-block;
-  min-width: 67%;
+
   position: absolute;
 }
 
+/* ==========================================================================
+   Search pane styling
+   ========================================================================== */
 .panel-pane.pane-block.pane-search-form {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
-    margin-bottom: 30px;
-    min-height: 160px;
+    margin-bottom: $default-spacing;
+    min-height: 197px;
 }
+
+.form-item-search-block-form .form-text {
+    width: 60%;
+}
+
+/* ==========================================================================
+   custom grid
+   ========================================================================== */
 .grid-11-left {
     -moz-box-sizing: border-box;
     float: left;
     margin-left: 0;
-    margin-right: -73%;
+    margin-right: -74%;
     padding-left: 10px;
     padding-right: 10px;
-    width: 73%;
+    width: 74%;
     word-wrap: break-word;
 }
+article .grid-inner{
+   @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+background-color: $gray-lighter;
+  }
+  .grid-8-left, .grid-8-right{
+   @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
+  margin-top: $default-spacing;
+  }
+    .grid-8-left .grid-inner, .grid-8-right .grid-inner{
+   box-shadow: none;
+background-color: transparent;
+  margin-top: $default-spacing;
+  }
+
+
+/* ==========================================================================
+   Login pane styling
+   ========================================================================== */
 .panel-pane.pane-block.pane-user-login {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;    
-    margin-bottom: 30px;
+    margin-bottom: $default-spacing;
+}
+/* Carousel content, mask, title etc.
+   ========================================================================== */
+/* line 94, ../sass/ting_search_carousel.scss */
+.rs-carousel-inner {
+  background-color: none;
+
+}
+
+.ctools-collapsible-container .ctools-toggle {
+  font-size: 12px;
+    height: 28px;
+    width: 21px;
+  background-position: 6px 13px;
+}
+.ctools-collapsible-container .ctools-toggle-collapsed {
+    background-position: 6px 13px;
+  
 }
