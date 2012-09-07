@@ -302,27 +302,27 @@ footer .grid-inner {
     -moz-box-sizing: border-box;
     float: left;
     margin-left: 0;
-    margin-right: -74%;
+    margin-right: -73%;
     padding-left: 10px;
     padding-right: 10px;
-    width: 74%;
+    width: 73%;
     word-wrap: break-word;
 }
 article .grid-inner{
    @include single-box-shadow;
-   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-   background-color: $gray-lighter;
+   @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+   background-color: $white;
   }
   .grid-8-left, .grid-8-right{
    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+   @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+   background: #E5E5E5;
 
-  margin-top: $default-spacing;
   }
     .grid-8-left .grid-inner, .grid-8-right .grid-inner{
    box-shadow: none;
 background-color: transparent;
-  margin-top: $default-spacing;
+
   }
 
 
@@ -338,16 +338,14 @@ background-color: transparent;
 /* Carousel content, mask, title etc.
    ========================================================================== */
 /* line 94, ../sass/ting_search_carousel.scss */
-.rs-carousel-inner {
-  background-color: none;
 
-}
 
 .ctools-collapsible-container .ctools-toggle {
   font-size: 12px;
     height: 28px;
     width: 21px;
   background-position: 6px 13px;
+ 
 }
 .ctools-collapsible-container .ctools-toggle-collapsed {
     background-position: 6px 13px;

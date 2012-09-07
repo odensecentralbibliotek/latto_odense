@@ -42,33 +42,32 @@ $theme-selection-background:  $gray;
 $link-color:              #0077a2 !default;
 $link-color-hover:        darken($link-color, 20%) !default;
 
-
+// Headers
 $theme-header-background: $theme-secondary-color;
+$theme-header-color:      $gray-light;
+$theme-subheader-color:   $gray-light;
+$theme-blockheader-color: $gray-light;
 
 $theme-breadcrumb-background: transparent;
 $theme-breadcrumb-border-bottom: 1px solid $gray-light;
 
+// Blocks
 $theme-block-background:  $gray-light;
 $theme-block-color:       $gray-light;
 $theme-block-color-hover: $gray-light;
 $theme-block-inverse-background: $gray-light;
 $theme-block-inverse-color: $gray-light;
 
+// Content
 $theme-content-background:  $gray-light;
 $theme-content-color:       $gray-light;
 
 $theme-image-border:        $gray-light;
 
+// Footers
 $theme-footer-background:   $gray-light;
 $theme-footer-color:        $gray-light;
 $theme-footer-color-hover:  $gray-light;
-
-$theme-header-color:      $gray-light;
-
-$theme-subheader-color:   $gray-light;
-
-$theme-blockheader-color: $gray-light;
-
 
 // Grids and spacing
 // -------------------------

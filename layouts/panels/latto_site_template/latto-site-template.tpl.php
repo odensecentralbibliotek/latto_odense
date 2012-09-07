@@ -17,7 +17,7 @@
   <?php endif; ?>
 
   <article class="grid-full">
-    <div class="grid-inner">
+    <div class="grid-inner clearfix">
       <?php print render($content['content']); ?>
       </div>
   </article>

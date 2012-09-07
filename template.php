@@ -17,6 +17,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'user_login_block':
       unset($form['name']['#title']);
       $form['name']['#attributes']['placeholder'] = t('cpr. or card no.');
+      $form['pass']['#attributes']['placeholder'] = t('Password');
       unset($form['pass']['#title']);
       $form['links']['#markup'] = "";
       break;
