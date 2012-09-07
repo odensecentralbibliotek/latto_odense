@@ -1,0 +1,16 @@
+/* ***** match placeholder/watermark padding to border+padding for input element ***** */
+
+label.placeholder {
+  cursor: text;
+  padding: 0.15em 0.25em;
+  color: #ccc;
+}
+
+/* html5 placeholder support */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color:#ccc;
+}
+
+input:placeholder, textarea:placeholder {
+  color:#ccc;
+}
