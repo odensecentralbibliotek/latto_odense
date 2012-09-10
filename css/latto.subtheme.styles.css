@@ -502,6 +502,25 @@ article .grid-inner {
   background-position: 6px 13px;
 }
 
+/* ***** match placeholder/watermark padding to border+padding for input element ***** */
+/* line 356, ../sass/latto.subtheme.base.scss */
+label.placeholder {
+  cursor: text;
+  padding: 0.4em 0.3em;
+  color: #ccc;
+}
+
+/* html5 placeholder support */
+/* line 363, ../sass/latto.subtheme.base.scss */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/* line 367, ../sass/latto.subtheme.base.scss */
+input:placeholder, textarea:placeholder {
+  color: #ccc;
+}
+
 /*
 
 #Theme elements
