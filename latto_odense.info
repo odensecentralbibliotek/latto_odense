@@ -9,7 +9,7 @@
 ;----------// Panels
   plugins[panels][layouts] = layouts/panels
 
-  stylesheets[all][] = css/latto.subtheme.styles.css
+stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 ;-------------- CSS FOAD -------------
 stylesheets[all][] = css/system.menus.css
