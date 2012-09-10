@@ -19,6 +19,8 @@ stylesheets[all][] = css/node.css
 
 scripts[] = js/base.js
 scripts[] = js/jquery.placeholder.js
+
+
 ;----------// Page manager
   api[page_manager][pages_default][version] = 1
   api[page_manager][pages_default][path] = pages
