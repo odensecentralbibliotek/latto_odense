@@ -23,7 +23,9 @@ header {
     position: relative;
     background: $theme-tertiary-color;
   } }
-
+.header-inner {
+  background: transparent;
+}  
 .logo {
   float: left;
   margin-right: $default-spacing;
@@ -271,7 +273,6 @@ footer .grid-inner {
   a {
     color: $black!important;
     margin: 0;
-    padding: 30px 0 15px 5px;
     text-transform: uppercase; } }  
 
 .nav-wrapper {
@@ -290,9 +291,19 @@ footer .grid-inner {
     margin-bottom: $default-spacing;
     min-height: 197px;
 }
+.search-wrapper{
+  margin-top: 0px;
+  
+      .btn {
+    font-family: "Amble Light Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    right: 150px;
+    top: 45px;
+}
+}
 
 .form-item-search-block-form .form-text {
-    width: 60%;
+    width: 70%;
 }
 
 /* ==========================================================================
