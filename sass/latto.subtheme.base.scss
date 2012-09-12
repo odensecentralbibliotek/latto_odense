@@ -17,6 +17,28 @@ header {
   overflow: hidden;
   padding-bottom: $default-spacing;
   padding-top: $default-spacing;
+  .site-name {
+  font-size: 150%;
+  margin-top: 44px;
+}
+.logo {
+  float: left;
+  margin-right: $default-spacing;
+  margin-left: $default-spacing / 2;
+ } 
+  .site-slogan {
+  clear: left;
+  color: $black;
+  margin-left: $default-spacing / 2;
+}
+  img {
+    width: 150px; 
+      }
+.header-inner {
+  background: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} 
   .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
@@ -24,36 +46,13 @@ header {
     background: $theme-tertiary-color;
   } 
 }
-.header-inner {
-  background: transparent;
-}  
-.logo {
-  float: left;
-  margin-right: $default-spacing;
-  margin-left: $default-spacing / 2;
-  img {
-    width: 150px; } }
-
+ 
 .form-actions {
     background-color: transparent;
     border-top: 0px solid transparent;
     padding: 0px;
 }
 
-.site-name {
-  color: $theme-primary-color;
-  float: left;
-  font-size: 150%;
-  line-height: 100%;
-  margin-left: $default-spacing / 2;
-  margin-top:  44px;
-}
-
-.site-slogan {
-  clear: left;
-  color: $gray-light;
-  margin-left: $default-spacing / 2;
-}
 .rs-carousel-title {
     padding-top: 0px;
 }
@@ -267,15 +266,14 @@ footer .grid-inner {
   position: relative;
   background-color: $gray-lighter;
   }
-
-.pane-menu-menu-footer-menu-1 .menu, .pane-menu-menu-footer-menu-2 .menu, .pane-menu-menu-footer-menu-3 .menu{
+ 
+.pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3{
   border-right: 2px solid white;
-  bottom: 5px;   
-  min-height: 100px;
-  top: 30px;
   }
 .menu {
+  
   list-style-type: none;
+  margin: 0px;
   a {
     color: $black!important;
     margin: 0;
@@ -283,8 +281,6 @@ footer .grid-inner {
 
 .nav-wrapper {
   display: inline-block;
-
-  position: absolute;
 }
 
 /* ==========================================================================
@@ -299,19 +295,35 @@ footer .grid-inner {
 }
 .search-wrapper{
   margin-top: 0px;
-  
+  h2 {
+    margin: 20px;
+    }
+  form {
+    margin: 20px;
+    position: relative;
+    width: 800px;
+}
       .btn {
     font-family: "Amble Light Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
     position: absolute;
     right: 150px;
-    top: 45px;
 }
 }
 
 .form-item-search-block-form .form-text {
     width: 70%;
 }
-
+.pane-system-user-menu {
+    background: $theme-tertiary-color;
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+}
+.pane-ding-user-frontend-ding-user-loan-number {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+  background: $theme-tertiary-color;
+  min-height: 125px;
+}
 /* ==========================================================================
    custom grid
    ========================================================================== */
@@ -330,17 +342,16 @@ article .grid-inner{
    @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
    background-color: $white;
   }
-  .grid-8-left, .grid-8-right{
+article .grid-8-left, article .grid-8-right{
    @include single-box-shadow;
    @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
    background: #E5E5E5;
-
+   width: 49%;
   }
     .grid-8-left .grid-inner, .grid-8-right .grid-inner{
    box-shadow: none;
-background-color: transparent;
-
-  }
+   background-color: transparent;
+          }
 
 
 /* ==========================================================================

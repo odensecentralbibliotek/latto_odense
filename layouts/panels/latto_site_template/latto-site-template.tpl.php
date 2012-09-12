@@ -14,6 +14,11 @@
         <?php print render($content['header']); ?>
       </div>
     </header>
+      <div class="search-login grid-full">
+      <div class="grid-inner clearfix">
+        <?php print render($content['search-login']); ?>
+      </div>
+    </div>
   <?php endif; ?>
 
   <article class="grid-full">

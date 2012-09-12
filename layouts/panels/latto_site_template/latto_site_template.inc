@@ -7,6 +7,7 @@ $plugin = array(
   'regions' => array(
     'branding' => t('Branding'),
     'header'   => t('Header'),
+    'search-login'   => t('Search-login'),
     'content'  => t('Main content'),
     'footer'   => t('Footer'),
     'bottom'   => t('Page bottom'),

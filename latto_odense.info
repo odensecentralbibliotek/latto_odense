@@ -12,24 +12,12 @@
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 
-  ; Unset Module CSS or other Stylesheets
-  ;
-  ; In your theme settings you can unset many stylesheets using the Unset CSS Extension. If for some
-  ; reason the file you want to unset is not showing, you can explicitly declare it here. Once you have
-  ; finished adding your declarations you must clear the sites cache, then go to your theme settings and
-  ; check the checkbox for the file, then save the theme settings and the file will be unset thereafter.
-  ;
-  ; Follow the syntax:
-  ;
-  ; unset_css[path/to/css/file.css] = 1
-  ;
-  ; For example to unset foobar_module.css you might use something like this:
-  ; unset_css[sites/all/modules/foobar_module/foobar_module.css] = 1
-unset_css[css/system.menus.css] = 1
-unset_css[css/system.messages.css] = 1
-unset_css[css/comment.css] = 1
-unset_css[css/node.css] = 1
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = comment.css
+stylesheets[all][] = node.css
 
+; adds placeholder support
 scripts[] = js/base.js
 scripts[] = js/jquery.placeholder.js
 
