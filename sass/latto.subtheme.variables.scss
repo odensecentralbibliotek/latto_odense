@@ -17,8 +17,8 @@ $white:                 #fff !default;
 
 // Theme variables.
 $theme-background-color:  $gray-lighter;
-$theme-background:        url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/tiny_grid.png') $theme-background-color;
-
+$theme-background:        url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noise_lines.png') $theme-background-color;
+$collapsibleColor:        url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/solid.png');
 
 // Font variables.
 // -------------------------
@@ -30,8 +30,8 @@ $theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 // Text colors
 // -------------------------
 $theme-primary-color:         $black;
-$theme-secondary-color:       yellow;
-$theme-tertiary-color:        #69C9CF;
+$theme-secondary-color:       #69C9CF;
+$theme-tertiary-color:        #99D7DB;
 $menu-active:                 #737577;
 $theme-selection-color:       $gray-lighter;
 $theme-selection-background:  $gray;

@@ -19,7 +19,7 @@ header {
   padding-top: $default-spacing;
   .site-name {
   font-size: 150%;
-  margin-top: 44px;
+  margin-top: 34px;
 }
 .logo {
   float: left;
@@ -32,7 +32,7 @@ header {
   margin-left: $default-spacing / 2;
 }
   img {
-    width: 150px; 
+    width: 100px; 
       }
 .header-inner {
   background: transparent;
@@ -43,7 +43,7 @@ header {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     position: relative;
-    background: $theme-tertiary-color;
+    background: $theme-secondary-color;
   } 
 }
  
@@ -65,9 +65,7 @@ header {
 
 .grid-content {
   .grid-inner {
-    @include rgba-background($theme-background-color, .75);
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
     padding: $default-spacing;
   }
 }
@@ -98,16 +96,6 @@ hr {
   &.tertiary {
     @include colruler($theme-tertiary-color);
   }
-}
-
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-
-.nav-wrapper {
-  margin-top: 0px;
-  padding-left: $default-spacing / 2;
-  padding-right: $default-spacing / 2;
 }
 
 
@@ -214,10 +202,12 @@ ul {
       }
     }
   }
-
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
   &.nav {
     &.nav-inline {
-      @include border-radius(4px);
+      @include border-radius(0px);
       @include rgba-background($navbar-background-color,.75);
 
       border-left: 1px solid rgba($navbar-background-color, .5);
@@ -310,17 +300,19 @@ footer .grid-inner {
 }
 }
 
-.form-item-search-block-form .form-text {
-    width: 70%;
+
+.search-wrapper .form-text {
+
+    width: 82%;
 }
 .pane-system-user-menu {
     background: $theme-tertiary-color;
     @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
 }
 .pane-ding-user-frontend-ding-user-loan-number {
   @include single-box-shadow;
-  @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   background: $theme-tertiary-color;
   min-height: 125px;
 }
@@ -338,15 +330,12 @@ footer .grid-inner {
     word-wrap: break-word;
 }
 article .grid-inner{
-   @include single-box-shadow;
-   @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
    background-color: $white;
   }
 article .grid-8-left, article .grid-8-right{
-   @include single-box-shadow;
-   @include box-shadow(rgba(black, .2) 0 7px 10px -2px);
-   background: #E5E5E5;
+   background: $collapsibleColor;
    width: 49%;
+  margin-bottom: $default-spacing;
   }
     .grid-8-left .grid-inner, .grid-8-right .grid-inner{
    box-shadow: none;
