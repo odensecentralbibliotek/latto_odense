@@ -313,8 +313,8 @@ footer .grid-inner {
     min-height: 197px;
   }
   .search-wrapper{
+    @include rgba-background($theme-tertiary-color, 1);
     margin-top: 0px;
-    background: $theme-tertiary-color;
     h2 {
       margin: 0 0 0 20px;
     }

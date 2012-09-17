@@ -442,8 +442,10 @@ Search pane styling
 
 /* line 315, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
+  background-color: #99d7db;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
   margin-top: 0px;
-  background: #99d7db;
 }
 /* line 318, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
