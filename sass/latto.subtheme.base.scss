@@ -18,8 +18,8 @@ header {
   padding-bottom: $default-spacing;
   padding-top: $default-spacing;
   .site-name {
-    font-size: 150%;
-    margin-top: 34px;
+    font-size: 110%;
+    margin-top: 25px;
   }
   .logo {
     float: left;
@@ -31,9 +31,10 @@ header {
     margin-left: $default-spacing / 2;
     position: absolute;
     top: 75px;
+    font-size: 12px
   }
   img {
-    width: 100px; 
+    width: 90px; 
   }
   .header-inner {
     background: transparent;
@@ -310,7 +311,7 @@ footer .grid-inner {
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
     margin-bottom: $default-spacing;
-    min-height: 197px;
+    min-height: 194px;
   }
   .search-wrapper{
     @include rgba-background($theme-tertiary-color, 1);
@@ -358,6 +359,12 @@ footer .grid-inner {
     padding-right: 10px;
     width: 73%;
     word-wrap: break-word;
+  }
+header .grid-8-left{
+    width: 40%;
+  }
+  header .grid-8-right{
+    width: 60%;
   }
   article .grid-inner{
     background-color: $white;
