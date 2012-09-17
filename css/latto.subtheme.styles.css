@@ -443,6 +443,7 @@ Search pane styling
 /* line 315, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
   margin-top: 0px;
+  background: #99d7db;
 }
 /* line 318, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
