@@ -18,7 +18,7 @@ $white:                 #fff !default;
 // Theme variables.
 $theme-background-color:  $gray-lighter;
 $theme-background:        url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noise_lines.png') $theme-background-color;
-$collapsibleColor:        url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/solid.png');
+$collapsibleColor:        #7E7F82;
 
 // Font variables.
 // -------------------------
@@ -35,6 +35,7 @@ $theme-tertiary-color:        #99D7DB;
 $menu-active:                 #737577;
 $theme-selection-color:       $gray-lighter;
 $theme-selection-background:  $gray;
+$footer-color:                #939496;
 
 
 // Links
@@ -77,7 +78,7 @@ $default-spacing: 15px;
 // Navigation
 //--------------------------
 
-$navbar-background-color:   $theme-tertiary-color;
+$navbar-background-color:   $theme-secondary-color;
 $navbar-text-color:         $white;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 
