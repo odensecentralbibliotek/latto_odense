@@ -10,7 +10,6 @@
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_block_form':
-      $form['search_block_form']['#attributes']['placeholder'] = t('Søge');
        unset($form['search_block_form']['#default_value']);
       $form['actions']['#suffix'] = '<div class="clearfix"></div>';
       break;

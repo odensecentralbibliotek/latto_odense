@@ -19,8 +19,6 @@ header {
   padding-top: $default-spacing;
   .site-name {
     font-size: 110%;
-    margin-top: 25px;
-    margin-left: 0;
   }
   .logo {
     float: left;
@@ -41,6 +39,7 @@ header {
     background: transparent;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-left: 0px;
   } 
   .grid-inner {
     @include single-box-shadow;
@@ -58,10 +57,21 @@ header {
   margin-top: 0px;
 }
 
+.rs-carousel-tabs ul li.active {
+  border-color: $gray-light;
+  a {
+    background-color: $gray-light;
+    &:before {
+      border-bottom: 8px solid $gray-light;
+    }
+  }
+}
+
 .rs-carousel-title {
   padding-top: 0px;
 }
-.rs-carousel-compact .rs-carousel-mask {
+
+.rs-carousel-mask {
   max-width: 75%;
 }
 /* ==========================================================================
@@ -214,48 +224,62 @@ ul {
     font-size: 38px;
   }
   
-  &.nav {
-    &.nav-inline {
-      @include border-radius(0px);
-      @include rgba-background($navbar-background-color,.75);
+.nav {
+  display: table;
+  width: 100%;
+  
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: auto;
+  }
+
+  &.nav-inline {
+    @include border-radius(0px);
+    margin: 0;
+    li {
       
-      
-      border-left: 1px solid rgba($navbar-background-color, .5);
-      border-right: 1px solid rgba($white, .2); 
-      margin: 0;
-      li {
-        @include rgba-background($navbar-background-color, .25);
-        border-left: 1px solid rgba($white, .2);
-        border-right: 1px solid rgba($navbar-background-color, .75);
-        display: table-cell;
-        
+      &:hover {
+
+      }
+
+      a {
+        height: 100%;
+        min-width: 100px;
+        padding: $navbar-item-spacing;
+        text-decoration: none;
+        &:hover {
+
+        }
+      }
+      &.first,
+      &.first.active {
+        @include border-radius(0px);
         a {
-          color: $navbar-text-color;
-          display: block;
-          padding: $navbar-item-spacing;
-          text-decoration: none;
-          text-align: center;
-          height: 80px;
-          &:hover {
-            color: lighten($navbar-text-color, 75%);
-          }
+
         }
-        &.first {
-          border-left: 0;
+      }
+
+      &.last {
+        @include border-radius(0);
+        a,
+        &.active a {
         }
-        &.last {
-          border-right: 1px solid rgba($navbar-background-color, .5);
+      }
+
+      &.active {
+        &:hover {
+
         }
-        &.active {
-          border-left: 0;
-          border-right: 0;
-          @include rgba-background($menu-active, 1);
-          margin-bottom: 20px;
+
+        a {
+
         }
       }
     }
   }
-}
+  }}
 
 .label-info,
 .badge-info {
@@ -360,16 +384,20 @@ footer .grid-inner {
     word-wrap: break-word;
   }
 header .grid-8-left{
-    width: 32%;
+    width: 26%;
+    margin-right: -26%;
   }
   header .grid-8-right{
-    width: 68%;
+    width: 76%;
+    margin-left: -76%;
   }
   article .grid-inner{
     background-color: $white;
   }
+  .ctools-collapsible-handle{
+    background: $gray-light;
+    }
   article .grid-8-left, article .grid-8-right{
-    background: $collapsibleColor;
     width: 49%;
     margin-bottom: $default-spacing;
   }

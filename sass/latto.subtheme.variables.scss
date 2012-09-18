@@ -78,7 +78,7 @@ $default-spacing: 15px;
 // Navigation
 //--------------------------
 
-$navbar-background-color:   $theme-secondary-color;
+$navbar-background-color:   $theme-secondary-color !default;
 $navbar-text-color:         $white;
 $navbar-item-spacing:       $default-spacing / 2 $default-spacing;
 
