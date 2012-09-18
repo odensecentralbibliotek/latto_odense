@@ -20,6 +20,7 @@ header {
   .site-name {
     font-size: 110%;
     margin-top: 25px;
+    margin-left: 0;
   }
   .logo {
     float: left;
@@ -49,7 +50,7 @@ header {
   } 
 }
 
-.form-actions {
+.form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
   padding: 0px;
@@ -311,7 +312,7 @@ footer .grid-inner {
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
     margin-bottom: $default-spacing;
-    min-height: 194px;
+    min-height: 155px;
   }
   .search-wrapper{
     @include rgba-background($theme-tertiary-color, 1);
@@ -320,11 +321,11 @@ footer .grid-inner {
       margin: 0 0 0 20px;
     }
     form {
-      margin: 20px;
+      margin: 0px 0 0 20px;
       position: relative;
       width: auto;
       }.form-text {
-      
+      height: 40px;
       width: 80%;
     }
     .btn {
@@ -342,10 +343,8 @@ footer .grid-inner {
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   }
   .pane-ding-user-frontend-ding-user-loan-number {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
-    min-height: 125px;
+    min-height: 82px;
   }
   /* ==========================================================================
   custom grid
@@ -361,10 +360,10 @@ footer .grid-inner {
     word-wrap: break-word;
   }
 header .grid-8-left{
-    width: 35%;
+    width: 32%;
   }
   header .grid-8-right{
-    width: 65%;
+    width: 68%;
   }
   article .grid-inner{
     background-color: $white;
@@ -388,6 +387,7 @@ header .grid-8-left{
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;    
     margin-bottom: $default-spacing;
+    min-height: 155px;
   }
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");

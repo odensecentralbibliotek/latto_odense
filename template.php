@@ -21,6 +21,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
       unset($form['pass']['#title']);
       $form['links']['#markup'] = "";
+      $form['actions']['submit']['#attributes']['class'][] = 'btn';
+
+      $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
       break;
 
     case 'comment_node_ding_news_form':
