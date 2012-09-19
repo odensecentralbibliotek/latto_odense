@@ -1,4 +1,20 @@
-// This file imports all of the stylesheets and is the only included in the theme.
+/* ==========================================================================
+   This file imports all of the stylesheets used in the theme.
+
+   Notice that it is the latto files that are used, this means that if you
+   update the latto theme you will automatically apply the changes.
+   
+   Important! Be careful before you update, there might be updates that
+   influence the layout of your site.
+   ========================================================================== */
 @import 'latto.subtheme.variables.scss';
 @import 'latto.subtheme.base.scss';
 @import 'latto.subtheme.typography.scss';
+
+
+
+/* Import the files from the latto theme
+   ========================================================================== */
+
+@import '../../latto/sass/latto.grid.scss';
+@import '../../latto/sass/latto.panels.scss';

@@ -1,7 +1,7 @@
 // This file holds all the variables for the theme.
+//
+// Compass version 0.12.2 (Alnilam)
 
-// Imports
-// -------------------------
 @import "compass/css3";
 
 
@@ -77,10 +77,10 @@ $default-spacing: 15px;
 
 // Navigation
 //--------------------------
-
 $navbar-background-color:   $theme-secondary-color !default;
-$navbar-text-color:         $white;
-$navbar-item-spacing:       $default-spacing / 2 $default-spacing;
+$navbar-font-size:        15px !default;
+$navbar-text-color:       $white !default;
+$navbar-item-spacing:     $default-spacing / 2 $default-spacing !default;
 
 // List
 //--------------------------

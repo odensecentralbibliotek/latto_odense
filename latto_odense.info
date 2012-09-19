@@ -4,7 +4,7 @@
   core        = 7.x
   release     = 7.x-1.x
   screenshot  = screenshot.png
-  base theme  = latto
+  base theme  = ddbasic
 
 ;----------// Panels
   plugins[panels][layouts] = layouts/panels

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Latto's theme implementation to display event nodes.
+ * Latto's theme implementation to display page nodes.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -16,8 +16,8 @@
  * - $name: Themed username of node author output from theme_username().
  * - $node_url: Direct url of the current node.
  * - $display_submitted: Whether submission information should be displayed.
- * - $submitted: Submission information created from $date (NOTE: modified for latto
- *   during latto_preprocess_node in templates.php)
+ * - $submitted: Submission information created from $date
+ *  (NOTE: modified for latto during latto_preprocess_node in templates.php)
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the
@@ -74,15 +74,12 @@
  * rule that was previously applied.
  *
  * Latto specific variables:
- * - $latto_updated: Information about latest update on the node created from $date during
- *   latto_preprocess_node().  
- * - $latto_ding_content_tags: Tags, as a comma-separated list of links with leading text "Tags: "    
- * - $latto_event_location: String containing adress info for either field_address or group_audience,
- *   as relevant for the event node 
- * - $latto_ding_event_target: event target as link
- * - $latto_byline: outputs byline to be used before $name  
- * - $latto_place2book_tickets: flag for field_place2book_tickets   
- * 
+ * - $latto_updated: Information about latest update on the node created
+ *  from $date during latto_preprocess_node().
+ * - $latto_ding_content_tags: Tags, as a comma-separated list of
+ *  links with leading text "Tags: " as relevant for the event node
+ * - $latto_byline: outputs byline to be used before $name
+ *
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
@@ -91,60 +88,25 @@
 <section class="span7" role="main">
   <article>
     <?php print render($content['field_main_image'][0]); ?>
-
+ <hr/>
     <header class="page-header">
-        <p>
-            <i class="icon-tag"></i> <?php print render($content['field_ding_event_category'][0]); ?>
-            <i class="icon-map-marker"></i> <?php print render($content['group_audience'][0]); ?>
-        </p>
-
-        <hr/>
-
-        <h1><?php print $title; ?></h1>
+       <h1><?php print $title; ?></h1>
 
         <div class="row-fluid">
             <div class="lead span8">
-                <p><?php print render($content['field_ding_event_manchet'][0]); ?></p>
-                <?php if ($latto_place2book_tickets): ?>
-                  <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
-                <?php endif; ?>
+                <p><?php print render($content['field_ding_page_manchet'][0]); ?></p>
             </div>
-            <div class="span4">
-                <p>
-                    <i class="icon-calendar"></i>
-                    <?php print render($variables['content']['field_event_date'][0]); ?>
-                </p>
-                <p>
-                    <i class="icon-home"></i>
-                    <?php print $latto_event_location; ?>
-                </p>
-                <p>
-                    <i class="icon-user"></i>
-                    <?php print render($content['field_ding_event_target'][0]); ?>
-                </p>
-                <p>
-                    <i class="icon-shopping-cart"></i>
-                    <?php print render($content['field_event_ticket_price'][0]); ?>
-                </p>
-            </div>
+           <hr/>
         </div>
     </header>
     
     <?php
-      // hide fields we have already rendered
+      // Hide fields we have already rendered.
       hide($content['field_main_image']);
-      hide($content['field_ding_event_category']);
       hide($content['group_audience']);
       hide($content['field_ding_event_manchet']);
-      hide($content['field_place2book_tickets']); //<-- field provided by optional module ding_place2book
-      hide($content['field_event_date']);
-      hide($content['field_address']);
-      hide($content['field_ding_event_target']);
-      hide($content['field_event_ticket_price']);
-      
-      // Hide fields that will be displayed as panel panes instead
+      // Hide fields that will be displayed as panel panes instead.
       hide($content['comments']);
-      
       // Hide fields now so that we can render them later.
       hide($content['links']);
       hide($content['ding_content_tags']);
@@ -157,9 +119,9 @@
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment
     // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) {
+    if ($teaser || !empty($content['comments']['comment_form'])) :
       unset($content['links']['comment']['#links']['comment-add']);
-    }
+    endif;
     // Only display the wrapper div if there are links.
     $links = render($content['links']);
     if ($links):
@@ -180,7 +142,7 @@
             <p>
                 <i class="icon-time"></i>
                 <?php print $submitted; ?> • <?php print $latto_updated; ?>
-                <br>
+                <br />
                 <i class="icon-tag"></i>
                 <?php print $latto_ding_content_tags; ?>
             </p>

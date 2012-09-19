@@ -1,18 +1,32 @@
-// Various mixins to make our life easier
+// Mixins used in the other stylesheets.
+////
+// Compass version 0.12.2 (Alnilam)
 
 $prefixes: ("-webkit-","-moz-", "-o-", "");
 
-// Adds trailing margin
+// Adds trailing margin.
+//
+// $amount - The amount of margin appended to the bottom.
+//
+// Compatible in IE9+, Firefox 1+, Opera 9,2+, Chrome 2+x, Safari 1,3+.
 @mixin append-bottom($amount: $default-spacing) {
   margin-bottom: $amount;
 }
 
-// Adds leading maring
+// Adds leading margin.
+//
+// $amount - The amount of margin appended to the top.
+//
+// Compatible in IE9+, Firefox 1+, Opera 9,2+, Chrome 2+, Safari 1,3+.
 @mixin prepend-top($amount: $default-spacing) {
   margin-top: $amount;
 }
 
-// Mixin this to an hr to make a horizontal ruler across a column.
+// Add default Latto styling to an HTML <HR> ruler across any column.
+// 
+// $border-color - The color of the HTML ruler.
+//
+// Compatible in IE9+, Firefox 3,5+, Opera 9,5+, Chrome 4+, Safari 3,1+.
 @mixin colruler($border-color: $gray) {
   background: $border-color;
   color: $border-color;
@@ -25,7 +39,13 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   @include append-bottom($default-spacing/2);
  }
  
- // RGBa background (https://gist.github.com/1949202)
+// Mixin for transparent backgrounds, maing it cross browser compatible 
+// including IE8+. (https://gist.github.com/1949202)
+//
+// $color - The color of the background.
+// $alpha - The alpha value for transparency.
+//
+// Compatible in IE8+, Firefox 1+, Opera 9,2+, Chrome 2+, Safari 3,1+.
 @mixin rgba-background($color, $alpha) {
   $rgba: rgba($color, $alpha);
   $ie-hex-str: ie-hex-str($rgba);
@@ -34,11 +54,28 @@ $prefixes: ("-webkit-","-moz-", "-o-", "");
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
 }
 
+// Mixin for the CSS ::selection, which allows specify selected text background
+// color.
+//
+// $color - The color for the selected text.
+// $background - The background color for the selected text.
+//
+// Compatible in IE9+, Opera 9,2+, Chrome 5+, Safari 3+.
 @mixin selection($color, $background) {
   @each $prefix in $prefixes {
     ::#{$prefix}selection {
       color: $color;
       background: $background;
     }
+  }
+}
+
+// Add a backup background color for IE
+// Placed at top so it comes before background-image
+@mixin ie-gradient-fix($background, $svg: true) {
+  background: $background;
+  
+  @if $svg == true {
+    $experimental-support-for-svg: $svg;
   }
 }

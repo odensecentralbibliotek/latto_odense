@@ -35,6 +35,16 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+/**
+ * Implements theme_menu_tree().
+ *
+ * Addes wrapper clases for the default menu.
+ */
+function latto_odense_menu_tree__menu_block__1($vars) {
+  return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
+}
+
+
 function latto_odense_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';

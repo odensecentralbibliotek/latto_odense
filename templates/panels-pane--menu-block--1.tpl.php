@@ -16,9 +16,7 @@
  * - $display: The complete panels display object containing all kinds of
  *   data including the contexts and all of the other panes being displayed.
  */
-/*removed nav-wrapper class */
 ?>
-
 <div class="<?php print $classes; ?>" <?php print $id; ?>>
    
   <?php if ($admin_links): ?>
@@ -26,7 +24,7 @@
   <?php endif; ?>
 
   <?php if ($title): ?>
-    <h2 class="nav-title"><?php print $title; ?></h2>
+    <h2><?php print $title; ?></h2>
   <?php endif; ?>
 
   <?php print render($content); ?>

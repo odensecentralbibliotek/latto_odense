@@ -1,6 +1,11 @@
-/* ==========================================================================
-Base styling
-========================================================================== */
+// The default stylesheet for the Latto theme.
+//
+// Documentation written in KSS (https://github.com/kneath/kss/blob/master/SPEC.md)
+// Find a styleguide at ding2tal.ting.dk/profiles/ding2/themes/latto/tools/tdcss/index.html
+//
+//
+// Compass version 0.12.2 (Alnilam)
+// Zen Grids version 1.2
 
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
@@ -8,8 +13,6 @@ Base styling
 
 body {
   background: $theme-background;
-  margin: 0;
-  padding: 0;
 }
 
 header {
@@ -37,9 +40,9 @@ header {
   }
   .header-inner {
     background: transparent;
+    padding-bottom: 0px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 0px;
+
   } 
   .grid-inner {
     @include single-box-shadow;
@@ -217,69 +220,47 @@ ul {
       }
     }
   }
+
+}
   /* ==========================================================================
   Navigation
   ========================================================================== */
-  i{
+
+i{
     font-size: 38px;
   }
   
-.nav {
+// The navigation bar used for the main-menu.
+//
+// No styleguide reference
+.main-menu {
   display: table;
+  font-size: $navbar-font-size;
   width: 100%;
-  
-  &.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    width: auto;
-  }
-
-  &.nav-inline {
-    @include border-radius(0px);
-    margin: 0;
+  margin: 0px;
     li {
-      
-      &:hover {
-
-      }
-
+      border-left: 1px solid lighten($navbar-background-color, 15%);
+      display: table-cell;
+      text-align: center;
       a {
+        border-left: 1px solid lighten($navbar-background-color, 3%);
+        color: $navbar-text-color;
+        display: block;
         height: 100%;
         min-width: 100px;
-        padding: $navbar-item-spacing;
+        padding: $default-spacing;
         text-decoration: none;
         &:hover {
-
+          background: darken($navbar-text-color, 15%);
         }
       }
-      &.first,
-      &.first.active {
-        @include border-radius(0px);
-        a {
-
-        }
-      }
-
-      &.last {
-        @include border-radius(0);
-        a,
-        &.active a {
-        }
-      }
-
       &.active {
-        &:hover {
-
-        }
-
-        a {
-
-        }
+        border-left: 1px solid lighten($navbar-background-color, 3%);
+        background: $gray-light;
       }
     }
-  }
-  }}
+}
+
 
 .label-info,
 .badge-info {
@@ -382,14 +363,6 @@ footer .grid-inner {
     padding-right: 10px;
     width: 73%;
     word-wrap: break-word;
-  }
-header .grid-8-left{
-    width: 26%;
-    margin-right: -26%;
-  }
-  header .grid-8-right{
-    width: 76%;
-    margin-left: -76%;
   }
   article .grid-inner{
     background-color: $white;
