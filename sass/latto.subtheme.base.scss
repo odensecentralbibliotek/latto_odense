@@ -302,15 +302,14 @@ footer .grid-inner {
   margin: 0px;
   a {
     margin: 0;
-     } }  
-  
+     } }   
   
   
   /* ==========================================================================
   Search pane styling
   ========================================================================== */
    .search-login .grid-inner{
-    margin-bottom: $default-spacing; 
+    margin-bottom: $default-spacing / 2; 
      }
   .panel-pane.pane-block.pane-search-form {
     @include single-box-shadow;
