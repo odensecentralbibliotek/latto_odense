@@ -265,7 +265,7 @@ ul {
 }
 
 footer .grid-inner {
-  margin-top: $default-spacing * 2 ;
+  margin-top: $default-spacing;
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   position: relative;
@@ -313,7 +313,6 @@ footer .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
-    margin-bottom: $default-spacing;
     min-height: 155px;
   }
   .search-wrapper{
