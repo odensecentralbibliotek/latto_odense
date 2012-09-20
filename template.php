@@ -17,11 +17,11 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'user_login_block':
       unset($form['name']['#title']);
       $form['name']['#attributes']['placeholder'] = t('Cpr- eller kortnummer:');
+      $form['name']['#type'] = 'password';
       $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
       unset($form['pass']['#title']);
       $form['links']['#markup'] = "";
       $form['actions']['submit']['#attributes']['class'][] = 'btn';
-
       $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
       break;
 
