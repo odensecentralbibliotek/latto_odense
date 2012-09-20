@@ -308,6 +308,9 @@ footer .grid-inner {
   /* ==========================================================================
   Search pane styling
   ========================================================================== */
+  .search-login .grid-inner{
+    margin-bottom: $default-spacing;
+    }
   .panel-pane.pane-block.pane-search-form {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
@@ -382,7 +385,6 @@ footer .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;    
-    margin-bottom: $default-spacing;
     min-height: 155px;
   }
   .ctools-collapsible-container .ctools-toggle {
