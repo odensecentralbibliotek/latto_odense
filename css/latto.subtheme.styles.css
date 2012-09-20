@@ -57,29 +57,29 @@ btn: text
 
 
 */
-/* line 14, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 14, ../sass/latto.subtheme.base.scss */
 body {
-  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noise_lines.png") #eeeeee;
+  background: url("../images/noise_lines.png") #eeeeee;
 }
 
-/* line 18, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 18, ../sass/latto.subtheme.base.scss */
 header {
   background: transparent;
   overflow: hidden;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 23, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 23, ../sass/latto.subtheme.base.scss */
 header .site-name {
   font-size: 110%;
 }
-/* line 26, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 26, ../sass/latto.subtheme.base.scss */
 header .logo {
   float: left;
   margin-right: 15px;
   margin-left: 7.5px;
 }
-/* line 31, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 31, ../sass/latto.subtheme.base.scss */
 header .site-slogan {
   color: black;
   margin-left: 7.5px;
@@ -87,17 +87,17 @@ header .site-slogan {
   top: 75px;
   font-size: 12px;
 }
-/* line 38, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 38, ../sass/latto.subtheme.base.scss */
 header img {
   width: 90px;
 }
-/* line 41, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 41, ../sass/latto.subtheme.base.scss */
 header .header-inner {
   background: transparent;
   padding-bottom: 0px;
   padding-top: 5px;
 }
-/* line 47, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 47, ../sass/latto.subtheme.base.scss */
 header .grid-inner {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -109,7 +109,7 @@ header .grid-inner {
   background: #69c9cf;
 }
 
-/* line 55, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 55, ../sass/latto.subtheme.base.scss */
 .form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
@@ -118,25 +118,25 @@ header .grid-inner {
   margin-top: 0px;
 }
 
-/* line 63, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 63, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active {
   border-color: #999999;
 }
-/* line 65, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 65, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a {
   background-color: #999999;
 }
-/* line 67, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 67, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a:before {
   border-bottom: 8px solid #999999;
 }
 
-/* line 73, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 73, ../sass/latto.subtheme.base.scss */
 .rs-carousel-title {
   padding-top: 0px;
 }
 
-/* line 77, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 77, ../sass/latto.subtheme.base.scss */
 .rs-carousel-compact .rs-carousel-mask {
   max-width: 75%;
 }
@@ -144,7 +144,7 @@ header .grid-inner {
 /* ==========================================================================
 Theme specific grid styling
 ========================================================================== */
-/* line 85, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 85, ../sass/latto.subtheme.base.scss */
 .grid-content .grid-inner {
   padding: 15px;
 }
@@ -154,14 +154,14 @@ Basic elements
 ========================================================================== */
 /* Paragraphs
 ========================================================================== */
-/* line 99, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 99, ../sass/latto.subtheme.base.scss */
 p {
   margin-bottom: 5px;
 }
 
 /* Default horizontal ruler styles
 ========================================================================== */
-/* line 106, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 106, ../sass/latto.subtheme.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -173,7 +173,7 @@ hr {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 108, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 108, ../sass/latto.subtheme.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -185,7 +185,7 @@ hr.primary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 111, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 111, ../sass/latto.subtheme.base.scss */
 hr.secondary {
   background: #69c9cf;
   color: #69c9cf;
@@ -197,7 +197,7 @@ hr.secondary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 114, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 114, ../sass/latto.subtheme.base.scss */
 hr.tertiary {
   background: #99d7db;
   color: #99d7db;
@@ -213,15 +213,15 @@ hr.tertiary {
 /* ==========================================================================
 List styling
 ========================================================================== */
-/* line 126, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 126, ../sass/latto.subtheme.base.scss */
 ul li h3 {
   margin-bottom: 3.75px;
 }
-/* line 129, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 129, ../sass/latto.subtheme.base.scss */
 ul li p {
   margin-bottom: 3.75px;
 }
-/* line 134, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 134, ../sass/latto.subtheme.base.scss */
 ul.date-list .date-wrapper {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -238,68 +238,68 @@ ul.date-list .date-wrapper {
   text-align: center;
   vertical-align: top;
 }
-/* line 147, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 147, ../sass/latto.subtheme.base.scss */
 ul.date-list .date-wrapper .day {
   background-color: #99d7db;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 152, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 152, ../sass/latto.subtheme.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner {
-  background: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noise_lines.png") #eeeeee;
+  background: url("../images/noise_lines.png") #eeeeee;
   border: 1px solid #d9d9d9;
 }
-/* line 155, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 155, ../sass/latto.subtheme.base.scss */
 ul.date-list .date-wrapper .date-wrapper-inner .date {
   font-size: 19.5px;
   margin-top: 3.75px;
 }
-/* line 161, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 161, ../sass/latto.subtheme.base.scss */
 ul.date-list .content {
   display: inline-block;
 }
-/* line 165, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 165, ../sass/latto.subtheme.base.scss */
 ul.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 170, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 170, ../sass/latto.subtheme.base.scss */
 ul.list li {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-/* line 174, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 174, ../sass/latto.subtheme.base.scss */
 ul.list li div.subheading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 177, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 177, ../sass/latto.subtheme.base.scss */
 ul.list li div.subheading span, ul.list li div.subheading a {
   margin-right: 5px;
 }
-/* line 179, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 179, ../sass/latto.subtheme.base.scss */
 ul.list li div.subheading span.label, ul.list li div.subheading a.label {
   color: white;
 }
-/* line 183, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 183, ../sass/latto.subtheme.base.scss */
 ul.list li div.subheading span.date {
   color: black;
 }
-/* line 187, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 187, ../sass/latto.subtheme.base.scss */
 ul.list li img {
   height: auto;
   width: 100%;
 }
-/* line 191, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 191, ../sass/latto.subtheme.base.scss */
 ul.list li.last {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 201, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 201, ../sass/latto.subtheme.base.scss */
 ul.floated li img {
   display: inline-block;
   padding-right: 10px;
@@ -308,7 +308,7 @@ ul.floated li img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 207, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 207, ../sass/latto.subtheme.base.scss */
 ul.floated li div.content {
   display: inline-block;
   vertical-align: top;
@@ -317,7 +317,7 @@ ul.floated li div.content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 218, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 218, ../sass/latto.subtheme.base.scss */
 ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
   display: none;
 }
@@ -325,25 +325,20 @@ ul.simple li img, ul.simple li div.subheading, ul.simple li div.content {
 /* ==========================================================================
 Navigation
 ========================================================================== */
-/* line 229, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
-i {
-  font-size: 38px;
-}
-
-/* line 236, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 230, ../sass/latto.subtheme.base.scss */
 .main-menu {
   display: table;
   font-size: 15px;
   width: 100%;
   margin: 0px;
 }
-/* line 241, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 235, ../sass/latto.subtheme.base.scss */
 .main-menu li {
   border-left: 1px solid #a3dee2;
   display: table-cell;
   text-align: center;
 }
-/* line 245, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 239, ../sass/latto.subtheme.base.scss */
 .main-menu li a {
   border-left: 1px solid #75cdd3;
   color: white;
@@ -353,23 +348,27 @@ i {
   padding: 15px;
   text-decoration: none;
 }
-/* line 253, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 247, ../sass/latto.subtheme.base.scss */
+.main-menu li a i {
+  font-size: 38px;
+}
+/* line 250, ../sass/latto.subtheme.base.scss */
 .main-menu li a:hover {
   background: #d9d9d9;
 }
-/* line 257, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 254, ../sass/latto.subtheme.base.scss */
 .main-menu li.active {
   border-left: 1px solid #75cdd3;
   background: #999999;
 }
 
-/* line 266, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 263, ../sass/latto.subtheme.base.scss */
 .label-info,
 .badge-info {
   background-color: #99d7db;
 }
 
-/* line 270, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 267, ../sass/latto.subtheme.base.scss */
 footer .grid-inner {
   margin-top: 30px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -382,12 +381,12 @@ footer .grid-inner {
   background-color: #eeeeee;
 }
 
-/* line 278, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 275, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
   border-right: 2px solid white;
   min-height: 350px;
 }
-/* line 281, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 278, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1 h2, .pane-menu-menu-footer-menu-2 h2, .pane-menu-menu-footer-menu-3 h2, .pane-menu-menu-footer-menu-4 h2 {
   color: #939496 !important;
   font-family: din,sans-serif,verdana;
@@ -396,7 +395,7 @@ footer .grid-inner {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 290, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 287, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1 a, .pane-menu-menu-footer-menu-2 a, .pane-menu-menu-footer-menu-3 a, .pane-menu-menu-footer-menu-4 a {
   color: #939496 !important;
   font-size: 12px;
@@ -404,17 +403,17 @@ footer .grid-inner {
   text-decoration: none;
 }
 
-/* line 298, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 295, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-4 {
   border-right: none;
 }
 
-/* line 302, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 299, ../sass/latto.subtheme.base.scss */
 .menu {
   list-style-type: none;
   margin: 0px;
 }
-/* line 306, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 303, ../sass/latto.subtheme.base.scss */
 .menu a {
   margin: 0;
 }
@@ -422,7 +421,7 @@ footer .grid-inner {
 /* ==========================================================================
 Search pane styling
 ========================================================================== */
-/* line 315, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 312, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-block.pane-search-form {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -435,29 +434,29 @@ Search pane styling
   min-height: 155px;
 }
 
-/* line 322, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 319, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
   background-color: #99d7db;
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
   margin-top: 0px;
 }
-/* line 325, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 322, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
   margin: 0 0 0 20px;
 }
-/* line 328, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 325, ../sass/latto.subtheme.base.scss */
 .search-wrapper form {
   margin: 0px 0 0 20px;
   position: relative;
   width: auto;
 }
-/* line 332, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 329, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-text {
   height: 40px;
   width: 80%;
 }
-/* line 336, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 333, ../sass/latto.subtheme.base.scss */
 .search-wrapper .btn {
   font-family: "Amble Light Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
   position: relative;
@@ -466,7 +465,7 @@ Search pane styling
   top: 0px;
 }
 
-/* line 345, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 342, ../sass/latto.subtheme.base.scss */
 .pane-system-user-menu {
   background: #99d7db;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -477,7 +476,7 @@ Search pane styling
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
 }
 
-/* line 350, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 347, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   background: #99d7db;
   min-height: 82px;
@@ -486,7 +485,7 @@ Search pane styling
 /* ==========================================================================
 custom grid
 ========================================================================== */
-/* line 357, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 354, ../sass/latto.subtheme.base.scss */
 .grid-11-left {
   -moz-box-sizing: border-box;
   float: left;
@@ -498,23 +497,23 @@ custom grid
   word-wrap: break-word;
 }
 
-/* line 367, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 364, ../sass/latto.subtheme.base.scss */
 article .grid-inner {
   background-color: white;
 }
 
-/* line 370, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 367, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-handle {
   background: #999999;
 }
 
-/* line 373, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 370, ../sass/latto.subtheme.base.scss */
 article .grid-8-left, article .grid-8-right {
   width: 49%;
   margin-bottom: 15px;
 }
 
-/* line 377, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 374, ../sass/latto.subtheme.base.scss */
 .grid-8-left .grid-inner, .grid-8-right .grid-inner {
   box-shadow: none;
   background-color: transparent;
@@ -523,7 +522,7 @@ article .grid-8-left, article .grid-8-right {
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
-/* line 386, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 383, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-block.pane-user-login {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -536,7 +535,7 @@ Login pane styling
   min-height: 155px;
 }
 
-/* line 393, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 390, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -546,13 +545,13 @@ Login pane styling
   width: 21px;
 }
 
-/* line 402, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 399, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 1px;
 }
 
-/* line 406, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 403, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -561,7 +560,7 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 414, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 411, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.3em;
@@ -569,12 +568,12 @@ label.placeholder {
 }
 
 /* html5 placeholder support */
-/* line 421, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 418, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 425, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 422, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
@@ -629,7 +628,7 @@ btn: text
 
 
 */
-/* line 5, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 5, ../sass/latto.subtheme.typography.scss */
 body {
   color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -637,31 +636,31 @@ body {
   line-height: 18px;
 }
 
-/* line 66, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 24, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 24, ../sass/latto.subtheme.typography.scss */
 h1,
 h2,
 h3,
@@ -670,7 +669,7 @@ h5,
 h6 {
   font-weight: normal;
 }
-/* line 27, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 27, ../sass/latto.subtheme.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -680,7 +679,7 @@ h6 a:link {
   color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
 }
-/* line 31, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 31, ../sass/latto.subtheme.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -689,7 +688,7 @@ h5 a:visited,
 h6 a:visited {
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 34, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 34, ../sass/latto.subtheme.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -699,60 +698,60 @@ h6 a:hover {
   color: black;
 }
 
-/* line 40, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 40, ../sass/latto.subtheme.typography.scss */
 h1 {
   color: black;
 }
 
-/* line 44, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 44, ../sass/latto.subtheme.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 52, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 52, ../sass/latto.subtheme.typography.scss */
 a:link {
   color: #0077a2;
   text-decoration: none;
 }
-/* line 56, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 56, ../sass/latto.subtheme.typography.scss */
 a:visited {
   color: #003f55;
 }
-/* line 59, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 59, ../sass/latto.subtheme.typography.scss */
 a:hover {
   color: #002c3c;
   text-decoration: underline;
 }
-/* line 63, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 63, ../sass/latto.subtheme.typography.scss */
 a:focus {
   color: #002c3c;
 }
-/* line 66, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 66, ../sass/latto.subtheme.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 84, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 84, ../sass/latto.subtheme.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 88, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 88, ../sass/latto.subtheme.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 92, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 92, ../sass/latto.subtheme.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 96, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 96, ../sass/latto.subtheme.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 100, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 100, ../sass/latto.subtheme.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
@@ -760,29 +759,29 @@ a:active {
 /* Import the files from the latto theme
    ========================================================================== */
 /* See: http://zengrids.com/help/#vars-legacy */
-/* line 13, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 13, ../../latto/sass/latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, /var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../../var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, /var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../../var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
 
-/* line 17, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 17, ../../latto/sass/latto.grid.scss */
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
 }
 
-/* line 23, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 23, ../../latto/sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -801,7 +800,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 27, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 27, ../../latto/sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -820,7 +819,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 31, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 31, ../../latto/sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -839,7 +838,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 35, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 35, ../../latto/sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -858,7 +857,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 39, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 39, ../../latto/sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -877,7 +876,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 43, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 43, ../../latto/sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -896,7 +895,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 47, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 47, ../../latto/sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -915,7 +914,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 51, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 51, ../../latto/sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -934,7 +933,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 55, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 55, ../../latto/sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -953,7 +952,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 59, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 59, ../../latto/sass/latto.grid.scss */
 .grid-8-center {
   float: left;
   width: 50%;
@@ -972,7 +971,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 63, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 63, ../../latto/sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -991,7 +990,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 67, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 67, ../../latto/sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -1010,7 +1009,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 71, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 71, ../../latto/sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -1029,7 +1028,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 75, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 75, ../../latto/sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -1048,7 +1047,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 79, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 79, ../../latto/sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -1067,7 +1066,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 83, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 83, ../../latto/sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -1086,7 +1085,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 87, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 87, ../../latto/sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -1105,7 +1104,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 91, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 91, ../../latto/sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -1124,7 +1123,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 95, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 95, ../../latto/sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -1144,22 +1143,22 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 100, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 100, ../../latto/sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 104, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 104, ../../latto/sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 108, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 108, ../../latto/sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 112, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 112, ../../latto/sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -1179,17 +1178,17 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 117, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 117, ../../latto/sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 15px;
 }
-/* line 120, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 120, ../../latto/sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 5, /home/quickstart/websites/ding2tal.dev/sites/all/themes/latto_odense/sass/../../latto/sass/latto.panels.scss */
+/* line 5, ../../latto/sass/latto.panels.scss */
 .branding .pane-page-logo {
   float: left;
 }

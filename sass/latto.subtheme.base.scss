@@ -224,14 +224,8 @@ ul {
 }
   /* ==========================================================================
   Navigation
-  ========================================================================== */
-
-i{
-    font-size: 38px;
-  }
-  
+  ========================================================================== */ 
 // The navigation bar used for the main-menu.
-//
 // No styleguide reference
 .main-menu {
   display: table;
@@ -250,6 +244,9 @@ i{
         min-width: 100px;
         padding: $default-spacing;
         text-decoration: none;
+        &i{
+          font-size: 38px;
+          }
         &:hover {
           background: darken($navbar-text-color, 15%);
         }
