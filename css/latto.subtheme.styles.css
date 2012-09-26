@@ -153,7 +153,7 @@ Theme specific grid styling
 
 /* line 91, ../sass/latto.subtheme.base.scss */
 .ui-datepicker {
-  z-index: 0;
+  z-index: 0!important;
 }
 
 /* ==========================================================================
