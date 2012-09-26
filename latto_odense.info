@@ -12,7 +12,7 @@
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 
-stylesheets[all][] = system.menus.css
+;stylesheets[all][] = system.menus.css
 ;stylesheets[all][] = system.messages.css
 ;stylesheets[all][] = comment.css
 ;stylesheets[all][] = node.css
