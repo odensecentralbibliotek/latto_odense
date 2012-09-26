@@ -227,6 +227,11 @@ ul {
   ========================================================================== */ 
 // The navigation bar used for the main-menu.
 // No styleguide reference
+ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+
 .main-menu {
   display: table;
   font-size: $navbar-font-size;
@@ -236,6 +241,11 @@ ul {
       border-left: 1px solid lighten($navbar-background-color, 15%);
       display: table-cell;
       text-align: center;
+      &.expanded, &.collapsed, &.leaf {
+    margin: 0;
+    padding: 0;
+}
+
       a {
         border-left: 1px solid lighten($navbar-background-color, 3%);
         color: $navbar-text-color;
