@@ -117,11 +117,9 @@ function latto_odense_menu_local_tasks(&$variables) {
    
     // Only display contextual links if the user has the correct permissions enabled.
     // Otherwise, the default primary tabs will be used.
-    $variables['primary']['#prefix'] = ($has_access) ?
-      '<div class="contextual-links-wrapper"><ul class="contextual-links">' : '<ul class="nav nav-tabs">';
+    $variables['primary']['#prefix'] = '<ul class="nav nav-tabs">';
 
-    $variables['primary']['#suffix'] = ($has_access) ?
-      '</ul></div>' : '</ul>';
+    $variables['primary']['#suffix'] = '</ul>';
     $output .= drupal_render($variables['primary']);
   }
   if (!empty($variables['secondary'])) {
