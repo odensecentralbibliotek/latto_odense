@@ -325,7 +325,8 @@ footer .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;
-    min-height: 155px;
+
+    min-height: 160px;
   }
   .search-wrapper{
     @include rgba-background($theme-tertiary-color, 1);
@@ -357,7 +358,7 @@ footer .grid-inner {
   }
   .pane-ding-user-frontend-ding-user-loan-number {
     background: $theme-tertiary-color;
-    min-height: 82px;
+    min-height: 88px;
   }
   /* ==========================================================================
   custom grid
@@ -395,7 +396,7 @@ footer .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;    
-    min-height: 155px;
+    min-height: 160px;
   }
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");
