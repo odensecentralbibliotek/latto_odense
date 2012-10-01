@@ -102,4 +102,37 @@ function theme_nomarkup($variables){
   }
   
 */
+
+/**
+* Implements hook_menu_local_task()
+*
+* @param array $variables
+*
+* return string with html
+*/
+function latto_odense_menu_local_tasks(&$variables) {
+  $output = '';
+  $has_access = user_access('access contextual links');
+  if (!empty($variables['primary'])) {
+   
+    // Only display contextual links if the user has the correct permissions enabled.
+    // Otherwise, the default primary tabs will be used.
+    $variables['primary']['#prefix'] = ($has_access) ?
+      '<div class="contextual-links-wrapper"><ul class="contextual-links">' : '<ul class="nav nav-tabs">';
+
+    $variables['primary']['#suffix'] = ($has_access) ?
+      '</ul></div>' : '</ul>';
+    $output .= drupal_render($variables['primary']);
+  }
+  if (!empty($variables['secondary'])) {
+
+    $variables['secondary']['#prefix'] = ($has_access) ?
+      '<div class="contextual-links-wrapper"><ul class="contextual-links">' : '<ul class="nav nav-tabs">';
+
+    $variables['secondary']['#suffix'] = ($has_access) ?
+      '</ul></div>' : '</ul>';
+    $output .= drupal_render($variables['secondary']);
+  }
+  return $output;
+}
 ?>
