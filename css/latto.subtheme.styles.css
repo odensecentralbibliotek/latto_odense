@@ -108,7 +108,7 @@ header .grid-inner {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   position: relative;
-  background: #95d6dc;
+  background: #62c8cd;
 }
 
 /* line 56, ../sass/latto.subtheme.base.scss */
@@ -189,8 +189,8 @@ hr.primary {
 }
 /* line 111, ../sass/latto.subtheme.base.scss */
 hr.secondary {
-  background: #95d6dc;
-  color: #95d6dc;
+  background: #62c8cd;
+  color: #62c8cd;
   clear: both;
   float: none;
   width: 100%;
@@ -240,7 +240,7 @@ hr.tertiary {
 }
 /* line 150, ../sass/latto.subtheme.base.scss */
 .list .list-item .subheading .date {
-  color: #f5fbfc;
+  color: #c3eaec;
 }
 /* line 154, ../sass/latto.subtheme.base.scss */
 .list .list-item .image-container {
@@ -293,7 +293,7 @@ hr.tertiary {
 }
 /* line 195, ../sass/latto.subtheme.base.scss */
 .list.simple .list-item .date {
-  color: #f5fbfc;
+  color: #c3eaec;
   display: table-cell;
   min-width: 60px;
 }
@@ -321,7 +321,7 @@ ul li.leaf {
 }
 /* line 222, ../sass/latto.subtheme.base.scss */
 .main-menu li {
-  border-left: 1px solid #cfecef;
+  border-left: 1px solid #9cdcdf;
   display: table-cell;
   text-align: center;
 }
@@ -332,7 +332,7 @@ ul li.leaf {
 }
 /* line 231, ../sass/latto.subtheme.base.scss */
 .main-menu li a {
-  border-left: 1px solid #a1dae0;
+  border-left: 1px solid #6eccd1;
   color: white;
   display: block;
   height: 100%;
@@ -350,7 +350,7 @@ ul li.leaf {
 }
 /* line 246, ../sass/latto.subtheme.base.scss */
 .main-menu li.active {
-  border-left: 1px solid #a1dae0;
+  border-left: 1px solid #6eccd1;
   background: #999999;
 }
 
