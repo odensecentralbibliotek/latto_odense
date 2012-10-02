@@ -117,111 +117,93 @@ hr {
 }
 
 
-/* ==========================================================================
-List styling
-========================================================================== */
+// Styling for the default list layouts.
+// Suitable for displaying news, events, headlines etc.
+//
+// .list              - The default styling for an unordered list in Latto theme.
+// .floated           - Implementation of the default list only with the picure
+//                      floated to the left of the summary.
+// .simple            - A list displaying only headlines.
+//
+// No styleguide reference
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
-ul {
-  li {
-    h3 {
-      margin-bottom: $default-spacing / 4;      
-    }
-    p {
-      margin-bottom: $default-spacing / 4;
-    }
+  .heading {
+    margin-bottom: $default-spacing / 4;
   }
-  &.date-list {
-    .date-wrapper {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      
-      display: inline-block;
-      margin-top : $default-spacing / 5;
-      margin-right: $default-spacing / 2;
-      min-width: 60px;
-      
-      color: $gray;
-      font-size: $default-font-size * .9;
-      text-align: center;
-      vertical-align: top;
-      .day {
-        background-color: $theme-tertiary-color;
-        color: $white;
-        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-      }
-      .date-wrapper-inner {
-        background: $theme-background;
-        border: 1px solid lighten($black, 85%);
-        .date {
-          font-size: $default-font-size * 1.5;
-          margin-top: $default-spacing / 4;
-        }
-      }
-    }
-    .content {
-      display: inline-block;
-    }
+
+  p {
+    margin-bottom: $default-spacing / 4;
   }
-  &.list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    li {
-      border-bottom: 1px solid $gray-lighter;
-      padding-bottom: $list-item-spacing * 1.5;
-      margin-bottom: $list-item-spacing * 1.5;
-      &div.subheading {
-        margin-top: $list-item-spacing;
-        margin-bottom: $list-item-spacing;
-        span, a { 
-          margin-right: $list-item-spacing / 2;
-          &.label {
-            color: $white;  
-          }
-        }
-        &span.date {
-          color: $theme-primary-color;
-        }
+
+  .list-item {
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: $list-item-spacing * 1.5;
+    margin-bottom: $list-item-spacing * 1.5;
+    .subheading {
+      margin-top: $list-item-spacing;
+      margin-bottom: $list-item-spacing;
+      .date {
+        color: lighten($text-primary-color, 25%);
       }
-      &img {       
+    }
+    .image-container {
+      margin-bottom: $list-item-spacing;
+      img {
         height: auto;
-        width: 100%;
-      }
-      &.last {
-        border-bottom: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        max-width: 100%;
       }
     }
+    &.last {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
-  
+
   &.floated {
-    li {
-      &img {
-        display: inline-block;
-        padding-right: $list-item-spacing;
-        width: $list-picture-width;
-        @include box-sizing(border-box);
+    .list-item {
+      letter-spacing: -4px; // Fix for the white letter next to li elements
+      div, p, a, span {
+        letter-spacing: normal;
       }
-      &div.content {
-        display: inline-block;
+      .image-container {
+        display: table-cell;
+        max-width: $list-picture-width;
+        img {
+
+          padding-right: $list-item-spacing;
+          margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
+          @include box-sizing(border-box);
+        }
+      }
+      .content {
+        display: table-cell;
         vertical-align: top;
-        width: 100 - $list-picture-width;
         @include box-sizing(border-box);
-      }
-    }
-  }
-  
-  &.simple {
-    li {
-      &img, &div.subheading, &div.content {
-        display: none;
       }
     }
   }
 
-}
+  &.simple {
+    .list-item {
+      display: table;
+      .date {
+        color: lighten($text-primary-color, 25%);
+        display: table-cell;
+        min-width: 60px;
+      }
+      .heading {
+        display: table-cell;
+        margin-left: $default-spacing;
+      }
+    }
+  }
+  }
   /* ==========================================================================
   Navigation
   ========================================================================== */ 

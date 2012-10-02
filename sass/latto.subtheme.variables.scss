@@ -28,7 +28,10 @@ $theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // Text colors
-// -------------------------
+$text-primary-color:         #1b1b1b !default;
+$text-selection-color:       $text-primary-color !default;
+$text-selection-background:  $gray-light !default;
+
 $theme-primary-color:         $black;
 $theme-secondary-color:       #69C9CF;
 $theme-tertiary-color:        #99D7DB;
