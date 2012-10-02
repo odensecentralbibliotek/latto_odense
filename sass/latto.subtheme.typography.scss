@@ -5,7 +5,7 @@
 body {
   color: $theme-primary-color;
   font-family: $theme-font-family;
-  font-size: $default-font-size;
+  font-size: $theme-font-size;
   line-height: $theme-line-height;
 }
 
@@ -82,21 +82,21 @@ em {
 // -------------------------
 
 .small {
-  font-size: $default-font-size*.5;
+  font-size: $theme-font-size*.5;
 }
 
 .medium {
-  font-size: $default-font-size*.75;
+  font-size: $theme-font-size*.75;
 }
 
 .big {
-  font-size: $default-font-size*1.25;
+  font-size: $theme-font-size*1.25;
 }
 
 .bigger {
-  font-size: $default-font-size*1.375;
+  font-size: $theme-font-size*1.375;
 }
 
 .biggest {
-  font-size: $default-font-size*1.5;
+  font-size: $theme-font-size*1.5;
 }
