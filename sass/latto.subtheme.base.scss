@@ -268,7 +268,7 @@ footer .grid-inner {
   border-right: 2px solid white;
   min-height: 350px;
   &h2 {
-    color: $footer-color!important; 
+    color: $theme-footer-color!important; 
     font-family: din,sans-serif,verdana;
     font-size: 12px;
     font-weight: normal;
@@ -277,7 +277,7 @@ footer .grid-inner {
     text-transform: uppercase;
   }
   &a {
-    color: $footer-color!important; 
+    color: $theme-footer-color!important; 
     font-size: 12px;
     list-style: none outside none;
     text-decoration: none;

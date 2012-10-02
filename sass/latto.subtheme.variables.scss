@@ -28,12 +28,12 @@ $theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 $theme-primary-color:         $black;
-$theme-secondary-color:       #69C9CF;
-$theme-tertiary-color:        #99D7DB;
+$theme-secondary-color:       #95d6dc !default;
+$theme-tertiary-color:        #95d6dc;
 $menu-active:                 #737577;
 $theme-selection-color:       $gray-lighter;
 $theme-selection-background:  $gray;
-$footer-color:                #939496;
+
 
 // Text colors
 $text-primary-color:         $theme-secondary-color;
@@ -65,14 +65,12 @@ $theme-block-inverse-color: $gray-light;
 // Content
 $theme-content-background:  $gray-light;
 $theme-content-color:       $gray-light;
-
 $theme-image-border:        $gray-light;
 
 // Footers
 $theme-footer-background:   $gray-light;
 $theme-footer-color:        $gray-light;
 $theme-footer-color-hover:  $gray-light;
-
 // Grids and spacing
 // -------------------------
 $default-spacing: 15px;
