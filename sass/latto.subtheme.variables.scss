@@ -36,7 +36,7 @@ $theme-selection-background:  $gray;
 
 
 // Text colors
-$text-primary-color:         $theme-secondary-color;
+$text-primary-color:         $theme-secondary-color !default;
 $text-selection-color:       $text-primary-color !default;
 $text-selection-background:  $gray-light !default;
 
