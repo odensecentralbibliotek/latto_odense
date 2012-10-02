@@ -88,7 +88,10 @@ Theme specific grid styling
     padding: $default-spacing;
   }
 }
-
+.content{
+  padding-left: $default-spacing;
+  padding-right: $default-spacing;
+  }
 /* ==========================================================================
 Basic elements
 ========================================================================== */
@@ -257,7 +260,11 @@ ul li.leaf {
 .badge-info {
   background-color: $theme-tertiary-color;
 }
-
+.pane-page-breadcrumb{
+  padding-left: $default-spacing;
+  padding-right: $default-spacing;
+    }
+    
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
