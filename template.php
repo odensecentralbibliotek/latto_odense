@@ -124,11 +124,9 @@ function latto_odense_menu_local_tasks(&$variables) {
   }
   if (!empty($variables['secondary'])) {
 
-    $variables['secondary']['#prefix'] = ($has_access) ?
-      '<div class="contextual-links-wrapper"><ul class="contextual-links">' : '<ul class="nav nav-tabs">';
+    $variables['secondary']['#prefix'] = '<ul class="nav nav-tabs">';
 
-    $variables['secondary']['#suffix'] = ($has_access) ?
-      '</ul></div>' : '</ul>';
+    $variables['secondary']['#suffix'] = '</ul>';
     $output .= drupal_render($variables['secondary']);
   }
   return $output;
