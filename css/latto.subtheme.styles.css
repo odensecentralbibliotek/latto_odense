@@ -240,7 +240,7 @@ hr.tertiary {
 }
 /* line 150, ../sass/latto.subtheme.base.scss */
 .list .list-item .subheading .date {
-  color: #5b5b5b;
+  color: #caecee;
 }
 /* line 154, ../sass/latto.subtheme.base.scss */
 .list .list-item .image-container {
@@ -293,7 +293,7 @@ hr.tertiary {
 }
 /* line 195, ../sass/latto.subtheme.base.scss */
 .list.simple .list-item .date {
-  color: #5b5b5b;
+  color: #caecee;
   display: table-cell;
   min-width: 60px;
 }
@@ -773,7 +773,7 @@ a:active {
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 1200px;
 }
 
 /* line 23, ../../latto/sass/latto.grid.scss */
