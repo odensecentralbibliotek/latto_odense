@@ -372,7 +372,6 @@ footer .grid-inner {
     }
     .collapsall{
       display: block!important;
-      padding-top: 10px
       }
   article .grid-8-left, article .grid-8-right{
     width: 49%;
@@ -398,10 +397,12 @@ footer .grid-inner {
     background-position: 3px 3px;
     background-repeat: no-repeat;
     cursor: pointer;
-    float: left;
-    
+    float: left;  
     width: 21px;
   }
+  .ctools-collapsible-content{
+    padding-top: 10px;
+    }
   .ctools-collapsible-container .ctools-toggle-collapsed {
     background-image: url("../images/new_arrow_collapsed.png");
     background-position: 6px 1px;
