@@ -257,10 +257,6 @@ ul li.leaf {
 .badge-info {
   background-color: $theme-tertiary-color;
 }
-.pane-page-breadcrumb{
-  padding-left: $default-spacing;
-  padding-right: $default-spacing;
-    }
     
 footer .grid-inner {
   margin-top: $default-spacing;
@@ -285,7 +281,7 @@ footer .grid-inner {
   &a {
     color: $theme-footer-color!important; 
     font-size: 12px;
-    list-style: none outside none;
+    list-style: none;
     text-decoration: none;
   }
 }
