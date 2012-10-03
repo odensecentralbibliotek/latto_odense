@@ -88,10 +88,7 @@ Theme specific grid styling
     padding: $default-spacing;
   }
 }
-.content{
-  padding-left: $default-spacing;
-  padding-right: $default-spacing;
-  }
+
 /* ==========================================================================
 Basic elements
 ========================================================================== */
@@ -366,6 +363,9 @@ footer .grid-inner {
   }
   article .grid-inner{
     background-color: $white;
+    max-width: 930px;
+    padding-left: $default-spacing;
+    padding-right: $default-spacing;
   }
   .ctools-collapsible-handle{
     background: $gray-light;
