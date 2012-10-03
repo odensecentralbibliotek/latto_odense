@@ -298,7 +298,13 @@ footer .grid-inner {
     margin: 0;
      } }   
   
-  
+ ul {
+    list-style:  none;
+}
+ul, ol {
+    margin-left: $default-spacing;
+    padding: 0;
+} 
   /* ==========================================================================
   Search pane styling
   ========================================================================== */
