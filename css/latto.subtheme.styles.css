@@ -536,8 +536,8 @@ article .grid-8-left, article .grid-8-right {
 
 /* line 387, ../sass/latto.subtheme.base.scss */
 .breadcrumb {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* ==========================================================================
