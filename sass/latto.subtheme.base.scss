@@ -387,7 +387,7 @@ ul, ol {
    padding-right: $default-spacing;
    }
    .content {
-   display: block;
+   display: block!important;
    }
    .subjects.content{
      padding-top: $default-spacing /2;

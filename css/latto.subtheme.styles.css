@@ -523,7 +523,7 @@ Search pane styling
 
 /* line 389, ../sass/latto.subtheme.base.scss */
 .content {
-  display: block;
+  display: block!important;
 }
 
 /* line 392, ../sass/latto.subtheme.base.scss */
