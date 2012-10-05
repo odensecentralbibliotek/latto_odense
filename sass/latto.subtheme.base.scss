@@ -116,7 +116,47 @@ hr {
   }
 }
 
+// @END .list-compact
 
+// Styling of a default date-list in Latto theme. Suitable for displaying
+// upcomming events.
+//
+// .date-list         - A list containing events with information about date,
+//                      location, time and entrence fee.
+//
+// No styleguide reference
+.date-list {
+  .date-wrapper {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+
+    display: inline-block;
+    margin-top : $default-spacing / 5;
+    margin-right: $default-spacing / 2;
+    min-width: 60px;
+
+    color: lighten($text-primary-color, 25%);
+    font-size: $theme-font-size * .9;
+    text-align: center;
+    vertical-align: top;
+    .day {
+      background-color: $theme-secondary-color;
+      color: $white;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    }
+    .date-wrapper-inner {
+      background: $theme-primary-color;
+      border: 1px solid lighten($black, 85%);
+      .date {
+        font-size: $theme-font-size * 1.5;
+        margin-top: $default-spacing / 4;
+      }
+    }
+  }
+  .content {
+    display: inline-block;
+  }
+}
 // Styling for the default list layouts.
 // Suitable for displaying news, events, headlines etc.
 //
@@ -343,8 +383,6 @@ ul, ol {
   
   .pane-system-user-menu {
     background: $theme-tertiary-color;
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   }
   .pane-ding-user-frontend-ding-user-loan-number {
     background: $theme-tertiary-color;
