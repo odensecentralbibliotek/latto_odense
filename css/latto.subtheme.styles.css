@@ -522,8 +522,8 @@ Search pane styling
 }
 
 /* line 389, ../sass/latto.subtheme.base.scss */
-.ting-cover.content {
-  display: block!important;
+.content {
+  display: block;
 }
 
 /* line 392, ../sass/latto.subtheme.base.scss */
