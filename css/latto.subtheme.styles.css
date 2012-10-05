@@ -515,12 +515,28 @@ Search pane styling
   top: 0px;
 }
 
-/* line 386, ../sass/latto.subtheme.base.scss */
+/* line 385, ../sass/latto.subtheme.base.scss */
+.ting-cover {
+  float: left;
+  padding-right: 15px;
+}
+
+/* line 389, ../sass/latto.subtheme.base.scss */
+.ting-cover.content {
+  display: block!important;
+}
+
+/* line 392, ../sass/latto.subtheme.base.scss */
+.subjects.content {
+  padding-top: 7.5px;
+}
+
+/* line 395, ../sass/latto.subtheme.base.scss */
 .pane-system-user-menu {
   background: #99d7db;
 }
 
-/* line 389, ../sass/latto.subtheme.base.scss */
+/* line 398, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   background: #99d7db;
   min-height: 88px;
@@ -529,7 +545,7 @@ Search pane styling
 /* ==========================================================================
 custom grid
 ========================================================================== */
-/* line 396, ../sass/latto.subtheme.base.scss */
+/* line 405, ../sass/latto.subtheme.base.scss */
 .grid-11-left {
   -moz-box-sizing: border-box;
   float: left;
@@ -541,7 +557,7 @@ custom grid
   word-wrap: break-word;
 }
 
-/* line 406, ../sass/latto.subtheme.base.scss */
+/* line 415, ../sass/latto.subtheme.base.scss */
 article .grid-inner {
   background-color: white;
   max-width: 940px;
@@ -549,29 +565,29 @@ article .grid-inner {
   padding-right: 10px;
 }
 
-/* line 412, ../sass/latto.subtheme.base.scss */
+/* line 421, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-handle {
   background: #999999;
 }
 
-/* line 415, ../sass/latto.subtheme.base.scss */
+/* line 424, ../sass/latto.subtheme.base.scss */
 .collapsall {
   display: block!important;
 }
 
-/* line 418, ../sass/latto.subtheme.base.scss */
+/* line 427, ../sass/latto.subtheme.base.scss */
 article .grid-8-left, article .grid-8-right {
   width: 49%;
   margin-bottom: 15px;
 }
 
-/* line 422, ../sass/latto.subtheme.base.scss */
+/* line 431, ../sass/latto.subtheme.base.scss */
 .grid-8-left .grid-inner, .grid-8-right .grid-inner {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 427, ../sass/latto.subtheme.base.scss */
+/* line 436, ../sass/latto.subtheme.base.scss */
 .breadcrumb {
   margin-left: 15px;
   margin-right: 15px;
@@ -580,7 +596,7 @@ article .grid-8-left, article .grid-8-right {
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
-/* line 434, ../sass/latto.subtheme.base.scss */
+/* line 443, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-block.pane-user-login {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -592,7 +608,7 @@ Login pane styling
   min-height: 160px;
 }
 
-/* line 440, ../sass/latto.subtheme.base.scss */
+/* line 449, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -602,18 +618,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 448, ../sass/latto.subtheme.base.scss */
+/* line 457, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 451, ../sass/latto.subtheme.base.scss */
+/* line 460, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 1px;
 }
 
-/* line 455, ../sass/latto.subtheme.base.scss */
+/* line 464, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -622,7 +638,7 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 463, ../sass/latto.subtheme.base.scss */
+/* line 472, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.3em;
@@ -630,12 +646,12 @@ label.placeholder {
 }
 
 /* html5 placeholder support */
-/* line 470, ../sass/latto.subtheme.base.scss */
+/* line 479, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 474, ../sass/latto.subtheme.base.scss */
+/* line 483, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
@@ -840,7 +856,7 @@ a:active {
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 960px;
 }
 
 /* line 23, ../../latto/sass/latto.grid.scss */

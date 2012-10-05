@@ -382,7 +382,16 @@ ul, ol {
       top: 0px;
     }
   }
-  
+ .ting-cover {
+   float: left;
+   padding-right: $default-spacing;
+   }
+   .ting-cover.content {
+   display: block!important;
+   }
+   .subjects.content{
+     padding-top: $default-spacing /2;
+     }
   .pane-system-user-menu {
     background: $theme-tertiary-color;
   }
