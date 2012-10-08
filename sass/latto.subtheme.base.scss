@@ -382,11 +382,14 @@ ul, ol {
       top: 0px;
     }
   }
+  .search-results{
+    display: block!important;
+  }
  .ting-cover {
    float: left;
    padding-right: $default-spacing;
    }
-     .subjects.content{
+   .subjects.content{
      padding-top: $default-spacing /2;
      }
   .pane-system-user-menu {
