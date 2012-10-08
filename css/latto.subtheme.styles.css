@@ -516,7 +516,7 @@ Search pane styling
 }
 
 /* line 385, ../sass/latto.subtheme.base.scss */
-.search-results {
+.search-results .content {
   display: block!important;
 }
 
