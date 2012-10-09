@@ -411,19 +411,19 @@ ul li.leaf {
 /* line 304, ../sass/latto.subtheme.base.scss */
 .views-label.views-label-field-ding-library-phone-number {
   float: left;
-  padding-right: 7.5px;
+  margin-right: 7.5px;
 }
 
 /* line 308, ../sass/latto.subtheme.base.scss */
 .views-label-field-ding-library-fax-number {
   float: left;
-  padding-right: 7.5px;
+  margin-right: 7.5px;
 }
 
 /* line 312, ../sass/latto.subtheme.base.scss */
 .views-label-field-ding-library-mail {
   float: left;
-  padding-right: 7.5px;
+  margin-right: 7.5px;
 }
 
 /* line 316, ../sass/latto.subtheme.base.scss */
