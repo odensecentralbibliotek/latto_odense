@@ -294,7 +294,36 @@ ul li.leaf {
 .pane-ding-library-map{
   padding-left: $default-spacing;
   }
-
+.views-field-field-ding-library-list-image{
+  float: left;
+  padding-right: $default-spacing / 2;
+  }
+  .addressfield-container-inline:after{
+   clear: none!important;
+    }
+    .views-label.views-label-field-ding-library-phone-number {
+    float: left;
+    padding-right: $default-spacing / 2;
+}
+.views-label-field-ding-library-fax-number {
+    float: left;
+    padding-right: $default-spacing / 2;
+}
+.views-label-field-ding-library-mail{
+    float: left;
+    padding-right: $default-spacing / 2;
+}
+.library-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+      }
+ .vcard{
+    border-bottom: 1px solid #999999;
+    margin-bottom: $default-spacing;
+    padding-bottom: $default-spacing;
+   }
 .label-info,
 .badge-info {
   background-color: $theme-tertiary-color;
