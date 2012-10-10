@@ -85,7 +85,7 @@ Theme specific grid styling
 .grid-content {
   .grid-inner {
     
-    padding: $default-spacing;
+    padding: $default-spacing / 2;
   }
 }
 
@@ -416,8 +416,11 @@ ul, ol {
       top: 0px;
     }
   }
-  ui-autocomplete-input { 
-    width: 100%;
+  ul.ui-autocomplete { 
+    max-width: 100%!important;
+}
+   .spinner {
+    background-position: 97% !important;
 }
   .search-results .content{
     display: block!important;
