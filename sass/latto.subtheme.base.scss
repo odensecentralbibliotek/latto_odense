@@ -328,7 +328,9 @@ ul li.leaf {
 .badge-info {
   background-color: $theme-tertiary-color;
 }
-    
+   .opening-hours-week{
+       padding: 0;  
+     }
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
