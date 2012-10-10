@@ -416,6 +416,9 @@ ul, ol {
       top: 0px;
     }
   }
+  ul.ui-autocomplete { 
+    width: 100%;
+}
   .search-results .content{
     display: block!important;
   }
