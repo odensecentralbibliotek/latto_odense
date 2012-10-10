@@ -570,7 +570,7 @@ Search pane styling
 }
 
 /* line 419, ../sass/latto.subtheme.base.scss */
-ul.ui-autocomplete {
+ui-autocomplete-input {
   width: 100%;
 }
 
