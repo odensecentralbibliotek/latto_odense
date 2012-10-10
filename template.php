@@ -110,6 +110,7 @@ function theme_nomarkup($variables){
 *
 * return string with html
 */
+/*
 function latto_odense_menu_local_tasks(&$variables) {
   $output = '';
   $has_access = user_access('access contextual links');
@@ -209,4 +210,6 @@ function latto_odense_links__library_menu($variables) {
   return $output;
 
 }
+
+ */
 ?>
