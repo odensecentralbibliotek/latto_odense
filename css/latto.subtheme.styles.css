@@ -575,7 +575,7 @@ ul.ui-autocomplete {
 }
 
 /* line 422, ../sass/latto.subtheme.base.scss */
-.spinner {
+ui-autocomplete.spinner {
   background-position: 97% !important;
 }
 
