@@ -575,7 +575,7 @@ ul.ui-autocomplete {
 }
 
 /* line 422, ../sass/latto.subtheme.base.scss */
-ui-autocomplete.spinner {
+input#edit-search-block-form--2.spinner {
   background-position: 97% !important;
 }
 
