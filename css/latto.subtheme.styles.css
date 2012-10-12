@@ -720,6 +720,11 @@ input:placeholder, textarea:placeholder {
   color: #ccc;
 }
 
+/* line 527, ../sass/latto.subtheme.base.scss */
+.ding-news-tags-wrapper a:link {
+  padding: 7.5px;
+}
+
 /*
 
 #Theme elements
