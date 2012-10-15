@@ -423,7 +423,7 @@ ul, ol {
   .panel-pane.pane-recommendation-list{
     background: $gray-lighter;
     }
-    #adhl list-item{      
+    .pane-recommendation-list .list-item{      
     margin-bottom: $default-spacing /2;
     padding-bottom: $default-spacing /2;
       }

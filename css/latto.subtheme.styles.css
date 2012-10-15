@@ -583,7 +583,7 @@ input#edit-search-block-form--2.spinner {
 }
 
 /* line 426, ../sass/latto.subtheme.base.scss */
-#adhl list-item {
+.pane-recommendation-list .list-item {
   margin-bottom: 7.5px;
   padding-bottom: 7.5px;
 }
