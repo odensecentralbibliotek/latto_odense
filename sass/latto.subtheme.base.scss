@@ -22,14 +22,13 @@ header {
   padding-top: $default-spacing;
   .site-name {
   font-size: 90%;
-  margin-left: 5px;
   }
   .logo {
     float: left;
     margin-right: $default-spacing;
     margin-left: $default-spacing / 2;
   img {
-    width: 70%; 
+    width: 65%; 
   } }
   .site-slogan {
     color: $black;
@@ -42,7 +41,7 @@ header {
   .header-inner {
     background: transparent;
     padding-bottom: 0px;
-    padding-top: 5px;
+    padding-top: $default-spacing / 2;
     margin-left: 0px;
   } 
   .grid-inner {
@@ -236,6 +235,7 @@ hr {
         color: lighten($text-primary-color, 25%);
         display: table-cell;
         min-width: 60px;
+        padding-right: $default-spacing;
       }
       .heading {
         display: table-cell;
@@ -346,12 +346,11 @@ footer .grid-inner {
   border-right: 2px solid white;
   min-height: 350px;
   &h2 {
-    color: $theme-footer-color!important; 
+    color: $gray!important; 
     font-family: din,sans-serif,verdana;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     margin: 0;
-
     text-transform: uppercase;
   }
   &a {
@@ -378,7 +377,7 @@ footer .grid-inner {
     list-style:  none;
 }
 ul, ol {
-    margin-left: $default-spacing;
+    margin-left: 0px;
     padding: 0;
 } 
   /* ==========================================================================
@@ -409,15 +408,11 @@ ul, ol {
       width: 80%;
     }
     .btn {
-      font-family: "Amble Light Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
-      position: relative;
-      left: auto;
-      right: 0px;
-      top: 0px;
     }
   }
   ul.ui-autocomplete { 
     max-width: 100%!important;
+    z-index:100;
 }
    input#edit-search-block-form--2.spinner {
     background-position: 97% !important;
@@ -425,6 +420,13 @@ ul, ol {
   .search-results .content{
     display: block!important;
   }
+  .panel-pane.pane-recommendation-list{
+    background: $gray-lighter;
+    }
+    .adhl list-item{      
+    margin-bottom: $default-spacing / 2;
+    padding-bottom: $default-spacing / 2;
+      }
  .ting-cover {
    float: left;
    padding-right: $default-spacing;
