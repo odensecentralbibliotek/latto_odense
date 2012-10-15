@@ -12,7 +12,7 @@
 <div<?php if (!empty($css_id)) { print " id=\"$css_id\""; } ?>>
   <div class="grid-row">
     <div class="grid-12-left">
-      <div class="grid-inner"><?php print $content['grid_12_left']; ?></div>
+      <div class="grid-inner"><?php print $content['grid_12_top_left']; ?></div>
     </div>
   </div>
   <div class="grid-row grid-content last">
