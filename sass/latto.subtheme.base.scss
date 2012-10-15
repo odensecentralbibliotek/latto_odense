@@ -488,7 +488,7 @@ ul, ol {
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     background: $theme-tertiary-color;    
     min-height: 160px;
-  }
+   }
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");
     background-position: 3px 3px;
