@@ -5,10 +5,11 @@ $plugin['stacked_8_4_4_reverse'] = array(
   'theme' => 'stacked_8_4_4_reverse',
   'category'  => 'Latto - multiple rows, three columns',
   'regions' => array(
-    'grid_12_top_left' => t('Top left content'),
-    'grid_4_top_right' => t('Top right sidebar'),
-    'grid_8_left' => t('left content'), 
-    'grid_4_center_right' => t('Right center content'),
-    'grid_4_right' => t('Right content'),
+    'grid_16_top_full' => t('Top full'),
+    'grid_12_left' => t('Left sidebar'),
+    'grid_4_right' => t('Right sidebar'), 
+    'grid_8_bottom_left' => t('Bottom left'),
+    'grid_4_bottom_center_right' => t('Bottom center right'),
+    'grid_4_bottom_right' => t('Bottom right'),
   ),
 );
