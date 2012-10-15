@@ -14,6 +14,9 @@
     <div class="grid-12-left">
       <div class="grid-inner"><?php print $content['grid_12_top_left']; ?></div>
     </div>
+    <aside class="grid-4-right">
+      <div class="grid-inner"><?php print $content['grid_4_right']; ?></div>
+    </aside>
   </div>
   <div class="grid-row grid-content last">
     <div class="grid-8-left">
