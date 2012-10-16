@@ -409,6 +409,7 @@ ul, ol {
     }
     .btn {
       height: 40px;
+      right: 5%;
     }
   }
   ul.ui-autocomplete { 
@@ -449,10 +450,10 @@ ul, ol {
     -moz-box-sizing: border-box;
     float: left;
     margin-left: 0;
-    margin-right: -73%;
+    margin-right: -72%;
     padding-left: 10px;
     padding-right: 10px;
-    width: 73%;
+    width: 72%;
     word-wrap: break-word;
   }
   article .grid-inner{
@@ -527,6 +528,6 @@ ul, ol {
     color:#ccc;
   }
   
-  .ding-news-tags-wrapper a:link{
+  .tags a{
     padding: $default-spacing / 2;
     }
