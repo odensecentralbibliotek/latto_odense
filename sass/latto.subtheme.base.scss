@@ -489,6 +489,9 @@ ul, ol {
     background: $theme-tertiary-color;    
     min-height: 160px;
    }
+   .pane-system-user-menu{
+      min-height: 160px;
+   }
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");
     background-position: 3px 3px;

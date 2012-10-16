@@ -681,6 +681,11 @@ Login pane styling
 }
 
 /* line 492, ../sass/latto.subtheme.base.scss */
+.pane-system-user-menu {
+  min-height: 160px;
+}
+
+/* line 495, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -690,18 +695,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 500, ../sass/latto.subtheme.base.scss */
+/* line 503, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 503, ../sass/latto.subtheme.base.scss */
+/* line 506, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 1px;
 }
 
-/* line 507, ../sass/latto.subtheme.base.scss */
+/* line 510, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -710,7 +715,7 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 515, ../sass/latto.subtheme.base.scss */
+/* line 518, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.3em;
@@ -718,17 +723,17 @@ label.placeholder {
 }
 
 /* html5 placeholder support */
-/* line 522, ../sass/latto.subtheme.base.scss */
+/* line 525, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 526, ../sass/latto.subtheme.base.scss */
+/* line 529, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
 
-/* line 530, ../sass/latto.subtheme.base.scss */
+/* line 533, ../sass/latto.subtheme.base.scss */
 .ding-news-tags-wrapper a:link {
   padding: 7.5px;
 }
@@ -933,7 +938,7 @@ a:active {
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 1200px;
 }
 
 /* line 23, ../../latto/sass/latto.grid.scss */
