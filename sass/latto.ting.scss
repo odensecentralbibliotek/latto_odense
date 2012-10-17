@@ -1,0 +1,23 @@
+// This files contains styling of specific for ting objects and the search
+// results page.
+
+// Place a space before the link with information about object availability.
+.availability-status:before {
+  content: " (";
+}
+.availability-status:after {
+  content: ")";
+}
+.availability {
+float:right;
+ul {
+  float: right;
+  li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 $default-spacing 0 0;
+    border: none;
+    margin: 0;
+  }
+}
+}
