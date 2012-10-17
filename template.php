@@ -49,36 +49,30 @@ function latto_odense_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
   
-  $element['#attributes']['class'][] = 'level-' . $element['#original_link']['depth'];
- 
- 
-  if (isset($element['#original_link']['options']['attributes']['class'])) {
-    $array_class = $element['#original_link']['options']['attributes']['class'];
-    $count = count($array_class);
-   
-    for ($i=0; $i <= $count; $i++){     
-      if (substr($array_class[$i], 0, 5) == 'icon-' ){
-        $icon = '<i class="' . $array_class[$i] . '"></i>';
-        $output = '<a href="';
-        if (isset($element['#original_link']['options']['attributes']['rel']) != 'nofollow') {
-          $output .=  $element['#href']; // If rel is set to 'nofollow' I don't need the link because I use it to activate Javascript. Remove these line if not a needed function...
-        }
-       
-        $output .= '" title="' . $element['#title'] . '">' . $element['#title'] .'<br/><br/>'. $icon . '</a>';
-       
-        return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  if ($element['#below']) {
+      $sub_menu = drupal_render($element['#below']);
+  }
+     
+  // Class attributes by menu_attributes
+  if (isset($element['#localized_options']['attributes']['class'])) {
+    $array_class = $element['#localized_options']['attributes']['class'];
+    $icon = '<br/>';
+    foreach ($array_class as $i => $class) {
+      if (substr($class, 0, 5) == 'icon-' ) {
+        // Don't put the class on the <a> tag
+        unset ($element['#localized_options']['attributes']['class'][$i]);
+        // It should go on a <i> tag (FontAwesome)
+        $icon .= '<i class="' . $class . '"></i>';
       }
     }
   }
-  else {
-    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-   
-    if ($element['#below']) {
-        $sub_menu = drupal_render($element['#below']);
-      }
-     
-    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  if (!empty($icon)) {
+    // Insert the icons (<i> tags) into the <a> tag.
+    $output = substr_replace($output, $icon, -4, 0);
   }
+
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 /**
  * Implements HOOK_theme().
