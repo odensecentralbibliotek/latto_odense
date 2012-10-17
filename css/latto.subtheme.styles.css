@@ -57,33 +57,33 @@ btn: text
 
 
 */
-/* line 14, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 14, ../sass/latto.subtheme.base.scss */
 body {
   background: url("../images/noise_lines.png") #eeeeee;
 }
 
-/* line 18, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 18, ../sass/latto.subtheme.base.scss */
 header {
   background: transparent;
   overflow: hidden;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 23, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 23, ../sass/latto.subtheme.base.scss */
 header .site-name {
   font-size: 90%;
 }
-/* line 26, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 26, ../sass/latto.subtheme.base.scss */
 header .logo {
   float: left;
   margin-right: 15px;
   margin-left: 7.5px;
 }
-/* line 30, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 30, ../sass/latto.subtheme.base.scss */
 header .logo img {
   width: 65%;
 }
-/* line 33, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 33, ../sass/latto.subtheme.base.scss */
 header .site-slogan {
   color: black;
   margin-left: 7.5px;
@@ -91,14 +91,14 @@ header .site-slogan {
   top: 75px;
   font-size: 12px;
 }
-/* line 41, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 41, ../sass/latto.subtheme.base.scss */
 header .header-inner {
   background: transparent;
   padding-bottom: 0px;
   padding-top: 7.5px;
   margin-left: 0px;
 }
-/* line 47, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 47, ../sass/latto.subtheme.base.scss */
 header .grid-inner {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -110,7 +110,7 @@ header .grid-inner {
   background: #69c9cf;
 }
 
-/* line 55, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 55, ../sass/latto.subtheme.base.scss */
 .form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
@@ -119,25 +119,25 @@ header .grid-inner {
   margin-top: 0px;
 }
 
-/* line 63, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 63, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active {
   border-color: #999999;
 }
-/* line 65, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 65, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a {
   background-color: #999999;
 }
-/* line 67, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 67, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a:before {
   border-bottom: 8px solid #999999;
 }
 
-/* line 73, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 73, ../sass/latto.subtheme.base.scss */
 .rs-carousel-title {
   padding-top: 0px;
 }
 
-/* line 77, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 77, ../sass/latto.subtheme.base.scss */
 .rs-carousel-compact .rs-carousel-mask {
   max-width: 75%;
 }
@@ -145,7 +145,7 @@ header .grid-inner {
 /* ==========================================================================
 Theme specific grid styling
 ========================================================================== */
-/* line 85, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 85, ../sass/latto.subtheme.base.scss */
 .grid-content .grid-inner {
   padding: 7.5px;
 }
@@ -155,14 +155,14 @@ Basic elements
 ========================================================================== */
 /* Paragraphs
 ========================================================================== */
-/* line 98, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 98, ../sass/latto.subtheme.base.scss */
 p {
   margin-bottom: 5px;
 }
 
 /* Default horizontal ruler styles
 ========================================================================== */
-/* line 105, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 105, ../sass/latto.subtheme.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -174,7 +174,7 @@ hr {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 107, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 107, ../sass/latto.subtheme.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -186,7 +186,7 @@ hr.primary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 110, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 110, ../sass/latto.subtheme.base.scss */
 hr.secondary {
   background: #69c9cf;
   color: #69c9cf;
@@ -198,7 +198,7 @@ hr.secondary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 113, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 113, ../sass/latto.subtheme.base.scss */
 hr.tertiary {
   background: #99d7db;
   color: #99d7db;
@@ -211,7 +211,7 @@ hr.tertiary {
   margin-bottom: 7.5px;
 }
 
-/* line 128, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 128, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -228,86 +228,86 @@ hr.tertiary {
   text-align: center;
   vertical-align: top;
 }
-/* line 141, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 141, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper .day {
   background-color: #69c9cf;
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 146, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 146, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper .date-wrapper-inner {
   background: white;
   border: 1px solid #d9d9d9;
 }
-/* line 149, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 149, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper .date-wrapper-inner .date {
   font-size: 19.5px;
   margin-top: 3.75px;
 }
-/* line 155, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 155, ../sass/latto.subtheme.base.scss */
 .date-list .content {
   display: inline-block;
 }
 
-/* line 168, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 168, ../sass/latto.subtheme.base.scss */
 .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 174, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 174, ../sass/latto.subtheme.base.scss */
 .list .heading {
   margin-bottom: 3.75px;
 }
-/* line 178, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 178, ../sass/latto.subtheme.base.scss */
 .list p {
   margin-bottom: 3.75px;
 }
-/* line 182, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 182, ../sass/latto.subtheme.base.scss */
 .list .list-item {
   border-bottom: 1px solid #999999;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
-/* line 186, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 186, ../sass/latto.subtheme.base.scss */
 .list .list-item .subheading {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 189, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 189, ../sass/latto.subtheme.base.scss */
 .list .list-item .subheading .date {
   color: #404040;
 }
-/* line 193, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 193, ../sass/latto.subtheme.base.scss */
 .list .list-item .image-container {
   margin-bottom: 10px;
 }
-/* line 195, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 195, ../sass/latto.subtheme.base.scss */
 .list .list-item .image-container img {
   height: auto;
   max-width: 100%;
 }
-/* line 200, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 200, ../sass/latto.subtheme.base.scss */
 .list .list-item.last {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-/* line 208, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 208, ../sass/latto.subtheme.base.scss */
 .list.floated .list-item {
   letter-spacing: -4px;
 }
-/* line 210, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 210, ../sass/latto.subtheme.base.scss */
 .list.floated .list-item div, .list.floated .list-item p, .list.floated .list-item a, .list.floated .list-item span {
   letter-spacing: normal;
 }
-/* line 213, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 213, ../sass/latto.subtheme.base.scss */
 .list.floated .list-item .image-container {
   display: table-cell;
   max-width: 10%;
 }
-/* line 216, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 216, ../sass/latto.subtheme.base.scss */
 .list.floated .list-item .image-container img {
   padding-right: 10px;
   margin-top: 3px;
@@ -316,7 +316,7 @@ hr.tertiary {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 223, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 223, ../sass/latto.subtheme.base.scss */
 .list.floated .list-item .content {
   display: table-cell;
   vertical-align: top;
@@ -324,18 +324,18 @@ hr.tertiary {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 232, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 232, ../sass/latto.subtheme.base.scss */
 .list.simple .list-item {
   display: table;
 }
-/* line 234, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 234, ../sass/latto.subtheme.base.scss */
 .list.simple .list-item .date {
   color: #404040;
   display: table-cell;
   min-width: 60px;
   padding-right: 15px;
 }
-/* line 240, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 240, ../sass/latto.subtheme.base.scss */
 .list.simple .list-item .heading {
   display: table-cell;
   margin-left: 15px;
@@ -344,31 +344,31 @@ hr.tertiary {
 /* ==========================================================================
 Navigation
 ========================================================================== */
-/* line 253, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 253, ../sass/latto.subtheme.base.scss */
 ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
 
-/* line 258, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 258, ../sass/latto.subtheme.base.scss */
 .main-menu {
   display: table;
   font-size: 15px;
   width: 100%;
   margin: 0px;
 }
-/* line 263, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 263, ../sass/latto.subtheme.base.scss */
 .main-menu li {
   border-left: 1px solid #a3dee2;
   display: table-cell;
   text-align: center;
 }
-/* line 267, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 267, ../sass/latto.subtheme.base.scss */
 .main-menu li.expanded, .main-menu li.collapsed, .main-menu li.leaf {
   margin: 0;
   padding: 0;
 }
-/* line 272, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 272, ../sass/latto.subtheme.base.scss */
 .main-menu li a {
   border-left: 1px solid #75cdd3;
   color: white;
@@ -378,60 +378,60 @@ ul li.leaf {
   padding: 15px;
   text-decoration: none;
 }
-/* line 280, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 280, ../sass/latto.subtheme.base.scss */
 .main-menu li a i {
   font-size: 38px;
 }
-/* line 283, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 283, ../sass/latto.subtheme.base.scss */
 .main-menu li a:hover {
   background: #d9d9d9;
 }
-/* line 287, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 287, ../sass/latto.subtheme.base.scss */
 .main-menu li.active {
   border-left: 1px solid #75cdd3;
   background: #999999;
 }
 
-/* line 294, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 294, ../sass/latto.subtheme.base.scss */
 .pane-ding-library-map {
   padding-left: 15px;
 }
 
-/* line 297, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 297, ../sass/latto.subtheme.base.scss */
 .views-field-field-ding-library-list-image {
   float: left;
   padding-right: 7.5px;
 }
 
-/* line 301, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 301, ../sass/latto.subtheme.base.scss */
 .addressfield-container-inline:after {
   clear: none!important;
 }
 
-/* line 304, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 304, ../sass/latto.subtheme.base.scss */
 .views-label.views-label-field-ding-library-phone-number {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 308, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 308, ../sass/latto.subtheme.base.scss */
 .views-label-field-ding-library-fax-number {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 312, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 312, ../sass/latto.subtheme.base.scss */
 .views-label-field-ding-library-mail {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 316, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 316, ../sass/latto.subtheme.base.scss */
 .country {
   padding-right: 7.5px;
 }
 
-/* line 319, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 319, ../sass/latto.subtheme.base.scss */
 .library-list {
   list-style-type: none;
   margin: 0;
@@ -439,25 +439,25 @@ ul li.leaf {
   width: 100%;
 }
 
-/* line 325, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 325, ../sass/latto.subtheme.base.scss */
 .vcard {
   border-bottom: 1px solid #999999;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 331, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 331, ../sass/latto.subtheme.base.scss */
 .label-info,
 .badge-info {
   background-color: #99d7db;
 }
 
-/* line 334, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 334, ../sass/latto.subtheme.base.scss */
 .opening-hours-week {
   padding: 0;
 }
 
-/* line 337, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 337, ../sass/latto.subtheme.base.scss */
 footer .grid-inner {
   margin-top: 15px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -470,12 +470,12 @@ footer .grid-inner {
   background-color: #eeeeee;
 }
 
-/* line 345, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 345, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
   border-right: 2px solid white;
   min-height: 350px;
 }
-/* line 348, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 348, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1 h2, .pane-menu-menu-footer-menu-2 h2, .pane-menu-menu-footer-menu-3 h2, .pane-menu-menu-footer-menu-4 h2 {
   color: #555555 !important;
   font-family: din,sans-serif,verdana;
@@ -484,7 +484,7 @@ footer .grid-inner {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 356, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 356, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-1 a, .pane-menu-menu-footer-menu-2 a, .pane-menu-menu-footer-menu-3 a, .pane-menu-menu-footer-menu-4 a {
   color: #999999 !important;
   font-size: 12px;
@@ -492,27 +492,27 @@ footer .grid-inner {
   text-decoration: none;
 }
 
-/* line 364, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 364, ../sass/latto.subtheme.base.scss */
 .pane-menu-menu-footer-menu-4 {
   border-right: none;
 }
 
-/* line 368, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 368, ../sass/latto.subtheme.base.scss */
 .menu {
   list-style-type: none;
   margin: 0px;
 }
-/* line 372, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 372, ../sass/latto.subtheme.base.scss */
 .menu a {
   margin: 0;
 }
 
-/* line 376, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 376, ../sass/latto.subtheme.base.scss */
 ul {
   list-style: none;
 }
 
-/* line 379, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 379, ../sass/latto.subtheme.base.scss */
 ul, ol {
   margin-left: 0px;
   padding: 0;
@@ -521,12 +521,12 @@ ul, ol {
 /* ==========================================================================
 Search pane styling
 ========================================================================== */
-/* line 386, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 386, ../sass/latto.subtheme.base.scss */
 .search-login .grid-inner {
   margin-bottom: 15px;
 }
 
-/* line 389, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 389, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-block.pane-search-form {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -538,78 +538,78 @@ Search pane styling
   min-height: 160px;
 }
 
-/* line 396, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 396, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
   background-color: #99d7db;
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
   margin-top: 0px;
 }
-/* line 399, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 399, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
   margin: 0 0 0 20px;
 }
-/* line 402, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 402, ../sass/latto.subtheme.base.scss */
 .search-wrapper form {
   margin: 0px 0 0 20px;
   position: relative;
   width: auto;
 }
-/* line 406, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 406, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-text {
   height: 40px;
   width: 80%;
 }
-/* line 410, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 410, ../sass/latto.subtheme.base.scss */
 .search-wrapper .btn {
   height: 40px;
   right: 5%;
 }
 
-/* line 415, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 415, ../sass/latto.subtheme.base.scss */
 ul.ui-autocomplete {
   max-width: 100%!important;
   z-index: 100;
 }
 
-/* line 419, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 419, ../sass/latto.subtheme.base.scss */
 input#edit-search-block-form--2.spinner {
   background-position: 97%!important;
 }
 
-/* line 422, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 422, ../sass/latto.subtheme.base.scss */
 .search-results .content {
   display: block!important;
 }
 
-/* line 425, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 425, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-recommendation-list {
   background: #F6F6F2;
 }
 
-/* line 428, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 428, ../sass/latto.subtheme.base.scss */
 .pane-recommendation-list .list-item {
   margin-bottom: 7.5px;
   padding-bottom: 7.5px;
 }
 
-/* line 432, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 432, ../sass/latto.subtheme.base.scss */
 .ting-cover {
   float: left;
   padding-right: 15px;
 }
 
-/* line 436, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 436, ../sass/latto.subtheme.base.scss */
 .subjects.content {
   padding-top: 7.5px;
 }
 
-/* line 439, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 439, ../sass/latto.subtheme.base.scss */
 .pane-system-user-menu {
   background: #99d7db;
 }
 
-/* line 442, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 442, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   background: #99d7db;
   min-height: 88px;
@@ -618,7 +618,7 @@ input#edit-search-block-form--2.spinner {
 /* ==========================================================================
 custom grid
 ========================================================================== */
-/* line 449, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 449, ../sass/latto.subtheme.base.scss */
 .grid-11-left {
   -moz-box-sizing: border-box;
   float: left;
@@ -630,7 +630,7 @@ custom grid
   word-wrap: break-word;
 }
 
-/* line 459, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 459, ../sass/latto.subtheme.base.scss */
 article .grid-inner {
   background-color: white;
   max-width: 940px;
@@ -638,29 +638,29 @@ article .grid-inner {
   padding-right: 10px;
 }
 
-/* line 465, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 465, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-handle {
   background: #999999;
 }
 
-/* line 468, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 468, ../sass/latto.subtheme.base.scss */
 .collapsall {
   display: block!important;
 }
 
-/* line 471, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 471, ../sass/latto.subtheme.base.scss */
 article .grid-8-left, article .grid-8-right {
   width: 49%;
   margin-bottom: 15px;
 }
 
-/* line 475, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 475, ../sass/latto.subtheme.base.scss */
 .grid-8-left .grid-inner, .grid-8-right .grid-inner {
   box-shadow: none;
   background-color: transparent;
 }
 
-/* line 480, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 480, ../sass/latto.subtheme.base.scss */
 .breadcrumb {
   margin-left: 15px;
   margin-right: 15px;
@@ -669,7 +669,7 @@ article .grid-8-left, article .grid-8-right {
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
-/* line 487, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 487, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-block.pane-user-login {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -681,7 +681,7 @@ Login pane styling
   min-height: 160px;
 }
 
-/* line 493, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 493, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -691,18 +691,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 501, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 501, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 504, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 504, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 1px;
 }
 
-/* line 508, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 508, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -711,7 +711,7 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 516, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 516, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.3em;
@@ -719,17 +719,17 @@ label.placeholder {
 }
 
 /* html5 placeholder support */
-/* line 523, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 523, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 527, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 527, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
 
-/* line 531, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 531, ../sass/latto.subtheme.base.scss */
 .tags a {
   padding: 7.5px;
 }
@@ -784,7 +784,7 @@ btn: text
 
 
 */
-/* line 5, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 5, ../sass/latto.subtheme.typography.scss */
 body {
   color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -792,31 +792,31 @@ body {
   line-height: 18px;
 }
 
-/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 24, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 24, ../sass/latto.subtheme.typography.scss */
 h1,
 h2,
 h3,
@@ -825,7 +825,7 @@ h5,
 h6 {
   font-weight: normal;
 }
-/* line 27, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 27, ../sass/latto.subtheme.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -835,7 +835,7 @@ h6 a:link {
   color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
 }
-/* line 31, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 31, ../sass/latto.subtheme.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -844,7 +844,7 @@ h5 a:visited,
 h6 a:visited {
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 34, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 34, ../sass/latto.subtheme.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -854,83 +854,79 @@ h6 a:hover {
   color: black;
 }
 
-/* line 40, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 40, ../sass/latto.subtheme.typography.scss */
 h1 {
   color: black;
 }
 
-/* line 44, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 44, ../sass/latto.subtheme.typography.scss */
 h3 {
   line-height: 22.5px;
 }
 
-/* line 52, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 52, ../sass/latto.subtheme.typography.scss */
 a:link {
   color: #0077a2;
   text-decoration: none;
 }
-/* line 56, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 56, ../sass/latto.subtheme.typography.scss */
 a:visited {
   color: #003f55;
 }
-/* line 59, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 59, ../sass/latto.subtheme.typography.scss */
 a:hover {
   color: #002c3c;
   text-decoration: underline;
 }
-/* line 63, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 63, ../sass/latto.subtheme.typography.scss */
 a:focus {
   color: #002c3c;
 }
-/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 66, ../sass/latto.subtheme.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 84, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 84, ../sass/latto.subtheme.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 88, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 88, ../sass/latto.subtheme.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 92, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 92, ../sass/latto.subtheme.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 96, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 96, ../sass/latto.subtheme.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 100, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 100, ../sass/latto.subtheme.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
 
-/* line 5, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 5, ../sass/latto.ting.scss */
 .availability-status:before {
   content: " (";
 }
 
-/* line 8, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 8, ../sass/latto.ting.scss */
 .availability-status:after {
   content: ")";
 }
 
-/* line 11, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.ting.scss */
-.availability {
-  float: right;
-}
-/* line 13, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 11, ../sass/latto.ting.scss */
 .availability ul {
   float: right;
 }
-/* line 15, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 13, ../sass/latto.ting.scss */
 .availability ul li {
   display: inline;
   list-style-type: none;
@@ -942,29 +938,29 @@ a:active {
 /* Import the files from the latto theme
    ========================================================================== */
 /* See: http://zengrids.com/help/#vars-legacy */
-/* line 13, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 13, ../../latto/sass/latto.grid.scss */
 #page {
   *position: relative;
   *zoom: 1;
 }
-/* line 52, /var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 52, ../../../../../../../../lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:before, #page:after {
   content: "";
   display: table;
 }
-/* line 56, /var/lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+/* line 56, ../../../../../../../../lib/gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
 #page:after {
   clear: both;
 }
 
-/* line 17, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 17, ../../latto/sass/latto.grid.scss */
 .grid-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
 }
 
-/* line 23, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 23, ../../latto/sass/latto.grid.scss */
 .grid-3-left {
   float: left;
   width: 18.75%;
@@ -983,7 +979,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 27, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 27, ../../latto/sass/latto.grid.scss */
 .grid-3-center-left {
   float: left;
   width: 18.75%;
@@ -1002,7 +998,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 31, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 31, ../../latto/sass/latto.grid.scss */
 .grid-3-center-right {
   float: right;
   width: 18.75%;
@@ -1021,7 +1017,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 35, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 35, ../../latto/sass/latto.grid.scss */
 .grid-3-right {
   float: right;
   width: 18.75%;
@@ -1040,7 +1036,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 39, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 39, ../../latto/sass/latto.grid.scss */
 .grid-4-left {
   float: left;
   width: 25%;
@@ -1059,7 +1055,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 43, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 43, ../../latto/sass/latto.grid.scss */
 .grid-4-center-left {
   float: left;
   width: 25%;
@@ -1078,7 +1074,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 47, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 47, ../../latto/sass/latto.grid.scss */
 .grid-4-center-right {
   float: left;
   width: 25%;
@@ -1097,7 +1093,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 51, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 51, ../../latto/sass/latto.grid.scss */
 .grid-4-right {
   float: right;
   width: 25%;
@@ -1116,7 +1112,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 55, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 55, ../../latto/sass/latto.grid.scss */
 .grid-8-left {
   float: left;
   width: 50%;
@@ -1135,7 +1131,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 59, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 59, ../../latto/sass/latto.grid.scss */
 .grid-8-center {
   float: left;
   width: 50%;
@@ -1154,7 +1150,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 63, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 63, ../../latto/sass/latto.grid.scss */
 .grid-8-right {
   float: right;
   width: 50%;
@@ -1173,7 +1169,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 67, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 67, ../../latto/sass/latto.grid.scss */
 .grid-10-left {
   float: left;
   width: 62.5%;
@@ -1192,7 +1188,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 71, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 71, ../../latto/sass/latto.grid.scss */
 .grid-10-center {
   float: left;
   width: 62.5%;
@@ -1211,7 +1207,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 75, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 75, ../../latto/sass/latto.grid.scss */
 .grid-10-right {
   float: right;
   width: 62.5%;
@@ -1230,7 +1226,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 79, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 79, ../../latto/sass/latto.grid.scss */
 .grid-12-left {
   float: left;
   width: 75%;
@@ -1249,7 +1245,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 83, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 83, ../../latto/sass/latto.grid.scss */
 .grid-12-right {
   float: right;
   width: 75%;
@@ -1268,7 +1264,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 87, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 87, ../../latto/sass/latto.grid.scss */
 .grid-13-left {
   float: left;
   width: 81.25%;
@@ -1287,7 +1283,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 91, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 91, ../../latto/sass/latto.grid.scss */
 .grid-13-right {
   float: right;
   width: 81.25%;
@@ -1306,7 +1302,7 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 95, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 95, ../../latto/sass/latto.grid.scss */
 .grid-full {
   clear: both;
   float: left;
@@ -1326,22 +1322,22 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 100, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 100, ../../latto/sass/latto.grid.scss */
 .grid-clear-both {
   clear: both;
 }
 
-/* line 104, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 104, ../../latto/sass/latto.grid.scss */
 .grid-clear-left {
   clear: left;
 }
 
-/* line 108, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 108, ../../latto/sass/latto.grid.scss */
 .grid-clear-right {
   clear: right;
 }
 
-/* line 112, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 112, ../../latto/sass/latto.grid.scss */
 .grid-stack {
   clear: both;
   float: left;
@@ -1361,17 +1357,17 @@ a:active {
   _overflow-y: visible;
 }
 
-/* line 117, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 117, ../../latto/sass/latto.grid.scss */
 .grid-row {
   clear: both;
   margin-bottom: 15px;
 }
-/* line 120, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.grid.scss */
+/* line 120, ../../latto/sass/latto.grid.scss */
 .grid-row.last {
   margin-bottom: 0;
 }
 
-/* line 5, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/../../latto/sass/latto.panels.scss */
+/* line 5, ../../latto/sass/latto.panels.scss */
 .branding .pane-page-logo {
   float: left;
 }

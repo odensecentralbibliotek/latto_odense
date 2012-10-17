@@ -8,9 +8,7 @@
 .availability-status:after {
   content: ")";
 }
-.availability {
-float:right;
-ul {
+.availability ul {
   float: right;
   li {
     display: inline;
@@ -19,5 +17,4 @@ ul {
     border: none;
     margin: 0;
   }
-}
 }
