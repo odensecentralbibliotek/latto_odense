@@ -14,7 +14,7 @@
   <?php endif; ?>
   <?php print $list_type_prefix; ?>
     <?php foreach ($rows as $id => $row): ?>
-      <li class="list-item"><?php print $row; ?> <?php print theme('opening_hours-week'); ?></li>
+      <li class="list-item"><?php print $row; ?> <?php block_render('opening_hours', 'week'); ?></li>
     <?php endforeach; ?>
   <?php print $list_type_suffix; ?>
 <?php print $wrapper_suffix; ?>
