@@ -1,13 +1,5 @@
 <?php
 
-/**
-* Preprocess node template variables.
-*/
-function latto_odense_preprocess_node(&$variables) {
-if ($variables['type'] == 'library' && function_exists('opening_hours_theme')) {
-    $variables['opening_hours'] = theme('opening_hours_week', $variables['node']);
-  }
-}
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
