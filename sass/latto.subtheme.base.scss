@@ -22,13 +22,14 @@ header {
   padding-top: $default-spacing;
   .site-name {
   font-size: 90%;
+  margin-left: 23px;
   }
   .logo {
     float: left;
     margin-right: $default-spacing;
     margin-left: $default-spacing / 2;
   img {
-    width: 65%; 
+    width: 60%; 
   } }
   .site-slogan {
     color: $black;
@@ -294,9 +295,6 @@ ul li.leaf {
 .pane-ding-library-map{
   padding-left: $default-spacing;
   }
-  .pane-similarterms-ding-content-tags li{
-    padding-bottom: $default-spacing / 2;
-    }
     .field-name-field-ding-library-mail a{
       font-size: 12px;
       }
