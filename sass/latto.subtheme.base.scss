@@ -299,20 +299,7 @@ ul li.leaf {
   .addressfield-container-inline:after{
    clear: none!important;
     }
-    .field-name-field-ding-library-phone-number {
-    float: left;
-    margin-right: $default-spacing / 2;
-}
-.field-name-field-ding-library-fax-number {
-    float: left;
-    margin-right: $default-spacing / 2;
-}
-.field-name-field-ding-library-mail{
-    float: left;
-    margin-right: $default-spacing / 2;
-&a{
-  font-size: 12px;
-      }}
+
 .country {
     padding-right: $default-spacing / 2;
 }
