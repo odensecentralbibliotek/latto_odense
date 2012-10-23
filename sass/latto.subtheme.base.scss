@@ -21,255 +21,255 @@ header {
   padding-bottom: $default-spacing;
   padding-top: $default-spacing;
   .site-name {
-  font-size: 90%;
-  margin-left: 23px;
+    font-size: 90%;
+    margin-left: 23px;
   }
   .logo {
     float: left;
     margin-right: $default-spacing;
     margin-left: $default-spacing / 2;
-  img {
-    width: 60%; 
-  } }
-  .site-slogan {
-    color: $black;
-    margin-left: $default-spacing / 2;
-    position: absolute;
-    top: 75px;
-    font-size: 12px
-  }
- 
-  .header-inner {
-    background: transparent;
-    padding-bottom: 0px;
-    padding-top: $default-spacing / 2;
-    margin-left: 0px;
-  } 
-  .grid-inner {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    position: relative;
-    background: $theme-secondary-color;
-  } 
-}
-
-.form-item, .form-actions {
-  background-color: transparent;
-  border-top: 0px solid transparent;
-  padding: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.rs-carousel-tabs ul li.active {
-  border-color: $gray-light;
-  a {
-    background-color: $gray-light;
-    &:before {
-      border-bottom: 8px solid $gray-light;
+    img {
+      width: 60%; 
+    } }
+    .site-slogan {
+      color: $black;
+      margin-left: $default-spacing / 2;
+      position: absolute;
+      top: 75px;
+      font-size: 12px
     }
-  }
-}
-
-.rs-carousel-title {
-  padding-top: 0px;
-}
-
-.rs-carousel-compact .rs-carousel-mask {
-  max-width: 75%;
-}
-/* ==========================================================================
-Theme specific grid styling
-========================================================================== */
-
-.grid-content {
-  .grid-inner {
     
-    padding: $default-spacing / 2;
+    .header-inner {
+      background: transparent;
+      padding-bottom: 0px;
+      padding-top: $default-spacing / 2;
+      margin-left: 0px;
+    } 
+    .grid-inner {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      position: relative;
+      background: $theme-secondary-color;
+    } 
   }
-}
-
-/* ==========================================================================
-Basic elements
-========================================================================== */
-
-/* Paragraphs
-========================================================================== */
-
-p {
-  margin-bottom: $default-spacing / 3;
-}
-
-/* Default horizontal ruler styles
-========================================================================== */
-
-hr {
-  @include colruler();
-  &.primary {
-    @include colruler($theme-primary-color);
+  
+  .form-item, .form-actions {
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
-  &.secondary {
-    @include colruler($theme-secondary-color);
-  }
-  &.tertiary {
-    @include colruler($theme-tertiary-color);
-  }
-}
-
-// @END .list-compact
-
-// Styling of a default date-list in Latto theme. Suitable for displaying
-// upcomming events.
-//
-// .date-list         - A list containing events with information about date,
-//                      location, time and entrence fee.
-//
-// No styleguide reference
-.date-list {
-  .date-wrapper {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-
-    display: inline-block;
-    margin-top : $default-spacing / 5;
-    margin-right: $default-spacing / 2;
-    min-width: 60px;
-
-    color: lighten($text-primary-color, 25%);
-    font-size: $theme-font-size * .9;
-    text-align: center;
-    vertical-align: top;
-    .day {
-      background-color: $theme-secondary-color;
-      color: $white;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-    }
-    .date-wrapper-inner {
-      background: $white;
-      border: 1px solid lighten($black, 85%);
-      .date {
-        font-size: $theme-font-size * 1.5;
-        margin-top: $default-spacing / 4;
+  
+  .rs-carousel-tabs ul li.active {
+    border-color: $gray-light;
+    a {
+      background-color: $gray-light;
+      &:before {
+        border-bottom: 8px solid $gray-light;
       }
     }
   }
-  .content {
-    display: inline-block;
+  
+  .rs-carousel-title {
+    padding-top: 0px;
   }
-}
-// Styling for the default list layouts.
-// Suitable for displaying news, events, headlines etc.
-//
-// .list              - The default styling for an unordered list in Latto theme.
-// .floated           - Implementation of the default list only with the picure
-//                      floated to the left of the summary.
-// .simple            - A list displaying only headlines.
-//
-// No styleguide reference
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-
-  .heading {
-    margin-bottom: $default-spacing / 4;
+  
+  .rs-carousel-compact .rs-carousel-mask {
+    max-width: 75%;
   }
-
+  /* ==========================================================================
+  Theme specific grid styling
+  ========================================================================== */
+  
+  .grid-content {
+    .grid-inner {
+      
+      padding: $default-spacing / 2;
+    }
+  }
+  
+  /* ==========================================================================
+  Basic elements
+  ========================================================================== */
+  
+  /* Paragraphs
+  ========================================================================== */
+  
   p {
-    margin-bottom: $default-spacing / 4;
+    margin-bottom: $default-spacing / 3;
   }
-
-  .list-item {
-    border-bottom: 1px solid $gray-light;
-    padding-bottom: $list-item-spacing * 1.5;
-    margin-bottom: $list-item-spacing * 1.5;
-    .subheading {
-      margin-top: $list-item-spacing;
-      margin-bottom: $list-item-spacing;
-      .date {
-        color: lighten($text-primary-color, 25%);
-      }
+  
+  /* Default horizontal ruler styles
+  ========================================================================== */
+  
+  hr {
+    @include colruler();
+    &.primary {
+      @include colruler($theme-primary-color);
     }
-    .image-container {
-      margin-bottom: $list-item-spacing;
-      img {
-        height: auto;
-        max-width: 100%;
-      }
+    &.secondary {
+      @include colruler($theme-secondary-color);
     }
-    &.last {
-      border-bottom: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
+    &.tertiary {
+      @include colruler($theme-tertiary-color);
     }
   }
-
-  &.floated {
+  
+  // @END .list-compact
+  
+  // Styling of a default date-list in Latto theme. Suitable for displaying
+  // upcomming events.
+  //
+  // .date-list         - A list containing events with information about date,
+  //                      location, time and entrence fee.
+  //
+  // No styleguide reference
+  .date-list {
+    .date-wrapper {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      
+      display: inline-block;
+      margin-top : $default-spacing / 5;
+      margin-right: $default-spacing / 2;
+      min-width: 60px;
+      
+      color: lighten($text-primary-color, 25%);
+      font-size: $theme-font-size * .9;
+      text-align: center;
+      vertical-align: top;
+      .day {
+        background-color: $theme-secondary-color;
+        color: $white;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+      }
+      .date-wrapper-inner {
+        background: $white;
+        border: 1px solid lighten($black, 85%);
+        .date {
+          font-size: $theme-font-size * 1.5;
+          margin-top: $default-spacing / 4;
+        }
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }
+  // Styling for the default list layouts.
+  // Suitable for displaying news, events, headlines etc.
+  //
+  // .list              - The default styling for an unordered list in Latto theme.
+  // .floated           - Implementation of the default list only with the picure
+  //                      floated to the left of the summary.
+  // .simple            - A list displaying only headlines.
+  //
+  // No styleguide reference
+  .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    .heading {
+      margin-bottom: $default-spacing / 4;
+    }
+    
+    p {
+      margin-bottom: $default-spacing / 4;
+    }
+    
     .list-item {
-      letter-spacing: -4px; // Fix for the white letter next to li elements
-      div, p, a, span {
-        letter-spacing: normal;
+      border-bottom: 1px solid $gray-light;
+      padding-bottom: $list-item-spacing * 1.5;
+      margin-bottom: $list-item-spacing * 1.5;
+      .subheading {
+        margin-top: $list-item-spacing;
+        margin-bottom: $list-item-spacing;
+        .date {
+          color: lighten($text-primary-color, 25%);
+        }
       }
       .image-container {
-        display: table-cell;
-        max-width: $list-picture-width;
+        margin-bottom: $list-item-spacing;
         img {
-
-          padding-right: $list-item-spacing;
-          margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
+          height: auto;
+          max-width: 100%;
+        }
+      }
+      &.last {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    
+    &.floated {
+      .list-item {
+        letter-spacing: -4px; // Fix for the white letter next to li elements
+        div, p, a, span {
+          letter-spacing: normal;
+        }
+        .image-container {
+          display: table-cell;
+          max-width: $list-picture-width;
+          img {
+            
+            padding-right: $list-item-spacing;
+            margin-top: 3px; /* Adding margin to make sure top of image align with top of text */
+            @include box-sizing(border-box);
+          }
+        }
+        .content {
+          display: table-cell;
+          vertical-align: top;
           @include box-sizing(border-box);
         }
       }
-      .content {
-        display: table-cell;
-        vertical-align: top;
-        @include box-sizing(border-box);
+    }
+    
+    &.simple {
+      .list-item {
+        display: table;
+        .date {
+          color: lighten($text-primary-color, 25%);
+          display: table-cell;
+          min-width: 60px;
+          padding-right: $default-spacing;
+        }
+        .heading {
+          display: table-cell;
+          margin-left: $default-spacing;
+        }
       }
     }
-  }
-
-  &.simple {
-    .list-item {
-      display: table;
-      .date {
-        color: lighten($text-primary-color, 25%);
-        display: table-cell;
-        min-width: 60px;
-        padding-right: $default-spacing;
-      }
-      .heading {
-        display: table-cell;
-        margin-left: $default-spacing;
-      }
-    }
-  }
   }
   
   /* ==========================================================================
   Navigation
   ========================================================================== */ 
-// The navigation bar used for the main-menu.
-// No styleguide reference
-ul li.leaf {
+  // The navigation bar used for the main-menu.
+  // No styleguide reference
+  ul li.leaf {
     list-style-image: none;
     list-style-type: none;
-}
-
-.main-menu {
-  display: table;
-  font-size: $navbar-font-size;
-  width: 100%;
-  margin: 0px;
+  }
+  
+  .main-menu {
+    display: table;
+    font-size: $navbar-font-size;
+    width: 100%;
+    margin: 0px;
     li {
       border-left: 1px solid lighten($navbar-background-color, 15%);
       display: table-cell;
       text-align: center;
       &.expanded, &.collapsed, &.leaf {
-    margin: 0;
-    padding: 0;
-}
-
+        margin: 0;
+        padding: 0;
+      }
+      
       a {
         border-left: 1px solid lighten($navbar-background-color, 3%);
         color: $navbar-text-color;
@@ -280,7 +280,7 @@ ul li.leaf {
         text-decoration: none;
         &i{
           font-size: 38px;
-          }
+        }
         &:hover {
           background: darken($navbar-text-color, 15%);
         }
@@ -290,238 +290,240 @@ ul li.leaf {
         background: $gray-light;
       }
     }
-}
-      
+  }
+  
   .addressfield-container-inline:after{
-   clear: none!important;
-    }
-.country {
+    clear: none!important;
+  }
+  .country {
     padding-right: $default-spacing / 2;
-}
+  }
   .libraries{
-     float: left;   
-    }
-.libraries-opening-hours{
-  float: right;
-  padding: 0;
-    }
-   .opening-hours-week{ 
-     padding: 0;
-     }
-     
-      .opening-hours-week .days{ 
-     padding: 0;
-     }
-     
-.library-list{
+    float: left;   
+  }
+  .libraries-opening-hours{
+    float: right;
+    padding: 0;
+  }
+  .opening-hours-week{ 
+    padding: 0;
+  }    
+  .opening-hours-week .days{ 
+    padding: 0;
+  }
+  
+  .library-list{
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100%;
-      }
- .vcard{
+  }
+  .vcard{
     border-bottom: 1px solid #999999;
     margin-bottom: $default-spacing;
     padding-bottom: $default-spacing;
-   }
-.label-info,
-.badge-info {
-  background-color: $theme-tertiary-color;
-}
-footer .grid-inner {
-  margin-top: $default-spacing;
-  @include single-box-shadow;
-  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-  position: relative;
-  background-color: $gray-lighter;
-}
-
-.pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
-  border-right: 2px solid white;
-  min-height: 350px;
-  &h2 {
-    color: $gray!important; 
-    font-family: din,sans-serif,verdana;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-    text-transform: uppercase;
   }
-  &a {
-    color: $theme-footer-color!important; 
+  .field-name-field-ding-library-mail a{
     font-size: 12px;
-    list-style: none;
-    text-decoration: none;
-  }
-}
-
-.pane-menu-menu-footer-menu-4 { 
- border-right: none;
-}
-
-.menu {
-  
-  list-style-type: none;
-  margin: 0px;
-  a {
-    margin: 0;
-     } }   
-  
- ul {
-    list-style:  none;
-}
-ul, ol {
-    margin-left: 0px;
-    padding: 0;
-} 
-  /* ==========================================================================
-  Search pane styling
-  ========================================================================== */
-  .search-login .grid-inner{
-    margin-bottom: $default-spacing;
     }
-  .panel-pane.pane-block.pane-search-form {
+  .label-info,
+  .badge-info {
+    background-color: $theme-tertiary-color;
+  }
+  footer .grid-inner {
+    margin-top: $default-spacing;
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    background: $theme-tertiary-color;
-
-    min-height: 160px;
+    position: relative;
+    background-color: $gray-lighter;
   }
-  .search-wrapper{
-    @include rgba-background($theme-tertiary-color, 1);
-    margin-top: 0px;
-    h2 {
-      margin: 0 0 0 20px;
+  
+  .pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
+    border-right: 2px solid white;
+    min-height: 350px;
+    &h2 {
+      color: $gray!important; 
+      font-family: din,sans-serif,verdana;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      text-transform: uppercase;
     }
-    form {
-      margin: 0px 0 0 20px;
-      position: relative;
-      width: auto;
-      }.form-text {
-      height: 40px;
-      width: 80%;
-    }
-    .btn {
-      height: 40px;
-      right: 5%;
+    &a {
+      color: $theme-footer-color!important; 
+      font-size: 12px;
+      list-style: none;
+      text-decoration: none;
     }
   }
-  ul.ui-autocomplete { 
-    max-width: 100%!important;
-    z-index:100;
-}
-   input#edit-search-block-form--2.spinner {
-    background-position: 97%!important;
-}
-  .search-results .content{
-    display: block!important;
+  
+  .pane-menu-menu-footer-menu-4 { 
+    border-right: none;
   }
-  .panel-pane.pane-recommendation-list{
-    background: #F6F6F2;
+  
+  .menu {
+    
+    list-style-type: none;
+    margin: 0px;
+    a {
+      margin: 0;
+    } }   
+    
+    ul {
+      list-style:  none;
+    }
+    ul, ol {
+      margin-left: 0px;
+      padding: 0;
+    } 
+    /* ==========================================================================
+    Search pane styling
+    ========================================================================== */
+    .search-login .grid-inner{
+      margin-bottom: $default-spacing;
+    }
+    .panel-pane.pane-block.pane-search-form {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      background: $theme-tertiary-color;
+      
+      min-height: 160px;
+    }
+    .search-wrapper{
+      @include rgba-background($theme-tertiary-color, 1);
+      margin-top: 0px;
+      h2 {
+        margin: 0 0 0 20px;
+      }
+      form {
+        margin: 0px 0 0 20px;
+        position: relative;
+        width: auto;
+        }.form-text {
+        height: 40px;
+        width: 80%;
+      }
+      .btn {
+        height: 40px;
+        right: 5%;
+      }
+    }
+    ul.ui-autocomplete { 
+      max-width: 100%!important;
+      z-index:100;
+    }
+    input#edit-search-block-form--2.spinner {
+      background-position: 97%!important;
+    }
+    .search-results .content{
+      display: block!important;
+    }
+    .panel-pane.pane-recommendation-list{
+      background: #F6F6F2;
     }
     .pane-recommendation-list .list-item{      
-    margin-bottom: $default-spacing /2;
-    padding-bottom: $default-spacing /2;
-      }
- .ting-cover {
-   float: left;
-   padding-right: $default-spacing;
-   }
-   .subjects.content{
-     padding-top: $default-spacing /2;
-     }
-  .pane-system-user-menu {
-    background: $theme-tertiary-color;
-  }
-  .pane-ding-user-frontend-ding-user-loan-number {
-    background: $theme-tertiary-color;
-    min-height: 88px;
-  }
-  /* ==========================================================================
-  custom grid
-  ========================================================================== */
-  .grid-11-left {
-    -moz-box-sizing: border-box;
-    float: left;
-    margin-left: 0;
-    margin-right: -72%;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 72%;
-    word-wrap: break-word;
-  }
-  article .grid-inner{
-    background-color: $white;
-    max-width: 940px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .ctools-collapsible-handle{
-    background: $gray-light;
+      margin-bottom: $default-spacing /2;
+      padding-bottom: $default-spacing /2;
+    }
+    .ting-cover {
+      float: left;
+      padding-right: $default-spacing;
+    }
+    .subjects.content{
+      padding-top: $default-spacing /2;
+    }
+    .pane-system-user-menu {
+      background: $theme-tertiary-color;
+    }
+    .pane-ding-user-frontend-ding-user-loan-number {
+      background: $theme-tertiary-color;
+      min-height: 88px;
+    }
+    /* ==========================================================================
+    custom grid
+    ========================================================================== */
+    .grid-11-left {
+      -moz-box-sizing: border-box;
+      float: left;
+      margin-left: 0;
+      margin-right: -72%;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 72%;
+      word-wrap: break-word;
+    }
+    article .grid-inner{
+      background-color: $white;
+      max-width: 940px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .ctools-collapsible-handle{
+      background: $gray-light;
     }
     .collapsall{
       display: block!important;
-      }
-  article .grid-8-left, article .grid-8-right{
-    width: 49%;
-    margin-bottom: $default-spacing;
-  }
-  .grid-8-left .grid-inner, .grid-8-right .grid-inner{
-    box-shadow: none;
-    background-color: transparent;
-  }
-  
- .breadcrumb {
-  margin-left: $default-spacing;
-  margin-right: $default-spacing;
-} 
-  /* ==========================================================================
-  Login pane styling
-  ========================================================================== */
-  .panel-pane.pane-block.pane-user-login {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    background: $theme-tertiary-color;    
-    min-height: 160px;
-   }
-  .ctools-collapsible-container .ctools-toggle {
-    background-image: url("../images/new_arrow.png");
-    background-position: 3px 3px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    float: left;  
-    width: 21px;
-  }
-  .ctools-collapsible-content{
-    padding-top: 10px;
     }
-  .ctools-collapsible-container .ctools-toggle-collapsed {
-    background-image: url("../images/new_arrow_collapsed.png");
-    background-position: 6px 1px;
-  }
-  .ctools-collapsible-container h2{
-    font-size: 12px;
-    line-height: 20px;
-    color: $white;
-    text-transform: uppercase;
-  }
-  /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-  
-  label.placeholder {
-    cursor: text;
-    padding: 0.4em 0.3em;
-    color: #ccc;
-  }
-  
-  /* html5 placeholder support */
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color:#ccc;
-  }
-  
-  input:placeholder, textarea:placeholder {
-    color:#ccc;
-  }
-  
-  .tags a{
-    padding: $default-spacing / 2;
+    article .grid-8-left, article .grid-8-right{
+      width: 49%;
+      margin-bottom: $default-spacing;
+    }
+    .grid-8-left .grid-inner, .grid-8-right .grid-inner{
+      box-shadow: none;
+      background-color: transparent;
+    }
+    
+    .breadcrumb {
+      margin-left: $default-spacing;
+      margin-right: $default-spacing;
+    } 
+    /* ==========================================================================
+    Login pane styling
+    ========================================================================== */
+    .panel-pane.pane-block.pane-user-login {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      background: $theme-tertiary-color;    
+      min-height: 160px;
+    }
+    .ctools-collapsible-container .ctools-toggle {
+      background-image: url("../images/new_arrow.png");
+      background-position: 3px 3px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      float: left;  
+      width: 21px;
+    }
+    .ctools-collapsible-content{
+      padding-top: 10px;
+    }
+    .ctools-collapsible-container .ctools-toggle-collapsed {
+      background-image: url("../images/new_arrow_collapsed.png");
+      background-position: 6px 1px;
+    }
+    .ctools-collapsible-container h2{
+      font-size: 12px;
+      line-height: 20px;
+      color: $white;
+      text-transform: uppercase;
+    }
+    /* ***** match placeholder/watermark padding to border+padding for input element ***** */
+    
+    label.placeholder {
+      cursor: text;
+      padding: 0.4em 0.3em;
+      color: #ccc;
+    }
+    
+    /* html5 placeholder support */
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color:#ccc;
+    }
+    
+    input:placeholder, textarea:placeholder {
+      color:#ccc;
+    }
+    
+    .tags a{
+      padding: $default-spacing / 2;
     }
