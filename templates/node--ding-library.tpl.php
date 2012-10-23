@@ -90,6 +90,6 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <div class="libraries"><?php print render($content); ?></div>
-    <?php if (!empty($opening_hours)) { print $opening_hours; } ?>
+    <div class="libraries-opening-hours"><?php if (!empty($opening_hours)) { print $opening_hours; } ?></div>
   </div>
 </div>

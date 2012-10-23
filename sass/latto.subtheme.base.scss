@@ -301,9 +301,18 @@ ul li.leaf {
   .libraries{
      float: left;   
     }
-.opening-hours-week{
+.libraries-opening-hours{
   float: right;
+  padding: 0;
     }
+   .opening-hours-week{ 
+     padding: 0;
+     }
+     
+      .opening-hours-week .days{ 
+     padding: 0;
+     }
+     
 .library-list{
     list-style-type: none;
     margin: 0;
