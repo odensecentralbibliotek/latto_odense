@@ -291,32 +291,28 @@ ul li.leaf {
       }
     }
 }
-
-.pane-ding-library-map{
-  padding-left: $default-spacing;
-  }
-    .field-name-field-ding-library-mail a{
-      font-size: 12px;
-      }
-.views-field-field-ding-library-list-image{
+      
+.field-name-field-ding-library-list-image{
   float: left;
   padding-right: $default-spacing / 2;
   }
   .addressfield-container-inline:after{
    clear: none!important;
     }
-    .views-label.views-label-field-ding-library-phone-number {
+    .field-name-field-ding-library-phone-number {
     float: left;
     margin-right: $default-spacing / 2;
 }
-.views-label-field-ding-library-fax-number {
+.field-name-field-ding-library-fax-number {
     float: left;
     margin-right: $default-spacing / 2;
 }
-.views-label-field-ding-library-mail{
+.field-name-field-ding-library-mail{
     float: left;
     margin-right: $default-spacing / 2;
-}
+&a{
+  font-size: 12px;
+      }}
 .country {
     padding-right: $default-spacing / 2;
 }
@@ -335,9 +331,6 @@ ul li.leaf {
 .badge-info {
   background-color: $theme-tertiary-color;
 }
-   .opening-hours-week{
-       padding: 0;  
-     }
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
