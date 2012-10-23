@@ -302,6 +302,12 @@ ul li.leaf {
 .country {
     padding-right: $default-spacing / 2;
 }
+  .libraries{
+     float: left;   
+    }
+.opening-hours-week{
+  float: right;
+    }
 .library-list{
     list-style-type: none;
     margin: 0;
