@@ -251,11 +251,43 @@ header {
   ========================================================================== */ 
   // The navigation bar used for the main-menu.
   // No styleguide reference
-  ul li.leaf {
-    list-style-image: none;
-    list-style-type: none;
+ul {
+  &.menu {
+    border: none;
+    list-style: none;
+    text-align: left;
+    /* LTR */
   }
-  
+  li {
+    &.leaf {
+      list-style-image: none;
+      list-style-type: none;
+    }
+  }
+}
+
+li {
+   &.leaf {
+    padding: 0.2em 0 0 0;
+    /* LTR */
+    margin: 0;
+  }
+  a.active {
+    color: $gray;
+  }
+}
+
+.expanded .menu {
+  margin-left: $default-spacing;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0px;
+  padding: 0;
+}
+
+    
   .main-menu {
     display: table;
     font-size: $navbar-font-size;
@@ -280,6 +312,7 @@ header {
         text-decoration: none;
         &i{
           font-size: 38px;
+          padding-top: $default-spacing;
         }
         &:hover {
           background: darken($navbar-text-color, 15%);
@@ -361,21 +394,6 @@ header {
     border-right: none;
   }
   
-  .menu {
-    
-    list-style-type: none;
-    margin: 0px;
-    a {
-      margin: 0;
-    } }   
-    
-    ul {
-      list-style:  none;
-    }
-    ul, ol {
-      margin-left: 0px;
-      padding: 0;
-    } 
     /* ==========================================================================
     Search pane styling
     ========================================================================== */

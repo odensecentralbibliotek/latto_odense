@@ -69,7 +69,7 @@ function latto_odense_menu_link(array $variables) {
   // Class attributes by menu_attributes
   if (isset($element['#localized_options']['attributes']['class'])) {
     $array_class = $element['#localized_options']['attributes']['class'];
-    $icon = '<br/><br/>';
+    $icon = '<br/>';
     foreach ($array_class as $i => $class) {
       if (substr($class, 0, 5) == 'icon-' ) {
         // Don't put the class on the <a> tag
