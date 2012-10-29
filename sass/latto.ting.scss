@@ -8,7 +8,9 @@
 .availability-status:after {
   content: ")";
 }
-.availability ul {
+.availability {
+    float: right; 
+ul {
   float: right;
   li {
     display: inline;
@@ -16,5 +18,41 @@
     padding: 0 $default-spacing 0 0;
     border: none;
     margin: 0;
+    float: right;
   }
+}
+}
+
+//Collaction style
+.ting-cover-style-ding_medium {
+    height: 131px;
+    width: 85px;
+}
+
+.field-name-ting-details-version .field-label{
+  float: left;
+  }
+  
+  .field-name-ding-entity-buttons{
+    float: right;
+    form{
+      float: left;
+      }
+    }
+
+.view-mode-collection-list {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.view-mode-full > div > div > div > h2 {
+  border-bottom: 1px solid #E7ECEB;
+  color: #790F21;
+  margin: 10px 0;
+}
+.field-name-ting-abstract{
+  margin-left: 100px;
+}
+.field-name-ting-subjects{
+  margin-left: 100px;
 }
