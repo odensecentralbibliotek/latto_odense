@@ -4,9 +4,12 @@
 
 @import "compass/css3";
 
+// Basic settings
+// Grid, spacing etc.
+$grid-max-width:    960px;
+$grid-column-count: 16;
 
-// Grayscale colors.
-// -------------------------
+// Standard color definitions.
 $black:                 #000 !default;
 $gray-darker:           #222 !default;
 $gray-dark:             #333 !default;
@@ -14,6 +17,7 @@ $gray:                  #555 !default;
 $gray-light:            #999 !default;
 $gray-lighter:          #eee !default;
 $white:                 #fff !default;
+$green:                 #2BE01B !default;
 
 // Theme variables.
 $theme-background-color:  $gray-lighter;
@@ -22,10 +26,16 @@ $theme-background:        url('../images/noise_lines.png') $theme-background-col
 
 // Font variables.
 // -------------------------
+$base-font-size:      16px !default; /* equivalent to font-size: 100% */
 $theme-font-size:         13px !default;
 $theme-line-height:       18px;
 $theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// Baseline for rem() mixin, measured in pixels
+// The value should be the same as the base-font-size value for the html element
+// If the html element's font-size is set to 62.5% (of the browser's default font-size of 16px),
+// then the variable below would be 10px.
+$baseline-px: $base-font-size;
 
 $theme-primary-color:         $black;
 $theme-secondary-color:       #69C9CF !default;
@@ -75,6 +85,8 @@ $theme-footer-color-hover:  $gray-light;
 // -------------------------
 $default-spacing: 15px;
 
+// Forms
+$form-border-radius: 5px !default;
 
 // Navigation
 //--------------------------
