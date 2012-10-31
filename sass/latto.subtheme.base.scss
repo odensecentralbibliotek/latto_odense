@@ -279,7 +279,10 @@ ul {
     /* ==========================================================================
     Search pane styling
     ========================================================================== */
-    .panel-pane.pane-block.pane-search-form {
+  .search-login .grid-inner{
+        margin-bottom: $default-spacing;
+    }
+  .panel-pane.pane-block.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;     
