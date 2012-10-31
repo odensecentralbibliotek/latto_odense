@@ -95,12 +95,13 @@ $navbar-font-size:        15px !default;
 $navbar-text-color:       $white !default;
 $navbar-item-spacing:     $default-spacing / 2 $default-spacing !default;
 
-// List
-//--------------------------
-$list-item-spacing:         10px;
-$list-picture-width:        10%;
+// Lists
+$list-item-spacing:         10px !default;
+$list-picture-width:        25% !default;
 
-
+// Search field
+$search-font-size:          20px !default;
+$search-field-height:       50px !default;
 /*
 
 #Theme elements

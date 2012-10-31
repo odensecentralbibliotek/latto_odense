@@ -387,7 +387,7 @@ footer .grid-inner {
 .pane-menu-menu-footer-menu-1 h2, .pane-menu-menu-footer-menu-2 h2, .pane-menu-menu-footer-menu-3 h2, .pane-menu-menu-footer-menu-4 h2 {
   color: #555555 !important;
   font-family: din,sans-serif,verdana;
-  font-size: 14px;
+  font-size: 13.65px;
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
@@ -569,6 +569,16 @@ Login pane styling
 }
 
 /* line 389, ../sass/latto.subtheme.base.scss */
+#edit-profile-provider-alma-field-alma-phone-id {
+  display: none;
+}
+
+/* line 392, ../sass/latto.subtheme.base.scss */
+#edit-profile-provider-alma-field-absent-id {
+  display: none;
+}
+
+/* line 396, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -578,18 +588,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 397, ../sass/latto.subtheme.base.scss */
+/* line 404, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 400, ../sass/latto.subtheme.base.scss */
+/* line 407, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
-  background-position: 6px 1px;
+  background-position: 6px 3px;
 }
 
-/* line 404, ../sass/latto.subtheme.base.scss */
+/* line 411, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -598,7 +608,7 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 412, ../sass/latto.subtheme.base.scss */
+/* line 419, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.3em;
@@ -606,17 +616,17 @@ label.placeholder {
 }
 
 /* html5 placeholder support */
-/* line 419, ../sass/latto.subtheme.base.scss */
+/* line 426, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 423, ../sass/latto.subtheme.base.scss */
+/* line 430, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
 
-/* line 427, ../sass/latto.subtheme.base.scss */
+/* line 434, ../sass/latto.subtheme.base.scss */
 .tags a {
   padding: 7.5px;
 }
@@ -830,7 +840,7 @@ a:active {
 }
 
 /* line 27, ../sass/latto.ting.scss */
-.ting-cover-style-ding_medium {
+.view-mode-collection-list .ting-cover-style-ding_medium {
   height: 131px;
   width: 85px;
 }
@@ -864,12 +874,12 @@ a:active {
 }
 
 /* line 53, ../sass/latto.ting.scss */
-.field-name-ting-abstract {
+.view-mode-collection-list .field-name-ting-abstract {
   margin-left: 100px;
 }
 
 /* line 56, ../sass/latto.ting.scss */
-.field-name-ting-subjects {
+.view-mode-collection-list .field-name-ting-subjects {
   margin-left: 100px;
 }
 
@@ -1700,7 +1710,7 @@ a:active {
 .list-image > .list-item .image-container, .list.floated > .list-item .image-container, .floated.list-image > .list-item .image-container, .floated.list-compact > .list-item .image-container, .floated.list.simple > .list-item .image-container, .floated.date-list > .list-item .image-container {
   display: table-cell;
   margin-bottom: 10px;
-  max-width: 10%;
+  max-width: 25%;
 }
 /* line 76, ../../latto/sass/_latto.lists.scss */
 .list-image > .list-item .image-container img, .list.floated > .list-item .image-container img, .floated.list-image > .list-item .image-container img, .floated.list-compact > .list-item .image-container img, .floated.list.simple > .list-item .image-container img, .floated.date-list > .list-item .image-container img {

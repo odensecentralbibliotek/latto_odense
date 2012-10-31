@@ -259,7 +259,7 @@ ul {
     &h2 {
       color: $gray!important; 
       font-family: din,sans-serif,verdana;
-      font-size: 14px;
+      font-size: $theme-font-size * 1.05;
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
@@ -386,6 +386,13 @@ ul {
       background: $theme-tertiary-color;    
       min-height: 160px;
     }
+    #edit-profile-provider-alma-field-alma-phone-id{
+      display:none;
+      }
+      #edit-profile-provider-alma-field-absent-id{
+        display:none;
+        }
+  
     .ctools-collapsible-container .ctools-toggle {
       background-image: url("../images/new_arrow.png");
       background-position: 3px 3px;
@@ -399,7 +406,7 @@ ul {
     }
     .ctools-collapsible-container .ctools-toggle-collapsed {
       background-image: url("../images/new_arrow_collapsed.png");
-      background-position: 6px 1px;
+      background-position: 6px 3px;
     }
     .ctools-collapsible-container h2{
       font-size: 12px;
