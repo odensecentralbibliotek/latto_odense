@@ -883,6 +883,16 @@ a:active {
   margin-left: 100px;
 }
 
+/* line 59, ../sass/latto.ting.scss */
+.field-name-ting-author {
+  margin-left: 100px;
+}
+
+/* line 62, ../sass/latto.ting.scss */
+.field-name-ting-details-classification {
+  display: inline-block;
+}
+
 /* Import the files from the latto theme
    ========================================================================== */
 /* See: http://zengrids.com/help/#vars-legacy */
