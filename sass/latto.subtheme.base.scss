@@ -21,7 +21,7 @@ header {
   padding-bottom: $default-spacing;
   padding-top: $default-spacing;
   .site-name {
-    font-size: 90%;
+    font-size: 85%;
     margin-left: 23px;
   }
   .logo {
@@ -279,14 +279,10 @@ ul {
     /* ==========================================================================
     Search pane styling
     ========================================================================== */
-    .search-login .grid-inner{
-      margin-bottom: $default-spacing;
-    }
     .panel-pane.pane-block.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;
-      
+      background: $theme-tertiary-color;     
       min-height: 160px;
     }
     .search-wrapper{
@@ -334,10 +330,13 @@ ul {
     }
     .pane-system-user-menu {
       background: $theme-tertiary-color;
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     }
     .pane-ding-user-frontend-ding-user-loan-number {
       background: $theme-tertiary-color;
-      min-height: 88px;
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     }
     /* ==========================================================================
     custom grid
