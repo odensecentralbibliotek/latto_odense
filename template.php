@@ -12,9 +12,22 @@
  */
 function latto_odense_preprocess_node(&$variables, $hook) {
   $hooks = theme_get_registry(FALSE);
-  if (isset($hooks['opening_hours_week'])) {
+  if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
     $variables['opening_hours'] = theme('opening_hours_week', array('node' => $variables['node']));
   }
+}
+
+/**
+ * Implements hook_preprocess_table().
+ * adds classes table table-striped
+ */
+function latto_odense_preprocess_table(&$variables) {
+  if (isset($variables['attributes']['class']) && is_string($variables['attributes']['class'])) {
+   // Convert classes to an array.
+   $variables['attributes']['class'] = explode(' ', $variables['attributes']['class']);
+  }
+
+  $variables['attributes']['class'][] = 'table table-striped';
 }
 
 /**

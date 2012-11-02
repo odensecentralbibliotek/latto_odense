@@ -914,11 +914,6 @@ a:active {
   content: ":";
 }
 
-/* line 8, ../sass/latto.logged.in.scss */
-table {
-  width: 100%;
-}
-
 /* Import the files from the latto theme
    ========================================================================== */
 /* See: http://zengrids.com/help/#vars-legacy */
