@@ -8,6 +8,12 @@
 .availability-status:after {
   content: ")";
 }
+.navcount:before {
+  content: " (";
+}
+.navcount:after {
+  content: ")";
+}
 .availability {
   float: right; 
   ul {
@@ -62,3 +68,6 @@
 .field-name-ting-details-classification{
   display: inline-block;
 }
+#ting-search-records-per-page > a:after{
+    content: " ";
+}  

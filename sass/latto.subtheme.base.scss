@@ -116,7 +116,10 @@ header {
     }
   }
   
- 
+
+.field-name-field-ding-news-library {
+    display: inline-block;
+}
   /* ==========================================================================
   Date
   ========================================================================== */   
@@ -436,3 +439,7 @@ ul {
     .tags a{
       padding: $default-spacing / 2;
     }
+    .pane-similarterms-ding-content-tags ul li{
+      margin-bottom: $default-spacing / 2;
+      padding-bottom: $default-spacing / 2;
+      }
