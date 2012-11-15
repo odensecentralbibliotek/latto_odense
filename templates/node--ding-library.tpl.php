@@ -87,9 +87,11 @@
 <div class="<?php print $classes; ?>">
 
   <h1 class="page-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1>
-
+<?php  if ($teaser) : ?>
   <div class="content"<?php print $content_attributes; ?>>
     <div class="libraries"><?php print render($content); ?></div>
+
     <div class="libraries-opening-hours"><?php if (!empty($opening_hours)) { print $opening_hours; } ?></div>
+    <?php endif; ?>
   </div>
 </div>

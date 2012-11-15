@@ -222,7 +222,7 @@ hr.tertiary {
 Date
 ========================================================================== */
 /* line 127, ../sass/latto.subtheme.base.scss */
-.day {
+.date-list .date-wrapper .day {
   background-color: #69c9cf !important;
 }
 
