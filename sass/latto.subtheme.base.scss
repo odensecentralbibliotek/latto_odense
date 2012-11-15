@@ -127,6 +127,9 @@ header {
     .date-list .date-wrapper .day {
       background-color: $theme-secondary-color!important;
     }
+   .list-compact .date{
+    margin-right: $default-spacing;
+      }
   
   /* ==========================================================================
   Navigation
@@ -256,7 +259,7 @@ ul {
     background-color: $gray-lighter;
   }
   
-  .pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
+  .footer-menu {
     border-right: 2px solid white;
     min-height: 350px;
     &h2 {
