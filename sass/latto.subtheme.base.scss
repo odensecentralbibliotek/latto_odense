@@ -240,9 +240,7 @@ ul {
     width: 100%;
   }
   .vcard{
-    border-bottom: 1px solid #999999;
-    margin-bottom: $default-spacing;
-    padding-bottom: $default-spacing;
+    margin-bottom: $default-spacing /2;
   }
   .field-name-field-ding-library-mail a{
     font-size: 12px;
@@ -372,14 +370,7 @@ ul {
     .collapsall{
       display: block!important;
     }
-    article .grid-8-left, article .grid-8-right{
-      width: 49%;
-      margin-bottom: $default-spacing;
-    }
-    .grid-8-left .grid-inner, .grid-8-right .grid-inner{
-      box-shadow: none;
-      background-color: transparent;
-    }
+  
     
     .breadcrumb {
       margin-left: $default-spacing;
