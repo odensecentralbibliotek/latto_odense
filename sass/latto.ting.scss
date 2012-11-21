@@ -16,6 +16,12 @@
 .navcount:after {
   content: ")";
 }
+.navcount:before {
+  content: " (";
+}
+.navcount:after {
+  content: ")";
+}
 .availability {
   float: right; 
   ul {

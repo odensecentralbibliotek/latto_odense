@@ -120,10 +120,13 @@ header {
   /* ==========================================================================
   Date
   ========================================================================== */   
-.date-wrapper-inner{
-  background: $white!important;
-  
-  }
+
+    .date-list .date-wrapper .day {
+      background-color: $theme-secondary-color!important;
+    }
+   .list-compact .date{
+    margin-right: $default-spacing;
+      }
   
   /* ==========================================================================
   Navigation
@@ -234,9 +237,7 @@ ul {
     width: 100%;
   }
   .vcard{
-    border-bottom: 1px solid #999999;
-    margin-bottom: $default-spacing;
-    padding-bottom: $default-spacing;
+    margin-bottom: $default-spacing /2;
   }
   .field-name-field-ding-library-mail a{
     font-size: 12px;
@@ -253,9 +254,8 @@ ul {
     background-color: $gray-lighter;
   }
   
-  .pane-menu-menu-footer-menu-1, .pane-menu-menu-footer-menu-2, .pane-menu-menu-footer-menu-3, .pane-menu-menu-footer-menu-4 {
+  .footer-menu {
     border-right: 2px solid white;
-    min-height: 350px;
     &h2 {
       color: $gray!important; 
       font-family: din,sans-serif,verdana;
@@ -272,7 +272,7 @@ ul {
     }
   }
   
-  .pane-menu-menu-footer-menu-4 { 
+  .pane-menu-block-4 { 
     border-right: none;
   }
   
@@ -366,14 +366,7 @@ ul {
     .collapsall{
       display: block!important;
     }
-    article .grid-8-left, article .grid-8-right{
-      width: 49%;
-      margin-bottom: $default-spacing;
-    }
-    .grid-8-left .grid-inner, .grid-8-right .grid-inner{
-      box-shadow: none;
-      background-color: transparent;
-    }
+  
     
     .breadcrumb {
       margin-left: $default-spacing;
