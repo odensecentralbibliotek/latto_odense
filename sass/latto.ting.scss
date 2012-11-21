@@ -90,7 +90,7 @@
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color; 
-      padding: 0px $default-spacing;
+      padding-left: $default-spacing;
       margin-bottom: $default-spacing / 2;
       border-bottom: 0px;
     } 
@@ -189,7 +189,7 @@ div.pane-search-result {
   }  
   
 .pane-search-result h2 {
-  font-size: 19.5px;
-  color: #CCC;
+    font-size: 19.5px;
+    color: #CCC;
   }
-       
+   

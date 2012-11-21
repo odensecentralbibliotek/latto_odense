@@ -935,7 +935,7 @@ a:active {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   background: #99d7db;
-  padding: 0px 15px;
+  padding-left: 15px;
   margin-bottom: 7.5px;
   border-bottom: 0px;
 }
