@@ -88,7 +88,7 @@ header {
       padding: $default-spacing / 2;
     }
   }
-  
+   
   /* ==========================================================================
   Basic elements
   ========================================================================== */
@@ -115,8 +115,8 @@ header {
       @include colruler($theme-tertiary-color);
     }
   }
-  
  
+
   /* ==========================================================================
   Date
   ========================================================================== */   
@@ -215,7 +215,7 @@ ul {
   }
   #ding-library-front .panel-separator{
     height: $default-spacing;
-    }
+    }   
   .libraries-opening-hours{
     float: right;
     padding: 0;
@@ -292,10 +292,10 @@ ul {
       @include rgba-background($theme-tertiary-color, 1);
       margin-top: 0px;
       h2 {
-        margin: 0 0 0 20px;
+        margin-left: $default-spacing;
       }
       form {
-        margin: 0px 0 0 20px;
+        margin-left: $default-spacing;
         position: relative;
         width: auto;
         }.form-text {
@@ -435,4 +435,12 @@ ul {
     
     .tags a{
       padding: $default-spacing / 2;
+    }
+    
+    /* ==========================================================================
+    Content pane styling
+    ========================================================================== */
+    
+    .pane-event-category-menu, .pane-news-category-menu {
+      padding: $default-spacing;   
     }

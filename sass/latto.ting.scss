@@ -1,11 +1,19 @@
 // This files contains styling of specific for ting objects and the search
 // results page.
 
-// Place a space before the link with information about object availability.
+// Place () around .availability-status
 .availability-status:before {
   content: " (";
 }
 .availability-status:after {
+  content: ")";
+}
+
+// Place () around .navcount
+.navcount:before {
+  content: " (";
+}
+.navcount:after {
   content: ")";
 }
 .availability {
@@ -56,9 +64,132 @@
 .view-mode-collection-list .field-name-ting-subjects{
   margin-left: 100px;
 }
-.field-name-ting-author {
-  margin-left: 100px;
-}
+
 .field-name-ting-details-classification{
   display: inline-block;
 }
+#ting-search-records-per-page > a:after{
+    content: " ";
+}  
+
+.field-group-format {
+  clear: both;  
+  }
+
+.pane-ting-ting-collection-types h2, .pane-ting-ting-object-types h2, .pane-ting-ting-relation-anchors h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}  
+  
+/* ==========================================================================
+  Facets styling
+  ========================================================================== */
+
+.pane-ding-facetbrowser {
+    legend {
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      background: $theme-tertiary-color; 
+      padding: 0px $default-spacing;
+      margin-bottom: $default-spacing / 2;
+      border-bottom: 0px;
+    } 
+    fieldset {
+      margin-bottom: $default-spacing;
+    }    
+  }
+  
+#expand_less {
+    margin-left: $default-spacing;
+  }
+  
+  
+/* ==========================================================================
+  Filter styling
+  ========================================================================== */
+
+//records per page  
+.pane-ting-search-records-per-page {
+  float: left;
+   }  
+   
+#ting-search-records-per-page {
+    font-weight: bold;
+    margin-top: 10px;  
+    a {
+      margin-left: $default-spacing / 2;
+    }
+  }   
+  
+//toggle
+.pane-ding-toggle-format-toggle {
+    float: right;
+    margin-top: $default-spacing / 2;
+  }
+  
+.ding-toggle-format-label {
+    font-weight: bold;
+  }
+
+//sort
+.pane-ting-search-sort-form {
+    float: right;
+    margin-right: $default-spacing * 2;
+    }  
+  
+#ting-search-sort-form {
+    label {
+      display: inline;
+      font-weight: bold;
+    }
+    select {
+      width: 9em;
+      margin-top: 5px;
+      height: 2em;
+    }
+  }
+
+.form-item .description {
+    display: none;      
+  }      
+
+//query string
+#search-query-display  {
+    font-size: 1em;
+    margin-top: 3em;
+    border-top: 0px;
+    padding: 0px;
+    clear: none;
+  }
+  
+//result number  
+.pane-ting-search {
+    border-bottom: 1px solid #999;
+    padding: 6px 0px;
+  }
+  
+/* ==========================================================================
+  Short-long format toogle
+  ========================================================================== */  
+
+li.ding-format-short .ting-cover  {
+    display: none;
+   }
+
+li.ding-format-short .subjects {
+    display: none;
+   }
+       
+/* ==========================================================================
+  Search results
+  ========================================================================== */        
+       
+div.pane-search-result {
+    margin-top: $default-spacing;
+  }  
+  
+.pane-search-result h2 {
+  font-size: 19.5px;
+  color: #CCC;
+  }
+       

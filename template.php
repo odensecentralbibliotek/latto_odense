@@ -15,7 +15,7 @@ function latto_odense_preprocess_node(&$variables, $hook) {
   if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
     $variables['opening_hours'] = theme('opening_hours_week', array('node' => $variables['node']));
   }
-}
+  }                                                                                                                                                          
 
 /**
  * Implements hook_preprocess_table().
@@ -36,7 +36,6 @@ function latto_odense_preprocess_table(&$variables) {
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_block_form':
-       unset($form['search_block_form']['#default_value']);
       $form['actions']['#suffix'] = '<div class="clearfix"></div>';
       break;
 
@@ -57,6 +56,14 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['actions']['preview']['#prefix'] = '<div>';
       $form['actions']['preview']['#suffix'] = '</div>';
       $form['subject']['#type'] = 'hidden';
+      break;
+
+    case 'flag_confirm':
+      $form['actions']['submit']['#attributes']['class'][] = 'btn';
+      break;
+
+    case 'ding_reservation_reserve_form':
+      $form['actions']['submit']['#attributes']['class'][] = 'btn';
       break;
   }
 }
