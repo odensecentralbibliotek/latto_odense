@@ -434,11 +434,11 @@ Search pane styling
 }
 /* line 294, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
-  margin: 0 0 0 20px;
+  margin-left: 15px;
 }
 /* line 297, ../sass/latto.subtheme.base.scss */
 .search-wrapper form {
-  margin: 0px 0 0 20px;
+  margin-left: 15px;
   position: relative;
   width: auto;
 }
@@ -642,6 +642,14 @@ input:placeholder, textarea:placeholder {
   padding: 7.5px;
 }
 
+/* ==========================================================================
+Content pane styling
+========================================================================== */
+/* line 444, ../sass/latto.subtheme.base.scss */
+.pane-event-category-menu, .pane-news-category-menu {
+  padding: 15px;
+}
+
 /* equivalent to font-size: 100% */
 /*
 
@@ -701,25 +709,25 @@ body {
   line-height: 18px;
 }
 
-/* line 66, ../sass/latto.mixins.scss */
+/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, ../sass/latto.mixins.scss */
+/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
 ::-moz-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, ../sass/latto.mixins.scss */
+/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
 ::-o-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, ../sass/latto.mixins.scss */
+/* line 66, /var/aegir/platforms/ding2tal-715/sites/all/themes/latto_odense/sass/latto.mixins.scss */
 ::selection {
   color: #eeeeee;
   background: #555555;
@@ -832,15 +840,25 @@ a:active {
   content: ")";
 }
 
-/* line 11, ../sass/latto.ting.scss */
+/* line 13, ../sass/latto.ting.scss */
+.navcount:before {
+  content: " (";
+}
+
+/* line 16, ../sass/latto.ting.scss */
+.navcount:after {
+  content: ")";
+}
+
+/* line 19, ../sass/latto.ting.scss */
 .availability {
   float: right;
 }
-/* line 13, ../sass/latto.ting.scss */
+/* line 21, ../sass/latto.ting.scss */
 .availability ul {
   float: right;
 }
-/* line 15, ../sass/latto.ting.scss */
+/* line 23, ../sass/latto.ting.scss */
 .availability ul li {
   display: inline;
   list-style-type: none;
@@ -850,58 +868,189 @@ a:active {
   float: right;
 }
 
-/* line 27, ../sass/latto.ting.scss */
+/* line 35, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover-style-ding_medium {
   height: 131px;
   width: 85px;
 }
 
-/* line 32, ../sass/latto.ting.scss */
+/* line 40, ../sass/latto.ting.scss */
 .field-name-ting-details-version .field-label {
   float: left;
 }
 
-/* line 36, ../sass/latto.ting.scss */
+/* line 44, ../sass/latto.ting.scss */
 .field-name-ding-entity-buttons {
   float: right;
 }
-/* line 38, ../sass/latto.ting.scss */
+/* line 46, ../sass/latto.ting.scss */
 .field-name-ding-entity-buttons form {
   float: left;
 }
 
-/* line 43, ../sass/latto.ting.scss */
+/* line 51, ../sass/latto.ting.scss */
 .view-mode-collection-list {
   border-bottom: 1px solid #999999;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 48, ../sass/latto.ting.scss */
+/* line 56, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #790F21;
   margin: 10px 0;
 }
 
-/* line 53, ../sass/latto.ting.scss */
+/* line 61, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-name-ting-abstract {
   margin-left: 100px;
 }
 
-/* line 56, ../sass/latto.ting.scss */
+/* line 64, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-name-ting-subjects {
   margin-left: 100px;
 }
 
-/* line 59, ../sass/latto.ting.scss */
-.field-name-ting-author {
-  margin-left: 100px;
-}
-
-/* line 62, ../sass/latto.ting.scss */
+/* line 68, ../sass/latto.ting.scss */
 .field-name-ting-details-classification {
   display: inline-block;
+}
+
+/* line 71, ../sass/latto.ting.scss */
+#ting-search-records-per-page > a:after {
+  content: " ";
+}
+
+/* line 75, ../sass/latto.ting.scss */
+.field-group-format {
+  clear: both;
+}
+
+/* line 79, ../sass/latto.ting.scss */
+.pane-ting-ting-collection-types h2, .pane-ting-ting-object-types h2, .pane-ting-ting-relation-anchors h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+  Facets styling
+  ========================================================================== */
+/* line 89, ../sass/latto.ting.scss */
+.pane-ding-facetbrowser legend {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  background: #99d7db;
+  padding: 0px 15px;
+  margin-bottom: 7.5px;
+  border-bottom: 0px;
+}
+/* line 97, ../sass/latto.ting.scss */
+.pane-ding-facetbrowser fieldset {
+  margin-bottom: 15px;
+}
+
+/* line 102, ../sass/latto.ting.scss */
+#expand_less {
+  margin-left: 15px;
+}
+
+/* ==========================================================================
+  Filter styling
+  ========================================================================== */
+/* line 112, ../sass/latto.ting.scss */
+.pane-ting-search-records-per-page {
+  float: left;
+}
+
+/* line 116, ../sass/latto.ting.scss */
+#ting-search-records-per-page {
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* line 119, ../sass/latto.ting.scss */
+#ting-search-records-per-page a {
+  margin-left: 7.5px;
+}
+
+/* line 125, ../sass/latto.ting.scss */
+.pane-ding-toggle-format-toggle {
+  float: right;
+  margin-top: 7.5px;
+}
+
+/* line 130, ../sass/latto.ting.scss */
+.ding-toggle-format-label {
+  font-weight: bold;
+}
+
+/* line 135, ../sass/latto.ting.scss */
+.pane-ting-search-sort-form {
+  float: right;
+  margin-right: 30px;
+}
+
+/* line 141, ../sass/latto.ting.scss */
+#ting-search-sort-form label {
+  display: inline;
+  font-weight: bold;
+}
+/* line 145, ../sass/latto.ting.scss */
+#ting-search-sort-form select {
+  width: 9em;
+  margin-top: 5px;
+  height: 2em;
+}
+
+/* line 152, ../sass/latto.ting.scss */
+.form-item .description {
+  display: none;
+}
+
+/* line 157, ../sass/latto.ting.scss */
+#search-query-display {
+  font-size: 1em;
+  margin-top: 3em;
+  border-top: 0px;
+  padding: 0px;
+  clear: none;
+}
+
+/* line 166, ../sass/latto.ting.scss */
+.pane-ting-search {
+  border-bottom: 1px solid #999;
+  padding: 6px 0px;
+}
+
+/* ==========================================================================
+  Short-long format toogle
+  ========================================================================== */
+/* line 175, ../sass/latto.ting.scss */
+li.ding-format-short .ting-cover {
+  display: none;
+}
+
+/* line 179, ../sass/latto.ting.scss */
+li.ding-format-short .subjects {
+  display: none;
+}
+
+/* ==========================================================================
+  Search results
+  ========================================================================== */
+/* line 187, ../sass/latto.ting.scss */
+div.pane-search-result {
+  margin-top: 15px;
+}
+
+/* line 191, ../sass/latto.ting.scss */
+.pane-search-result h2 {
+  font-size: 19.5px;
+  color: #CCC;
 }
 
 /* line 1, ../sass/latto.logged.in.scss */
