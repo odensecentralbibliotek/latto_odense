@@ -923,10 +923,22 @@ a:active {
   font-weight: bold;
 }
 
+/* line 84, ../sass/latto.ting.scss */
+.search-wrapper .btn {
+  height: 50px;
+  min-width: 10%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* ==========================================================================
+  Advanced Search
+  ========================================================================== */
 /* ==========================================================================
   Facets styling
   ========================================================================== */
-/* line 89, ../sass/latto.ting.scss */
+/* line 102, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser legend {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -939,12 +951,12 @@ a:active {
   margin-bottom: 7.5px;
   border-bottom: 0px;
 }
-/* line 97, ../sass/latto.ting.scss */
+/* line 110, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser fieldset {
   margin-bottom: 15px;
 }
 
-/* line 102, ../sass/latto.ting.scss */
+/* line 115, ../sass/latto.ting.scss */
 #expand_less {
   margin-left: 15px;
 }
@@ -952,95 +964,203 @@ a:active {
 /* ==========================================================================
   Filter styling
   ========================================================================== */
-/* line 112, ../sass/latto.ting.scss */
+/* line 125, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page {
   float: left;
 }
 
-/* line 116, ../sass/latto.ting.scss */
+/* line 129, ../sass/latto.ting.scss */
 #ting-search-records-per-page {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 4px;
 }
-/* line 119, ../sass/latto.ting.scss */
+/* line 132, ../sass/latto.ting.scss */
 #ting-search-records-per-page a {
   margin-left: 7.5px;
 }
 
-/* line 125, ../sass/latto.ting.scss */
-.pane-ding-toggle-format-toggle {
-  float: right;
-  margin-top: 7.5px;
-}
-
-/* line 130, ../sass/latto.ting.scss */
-.ding-toggle-format-label {
-  font-weight: bold;
-}
-
-/* line 135, ../sass/latto.ting.scss */
+/* line 138, ../sass/latto.ting.scss */
 .pane-ting-search-sort-form {
   float: right;
-  margin-right: 30px;
 }
 
-/* line 141, ../sass/latto.ting.scss */
+/* line 142, ../sass/latto.ting.scss */
+#ting-search-sort-form {
+  margin-bottom: 0px;
+}
+/* line 144, ../sass/latto.ting.scss */
 #ting-search-sort-form label {
   display: inline;
   font-weight: bold;
 }
-/* line 145, ../sass/latto.ting.scss */
+/* line 148, ../sass/latto.ting.scss */
 #ting-search-sort-form select {
   width: 9em;
-  margin-top: 5px;
+  margin-bottom: 0px;
   height: 2em;
 }
 
-/* line 152, ../sass/latto.ting.scss */
+/* line 155, ../sass/latto.ting.scss */
 .form-item .description {
   display: none;
 }
 
-/* line 157, ../sass/latto.ting.scss */
+/* line 160, ../sass/latto.ting.scss */
 #search-query-display {
   font-size: 1em;
-  margin-top: 3em;
   border-top: 0px;
   padding: 0px;
-  clear: none;
 }
 
-/* line 166, ../sass/latto.ting.scss */
+/* line 167, ../sass/latto.ting.scss */
 .pane-ting-search {
   border-bottom: 1px solid #999;
-  padding: 6px 0px;
-}
-
-/* ==========================================================================
-  Short-long format toogle
-  ========================================================================== */
-/* line 175, ../sass/latto.ting.scss */
-li.ding-format-short .ting-cover {
-  display: none;
-}
-
-/* line 179, ../sass/latto.ting.scss */
-li.ding-format-short .subjects {
-  display: none;
+  padding-bottom: 7.5px;
 }
 
 /* ==========================================================================
   Search results
   ========================================================================== */
-/* line 187, ../sass/latto.ting.scss */
+/* line 176, ../sass/latto.ting.scss */
 div.pane-search-result {
   margin-top: 15px;
 }
 
-/* line 191, ../sass/latto.ting.scss */
+/* line 180, ../sass/latto.ting.scss */
 .pane-search-result h2 {
   font-size: 19.5px;
   color: #CCC;
+}
+
+/* line 185, ../sass/latto.ting.scss */
+div.availability {
+  margin-top: 7.5px;
+}
+
+/* line 191, ../sass/latto.ting.scss */
+.ting-collection-types-header, .ting-object-types-header, .ting-relations-header {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
+  background: #99d7db;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  padding-left: 15px;
+  font-size: 19.5px;
+  font-weight: normal;
+  width: 141px;
+  color: #333;
+}
+
+/* line 204, ../sass/latto.ting.scss */
+.pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors {
+  margin-bottom: 15px;
+}
+/* line 206, ../sass/latto.ting.scss */
+.pane-ting-ting-collection-types li, .pane-ting-ting-object-types li, .pane-ting-ting-relation-anchors li {
+  margin: 5px 0px;
+}
+
+/* line 211, ../sass/latto.ting.scss */
+.view-mode-full > div > div > div > h2 {
+  border-bottom: 1px solid #E7ECEB;
+  color: #333;
+  margin: 10px 0;
+  font-size: 19.5px;
+}
+
+/* line 219, ../sass/latto.ting.scss */
+.ting-relation h2, .field-name-ding-availability-holdings h2, .group-material-details h2 {
+  font-size: 19.5px;
+}
+
+/* line 224, ../sass/latto.ting.scss */
+.availability.processed {
+  background-color: #ED1E88;
+  padding: 3.75px;
+  margin-right: 7.5px;
+  color: #FFF;
+}
+/* line 229, ../sass/latto.ting.scss */
+.availability.processed a {
+  color: #FFF;
+}
+
+/* line 232, ../sass/latto.ting.scss */
+.availability.available.reservable {
+  background-color: #40854B;
+  padding: 3.75px;
+  margin-right: 7.5px;
+  color: #FFF;
+}
+/* line 237, ../sass/latto.ting.scss */
+.availability.available.reservable a {
+  color: #FFF;
+}
+
+/* line 239, ../sass/latto.ting.scss */
+.availability.reservable {
+  background-color: #F53;
+  padding: 3.75px;
+  margin-right: 7.5px;
+  color: #FFF;
+}
+/* line 244, ../sass/latto.ting.scss */
+.availability.reservable a {
+  color: #FFF;
+}
+
+/* line 246, ../sass/latto.ting.scss */
+.availability.available {
+  background-color: #0072BC;
+  padding: 3.75px;
+  margin-right: 7.5px;
+  color: #FFF;
+}
+/* line 251, ../sass/latto.ting.scss */
+.availability.available a {
+  color: #FFF;
+}
+
+/* line 255, ../sass/latto.ting.scss */
+.view-mode-collection-list .field-group-format {
+  clear: none;
+}
+
+/* line 260, ../sass/latto.ting.scss */
+.group-material-details .field-label {
+  width: 132px;
+  padding-right: 15px;
+}
+
+/* line 265, ../sass/latto.ting.scss */
+.view-mode-collection-list .collapsed span.field-group-format-toggler a {
+  background: url(../images/plus-icon.png) no-repeat;
+  padding-left: 30px;
+}
+
+/* line 269, ../sass/latto.ting.scss */
+.view-mode-collection-list span.field-group-format-toggler a {
+  background: url(../images/plus-icon.png) no-repeat;
+  padding-left: 30px;
+}
+
+/* line 276, ../sass/latto.ting.scss */
+.grid-12-right {
+  margin-top: 15px;
+}
+
+/* line 280, ../sass/latto.ting.scss */
+.grid-4-left {
+  margin-top: 15px;
+}
+
+/* line 284, ../sass/latto.ting.scss */
+.grid-12-right .nav {
+  margin-bottom: 7.5px;
 }
 
 /* line 1, ../sass/latto.logged.in.scss */

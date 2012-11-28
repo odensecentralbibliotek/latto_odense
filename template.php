@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Implements hook_preprocess_node().
  *
@@ -63,7 +62,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'ding_reservation_reserve_form':
-      $form['actions']['submit']['#attributes']['class'][] = 'btn';
+      $form['submit']['#attributes']['class'][] = 'btn';
       break;
   }
 }
