@@ -89,28 +89,6 @@ function latto_odense_menu_link(array $variables) {
 
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
-/**
- * Implements HOOK_theme().
- */
-/*
-function latto_odense_theme() {
-  return array(
-    'nomarkup' => array(
-      'render element' => 'element',
-    ),
-  );
-}
-
-function theme_nomarkup($variables){
-  $output = '';
-    //Render the items.
-    foreach ($variables['items'] as $delta => $item){
-  $output .= drupal_render($item);
- }
-  return $output;
-  }
-  
-*/
 
 /**
 * Implements hook_menu_local_task()
