@@ -210,11 +210,18 @@ ul {
   .addressfield-container-inline:after{
     clear: none!important;
   }
+  .ding-entity-button {
+    margin-left: $default-spacing / 2;
+  }
   .country {
     padding-right: $default-spacing / 2;
   }
-  .libraries{
-    float: left;   
+  .field.field-name-field-ding-library-list-image.field-type-image.field-label-hidden {
+    float: left;
+    margin-right: 7.5px;
+  }
+  .ding-library-list-wrapper {
+    float: left;
   }
   #ding-library-front .panel-separator{
     height: $default-spacing;
@@ -229,7 +236,9 @@ ul {
   .opening-hours-week .days{ 
     padding: 0;
   }
-  
+  .opening-hours-week .times {
+    margin-right: $default-spacing /2!important;
+  }
   .library-list{
     list-style-type: none;
     margin: 0;
@@ -437,3 +446,26 @@ ul {
     .pane-event-category-menu, .pane-news-category-menu {
       padding: $default-spacing;   
     }
+.pane-similarterms-ding-content-tags ul li {
+  margin-bottom: $default-spacing / 2;
+}
+
+.fffW-widget {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+.fffW-widget .fffW-title {
+  font-size: 16px !important;
+  margin: 10px 0 0 !important;
+}
+
+.fffW-widget p {
+  font-size: 12px !important;
+}
+
+#ding-library-front .rounded-corner {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
