@@ -310,12 +310,50 @@ ul {
         }.form-text {
         height: 40px;
         width: 80%;
-      }
+        }
       .btn {
         height: 40px;
         right: 5%;
       }
     }
+    
+    //advanced search
+        
+    #advanced-search-wrapper {
+      legend {
+        line-height: 20px;
+        margin-bottom: $default-spacing / 2;
+        border-bottom: 0px;
+        font-size: 15px;
+        }    
+      label {
+        display: inline;
+        }
+      .form-text {
+          width: 250px;
+          height: 20px;
+          }    
+      .form-select {
+          width: 250px;
+          }        
+      .form-type-textfield label  {
+        clear: left;
+        float: left;
+        padding: 3px 10px 2px;
+        text-align: right;
+        width: 80px;
+       }
+       .form-type-select label  {
+        clear: left;
+        float: left;
+        padding: 3px 10px 2px;
+        text-align: right;
+        width: 80px;
+       }
+    }
+        
+    //
+    
     ul.ui-autocomplete { 
       max-width: 100%!important;
       z-index:100;

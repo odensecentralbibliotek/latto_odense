@@ -1,7 +1,7 @@
 (function($){
 
   $(document).ready(function($) {
-    $('.search-login .grid-inner').equalize('height');
+    //$('.search-login .grid-inner').equalize('height');
     $('footer .grid-inner').equalize('height');
     $('input[placeholder],textarea[placeholder]').placeholder();
     if ($('.ting-search-amount-block')) {

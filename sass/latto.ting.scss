@@ -81,6 +81,19 @@
     font-weight: bold;
 }  
   
+.search-wrapper .btn {
+    height: 50px;
+    min-width: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ==========================================================================
+  Advanced Search
+  ========================================================================== */
+
+
 /* ==========================================================================
   Facets styling
   ========================================================================== */
@@ -115,40 +128,30 @@
    
 #ting-search-records-per-page {
     font-weight: bold;
-    margin-top: 10px;  
+    margin-top: 4px;
     a {
       margin-left: $default-spacing / 2;
     }
   }   
   
-//toggle
-.pane-ding-toggle-format-toggle {
-    float: right;
-    margin-top: $default-spacing / 2;
-  }
-  
-.ding-toggle-format-label {
-    font-weight: bold;
-  }
-
 //sort
-.pane-ting-search-sort-form {
+ .pane-ting-search-sort-form {
     float: right;
-    margin-right: $default-spacing * 2;
-    }  
+  }  
   
 #ting-search-sort-form {
-    label {
-      display: inline;
-      font-weight: bold;
-    }
-    select {
-      width: 9em;
-      margin-top: 5px;
-      height: 2em;
-    }
+    margin-bottom: 0px;
+      label {
+        display: inline;
+        font-weight: bold;
+      }
+      select {
+        width: 9em;
+        margin-bottom: 0px;
+        height: 2em;
+      }
   }
-
+  
 .form-item .description {
     display: none;      
   }      
@@ -156,30 +159,16 @@
 //query string
 #search-query-display  {
     font-size: 1em;
-    margin-top: 3em;
     border-top: 0px;
     padding: 0px;
-    clear: none;
   }
   
 //result number  
 .pane-ting-search {
     border-bottom: 1px solid #999;
-    padding: 6px 0px;
+    padding-bottom: $default-spacing / 2;
   }
-  
-/* ==========================================================================
-  Short-long format toogle
-  ========================================================================== */  
-
-li.ding-format-short .ting-cover  {
-    display: none;
-   }
-
-li.ding-format-short .subjects {
-    display: none;
-   }
-       
+         
 /* ==========================================================================
   Search results
   ========================================================================== */        
@@ -189,7 +178,95 @@ div.pane-search-result {
   }  
   
 .pane-search-result h2 {
-    font-size: 19.5px;
+    font-size: $theme-font-size * 1.5;
     color: #CCC;
   }
-   
+
+div.availability {
+    margin-top: $default-spacing / 2;
+  }    
+  
+//collections & objects  
+ 
+.ting-collection-types-header, .ting-object-types-header, .ting-relations-header {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  background: $theme-tertiary-color;
+  margin-top: $default-spacing / 2;
+  margin-bottom: $default-spacing / 2;
+  padding-left: $default-spacing;
+  font-size: $theme-font-size * 1.5;
+  font-weight: normal;
+  width: 141px;
+  color: #333;
+}  
+ 
+.pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors { 
+  margin-bottom: $default-spacing; 
+  li {
+    margin: 5px 0px;  
+  }
+}
+
+.view-mode-full > div > div > div > h2 {
+    border-bottom: 1px solid #E7ECEB;
+    color: #333;
+    margin: 10px 0;
+    font-size: $theme-font-size * 1.5;
+}
+
+.ting-relation, .field-name-ding-availability-holdings, .group-material-details {      
+   h2{
+       font-size: $theme-font-size * 1.5;
+       }
+}
+
+.availability.processed {
+  background-color: #ED1E88;
+  padding: $default-spacing / 4;
+  margin-right: $default-spacing / 2;
+  color: #FFF;
+  a {color: #FFF; }
+}
+
+.availability.available.reservable {
+  background-color: #40854B;
+  padding: $default-spacing / 4;
+  margin-right: $default-spacing / 2;
+  color: #FFF;
+  a {color: #FFF; }  
+}
+.availability.reservable {
+  background-color: #F53;
+  padding: $default-spacing / 4;
+  margin-right: $default-spacing / 2;
+  color: #FFF;
+  a {color: #FFF; }
+}
+.availability.available {
+  background-color: #0072BC;
+  padding: $default-spacing / 4;
+  margin-right: $default-spacing / 2;
+  color: #FFF;
+  a {color: #FFF; }
+}
+
+
+.view-mode-collection-list .field-group-format {
+    clear: none;
+}
+
+.group-material-details {
+   .field-label {
+      width: 132px;
+      padding-right: $default-spacing;}
+}
+
+.view-mode-collection-list .collapsed span.field-group-format-toggler a{
+  background: url(../images/plus-icon.png) no-repeat;
+  padding-left: 30px;
+  }
+.view-mode-collection-list span.field-group-format-toggler a{
+  background: url(../images/plus-icon.png) no-repeat;
+  padding-left: 30px;
+  }
