@@ -64,6 +64,10 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'ding_reservation_reserve_form':
       $form['submit']['#attributes']['class'][] = 'btn';
       break;
+    
+    case 'ding_facetbrowser_form':
+      $form['span']['#expand-more']['class'][] = 'btn';
+      break;
   }
 }
 
