@@ -472,6 +472,24 @@ ul {
     Content pane styling
     ========================================================================== */
     
-    .pane-event-category-menu, .pane-news-category-menu {
-      padding: $default-spacing;   
-    }
+  .pane-event-category-menu, .pane-news-category-menu {
+    padding: $default-spacing;   
+  }
+
+  //cookie slider
+  #sliding-popup {
+      background: url("../images/gradient.png") repeat-y scroll center center transparent;
+      }  
+      
+  #advanced-search-wrapper fieldset.collapsed .fieldset-legend {
+    background-image: url("../images/plus-icon.png");
+    padding-left: 20px;
+    background-position: 0 50%;
+  }
+
+  #advanced-search-wrapper fieldset .fieldset-legend {
+    background: url("../images/minus-icon.png") no-repeat;
+    padding-left: 20px;
+    background-position: 0 50%;
+  }    
+  
