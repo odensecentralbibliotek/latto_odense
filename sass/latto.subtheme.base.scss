@@ -195,6 +195,8 @@ ul {
         &i{
           font-size: 38px;
           padding-top: $default-spacing;
+          display: block;
+          padding-left: 35px;
         }
         &:hover {
           background: darken($navbar-text-color, 15%);
@@ -207,14 +209,26 @@ ul {
     }
   }
   
-  .addressfield-container-inline:after{
-    clear: none!important;
+.pane-menu-kviklinks ul li a{   
+    color: black;
+    text-decoration: none !important;
+    &i{
+      float: left;
+      }
+    }
+    
+  .ding-entity-button {
+    margin-left: $default-spacing / 2;
   }
   .country {
     padding-right: $default-spacing / 2;
   }
-  .libraries{
-    float: left;   
+  .field.field-name-field-ding-library-list-image.field-type-image.field-label-hidden {
+    float: left;
+    margin-right: 7.5px;
+  }
+  .ding-library-list-wrapper {
+    float: left;
   }
   #ding-library-front .panel-separator{
     height: $default-spacing;
@@ -229,7 +243,9 @@ ul {
   .opening-hours-week .days{ 
     padding: 0;
   }
-  
+  .opening-hours-week .times {
+    margin-right: $default-spacing /2!important;
+  }
   .library-list{
     list-style-type: none;
     margin: 0;
@@ -322,7 +338,7 @@ ul {
         }
       .form-text {
           width: 250px;
-          height: 20px;
+          height: 30px;
           }    
       .form-select {
           width: 250px;
@@ -331,14 +347,12 @@ ul {
         clear: left;
         float: left;
         padding: 3px 10px 2px;
-        text-align: right;
         width: 80px;
        }
        .form-type-select label  {
         clear: left;
         float: left;
         padding: 3px 10px 2px;
-        text-align: right;
         width: 80px;
        }
     }
@@ -394,9 +408,6 @@ ul {
     }
     article .grid-inner{
       background-color: $white;
-      max-width: 940px;
-      padding-left: 10px;
-      padding-right: 10px;
     }
     .ctools-collapsible-handle{
       background: $gray-light;
@@ -493,3 +504,26 @@ ul {
     background-position: 0 50%;
   }    
   
+.pane-similarterms-ding-content-tags ul li {
+  margin-bottom: $default-spacing / 2;
+}
+
+.fffW-widget {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+}
+
+.fffW-widget .fffW-title {
+  font-size: 16px !important;
+  margin: 10px 0 0 !important;
+}
+
+.fffW-widget p {
+  font-size: 12px !important;
+}
+
+#ding-library-front .rounded-corner {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
