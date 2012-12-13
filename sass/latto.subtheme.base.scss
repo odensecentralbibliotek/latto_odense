@@ -195,6 +195,8 @@ ul {
         &i{
           font-size: 38px;
           padding-top: $default-spacing;
+          display: block;
+          padding-left: 35px;
         }
         &:hover {
           background: darken($navbar-text-color, 15%);
@@ -207,7 +209,14 @@ ul {
     }
   }
   
-
+.pane-menu-kviklinks ul li a{   
+    color: black;
+    text-decoration: none !important;
+    &i{
+      float: left;
+      }
+    }
+    
   .ding-entity-button {
     margin-left: $default-spacing / 2;
   }

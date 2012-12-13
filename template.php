@@ -5,8 +5,8 @@
  */
 function latto_odense_preprocess_table(&$variables) {
   if (isset($variables['attributes']['class']) && is_string($variables['attributes']['class'])) {
-   // Convert classes to an array.
-   $variables['attributes']['class'] = explode(' ', $variables['attributes']['class']);
+    // Convert classes to an array.
+    $variables['attributes']['class'] = explode(' ', $variables['attributes']['class']);
   }
 
   $variables['attributes']['class'][] = 'table table-striped';
@@ -59,25 +59,23 @@ function latto_odense_menu_tree__menu_block__1($vars) {
   return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
 }
 
-
 function latto_odense_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
-  
+
   if ($element['#below']) {
-      $sub_menu = drupal_render($element['#below']);
+    $sub_menu = drupal_render($element['#below']);
   }
-     
+
   // Class attributes by menu_attributes
   if (isset($element['#localized_options']['attributes']['class'])) {
     $array_class = $element['#localized_options']['attributes']['class'];
-    $icon = '<br/>';
     foreach ($array_class as $i => $class) {
-      if (substr($class, 0, 5) == 'icon-' ) {
-        // Don't put the class on the <a> tag
-        unset ($element['#localized_options']['attributes']['class'][$i]);
-        // It should go on a <i> tag (FontAwesome)
-        $icon .= '<i class="' . $class . '"></i>';
+      if (substr($class, 0, 5) == 'icon-') {
+        // Don't put the class on the <a> tag!
+        unset($element['#localized_options']['attributes']['class'][$i]);
+        // It should go on a <i> tag (FontAwesome)!
+        $icon = '<i class="' . $class . '"></i>';
       }
     }
   }
@@ -91,18 +89,17 @@ function latto_odense_menu_link(array $variables) {
 }
 
 /**
-* Implements hook_menu_local_task()
-*
-* @param array $variables
-*
-* return string with html
-*/
-
+ * Implements hook_menu_local_task()
+ *
+ * @param array $variables
+ *
+ * return string with html
+ */
 function latto_odense_menu_local_tasks(&$variables) {
   $output = '';
   $has_access = user_access('access contextual links');
   if (!empty($variables['primary'])) {
-   
+
     // Only display contextual links if the user has the correct permissions enabled.
     // Otherwise, the default primary tabs will be used.
     $variables['primary']['#prefix'] = '<ul class="nav nav-tabs">';
@@ -138,7 +135,7 @@ function latto_odense_links__library_menu($variables) {
         // is a string.
         $heading = array(
           'text' => $heading,
-          // Set the default level of the heading. 
+          // Set the default level of the heading.
           'level' => 'h2',
         );
       }
@@ -166,7 +163,7 @@ function latto_odense_links__library_menu($variables) {
         $class[] = 'last';
       }
       if (isset($link['href']) && ($link['href'] == $_GET['q'] || ($link['href'] == '<front>' && drupal_is_front_page()))
-           && (empty($link['language']) || $link['language']->language == $language_url->language)) {
+          && (empty($link['language']) || $link['language']->language == $language_url->language)) {
         $class[] = 'active';
       }
       $output .= '<li' . drupal_attributes(array('class' => $class)) . '>';
@@ -195,6 +192,6 @@ function latto_odense_links__library_menu($variables) {
   }
 
   return $output;
-
 }
+
 ?>
