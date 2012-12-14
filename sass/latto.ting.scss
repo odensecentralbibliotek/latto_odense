@@ -112,9 +112,16 @@
     }    
   }
   
-#expand_less {
-    margin-left: $default-spacing;
-  }
+span#expand_more {
+  background: url(../images/plus-icon.png) no-repeat;
+  padding-left: 20px;
+  }  
+  
+span#expand_less {
+  background: url(../images/minus-icon.png) no-repeat;
+  margin-left: $default-spacing;
+  padding-left: 20px;
+}
   
   
 /* ==========================================================================
@@ -222,7 +229,7 @@ div.availability {
 }
 
 .availability.processed {
-  background-color: #ED1E88;
+  background-color: #40854B;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
@@ -244,7 +251,7 @@ div.availability {
   a {color: #FFF; }
 }
 .availability.available {
-  background-color: #0072BC;
+  background-color: #40854B;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
