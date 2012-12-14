@@ -10,10 +10,11 @@
  */
 ?>
 <div<?php if (!empty($css_id)) { print " id=\"$css_id\""; } ?>>
-    <div class="grid-row">
+  <div class="grid-row">
     <div class="grid-full">
       <div class="grid-inner"><?php print $content['grid_16_top_full']; ?></div>
     </div>
+  </div>
   <div class="grid-row">
     <div class="grid-12-left">
       <div class="grid-inner"><?php print $content['grid_12_left']; ?></div>
