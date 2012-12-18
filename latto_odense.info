@@ -9,6 +9,7 @@
 ;----------// Panels
   plugins[panels][layouts] = layouts/panels
 
+stylesheets[print][] = css/latto.print.styles.css
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 

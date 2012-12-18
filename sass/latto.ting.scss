@@ -169,13 +169,7 @@ span#expand_less {
     border-top: 0px;
     padding: 0px;
   }
-  
-//result number  
-.pane-ting-search {
-    border-bottom: 1px solid #999;
-    padding-bottom: $default-spacing / 2;
-  }
-         
+    
 /* ==========================================================================
   Search results
   ========================================================================== */        
@@ -228,14 +222,15 @@ div.availability {
        }
 }
 
+//availability & availability icons
+
 .availability.processed {
-  background-color: #40854B;
+  background-color: $gray;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
   a {color: #FFF; }
 }
-
 .availability.available.reservable {
   background-color: #40854B;
   padding: $default-spacing / 4;
@@ -258,6 +253,31 @@ div.availability {
   a {color: #FFF; }
 }
 
+.availability-legend {
+    border-top: none;
+    border-bottom: 1px solid $gray-light;
+}
+
+.availability-legend-item.available img {
+  background-color: #40854B;
+}
+
+.availability-legend-item.unavailable img {
+  background-color: $gray;
+}
+
+.availability-legend-item.on-loan img {
+  background-color: #F53;
+}
+div.unreservable {
+  display: none;
+}
+
+.availability-legend-item .availability-label {
+  font-size: 1em;
+}
+
+//
 
 .view-mode-collection-list .field-group-format {
     clear: none;
