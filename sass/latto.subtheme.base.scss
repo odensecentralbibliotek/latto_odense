@@ -85,7 +85,9 @@ header {
   .pane-page-content {
       padding: $default-spacing / 2;
     }
-  
+  .grid-content .grid-inner {
+    padding: 0px!important;
+}
   /* ==========================================================================
   Basic elements
   ========================================================================== */
