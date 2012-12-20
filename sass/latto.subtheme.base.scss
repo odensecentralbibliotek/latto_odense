@@ -82,13 +82,10 @@ header {
   Theme specific grid styling
   ========================================================================== */
   
-  .grid-content {
-    .grid-inner {
-      
+  .pane-page-content {
       padding: $default-spacing / 2;
     }
-  }
-   
+  
   /* ==========================================================================
   Basic elements
   ========================================================================== */
@@ -333,24 +330,27 @@ ul {
         border-bottom: 0px;
         font-size: 15px;
         }    
-      label {
-        display: inline;
-        }
+      a {
+         color: #000;   
+         }
+      .form-item {
+        width: 325px;
+        float: left;
+        height: 40px;
+        }  
       .form-text {
-          width: 250px;
+          width: 225px;
           height: 30px;
           }    
       .form-select {
-          width: 250px;
-          }        
-      .form-type-textfield label  {
-        clear: left;
+          width: 225px;   
+          }         
+      .form-type-textfield label  {     
         float: left;
         padding: 3px 10px 2px;
         width: 80px;
        }
-       .form-type-select label  {
-        clear: left;
+       .form-type-select label  {       
         float: left;
         padding: 3px 10px 2px;
         width: 80px;

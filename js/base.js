@@ -8,6 +8,8 @@
      count = $('.ting-search-amount-block em:eq(2)').clone().addClass('navcount');
      $('.nav li a').first().append(count);
     }
+    $("a.infomedia_group").addClass("btn");
+    $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');   
 });
 
 })(jQuery);

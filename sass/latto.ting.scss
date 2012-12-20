@@ -222,6 +222,26 @@ div.availability {
        }
 }
 
+//periodicals
+
+.field-name-ding-periodical-issues {
+  margin-top: $default-spacing;
+}
+
+li.ding-periodical-foldable {
+  padding-top: $default-spacing;  
+}
+
+.ding-periodical-fold {
+  cursor: pointer;
+}
+.ding-periodical-fold:hover {
+  text-decoration: underline;
+}
+
+
+
+
 //availability & availability icons
 
 .availability.processed {
@@ -275,6 +295,7 @@ div.unreservable {
 
 .availability-legend-item .availability-label {
   font-size: 1em;
+  font-weight: normal;
 }
 
 //
