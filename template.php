@@ -18,7 +18,22 @@ function latto_odense_preprocess_table(&$variables) {
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_block_form':
-      $form['actions']['#suffix'] = '<div class="clearfix"></div>';
+      $path_parts = explode('/', drupal_get_path_alias($_GET['q']));
+      /* @var $path_parts type */
+      if ($path_parts[1] == 'ting') {
+        $default_value = 0;
+      }
+      else {
+        $default_value = 1;
+      }
+      $form['search_type'] = array(
+        '#type' => 'radios',
+        '#default_value' => $default_value,
+        '#options' => array(
+          '0' => t('Materialer'),
+          '1' => t('Hjemmeside')),
+      );
+      $form['actions']['submit']['#submit'][] = 'search_form_alter_submit';
       break;
 
     case 'user_login_block':
@@ -54,6 +69,23 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+/**
+ * Implements callback search_form_alter_submit().
+ *
+ */
+function search_form_alter_submit($form, &$form_state) {
+
+  if ($form_state['input']['search_type'] == '0') {
+
+    $form_state['redirect'] = 'search/ting/' . trim($form_state['values']['search_block_form']);
+    $path = $form_state['redirect'];
+  }
+  elseif ($form_state['input']['search_type'] == '1') {
+    $form_state['redirect'] = 'search/node/' . trim($form_state['values']['search_block_form']);
+    $path = $form_state['redirect'];
+  }
+  drupal_goto($path);
+}
 /**
  * Implements theme_menu_tree().
  *
