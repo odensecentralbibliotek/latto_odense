@@ -29,7 +29,7 @@ header {
     margin-right: $default-spacing;
     margin-left: $default-spacing / 2;
     img {
-      width: 60%; 
+      max-width: 40%; 
     } }
     .site-slogan {
       color: $black;
@@ -51,14 +51,6 @@ header {
       position: relative;
       background: $theme-secondary-color;
     } 
-  }
-  
-  .form-item, .form-actions {
-    background-color: transparent;
-    border-top: 0px solid transparent;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
   }
   
   .rs-carousel-tabs ul li.active {
@@ -319,11 +311,26 @@ ul {
         width: 80%;
         }
       .btn {
-        height: 40px;
-        right: 5%;
+        height: 40px!important;
+        top: 30px!important;
+        right: 5%!important;
       }
     }
-    
+   .form-item, .form-actions {
+    background-color: transparent;
+    border-top: 0px solid transparent;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #edit-search-type .form-item-search-type{
+  float: left;
+  margin-right: $default-spacing;
+  } 
+  
+  .form-text{
+    max-width: 90%;
+    }
     //advanced search
         
     #advanced-search-wrapper {
@@ -385,7 +392,7 @@ ul {
     }
     .subjects.content{
       padding-top: $default-spacing /2;
-    }
+}
     .pane-system-user-menu {
       background: $theme-tertiary-color;
       @include single-box-shadow;

@@ -26,8 +26,10 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       else {
         $default_value = 0;
       }
+      $form['advanced-search-wrapper']['#weight'] = -2;
       $form['search_type'] = array(
         '#type' => 'radios',
+        '#weight' => -1,
         '#default_value' => $default_value,
         '#options' => array(
           '0' => t('Materialer'),
