@@ -468,15 +468,15 @@ ul {
 
     .pane-user-login {
       min-height: 135px;
-      #edit-name {
+      .form-item-name {
         width: 90%;
         float: left;
         }
-      #edit-pass {
+      .form-item-pass {
         width: 58%;
         float: left;
         }
-      #edit-actions--2 {
+      .form-actions {
         width: 40px;
         float: left;
         margin-left: $default-spacing / 2;
