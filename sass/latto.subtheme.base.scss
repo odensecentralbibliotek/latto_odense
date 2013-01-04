@@ -206,8 +206,12 @@ ul {
     &i{
       float: left;
       }
-    }
-    
+    } 
+.pane-menu-kviklinks .pane-title {
+    background: none repeat scroll 0 0 #CCCCCC;
+    padding-left: $default-spacing /2;
+   } 
+   
   .ding-entity-button {
     margin-left: $default-spacing / 2;
   }
@@ -308,7 +312,7 @@ ul {
         width: 100%;
         }.form-text {
           height: 40px;
-          width: 90%;
+          width: 80%;
           -webkit-border-radius: 4px 0px 0px 4px;
           -moz-border-radius: 4px 0px 0px 4px;
           border-radius: 4px 0px 0px 4px;
@@ -329,12 +333,7 @@ ul {
   #edit-search-type .form-item-search-type{
   float: left;
   margin-right: $default-spacing;
-  } 
-  
-  .form-text{
-    max-width: 90%;
-    }
-    
+  }    
   
   html.js fieldset.collapsed .fieldset-legend, html.js fieldset.collapsible .fieldset-legend {
     background-color: whiteSmoke;
@@ -345,6 +344,7 @@ ul {
     background-image: linear-gradient(to bottom, white, #E6E6E6);
     background-position: 0px 50%;
     padding: 0px 5px 0px 0px;
+    margin-right: 15px;
   }  
     
   .search-wrapper .extendsearch-advanced {
@@ -390,9 +390,6 @@ ul {
     
     .search-wrapper .btn {
       top: 31px;
-      -webkit-border-radius: 0px 4px 4px 0px;
-      -moz-border-radius: 0px 4px 4px 0px;
-      border-radius: 0px 4px 4px 0px;
     }
 
     html.js fieldset.collapsible .fieldset-legend a{
@@ -400,10 +397,6 @@ ul {
       background-position: right;
     }
     
-    html.js fieldset.collapsed .fieldset-legend a{
-      background: url(../../../../../misc/menu-collapsed.png) no-repeat;
-      background-position: right;
-    }
     
     //advanced search
         
@@ -474,11 +467,11 @@ ul {
     .pane-user-login {
       min-height: 135px;
       #edit-name {
-        width: 250px;
+        width: 90%;
         float: left;
         }
       #edit-pass {
-        width: 130px;
+        width: 58%;
         float: left;
         }
       #edit-actions--2 {
@@ -491,13 +484,6 @@ ul {
         //-moz-border-radius: 0px 4px 4px 0px;
         //border-radius: 0px 4px 4px 0px;
       }  
-    }
-  
-    .pane-user-login .pane-content {
-      padding-top: 13px;
-      .form-text {
-        width: 100%;
-      }    
     }
 
     .search-login .pane-system-user-menu {
@@ -606,19 +592,7 @@ ul {
   //cookie slider
   #sliding-popup {
       background: url("../images/gradient.png") repeat-y scroll center center transparent;
-      }  
-      
-  #advanced-search-wrapper fieldset.collapsed .fieldset-legend {
-    background-image: url("../images/plus-icon.png");
-    padding-left: 20px;
-    background-position: 0 50%;
-  }
-
-  #advanced-search-wrapper fieldset .fieldset-legend {
-    background: url("../images/minus-icon.png") no-repeat;
-    padding-left: 20px;
-    background-position: 0 50%;
-  }    
+      }     
   
 .pane-similarterms-ding-content-tags ul li {
   margin-bottom: $default-spacing / 2;
