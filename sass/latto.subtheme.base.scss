@@ -294,7 +294,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;     
-      min-height: 160px;
+      min-height: 135px;
     }
     .search-wrapper{
       @include rgba-background($theme-tertiary-color, 1);
@@ -303,17 +303,20 @@ ul {
         margin-left: $default-spacing;
       }
       form {
-        margin-left: $default-spacing;
+        margin: 0px;
         position: relative;
-        width: auto;
+        width: 100%;
         }.form-text {
-        height: 40px;
-        width: 80%;
+          height: 40px;
+          width: 90%;
+          -webkit-border-radius: 4px 0px 0px 4px;
+          -moz-border-radius: 4px 0px 0px 4px;
+          border-radius: 4px 0px 0px 4px;
         }
       .btn {
-        height: 40px!important;
-        top: 30px!important;
-        right: 5%!important;
+        height: 38px;
+        top: 34px;
+        right: 0;
       }
     }
    .form-item, .form-actions {
@@ -331,39 +334,106 @@ ul {
   .form-text{
     max-width: 90%;
     }
+    
+  
+  html.js fieldset.collapsed .fieldset-legend, html.js fieldset.collapsible .fieldset-legend {
+    background-color: whiteSmoke;
+    background-image: -moz-linear-gradient(top, white, #E6E6E6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+    background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+    background-image: -o-linear-gradient(top, white, #E6E6E6);
+    background-image: linear-gradient(to bottom, white, #E6E6E6);
+    background-position: 0px 50%;
+    padding: 0px 5px 0px 0px;
+  }  
+    
+  .search-wrapper .extendsearch-advanced {
+    margin: 0;
+    position: static;
+    padding-top: $default-spacing / 2;
+    span.fieldset-legend {
+      height: 38px;
+      padding: 0;
+      position: absolute;
+      right: 70px;
+      top: 31px;
+      width: 150px;
+    }
+    legend {
+      margin: 0px;
+      border: 0px;
+    }
+    .fieldset-wrapper {
+      left: -20px;
+      padding: 0 10px 0 13px;
+      position: relative;;
+      width: 100%;
+      z-index: 50;
+    }
+    .fieldset-legend {
+      a {
+        display: block;
+        height: 40px;
+        font-size: 13px;
+        color: #555;
+        font-weight: 400px;
+        border-left: 1px solid #CCC;
+        vertical-align: middle;
+        padding-left: $default-spacing;
+        line-height: 38px;
+      }
+      a:hover {
+        text-decoration: none;    
+      }
+  }
+}
+    
+    .search-wrapper .btn {
+      top: 31px;
+      -webkit-border-radius: 0px 4px 4px 0px;
+      -moz-border-radius: 0px 4px 4px 0px;
+      border-radius: 0px 4px 4px 0px;
+    }
+
+    html.js fieldset.collapsible .fieldset-legend a{
+      background: url(../../../../../misc/menu-expanded.png) no-repeat;
+      background-position: right;
+    }
+    
+    html.js fieldset.collapsed .fieldset-legend a{
+      background: url(../../../../../misc/menu-collapsed.png) no-repeat;
+      background-position: right;
+    }
+    
     //advanced search
         
-    #advanced-search-wrapper {
-      legend {
-        line-height: 20px;
-        margin-bottom: $default-spacing / 2;
-        border-bottom: 0px;
-        font-size: 15px;
-        }    
-      a {
-         color: #000;   
+    .extendsearch-advanced {
+
+      .fieldset-wrapper {   
+
+        .form-item {
+          width: 50%;
+          float: left;
+          height: 40px;
+          }  
+        .form-text {
+            width: 235px;
+            height: 30px;
+            }    
+        .form-select {
+            width: 235px;
+            height: 30px;
+            }         
+        .form-type-textfield label  {     
+          float: left;
+          padding: 3px 10px 2px;
+          width: 80px;
          }
-      .form-item {
-        width: 325px;
-        float: left;
-        height: 40px;
-        }  
-      .form-text {
-          width: 225px;
-          height: 30px;
-          }    
-      .form-select {
-          width: 225px;   
-          }         
-      .form-type-textfield label  {     
-        float: left;
-        padding: 3px 10px 2px;
-        width: 80px;
-       }
-       .form-type-select label  {       
-        float: left;
-        padding: 3px 10px 2px;
-        width: 80px;
+         .form-type-select label  {       
+          float: left;
+          padding: 3px 10px 2px;
+          width: 80px;
+         }
        }
     }
         
@@ -393,11 +463,47 @@ ul {
     .subjects.content{
       padding-top: $default-spacing /2;
 }
+
+    //user menu
     .pane-system-user-menu {
       background: $theme-tertiary-color;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     }
+
+    .pane-user-login {
+      min-height: 135px;
+      #edit-name {
+        width: 250px;
+        float: left;
+        }
+      #edit-pass {
+        width: 130px;
+        float: left;
+        }
+      #edit-actions--2 {
+        width: 40px;
+        float: left;
+        margin-left: $default-spacing / 2;
+        }
+      .btn-info {
+        //-webkit-border-radius: 0px 4px 4px 0px;
+        //-moz-border-radius: 0px 4px 4px 0px;
+        //border-radius: 0px 4px 4px 0px;
+      }  
+    }
+  
+    .pane-user-login .pane-content {
+      padding-top: 13px;
+      .form-text {
+        width: 100%;
+      }    
+    }
+
+    .search-login .pane-system-user-menu {
+      min-height: 135px;
+    }  
+    
     .pane-ding-user-frontend-ding-user-loan-number {
       background: $theme-tertiary-color;
       @include single-box-shadow;
@@ -438,7 +544,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;    
-      min-height: 160px;
+      min-height: 135px;
     }
     #edit-profile-provider-alma-field-alma-phone-id{
       display:none;
