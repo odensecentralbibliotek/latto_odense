@@ -10,7 +10,6 @@
     }
     $("a.infomedia_group").addClass("btn");
     $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
-    $("#edit-advanced").addClass("extendsearch-advanced");
 });
 
 })(jQuery);

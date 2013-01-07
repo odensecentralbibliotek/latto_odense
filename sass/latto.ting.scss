@@ -237,28 +237,28 @@ li.ding-periodical-foldable {
 //availability & availability icons
 
 .availability.processed {
-  background-color: $gray;
+  background-color: #006699;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
   a {color: #FFF; }
 }
 .availability.available.reservable {
-  background-color: #40854B;
+  background-color: #66CC00;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
   a {color: #FFF; }  
 }
 .availability.reservable {
-  background-color: #F53;
+  background-color: #CC0000;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
   a {color: #FFF; }
 }
 .availability.available {
-  background-color: #40854B;
+  background-color: #66CC00;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
@@ -271,15 +271,15 @@ li.ding-periodical-foldable {
 }
 
 .availability-legend-item.available img {
-  background-color: #40854B;
+  background-color: #66CC00;
 }
 
 .availability-legend-item.unavailable img {
-  background-color: $gray;
+  background-color: #006699;
 }
 
 .availability-legend-item.on-loan img {
-  background-color: #F53;
+  background-color: #CC0000;
 }
 div.unreservable {
   display: none;
