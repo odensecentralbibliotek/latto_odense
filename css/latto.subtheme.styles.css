@@ -657,17 +657,17 @@ input#edit-search-block-form--2.spinner {
   min-height: 135px;
 }
 /* line 471, ../sass/latto.subtheme.base.scss */
-.pane-user-login #edit-name {
+.pane-user-login .form-item-name input {
   width: 90%;
   float: left;
 }
 /* line 475, ../sass/latto.subtheme.base.scss */
-.pane-user-login #edit-pass {
+.pane-user-login .form-item-pass input {
   width: 58%;
   float: left;
 }
 /* line 479, ../sass/latto.subtheme.base.scss */
-.pane-user-login #edit-actions--2 {
+.pane-user-login .form-actions {
   width: 40px;
   float: left;
   margin-left: 7.5px;

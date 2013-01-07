@@ -468,11 +468,11 @@ ul {
 
     .pane-user-login {
       min-height: 135px;
-      .form-item-name {
+      .form-item-name input {
         width: 90%;
         float: left;
         }
-      .form-item-pass {
+      .form-item-pass input {
         width: 58%;
         float: left;
         }
