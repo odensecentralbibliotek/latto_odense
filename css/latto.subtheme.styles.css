@@ -60,7 +60,7 @@ btn: text
 */
 /* line 14, ../sass/latto.subtheme.base.scss */
 body {
-  background: url("../images/fabric_background.png") #eeeeee;
+  background: url("../images/Baggrund_1920x1231_sh_20.jpg") #eeeeee fixed no-repeat;
 }
 
 /* line 18, ../sass/latto.subtheme.base.scss */
@@ -447,7 +447,7 @@ Search pane styling
 }
 
 /* line 299, ../sass/latto.subtheme.base.scss */
-.panel-pane.pane-block.pane-search-form {
+.panel-pane.pane-search-form {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
@@ -1306,7 +1306,7 @@ li.ding-periodical-foldable {
 
 /* line 239, ../sass/latto.ting.scss */
 .availability.processed {
-  background-color: #006699;
+  background-color: #0077A2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
@@ -1318,7 +1318,7 @@ li.ding-periodical-foldable {
 
 /* line 246, ../sass/latto.ting.scss */
 .availability.available.reservable {
-  background-color: #66CC00;
+  background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
@@ -1342,7 +1342,7 @@ li.ding-periodical-foldable {
 
 /* line 260, ../sass/latto.ting.scss */
 .availability.available {
-  background-color: #66CC00;
+  background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
@@ -1360,12 +1360,12 @@ li.ding-periodical-foldable {
 
 /* line 273, ../sass/latto.ting.scss */
 .availability-legend-item.available img {
-  background-color: #66CC00;
+  background-color: #40854B;
 }
 
 /* line 277, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
-  background-color: #006699;
+  background-color: #0077A2;
 }
 
 /* line 281, ../sass/latto.ting.scss */

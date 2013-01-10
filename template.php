@@ -17,7 +17,7 @@ function latto_odense_preprocess_table(&$variables) {
  */
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
-    case 'search_block_form':
+    case 'search_form':
       $path_parts = explode('/', drupal_get_path_alias($_GET['q']));
       /* @var $path_parts type */
       if (isset($path_parts[1]) && $path_parts[1] == 'node') {
@@ -26,7 +26,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       else {
         $default_value = 0;
       }
-      $form['advanced-search-wrapper']['#weight'] = -2;
+      $form['advanced']['#weight'] = 2;
       $form['search_type'] = array(
         '#type' => 'radios',
         '#weight' => -1,
@@ -35,7 +35,13 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
           '0' => t('Materialer'),
           '1' => t('Hjemmeside')),
       );
-      $form['actions']['submit']['#submit'][] = 'search_form_alter_submit';
+      $form['basic']['submit']['#submit'][] = 'search_form_alter_submit';
+      unset($form['basic']['keys']['#title']);
+      $form['basic']['keys']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
+      $form['basic']['keys']['#attributes']['placeholder'] = t('Søg efter materialer fra biblioteket..');
+      $form['basic']['submit']['#attributes']['class'][] = 'btn';
+      $form['basic']['submit']['#attributes']['class'][] = 'btn-large';
+      $form['basic']['submit']['#attributes']['class'][] = 'btn-info';
       break;
 
     case 'user_login_block':
@@ -81,7 +87,7 @@ function search_form_alter_submit($form, &$form_state) {
     return ting_search_submit($form, $form_state);
   }
   elseif ($form_state['input']['search_type'] == '1') {
-    $form_state['redirect'] = 'search/node/' . trim($form_state['values']['search_block_form']);
+    $form_state['redirect'] = 'search/node/' . trim($form_state['values']['keys']);
     return;
   }
 }

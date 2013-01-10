@@ -237,14 +237,14 @@ li.ding-periodical-foldable {
 //availability & availability icons
 
 .availability.processed {
-  background-color: #006699;
+  background-color: #0077A2;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
   a {color: #FFF; }
 }
 .availability.available.reservable {
-  background-color: #66CC00;
+  background-color: #40854B;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
@@ -258,7 +258,7 @@ li.ding-periodical-foldable {
   a {color: #FFF; }
 }
 .availability.available {
-  background-color: #66CC00;
+  background-color: #40854B;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
   color: #FFF;
@@ -271,11 +271,11 @@ li.ding-periodical-foldable {
 }
 
 .availability-legend-item.available img {
-  background-color: #66CC00;
+  background-color: #40854B;
 }
 
 .availability-legend-item.unavailable img {
-  background-color: #006699;
+  background-color: #0077A2;
 }
 
 .availability-legend-item.on-loan img {

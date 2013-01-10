@@ -12,7 +12,7 @@
 @import 'compass/css3/box-shadow';
 
 body {
-  background: $theme-background;
+  background: $theme-background fixed no-repeat;
 }
 
 header {
@@ -296,7 +296,7 @@ ul {
   .search-login .grid-inner{
         margin-bottom: $default-spacing;
     }
-  .panel-pane.pane-block.pane-search-form {
+  .panel-pane.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;     

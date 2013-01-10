@@ -18,7 +18,7 @@
  *   removed search-inner-wrapper
  */
 ?>
-<div class="search-wrapper <?php print $classes; ?>" <?php print $id; ?>>
+<div class="search-wrapper  <?php print $classes; ?>" <?php print $id; ?>>
   <div>
     <?php if ($admin_links): ?>
       <?php print $admin_links; ?>
