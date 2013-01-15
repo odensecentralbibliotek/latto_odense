@@ -26,7 +26,6 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       else {
         $default_value = 0;
       }
-      $form['advanced']['#weight'] = 2;
       $form['search_type'] = array(
         '#type' => 'radios',
         '#weight' => -1,
@@ -39,9 +38,14 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       unset($form['basic']['keys']['#title']);
       $form['basic']['keys']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
       $form['basic']['keys']['#attributes']['placeholder'] = t('Søg efter materialer fra biblioteket..');
+      $form['basic']['adv-shortcut']['#prefix'] = '<div class="adv-button" onClick=\'jQuery(".search-wrapper .fieldset-title").click()\'><a href="#">';
+      $form['basic']['adv-shortcut']['#markup'] = 'Avanceret søgning';
+      $form['basic']['adv-shortcut']['#suffix'] = '</a></div>';
+      $form['basic']['adv-shortcut']['#weight'] = -1;
       $form['basic']['submit']['#attributes']['class'][] = 'btn';
       $form['basic']['submit']['#attributes']['class'][] = 'btn-large';
       $form['basic']['submit']['#attributes']['class'][] = 'btn-info';
+      $form['basic']['submit']['#weight'] = -2;
       break;
 
     case 'user_login_block':
