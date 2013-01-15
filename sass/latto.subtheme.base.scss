@@ -174,7 +174,9 @@ ul {
         margin: 0;
         padding: 0;
       }
-      
+      &:hover {
+        background: darken($navbar-text-color, 15%);
+      }
       a {
         border-left: 1px solid lighten($navbar-background-color, 3%);
         color: $navbar-text-color;
@@ -183,9 +185,8 @@ ul {
         min-width: 90px;
         padding: $default-spacing;
         text-decoration: none;
-        .active {
-          border-left: 1px solid lighten($navbar-background-color, 3%);
-          background: $gray-light;
+        &.active {
+          background-color: $gray-light;
         }
         i{
           font-size: 38px;
@@ -193,9 +194,7 @@ ul {
           display: block;
           padding-left: 35px;
         }
-        :hover {
-          background: darken($navbar-text-color, 15%);
-        }
+        
       }
     }
   }
@@ -589,12 +588,21 @@ ul {
       padding: $default-spacing / 2;
     }
     
-    /* NEWS */
+    /* NEWS & EVENTS */
     
-    ul.promoted li {
+    ul.promoted li.last {
       border-bottom: 1px solid #E7E7E7;
       padding-bottom: 15px;
       margin-bottom: 15px;
+    }
+    
+    div.subheading span {
+      padding-right: $default-spacing / 4;
+      padding-left: $default-spacing / 4;
+    }
+    
+    div.view-ding-event .date {
+      padding-right: $default-spacing;     
     }
     
     /* ==========================================================================
