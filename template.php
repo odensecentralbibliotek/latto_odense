@@ -1,5 +1,49 @@
 <?php
 /**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
+
+  $account = $form_state['user'];
+
+  $form['mail'] = array(
+    '#title' => t('email'),
+    '#type' => 'textfield',
+    '#default_value' => $account->mail,
+    '#weight' => 0,
+  );
+
+  $updates = array(
+    'mail' => $form['mail']['#default_value'],
+  );
+
+  user_save($account, $updates);
+}
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function latto_odense_menu_alter(&$items, $account) {
+
+  unset($items['user/%user/edit']);
+  $items['user/%user/edit']['type'] = MENU_CALLBACK;
+  
+  $items['user/%user/provider_alma'] = array(
+  'title' => 'Edit user profile',
+  'page callback' => 'latto_odense_redirect_add_listing',
+  'access callback' => TRUE,
+  'type' => MENU_LOCAL_TASK
+  );
+  return $items;
+}
+/**
+* Page callback which redirects to the /edit/provider_alma
+*/
+function latto_odense_redirect_add_listing() {
+$path_parts = explode('/', drupal_get_path_alias($_GET['q']));
+drupal_goto($path_parts[0].'/'.$path_parts[1]. '/edit/provider_alma');
+}
+/**
  * Implements hook_preprocess_table().
  * adds classes table table-striped
  */
@@ -49,10 +93,12 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'user_login_block':
+      $form['name']['#prefix']= '<i class="icon-user"></i>';
       unset($form['name']['#title']);
       $form['name']['#attributes']['placeholder'] = t('Cpr- eller kortnummer:');
       $form['name']['#type'] = 'password';
       $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
+      $form['pass']['#prefix']= '<i class="icon-lock"></i>';
       unset($form['pass']['#title']);
       $form['links']['#markup'] = "";
       $form['actions']['submit']['#attributes']['class'][] = 'btn';

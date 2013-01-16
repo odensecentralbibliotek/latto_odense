@@ -50,6 +50,8 @@ header {
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       position: relative;
       background: $theme-secondary-color;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
     } 
   }
   
@@ -302,6 +304,8 @@ ul {
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;     
       min-height: 135px;
+      opacity: 0.8;
+      filter: alpha(opacity=80);
     }
     .search-wrapper{
       @include rgba-background($theme-tertiary-color, 1);
@@ -453,6 +457,11 @@ ul {
 
     .pane-user-login {
       min-height: 141px;
+      @include single-box-shadow;
+      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      background: $theme-tertiary-color;    
+      opacity: 0.8;
+      filter: alpha(opacity=80);
       .form-item-name input {
         width: 90%;
         float: left;
@@ -472,7 +481,26 @@ ul {
         //border-radius: 0px 4px 4px 0px;
       }  
     }
-
+i.icon-user {
+    display: inline-table;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 3;
+}
+i.icon-lock {
+    display: inline-table;
+    float: left;
+    margin-left: 5px;
+    margin-top: 42px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 3;
+}
     .search-login .pane-system-user-menu {
       min-height: 135px;
     }  
@@ -513,12 +541,7 @@ ul {
     /* ==========================================================================
     Login pane styling
     ========================================================================== */
-    .panel-pane.pane-block.pane-user-login {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;    
-      min-height: 135px;
-    }
+
     #edit-profile-provider-alma-field-alma-phone-id{
       display:none;
       }
@@ -554,7 +577,9 @@ ul {
       padding: 0.4em 0.3em;
       color: #ccc;
     }
-    
+    .pane-user-login input[placeholder]{
+      padding-left: 17px;
+      }
     /* html5 placeholder support */
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
       color:#ccc;
