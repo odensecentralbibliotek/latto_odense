@@ -27,12 +27,12 @@ function latto_odense_menu_alter(&$items, $account) {
 
   unset($items['user/%user/edit']);
   $items['user/%user/edit']['type'] = MENU_CALLBACK;
-  
+
   $items['user/%user/provider_alma'] = array(
-  'title' => 'Edit user profile',
-  'page callback' => 'latto_odense_redirect_add_listing',
-  'access callback' => TRUE,
-  'type' => MENU_LOCAL_TASK
+    'title' => 'Edit user profile',
+    'page callback' => 'latto_odense_redirect_add_listing',
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
   );
   return $items;
 }
@@ -41,7 +41,7 @@ function latto_odense_menu_alter(&$items, $account) {
 */
 function latto_odense_redirect_add_listing() {
 $path_parts = explode('/', drupal_get_path_alias($_GET['q']));
-drupal_goto($path_parts[0].'/'.$path_parts[1]. '/edit/provider_alma');
+drupal_goto('user/'.$path_parts[1]. '/edit/provider_alma');
 }
 /**
  * Implements hook_preprocess_table().

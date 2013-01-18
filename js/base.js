@@ -13,7 +13,7 @@
     
     $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
     
-    $(".pane-search-form input[type=submit], .ui-corner-all").click(function(){     
+    $(".pane-search-form input[type=submit], .ui-corner-all, .pager li").click(function(){     
       $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
     });
   });
