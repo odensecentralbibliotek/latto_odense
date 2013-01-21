@@ -23,7 +23,7 @@
     <span class="label">(<?php print $bookmark_count; ?>)</span>
   </div>
   <div>
-    <span><?php print l(t('My account'), 'user/'); ?></span>
+    <span><?php print l(t('My profile'), 'user/'); ?></span>
   </div>
   <div>
     <span><?php print l(t('Logout'), 'user/logout/'); ?></span>
