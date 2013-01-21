@@ -616,7 +616,7 @@ i.icon-lock {
     
     /* NEWS & EVENTS */
     
-    ul.promoted li.last {
+    ul.promoted li.list-item.last {
       border-bottom: 1px solid #E7E7E7;
       padding-bottom: 15px;
       margin-bottom: 15px;
@@ -626,11 +626,10 @@ i.icon-lock {
       padding-right: $default-spacing / 4;
       padding-left: $default-spacing / 4;
     }
-    
-    div.view-ding-event .date {
-      padding-right: $default-spacing;     
+ 
+  .view-display-id-ding_event_simple_list .heading {
+      padding-left: $default-spacing;  
     }
-    
     /* ==========================================================================
     Content pane styling
     ========================================================================== */
