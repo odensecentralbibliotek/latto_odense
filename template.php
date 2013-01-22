@@ -11,6 +11,7 @@ function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
     '#type' => 'textfield',
     '#default_value' => $account->mail,
     '#weight' => 0,
+    '#required' => TRUE,
   );
 
   $updates = array(

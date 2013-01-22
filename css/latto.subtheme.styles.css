@@ -1488,6 +1488,55 @@ div.unreservable {
   padding-left: 30px;
 }
 
+/* line 313, ../sass/latto.ting.scss */
+.pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a {
+  border-right: 1px solid #112338;
+  margin-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+/* line 319, ../sass/latto.ting.scss */
+.pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
+  border-right: medium none;
+}
+
+/* line 323, ../sass/latto.ting.scss */
+.search-ting-cover, .ting-cover {
+  position: relative;
+  width: 10%;
+  min-height: 100px;
+  z-index: 1;
+}
+/* line 332, ../sass/latto.ting.scss */
+.search-ting-cover:after, .ting-cover:after {
+  content: "";
+  background: url("../images/image-missing.png");
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100px;
+}
+
+/* line 348, ../sass/latto.ting.scss */
+.ting-cover {
+  margin-right: 15px;
+}
+
+/* line 353, ../sass/latto.ting.scss */
+.pane-search-result .search-results .list .list-item {
+  background-color: #F3F3F3;
+  padding: 15px;
+}
+
 /* line 1, ../sass/latto.logged.in.scss */
 .profile label {
   display: inline-block;

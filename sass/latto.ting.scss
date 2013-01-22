@@ -310,3 +310,47 @@ div.unreservable {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
   }
+.pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a{
+  border-right: 1px solid #112338;
+  margin-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+.pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
+    border-right: medium none;
+}
+
+.search-ting-cover {
+  @extend .pull-left;
+
+  position: relative;
+  width: 10%;
+  min-height: 100px;
+  z-index: 1;
+
+  // Insert a background with image missing icon
+  &:after {
+    content: "";
+    background: url("../images/image-missing.png");
+    @include opacity(0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 100px;
+  }
+}
+.ting-cover {
+        @extend .search-ting-cover;
+        margin-right: $default-spacing;
+      }
+
+.pane-search-result .search-results .list .list-item {
+    background-color: #F3F3F3;
+    padding: $default-spacing;
+}
