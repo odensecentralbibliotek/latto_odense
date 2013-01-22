@@ -445,10 +445,16 @@ ul {
     //
     
     ul.ui-autocomplete { 
-      max-width: 100%!important;
+      max-width: 432px!important;
       z-index:100;
     }
-    input#edit-search-block-form--2.spinner {
+      
+  .ui-menu .ui-menu-item a{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+        input#edit-search-block-form--2.spinner {
       background-position: 97%!important;
     }
     .search-results .content{
