@@ -157,7 +157,7 @@ span#expand_less {
   }      
 
 //query string
-#search-query-display  {
+#search-query-display {
     font-size: 1em;
     border-top: 0px;
     padding: 0px;
@@ -354,7 +354,7 @@ div.unreservable {
     background-color: #F3F3F3;
     padding: $default-spacing;
 }
-.view-mode-collection-list .search-ting-cover{
+.view-mode-collection-list .search-ting-cover{   
     
     &:after{
     right: $default-spacing;
@@ -364,6 +364,9 @@ div.unreservable {
   margin-right: 0;
   }
 
-.ting-cover-style-ding_large.ting-cover-processed{
-  width: 25%;
-  }
+.pane-ting-object {
+  .ting-cover {
+   width: 23%;
+    min-height: 250px;
+}
+}
