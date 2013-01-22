@@ -1508,7 +1508,7 @@ div.unreservable {
   min-height: 100px;
   z-index: 1;
 }
-/* line 332, ../sass/latto.ting.scss */
+/* line 331, ../sass/latto.ting.scss */
 .search-ting-cover:after, .ting-cover:after {
   content: "";
   background: url("../images/image-missing.png");
@@ -1526,15 +1526,30 @@ div.unreservable {
   min-height: 100px;
 }
 
-/* line 348, ../sass/latto.ting.scss */
+/* line 347, ../sass/latto.ting.scss */
 .ting-cover {
   margin-right: 15px;
 }
 
-/* line 353, ../sass/latto.ting.scss */
+/* line 352, ../sass/latto.ting.scss */
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
+}
+
+/* line 358, ../sass/latto.ting.scss */
+.view-mode-collection-list .search-ting-cover:after, .view-mode-collection-list .ting-cover:after {
+  right: 15px;
+}
+
+/* line 362, ../sass/latto.ting.scss */
+.view-mode-collection-list .ting-cover {
+  margin-right: 0;
+}
+
+/* line 366, ../sass/latto.ting.scss */
+.ting-cover-style-ding_large.ting-cover-processed {
+  width: 100px;
 }
 
 /* line 1, ../sass/latto.logged.in.scss */

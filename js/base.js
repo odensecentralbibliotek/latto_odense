@@ -10,6 +10,7 @@
       $('.nav li a').first().append(count);
     }
     $("a.infomedia_group").addClass("btn");
+    $("#edit-submit").css('display', '');
     
     $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
     

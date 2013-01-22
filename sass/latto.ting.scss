@@ -322,7 +322,6 @@ div.unreservable {
 
 .search-ting-cover {
   @extend .pull-left;
-
   position: relative;
   width: 10%;
   min-height: 100px;
@@ -354,3 +353,16 @@ div.unreservable {
     background-color: #F3F3F3;
     padding: $default-spacing;
 }
+.view-mode-collection-list .search-ting-cover{
+    
+    &:after{
+    right: $default-spacing;
+  }
+  }
+.view-mode-collection-list .ting-cover{
+  margin-right: 0;
+  }
+
+.ting-cover-style-ding_large.ting-cover-processed{
+  width: 100px;
+  }
