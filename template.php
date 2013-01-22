@@ -7,7 +7,7 @@ function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
   $account = $form_state['user'];
 
   $form['mail'] = array(
-    '#title' => t('email'),
+    '#title' => t('Email'),
     '#type' => 'textfield',
     '#default_value' => $account->mail,
     '#weight' => 0,

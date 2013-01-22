@@ -1,7 +1,9 @@
 (function($){
  
   $(document).ready(function($) {
-   
+    //choose all checkbox on user status list
+    var alle = $('.select-all input[type=checkbox]').attr('title');
+    $('<span> '+alle+'</span>').appendTo('.select-all');
     //$('.search-login .grid-inner').equalize('height');
     $('footer .grid-inner').equalize('height');
     $('input[placeholder],textarea[placeholder]').placeholder();
