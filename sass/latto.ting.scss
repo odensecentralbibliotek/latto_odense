@@ -349,7 +349,10 @@ div.unreservable {
         @extend .search-ting-cover;
         margin-right: $default-spacing;
       }
-
+div[class*='ting-cover-'] {
+      float: left;
+      padding-right: $default-spacing;
+  }
 .pane-search-result .search-results .list .list-item {
     background-color: #F3F3F3;
     padding: $default-spacing;
@@ -368,5 +371,10 @@ div.unreservable {
   .ting-cover {
    width: 23%;
     min-height: 250px;
+}
+}
+.view-mode-user-list {
+  .ting-cover {
+   width: 8%;
 }
 }
