@@ -81,6 +81,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       );
       $form['basic']['submit']['#submit'][] = 'search_form_alter_submit';
       unset($form['basic']['keys']['#title']);
+      $form['ding-campaign']['#value'] = 'ding-campaign';
+      $form['ding-campaign']['#type'] = 'hidden';
+      $form['ding-campaign']['#name'] = 'type[ding-campaign]'; 
       $form['basic']['keys']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
       $form['basic']['keys']['#attributes']['placeholder'] = t('Søg efter materialer fra biblioteket..');
       $form['basic']['adv-shortcut']['#prefix'] = '<div class="adv-button" onClick=\'jQuery(".search-wrapper .fieldset-title").click()\'><a href="#">';
