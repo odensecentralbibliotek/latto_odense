@@ -940,11 +940,6 @@ Content pane styling
   margin-top: 1em;
 }
 
-/* line 676, ../sass/latto.subtheme.base.scss */
-.image-container img {
-  max-width: 100px!important;
-}
-
 /* equivalent to font-size: 100% */
 /*
 
