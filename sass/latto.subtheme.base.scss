@@ -672,3 +672,8 @@ ul {
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.image-container {
+      img {
+        max-width: 100px!important;
+      }
+}

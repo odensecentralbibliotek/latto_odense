@@ -58,34 +58,34 @@ btn: text
 
 
 */
-/* line 14, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 14, ../sass/latto.subtheme.base.scss */
 body {
   background: url("../images/Baggrund_1920x1231_sh_20.jpg") #eeeeee fixed no-repeat;
 }
 
-/* line 18, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 18, ../sass/latto.subtheme.base.scss */
 header {
   background: transparent;
   overflow: hidden;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-/* line 23, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 23, ../sass/latto.subtheme.base.scss */
 header .site-name {
   font-size: 85%;
   margin-left: 23px;
 }
-/* line 27, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 27, ../sass/latto.subtheme.base.scss */
 header .logo {
   float: left;
   margin-right: 15px;
   margin-left: 7.5px;
 }
-/* line 31, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 31, ../sass/latto.subtheme.base.scss */
 header .logo img {
   max-width: 40%;
 }
-/* line 34, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 34, ../sass/latto.subtheme.base.scss */
 header .site-slogan {
   color: black;
   margin-left: 7.5px;
@@ -93,14 +93,14 @@ header .site-slogan {
   top: 75px;
   font-size: 12px;
 }
-/* line 42, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 42, ../sass/latto.subtheme.base.scss */
 header .header-inner {
   background: transparent;
   padding-bottom: 0px;
   padding-top: 7.5px;
   margin-left: 0px;
 }
-/* line 48, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 48, ../sass/latto.subtheme.base.scss */
 header .grid-inner {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -114,25 +114,25 @@ header .grid-inner {
   filter: alpha(opacity=80);
 }
 
-/* line 58, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 58, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active {
   border-color: #999999;
 }
-/* line 60, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 60, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a {
   background-color: #999999;
 }
-/* line 62, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 62, ../sass/latto.subtheme.base.scss */
 .rs-carousel-tabs ul li.active a:before {
   border-bottom: 8px solid #999999;
 }
 
-/* line 68, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 68, ../sass/latto.subtheme.base.scss */
 .rs-carousel-title {
   padding-top: 0px;
 }
 
-/* line 72, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 72, ../sass/latto.subtheme.base.scss */
 .rs-carousel-compact .rs-carousel-mask {
   max-width: 75%;
 }
@@ -140,12 +140,12 @@ header .grid-inner {
 /* ==========================================================================
 Theme specific grid styling
 ========================================================================== */
-/* line 79, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 79, ../sass/latto.subtheme.base.scss */
 .pane-page-content {
   padding: 7.5px;
 }
 
-/* line 82, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 82, ../sass/latto.subtheme.base.scss */
 .grid-content .grid-inner {
   padding: 0px!important;
 }
@@ -155,14 +155,14 @@ Basic elements
 ========================================================================== */
 /* Paragraphs
 ========================================================================== */
-/* line 92, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 92, ../sass/latto.subtheme.base.scss */
 p {
   margin-bottom: 5px;
 }
 
 /* Default horizontal ruler styles
 ========================================================================== */
-/* line 99, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 99, ../sass/latto.subtheme.base.scss */
 hr {
   background: #555555;
   color: #555555;
@@ -174,7 +174,7 @@ hr {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 101, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 101, ../sass/latto.subtheme.base.scss */
 hr.primary {
   background: black;
   color: black;
@@ -186,7 +186,7 @@ hr.primary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 104, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 104, ../sass/latto.subtheme.base.scss */
 hr.secondary {
   background: #69c9cf;
   color: #69c9cf;
@@ -198,7 +198,7 @@ hr.secondary {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
-/* line 107, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 107, ../sass/latto.subtheme.base.scss */
 hr.tertiary {
   background: #99d7db;
   color: #99d7db;
@@ -214,12 +214,12 @@ hr.tertiary {
 /* ==========================================================================
 Date
 ========================================================================== */
-/* line 117, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 117, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper .day {
   background-color: #69c9cf !important;
 }
 
-/* line 120, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 120, ../sass/latto.subtheme.base.scss */
 .list-compact .date {
   margin-right: 15px;
 }
@@ -227,65 +227,65 @@ Date
 /* ==========================================================================
 Navigation
 ========================================================================== */
-/* line 130, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 130, ../sass/latto.subtheme.base.scss */
 ul.menu {
   border: none;
   list-style: none;
   text-align: left;
   /* LTR */
 }
-/* line 137, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 137, ../sass/latto.subtheme.base.scss */
 ul li.leaf {
   list-style-image: none;
   list-style-type: none;
 }
 
-/* line 145, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 145, ../sass/latto.subtheme.base.scss */
 li.leaf {
   padding: 0.2em 0 0 0;
   /* LTR */
   margin: 0;
 }
-/* line 150, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 150, ../sass/latto.subtheme.base.scss */
 li a.active {
   text-decoration: underline;
 }
 
-/* line 155, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 155, ../sass/latto.subtheme.base.scss */
 .expanded .menu {
   margin-left: 15px;
 }
 
-/* line 159, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 159, ../sass/latto.subtheme.base.scss */
 ul {
   list-style: none;
   margin: 0px;
   padding: 0;
 }
 
-/* line 166, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 166, ../sass/latto.subtheme.base.scss */
 .main-menu {
   display: table;
   font-size: 15px;
   width: 100%;
   margin: 0px;
 }
-/* line 171, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 171, ../sass/latto.subtheme.base.scss */
 .main-menu li {
   border-left: 1px solid #a3dee2;
   display: table-cell;
   text-align: center;
 }
-/* line 175, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 175, ../sass/latto.subtheme.base.scss */
 .main-menu li.expanded, .main-menu li.collapsed, .main-menu li.leaf {
   margin: 0;
   padding: 0;
 }
-/* line 179, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 179, ../sass/latto.subtheme.base.scss */
 .main-menu li:hover {
   background: #d9d9d9;
 }
-/* line 182, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 182, ../sass/latto.subtheme.base.scss */
 .main-menu li a {
   border-left: 1px solid #75cdd3;
   color: white;
@@ -295,11 +295,11 @@ ul {
   padding: 15px;
   text-decoration: none;
 }
-/* line 190, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 190, ../sass/latto.subtheme.base.scss */
 .main-menu li a.active {
   background-color: #999999;
 }
-/* line 193, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 193, ../sass/latto.subtheme.base.scss */
 .main-menu li a i {
   font-size: 38px;
   padding-top: 15px;
@@ -307,54 +307,54 @@ ul {
   padding-left: 35px;
 }
 
-/* line 204, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 204, ../sass/latto.subtheme.base.scss */
 .pane-menu-kviklinks ul li a {
   color: black;
   text-decoration: none !important;
 }
-/* line 207, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 207, ../sass/latto.subtheme.base.scss */
 .pane-menu-kviklinks ul li a i {
   float: left;
 }
 
-/* line 211, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 211, ../sass/latto.subtheme.base.scss */
 .pane-menu-kviklinks .pane-title {
   background: none repeat scroll 0 0 #CCCCCC;
   padding-left: 7.5px;
 }
 
-/* line 215, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 215, ../sass/latto.subtheme.base.scss */
 .pane-menu-kviklinks h2 {
   font-size: 18px;
 }
 
-/* line 218, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 218, ../sass/latto.subtheme.base.scss */
 .ding-entity-button {
   margin-left: 7.5px;
 }
 
-/* line 221, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 221, ../sass/latto.subtheme.base.scss */
 .country {
   padding-right: 7.5px;
 }
 
-/* line 224, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 224, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-list-image {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 228, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 228, ../sass/latto.subtheme.base.scss */
 .libraries {
   float: left;
 }
 
-/* line 231, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 231, ../sass/latto.subtheme.base.scss */
 #ding-library-front .panel-separator {
   height: 15px;
 }
 
-/* line 234, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 234, ../sass/latto.subtheme.base.scss */
 .libraries-opening-hours {
   float: right;
   padding: 0;
@@ -362,22 +362,22 @@ ul {
   width: 35%;
 }
 
-/* line 240, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 240, ../sass/latto.subtheme.base.scss */
 .opening-hours-week {
   padding: 0;
 }
 
-/* line 243, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 243, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .days {
   padding: 0;
 }
 
-/* line 246, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 246, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .times {
   margin-right: 7.5px !important;
 }
 
-/* line 249, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 249, ../sass/latto.subtheme.base.scss */
 .library-list {
   list-style-type: none;
   margin: 0;
@@ -385,23 +385,23 @@ ul {
   width: 100%;
 }
 
-/* line 255, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 255, ../sass/latto.subtheme.base.scss */
 .vcard {
   margin-bottom: 7.5px;
 }
 
-/* line 258, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 258, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-mail a {
   font-size: 12px;
 }
 
-/* line 262, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 262, ../sass/latto.subtheme.base.scss */
 .label-info,
 .badge-info {
   background-color: #99d7db;
 }
 
-/* line 265, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 265, ../sass/latto.subtheme.base.scss */
 footer .grid-inner {
   margin-top: 15px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -414,12 +414,12 @@ footer .grid-inner {
   background-color: #eeeeee;
 }
 
-/* line 273, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 273, ../sass/latto.subtheme.base.scss */
 .footer-menu {
   border-right: 2px solid white;
   height: auto!important;
 }
-/* line 276, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 276, ../sass/latto.subtheme.base.scss */
 .footer-menu h2 {
   color: #555555 !important;
   font-family: din,sans-serif,verdana;
@@ -428,7 +428,7 @@ footer .grid-inner {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 284, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 284, ../sass/latto.subtheme.base.scss */
 .footer-menu a {
   color: #999999 !important;
   font-size: 12px;
@@ -436,7 +436,7 @@ footer .grid-inner {
   text-decoration: none;
 }
 
-/* line 292, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 292, ../sass/latto.subtheme.base.scss */
 .pane-menu-block-4 {
   border-right: none;
 }
@@ -444,12 +444,12 @@ footer .grid-inner {
 /* ==========================================================================
 Search pane styling
 ========================================================================== */
-/* line 299, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 299, ../sass/latto.subtheme.base.scss */
 .search-login .grid-inner {
   margin-bottom: 15px;
 }
 
-/* line 302, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 302, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-search-form {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -463,24 +463,24 @@ Search pane styling
   filter: alpha(opacity=80);
 }
 
-/* line 310, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 310, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
   background-color: #99d7db;
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
   margin-top: 0px;
 }
-/* line 313, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 313, ../sass/latto.subtheme.base.scss */
 .search-wrapper h2 {
   margin-left: 15px;
 }
-/* line 316, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 316, ../sass/latto.subtheme.base.scss */
 .search-wrapper form {
   margin: 0px;
   position: relative;
   width: 100%;
 }
-/* line 320, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 320, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-text {
   height: 40px;
   width: 100%;
@@ -488,13 +488,13 @@ Search pane styling
   -moz-border-radius: 4px 0px 0px 4px;
   border-radius: 4px 0px 0px 4px;
 }
-/* line 327, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 327, ../sass/latto.subtheme.base.scss */
 .search-wrapper .btn {
   height: 38px;
   position: static;
   float: right;
 }
-/* line 332, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 332, ../sass/latto.subtheme.base.scss */
 .search-wrapper .adv-button {
   float: right;
   background-color: whiteSmoke;
@@ -507,7 +507,7 @@ Search pane styling
   padding: 0px 5px 0px 0px;
   margin-right: 15px;
 }
-/* line 344, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 344, ../sass/latto.subtheme.base.scss */
 .search-wrapper .adv-button a {
   background: url(../../../../../misc/menu-expanded.png) no-repeat;
   background-position: 95% 50%;
@@ -518,17 +518,17 @@ Search pane styling
   padding-right: 30px;
   line-height: 40px;
 }
-/* line 354, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 354, ../sass/latto.subtheme.base.scss */
 .search-wrapper .adv-button a:hover {
   text-decoration: none;
 }
-/* line 357, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 357, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-item-keys {
   display: block;
   overflow: hidden;
 }
 
-/* line 362, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 362, ../sass/latto.subtheme.base.scss */
 .form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
@@ -537,30 +537,30 @@ Search pane styling
   margin-top: 0px;
 }
 
-/* line 369, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 369, ../sass/latto.subtheme.base.scss */
 #edit-search-type .form-item-search-type {
   float: left;
   margin-right: 15px;
 }
 
-/* line 374, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 374, ../sass/latto.subtheme.base.scss */
 #edit-search-type {
   height: 30px;
   overflow: hidden;
   display: block;
 }
 
-/* line 376, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 376, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced {
   margin: 0;
   position: static;
   padding-top: 7.5px;
 }
-/* line 380, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 380, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced legend {
   display: none;
 }
-/* line 383, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 383, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced .fieldset-wrapper {
   left: -20px;
   padding: 0 10px 0 13px;
@@ -569,7 +569,7 @@ Search pane styling
   z-index: 50;
 }
 
-/* line 392, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 392, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay {
   z-index: 10000;
   filter: alpha(opacity=50);
@@ -593,7 +593,7 @@ Search pane styling
   vertical-align: middle;
 }
 
-/* line 403, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 403, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay .spinner {
   z-index: 10001;
   position: fixed;
@@ -608,86 +608,86 @@ Search pane styling
 }
 
 /* facet link color */
-/* line 410, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 410, ../sass/latto.subtheme.base.scss */
 .pane-ding-facetbrowser a, .pane-ding-facetbrowser a:visited {
   color: #000;
 }
 
-/* line 411, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 411, ../sass/latto.subtheme.base.scss */
 .pane-ding-facetbrowser a:hover {
   color: #000;
   text-decoration: none;
 }
 
-/* line 419, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 419, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-item {
   width: 50%;
   float: left;
   height: 40px;
 }
-/* line 424, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 424, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-text {
   width: 235px;
   height: 30px;
 }
-/* line 428, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 428, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-select {
   width: 235px;
   height: 30px;
 }
-/* line 432, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 432, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-type-textfield label {
   float: left;
   padding: 3px 10px 2px;
   width: 80px;
 }
-/* line 437, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 437, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-type-select label {
   float: left;
   padding: 3px 10px 2px;
   width: 80px;
 }
 
-/* line 447, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 447, ../sass/latto.subtheme.base.scss */
 ul.ui-autocomplete {
   max-width: 432px!important;
   z-index: 100;
 }
 
-/* line 452, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 452, ../sass/latto.subtheme.base.scss */
 .ui-menu .ui-menu-item a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* line 457, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 457, ../sass/latto.subtheme.base.scss */
 input#edit-search-block-form--2.spinner {
   background-position: 97%!important;
 }
 
-/* line 460, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 460, ../sass/latto.subtheme.base.scss */
 .search-results .content {
   display: block!important;
 }
 
-/* line 463, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 463, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-recommendation-list {
   background: #F6F6F2;
 }
 
-/* line 466, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 466, ../sass/latto.subtheme.base.scss */
 .pane-recommendation-list .list-item {
   margin-bottom: 7.5px;
   padding-bottom: 7.5px;
 }
 
-/* line 470, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 470, ../sass/latto.subtheme.base.scss */
 .subjects.content {
   padding-top: 7.5px;
 }
 
-/* line 475, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 475, ../sass/latto.subtheme.base.scss */
 .pane-system-user-menu {
   background: #99d7db;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -698,7 +698,7 @@ input#edit-search-block-form--2.spinner {
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
 }
 
-/* line 481, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 481, ../sass/latto.subtheme.base.scss */
 .pane-user-login {
   min-height: 141px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -711,24 +711,24 @@ input#edit-search-block-form--2.spinner {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 488, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 488, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-item-name input {
   width: 90%;
   float: left;
 }
-/* line 492, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 492, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-item-pass input {
   width: 58%;
   float: left;
 }
-/* line 496, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 496, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-actions {
   width: 40px;
   float: left;
   margin-left: 7.5px;
 }
 
-/* line 508, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 508, ../sass/latto.subtheme.base.scss */
 .pane-user-login .icon-user {
   display: block;
   float: left;
@@ -739,7 +739,7 @@ input#edit-search-block-form--2.spinner {
   position: absolute;
   z-index: 3;
 }
-/* line 518, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 518, ../sass/latto.subtheme.base.scss */
 .pane-user-login .icon-lock {
   display: block;
   float: left;
@@ -751,12 +751,12 @@ input#edit-search-block-form--2.spinner {
   z-index: 3;
 }
 
-/* line 529, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 529, ../sass/latto.subtheme.base.scss */
 .search-login .pane-system-user-menu {
   min-height: 135px;
 }
 
-/* line 533, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 533, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   background: #99d7db;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -770,7 +770,7 @@ input#edit-search-block-form--2.spinner {
 /* ==========================================================================
 custom grid
 ========================================================================== */
-/* line 541, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 541, ../sass/latto.subtheme.base.scss */
 .grid-11-left {
   -moz-box-sizing: border-box;
   float: left;
@@ -782,22 +782,22 @@ custom grid
   word-wrap: break-word;
 }
 
-/* line 551, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 551, ../sass/latto.subtheme.base.scss */
 article .grid-inner {
   background-color: white;
 }
 
-/* line 554, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 554, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-handle {
   background: #999999;
 }
 
-/* line 557, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 557, ../sass/latto.subtheme.base.scss */
 .collapsall {
   display: block!important;
 }
 
-/* line 562, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 562, ../sass/latto.subtheme.base.scss */
 .breadcrumb {
   margin-left: 15px;
   margin-right: 15px;
@@ -806,22 +806,22 @@ article .grid-inner {
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
-/* line 570, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 570, ../sass/latto.subtheme.base.scss */
 #edit-profile-provider-alma-field-alma-phone-id {
   display: none;
 }
 
-/* line 573, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 573, ../sass/latto.subtheme.base.scss */
 #edit-profile-provider-alma-field-absent-id {
   display: none;
 }
 
-/* line 576, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 576, ../sass/latto.subtheme.base.scss */
 #edit-profile-provider-alma-field-alma-reservation-pause {
   display: none;
 }
 
-/* line 579, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 579, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -831,18 +831,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 587, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 587, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 590, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 590, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 3px;
 }
 
-/* line 594, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 594, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -851,49 +851,49 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 602, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 602, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.6em 0.4em 1.6em;
   color: #ccc;
 }
 
-/* line 607, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 607, ../sass/latto.subtheme.base.scss */
 .pane-user-login input[placeholder] {
   padding-left: 17px;
 }
 
 /* html5 placeholder support */
-/* line 611, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 611, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 615, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 615, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: #ccc;
 }
 
-/* line 619, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 619, ../sass/latto.subtheme.base.scss */
 .tags a {
   padding: 7.5px;
 }
 
 /* NEWS & EVENTS */
-/* line 625, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 625, ../sass/latto.subtheme.base.scss */
 ul.promoted li.list-item.last {
   border-bottom: 1px solid #E7E7E7;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-/* line 631, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 631, ../sass/latto.subtheme.base.scss */
 div.subheading span {
   padding-right: 3.75px;
   padding-left: 3.75px;
 }
 
-/* line 636, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 636, ../sass/latto.subtheme.base.scss */
 .view-display-id-ding_event_simple_list .heading {
   padding-left: 15px;
 }
@@ -901,43 +901,48 @@ div.subheading span {
 /* ==========================================================================
 Content pane styling
 ========================================================================== */
-/* line 643, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 643, ../sass/latto.subtheme.base.scss */
 .pane-event-category-menu, .pane-news-category-menu {
   padding: 15px;
 }
 
-/* line 648, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 648, ../sass/latto.subtheme.base.scss */
 #sliding-popup {
   background: url("../images/gradient.png") repeat-y scroll center center transparent;
 }
 
-/* line 652, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 652, ../sass/latto.subtheme.base.scss */
 .pane-similarterms-ding-content-tags ul li {
   margin-bottom: 7.5px;
 }
 
-/* line 656, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 656, ../sass/latto.subtheme.base.scss */
 .fffW-widget {
   margin: 0px !important;
   padding: 0px !important;
   border: none !important;
 }
 
-/* line 662, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 662, ../sass/latto.subtheme.base.scss */
 .fffW-widget .fffW-title {
   font-size: 16px !important;
   margin: 10px 0 0 !important;
 }
 
-/* line 667, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 667, ../sass/latto.subtheme.base.scss */
 .fffW-widget p {
   font-size: 12px !important;
 }
 
-/* line 671, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss */
+/* line 671, ../sass/latto.subtheme.base.scss */
 #ding-library-front .rounded-corner {
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+/* line 676, ../sass/latto.subtheme.base.scss */
+.image-container img {
+  max-width: 100px!important;
 }
 
 /* equivalent to font-size: 100% */
@@ -991,7 +996,7 @@ btn: text
 
 
 */
-/* line 5, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 5, ../sass/latto.subtheme.typography.scss */
 body {
   color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -999,31 +1004,31 @@ body {
   line-height: 18px;
 }
 
-/* line 66, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 66, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 66, ../sass/latto.mixins.scss */
 ::selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 24, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 24, ../sass/latto.subtheme.typography.scss */
 h1,
 h2,
 h3,
@@ -1032,7 +1037,7 @@ h5,
 h6 {
   font-weight: normal;
 }
-/* line 27, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 27, ../sass/latto.subtheme.typography.scss */
 h1 a:link,
 h2 a:link,
 h3 a:link,
@@ -1042,7 +1047,7 @@ h6 a:link {
   color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
 }
-/* line 31, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 31, ../sass/latto.subtheme.typography.scss */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
@@ -1051,7 +1056,7 @@ h5 a:visited,
 h6 a:visited {
   color: rgba(0, 0, 0, 0.85);
 }
-/* line 34, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 34, ../sass/latto.subtheme.typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -1061,94 +1066,94 @@ h6 a:hover {
   color: black;
 }
 
-/* line 40, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 40, ../sass/latto.subtheme.typography.scss */
 h1 {
   color: black;
 }
 
-/* line 44, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 44, ../sass/latto.subtheme.typography.scss */
 h3 {
   line-height: 22.5px;
   font-size: 18px;
 }
 
-/* line 53, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 53, ../sass/latto.subtheme.typography.scss */
 a:link {
   color: #0077a2;
   text-decoration: none;
 }
-/* line 57, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 57, ../sass/latto.subtheme.typography.scss */
 a:visited {
   color: #003f55;
 }
-/* line 60, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 60, ../sass/latto.subtheme.typography.scss */
 a:hover {
   color: #002c3c;
   text-decoration: underline;
 }
-/* line 64, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 64, ../sass/latto.subtheme.typography.scss */
 a:focus {
   color: #002c3c;
 }
-/* line 67, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 67, ../sass/latto.subtheme.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 85, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 85, ../sass/latto.subtheme.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 89, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 89, ../sass/latto.subtheme.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 93, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 93, ../sass/latto.subtheme.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 97, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 97, ../sass/latto.subtheme.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 101, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.subtheme.typography.scss */
+/* line 101, ../sass/latto.subtheme.typography.scss */
 .biggest {
   font-size: 19.5px;
 }
 
-/* line 5, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 5, ../sass/latto.ting.scss */
 .availability-status:before {
   content: " (";
 }
 
-/* line 8, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 8, ../sass/latto.ting.scss */
 .availability-status:after {
   content: ")";
 }
 
-/* line 13, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 13, ../sass/latto.ting.scss */
 .navcount:before {
   content: " (";
 }
 
-/* line 16, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 16, ../sass/latto.ting.scss */
 .navcount:after {
   content: ")";
 }
 
-/* line 19, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 19, ../sass/latto.ting.scss */
 .availability {
   float: right;
 }
-/* line 21, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 21, ../sass/latto.ting.scss */
 .availability ul {
   float: right;
 }
-/* line 23, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 23, ../sass/latto.ting.scss */
 .availability ul li {
   display: inline;
   list-style-type: none;
@@ -1159,66 +1164,66 @@ a:active {
   float: right;
 }
 
-/* line 36, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 36, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover-style-ding_medium {
   height: 131px;
   width: 85px;
 }
 
-/* line 41, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 41, ../sass/latto.ting.scss */
 .field-name-ting-details-version .field-label {
   float: left;
 }
 
-/* line 45, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 45, ../sass/latto.ting.scss */
 .field-name-ding-entity-buttons {
   float: right;
 }
-/* line 47, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 47, ../sass/latto.ting.scss */
 .field-name-ding-entity-buttons form {
   float: left;
 }
 
-/* line 52, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 52, ../sass/latto.ting.scss */
 .view-mode-collection-list {
   border-bottom: 1px solid #999999;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
 
-/* line 57, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 57, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #790F21;
   margin: 10px 0;
 }
 
-/* line 62, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 62, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-name-ting-abstract {
   margin-left: 100px;
 }
 
-/* line 65, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 65, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-name-ting-subjects {
   margin-left: 100px;
 }
 
-/* line 69, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 69, ../sass/latto.ting.scss */
 .field-name-ting-details-classification {
   display: inline-block;
 }
 
-/* line 72, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 72, ../sass/latto.ting.scss */
 #ting-search-records-per-page > a:after {
   content: " ";
 }
 
-/* line 76, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 76, ../sass/latto.ting.scss */
 .field-group-format {
   clear: both;
 }
 
-/* line 80, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 80, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types h2, .pane-ting-ting-object-types h2, .pane-ting-ting-relation-anchors h2 {
   font-size: 1.2em;
   font-weight: bold;
@@ -1230,7 +1235,7 @@ a:active {
 /* ==========================================================================
   Facets styling
   ========================================================================== */
-/* line 95, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 95, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser legend {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1243,18 +1248,18 @@ a:active {
   margin-bottom: 7.5px;
   border-bottom: 0px;
 }
-/* line 103, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 103, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser fieldset {
   margin-bottom: 15px;
 }
 
-/* line 108, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 108, ../sass/latto.ting.scss */
 span#expand_more {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 20px;
 }
 
-/* line 113, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 113, ../sass/latto.ting.scss */
 span#expand_less {
   background: url(../images/minus-icon.png) no-repeat;
   margin-left: 15px;
@@ -1264,52 +1269,52 @@ span#expand_less {
 /* ==========================================================================
   Filter styling
   ========================================================================== */
-/* line 125, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 125, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page {
   float: left;
 }
 
-/* line 129, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 129, ../sass/latto.ting.scss */
 #ting-search-records-per-page {
   font-weight: bold;
   margin-top: 4px;
 }
-/* line 132, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 132, ../sass/latto.ting.scss */
 #ting-search-records-per-page a {
   margin-left: 7.5px;
 }
 
-/* line 138, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 138, ../sass/latto.ting.scss */
 .pane-ting-search-sort-form {
   float: right;
 }
 
-/* line 142, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 142, ../sass/latto.ting.scss */
 #ting-search-sort-form {
   margin-bottom: 0px;
 }
-/* line 144, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 144, ../sass/latto.ting.scss */
 #ting-search-sort-form label {
   display: inline;
   font-weight: bold;
 }
-/* line 148, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 148, ../sass/latto.ting.scss */
 #ting-search-sort-form select {
   width: 9em;
   margin-bottom: 0px;
   height: 2em;
 }
-/* line 153, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 153, ../sass/latto.ting.scss */
 #ting-search-sort-form input {
   visibility: hidden;
 }
 
-/* line 158, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 158, ../sass/latto.ting.scss */
 .form-item .description {
   display: none;
 }
 
-/* line 163, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 163, ../sass/latto.ting.scss */
 #search-query-display {
   font-size: 1em;
   border-top: 0px;
@@ -1319,23 +1324,23 @@ span#expand_less {
 /* ==========================================================================
   Search results
   ========================================================================== */
-/* line 173, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 173, ../sass/latto.ting.scss */
 div.pane-search-result {
   margin-top: 15px;
 }
 
-/* line 177, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 177, ../sass/latto.ting.scss */
 .pane-search-result h2 {
   font-size: 19.5px;
   color: #CCC;
 }
 
-/* line 182, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 182, ../sass/latto.ting.scss */
 div.availability {
   margin-top: 7.5px;
 }
 
-/* line 188, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 188, ../sass/latto.ting.scss */
 .ting-collection-types-header, .ting-object-types-header, .ting-relations-header {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1353,16 +1358,16 @@ div.availability {
   color: #333;
 }
 
-/* line 201, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 201, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors {
   margin-bottom: 15px;
 }
-/* line 203, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 203, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types li, .pane-ting-ting-object-types li, .pane-ting-ting-relation-anchors li {
   margin: 5px 0px;
 }
 
-/* line 208, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 208, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #333;
@@ -1370,135 +1375,135 @@ div.availability {
   font-size: 19.5px;
 }
 
-/* line 216, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 216, ../sass/latto.ting.scss */
 .ting-relation h2, .field-name-ding-availability-holdings h2, .group-material-details h2 {
   font-size: 19.5px;
 }
 
-/* line 223, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 223, ../sass/latto.ting.scss */
 .field-name-ding-periodical-issues {
   margin-top: 15px;
 }
 
-/* line 227, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 227, ../sass/latto.ting.scss */
 li.ding-periodical-foldable {
   padding-top: 15px;
 }
 
-/* line 231, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 231, ../sass/latto.ting.scss */
 .ding-periodical-fold {
   cursor: pointer;
 }
 
-/* line 234, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 234, ../sass/latto.ting.scss */
 .ding-periodical-fold:hover {
   text-decoration: underline;
 }
 
-/* line 243, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 243, ../sass/latto.ting.scss */
 .availability.processed {
   background-color: #0077A2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 248, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 248, ../sass/latto.ting.scss */
 .availability.processed a {
   color: #FFF;
 }
 
-/* line 250, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 250, ../sass/latto.ting.scss */
 .availability.available.reservable {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 255, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 255, ../sass/latto.ting.scss */
 .availability.available.reservable a {
   color: #FFF;
 }
 
-/* line 257, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 257, ../sass/latto.ting.scss */
 .availability.reservable {
   background-color: #CC0000;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 262, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 262, ../sass/latto.ting.scss */
 .availability.reservable a {
   color: #FFF;
 }
 
-/* line 264, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 264, ../sass/latto.ting.scss */
 .availability.available {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 269, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 269, ../sass/latto.ting.scss */
 .availability.available a {
   color: #FFF;
 }
 
-/* line 272, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 272, ../sass/latto.ting.scss */
 .availability-legend {
   border-top: none;
   border-bottom: 1px solid #999999;
 }
 
-/* line 277, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 277, ../sass/latto.ting.scss */
 .availability-legend-item.available img {
   background-color: #40854B;
 }
 
-/* line 281, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 281, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
   background-color: #0077A2;
 }
 
-/* line 285, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 285, ../sass/latto.ting.scss */
 .availability-legend-item.on-loan img {
   background-color: #CC0000;
 }
 
-/* line 288, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 288, ../sass/latto.ting.scss */
 div.unreservable {
   display: none;
 }
 
-/* line 292, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 292, ../sass/latto.ting.scss */
 .availability-legend-item .availability-label {
   font-size: 1em;
   font-weight: normal;
 }
 
-/* line 299, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 299, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-group-format {
   clear: none;
 }
 
-/* line 304, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 304, ../sass/latto.ting.scss */
 .group-material-details .field-label {
   width: 132px;
   padding-right: 15px;
 }
 
-/* line 309, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 309, ../sass/latto.ting.scss */
 .view-mode-collection-list .collapsed span.field-group-format-toggler a {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 313, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 313, ../sass/latto.ting.scss */
 .view-mode-collection-list span.field-group-format-toggler a {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 317, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 317, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a {
   border-right: 1px solid #112338;
   margin-left: 10px;
@@ -1506,19 +1511,19 @@ div.unreservable {
   text-decoration: none;
 }
 
-/* line 323, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 323, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
   border-right: medium none;
 }
 
-/* line 327, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 327, ../sass/latto.ting.scss */
 .search-ting-cover, .ting-cover {
   position: relative;
   width: 10%;
   min-height: 100px;
   z-index: 1;
 }
-/* line 335, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 335, ../sass/latto.ting.scss */
 .search-ting-cover:after, .ting-cover:after {
   content: "";
   background: url("../images/image-missing.png");
@@ -1536,50 +1541,50 @@ div.unreservable {
   min-height: 100px;
 }
 
-/* line 351, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 351, ../sass/latto.ting.scss */
 .ting-cover {
   margin-right: 15px;
 }
 
-/* line 355, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 355, ../sass/latto.ting.scss */
 div[class*='ting-cover-'] {
   float: left;
   padding-right: 15px;
 }
 
-/* line 359, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 359, ../sass/latto.ting.scss */
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
 }
 
-/* line 365, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 365, ../sass/latto.ting.scss */
 .view-mode-collection-list .search-ting-cover:after, .view-mode-collection-list .ting-cover:after {
   right: 15px;
 }
 
-/* line 369, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 369, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover {
   margin-right: 0;
 }
 
-/* line 374, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 374, ../sass/latto.ting.scss */
 .pane-ting-object .ting-cover {
   width: 23%;
   min-height: 250px;
 }
 
-/* line 380, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.ting.scss */
+/* line 380, ../sass/latto.ting.scss */
 .view-mode-user-list .ting-cover {
   width: 8%;
 }
 
-/* line 1, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.logged.in.scss */
+/* line 1, ../sass/latto.logged.in.scss */
 .profile label {
   display: inline-block;
 }
 
-/* line 5, /var/aegir/platforms/odense-717-2/sites/all/themes/latto_odense/sass/latto.logged.in.scss */
+/* line 5, ../sass/latto.logged.in.scss */
 .profile label:after {
   content: ":";
 }
