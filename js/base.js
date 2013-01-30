@@ -19,9 +19,11 @@
     $(".pane-search-form input[type=submit], .ui-corner-all, .pager li, .form-type-checkbox .option a").click(function(){     
       $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
     });
-    
+      $(window).load(function(){  
+    //initialize after images are loaded  
      $('.ting-cover img').parent().removeClass('ting-cover');
-     
+    });  
+    
   }); 
 
 })(jQuery);
