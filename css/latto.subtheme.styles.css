@@ -940,17 +940,6 @@ Content pane styling
   margin-top: 1em;
 }
 
-/* line 676, ../sass/latto.subtheme.base.scss */
-.image-container {
-  margin-bottom: 10px;
-}
-/* line 679, ../sass/latto.subtheme.base.scss */
-.image-container img {
-  height: auto;
-  max-width: 100%;
-  min-width: 100%;
-}
-
 /* equivalent to font-size: 100% */
 /*
 
