@@ -1,0 +1,56 @@
+.main-menu li {
+  float: left!important;
+  
+
+}
+.grid-11-left{
+  width: 70%;
+  margin-right: 70%;
+  
+}
+.grid-11-left {
+    -moz-box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+    margin-right: -70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 70%;
+    word-wrap: break-word;
+}
+.pane-user-login .form-actions {
+    float: left;
+    margin-left: 0px;
+    width: 40px;
+}
+
+.pane-user-login .form-item-pass input {
+    float: left;
+    width: 55%;
+}
+.grid-13-right {
+    -moz-box-sizing: border-box;
+    float: right;
+    margin-left: -70%;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 70%;
+    word-wrap: break-word;
+}
+header .site-name {
+    color: black;
+    float: none;
+    font-size: 80%;
+    line-height: 100%;
+}
+.grid-4-left {
+    -moz-box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+    margin-right: -20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+    word-wrap: break-word;
+}

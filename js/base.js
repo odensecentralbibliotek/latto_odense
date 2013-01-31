@@ -19,7 +19,9 @@
     $(".pane-search-form input[type=submit], .ui-corner-all, .pager li, .form-type-checkbox .option a").click(function(){     
       $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
     });
-    if(jQuery.browser.version.substring(0, 2) <= "8.") {
+   // Select Internet Explorer 7 and below
+if (jQuery.browser.msie && jQuery.browser.version <= 8) {
+    // do sth.
         $('.ting-cover').removeClass('ting-cover');
   }
       $(window).load(function(){  

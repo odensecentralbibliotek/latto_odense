@@ -948,7 +948,7 @@ Content pane styling
 .image-container img {
   height: auto;
   max-width: 100%;
-  min-width: 138px;
+  min-width: 100%;
 }
 
 /* equivalent to font-size: 100% */
