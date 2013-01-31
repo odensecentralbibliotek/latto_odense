@@ -13,7 +13,7 @@ stylesheets[print][] = css/latto.print.css
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 stylesheets-conditional[IE 7][all][] = css/ie7.css
-stylesheets-conditional[lst IE 8][all][] = css/ie8.css
+stylesheets-conditional[IE 8][all][] = css/ie8.css
 
 stylesheets[all][] = system.menus.css
 ;stylesheets[all][] = system.messages.css
