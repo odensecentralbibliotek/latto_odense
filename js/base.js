@@ -1,3 +1,12 @@
+window.xact_width=400;
+window.xact_height=400;
+window.xact_surveyURL='https://www.survey-xact.dk/LinkCollector?key=Z6QJ5GLE3231';
+window.xact_surveyKey='Z6QJ5GLE3231';
+window.xact_probability = 1;
+window.xact_baseURL = 'http://www.survey-xact.dk';
+window.xact_language = "da";
+xact_startPopIn();
+
 (function($){
  
   $(document).ready(function($) {
