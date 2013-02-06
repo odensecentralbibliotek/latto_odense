@@ -15,6 +15,17 @@ body {
   background: $theme-background fixed no-repeat;
 }
 
+// For survey-xact.dk.
+#xact_popinButtons button {
+  border: 2px outset buttonface;
+  padding: 1px 6px;
+}
+
+// For survey-xact.dk.
+#xact_popText label {
+  display: inline;
+}
+
 header {
   background: transparent;
   overflow: hidden;
