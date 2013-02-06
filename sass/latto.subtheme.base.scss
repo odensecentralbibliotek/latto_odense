@@ -672,4 +672,9 @@ ul {
   margin-bottom: 1em;
   margin-top: 1em;
 }
-
+  .table.table-striped.sticky-enabled.table-select-processed.tableheader-processed.sticky-table th:nth-child(4) {
+    display: none;
+  }
+  .expire-date{
+    display: none;
+  }
