@@ -940,6 +940,21 @@ Content pane styling
   margin-top: 1em;
 }
 
+/* line 675, ../sass/latto.subtheme.base.scss */
+#ding-reservation-reservations-notready-form th {
+  width: 20px;
+}
+
+/* line 678, ../sass/latto.subtheme.base.scss */
+.table.table-striped.sticky-enabled.table-select-processed.tableheader-processed.sticky-table th:nth-child(4) {
+  display: none;
+}
+
+/* line 681, ../sass/latto.subtheme.base.scss */
+.expire-date {
+  display: none;
+}
+
 /* equivalent to font-size: 100% */
 /*
 
