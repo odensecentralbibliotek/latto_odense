@@ -5,6 +5,7 @@ window.xact_surveyKey='Z6QJ5GLE3231';
 window.xact_probability = 1;
 window.xact_baseURL = 'https://www.survey-xact.dk';
 window.xact_language = "da";
+window.xact_cookieOptOut = true;
 xact_startPopIn();
 
 (function($){
