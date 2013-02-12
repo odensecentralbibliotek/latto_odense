@@ -1,10 +1,4 @@
 <?php
-function latto_odense_preprocess_html(&$vars) {
-  drupal_add_css('https://popin.survey-xact.dk/popin/popin.css', 'external');
-  drupal_add_js('https://popin.survey-xact.dk/popin/popin.js', 'external');
-  drupal_add_js('https://popin.survey-xact.dk/dynjs/Z6QJ5GLE3231/popin.js', 'external');
-  drupal_add_js('https://popin.survey-xact.dk/cookies.js', 'external');
-}
 /**
  * Implements hook_form_FORM_ID_alter().
  */
