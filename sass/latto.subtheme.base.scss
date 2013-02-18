@@ -267,7 +267,7 @@ ul {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     position: relative;
-    background-color: $gray-lighter;
+    background-color: rgba(238, 238, 238, 0.7);
   }
   
   .footer-menu {
