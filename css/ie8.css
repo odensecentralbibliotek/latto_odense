@@ -1,3 +1,6 @@
   .image-container img {
         min-width: 138px;
 }
+ input {
+    font-family: Arial;
+  }
