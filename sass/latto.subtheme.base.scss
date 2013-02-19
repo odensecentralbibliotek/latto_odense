@@ -268,6 +268,10 @@ ul {
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     position: relative;
     background-color: rgba(238, 238, 238, 0.7);
+    background:none;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2EEEEEE,endColorstr=#B2EEEEEE);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2EEEEEE,endColorstr=#B2EEEEEE);
+    zoom: 1;
   }
   
   .footer-menu {
