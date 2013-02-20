@@ -267,11 +267,7 @@ ul {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     position: relative;
-    background-color: rgba(238, 238, 238, 0.7);
-    background:none;
-    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2EEEEEE,endColorstr=#B2EEEEEE);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2EEEEEE,endColorstr=#B2EEEEEE);
-    zoom: 1;
+    background: rgba(238, 238, 238, 0.7);
   }
   
   .footer-menu {
@@ -676,7 +672,7 @@ ul {
   margin-bottom: 1em;
   margin-top: 1em;
 }
-#ding-reservation-reservations-notready-form  .table.table-striped.sticky-enabled.table-select-processed.tableheader-processed.sticky-table th:nth-child(4) {
+#ding-reservation-reservations-notready-form th:nth-child(4) {
     display: none;
   }
   #ding-reservation-reservations-notready-form .expire-date{
