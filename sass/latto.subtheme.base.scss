@@ -535,6 +535,10 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     }
+    //count callback adds divs
+    .amount div{
+      display: inline;
+        }
     /* ==========================================================================
     custom grid
     ========================================================================== */
@@ -663,7 +667,7 @@ ul {
   font-size: 16px !important;
   margin: 10px 0 0 !important;
 }
-
+ding-user
 .fffW-widget p {
   font-size: 12px !important;
 }
@@ -678,3 +682,6 @@ ul {
   #ding-reservation-reservations-notready-form .expire-date{
     display: none;
   }
+  .pickup-order-id{
+    font-size: 18px;
+    }
