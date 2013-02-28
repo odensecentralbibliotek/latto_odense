@@ -209,7 +209,7 @@ ul {
       }
     } 
 .pane-menu-kviklinks .pane-title {
-    background: none repeat scroll 0 0 #CCCCCC;
+    background: none repeat scroll 0 0 $gray-light2;
     padding-left: $default-spacing /2;
    } 
    .pane-menu-kviklinks h2{
@@ -345,7 +345,7 @@ ul {
         background: url(../../../../../misc/menu-expanded.png) no-repeat;
         background-position: 95% 50%;
         font-size: 13px;
-        color: #555;
+        color: $gray;
         font-weight: 400px;
         padding-left: $default-spacing / 2;
         padding-right: 30px;
@@ -396,19 +396,19 @@ ul {
   -moz-opacity: .50; /*older Mozilla*/
   -khtml-opacity: 0.5;   /*older Safari*/
   opacity: 0.5;   /*supported by current Mozilla, Safari, and Opera*/
-  background-color:#000000;
-  position:fixed; top:0px; left:0px; width:100%; height:100%; color:#FFFFFF; text-align:center; vertical-align:middle;
+  background-color: $black;
+  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
 }
 
 .facetbrowser_overlay .spinner {
   z-index:10001;
-  position:fixed; top:0px; left:0px; width:100%; height:100%; color:#FFFFFF; text-align:center; vertical-align:middle;
+  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
   background: transparent url(../images/spinner.gif) no-repeat 50% 50%;
 }
 
 /* facet link color */
-.pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: #000; }
-.pane-ding-facetbrowser a:hover { color: #000; text-decoration: none; }
+.pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: $black; }
+.pane-ding-facetbrowser a:hover { color: $black; text-decoration: none; }
 
     //advanced search
         
@@ -461,7 +461,7 @@ ul {
       display: block!important;
     }
     .panel-pane.pane-recommendation-list{
-      background: #F6F6F2;
+      background: $recommendation-list;
     }
     .pane-recommendation-list .list-item{      
       margin-bottom: $default-spacing /2;
@@ -535,10 +535,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     }
-    //count callback adds divs
-    .amount div{
-      display: inline;
-        }
+
     /* ==========================================================================
     custom grid
     ========================================================================== */
@@ -606,18 +603,18 @@ ul {
     label.placeholder {
       cursor: text;
       padding: 0.4em 0.6em 0.4em 1.6em;   
-      color: #ccc;
+      color: $gray-light2;
     }
     .pane-user-login input[placeholder]{
       padding-left: 17px;
       }
     /* html5 placeholder support */
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-      color:#ccc;
+      color: $gray-light2;
     }
     
     input:placeholder, textarea:placeholder {
-      color:#ccc;
+      color: $gray-light2;
     }
     
     .tags a{

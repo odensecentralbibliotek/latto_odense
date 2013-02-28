@@ -15,7 +15,7 @@
     $("#edit-submit").css('display', '');
     
     $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
-    
+  
     $(".pane-search-form input[type=submit], .ui-corner-all, .pager li, .form-type-checkbox .option a").click(function(){     
       $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
     });
@@ -31,5 +31,23 @@ if (jQuery.browser.msie && jQuery.browser.version <= 8) {
   });  
     
   });
+  
+  // reload page after closing reservation pop-up
+  Drupal.behaviors.reloadBookmarkOnPopupClose = {
+    attach: function(context) {
+      // Capture link clicks.
+      $('.ui-dialog a.ui-dialog-titlebar-close').each( function(context) {
+        // Unbind existing click behaviors.
+        $(this).unbind('click');
+        // Handle clicks.
+        $(this).click( function(e) {
+          // Remove the default click handler.
+          e.preventDefault();
+          location.reload();
+          return false;
+        });
+      });
+    }
+  };
 
 })(jQuery);
