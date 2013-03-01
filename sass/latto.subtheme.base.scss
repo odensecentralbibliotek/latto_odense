@@ -682,3 +682,25 @@ ding-user
   .pickup-order-id{
     font-size: 18px;
     }
+ 
+  //logged in table list fixes.
+  .table {
+    .field.field-name-ting-title.field-type-ting-title {
+      float: left;
+      padding-right: $default-spacing / 2;
+      h2{
+        font-size: 14px;
+      }
+    }
+    .field-name-ting-author.field-type-ting-author{
+      float: left;
+      padding-right: $default-spacing / 2;
+      padding-top: $default-spacing /2;
+    }
+    .field.field-name-ting-type.field-type-ting-type{
+       padding-top: $default-spacing / 2;
+      }
+  }
+.table  .title h2 {
+    font-size: 14px;
+}

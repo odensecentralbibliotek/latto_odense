@@ -956,6 +956,31 @@ ding-user
   font-size: 18px;
 }
 
+/* line 688, ../sass/latto.subtheme.base.scss */
+.table .field.field-name-ting-title.field-type-ting-title {
+  float: left;
+  padding-right: 7.5px;
+}
+/* line 691, ../sass/latto.subtheme.base.scss */
+.table .field.field-name-ting-title.field-type-ting-title h2 {
+  font-size: 14px;
+}
+/* line 695, ../sass/latto.subtheme.base.scss */
+.table .field-name-ting-author.field-type-ting-author {
+  float: left;
+  padding-right: 7.5px;
+  padding-top: 7.5px;
+}
+/* line 700, ../sass/latto.subtheme.base.scss */
+.table .field.field-name-ting-type.field-type-ting-type {
+  padding-top: 7.5px;
+}
+
+/* line 704, ../sass/latto.subtheme.base.scss */
+.table .title h2 {
+  font-size: 14px;
+}
+
 /* equivalent to font-size: 100% */
 /*
 
