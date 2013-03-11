@@ -9,7 +9,6 @@
 ;----------// Panels
 plugins[panels][layouts] = layouts/panels
 
-stylesheets[print][] = css/latto.print.css
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 stylesheets-conditional[IE 7][all][] = css/ie7.css
