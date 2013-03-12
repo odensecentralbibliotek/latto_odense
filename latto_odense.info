@@ -7,24 +7,19 @@
   base theme  = ddbasic
 
 ;----------// Panels
-  plugins[panels][layouts] = layouts/panels
+plugins[panels][layouts] = layouts/panels
 
-stylesheets[print][] = css/latto.print.css
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
 stylesheets-conditional[IE 7][all][] = css/ie7.css
 stylesheets-conditional[IE 8][all][] = css/ie8.css
 
 stylesheets[all][] = system.menus.css
-;stylesheets[all][] = system.messages.css
-;stylesheets[all][] = comment.css
-;stylesheets[all][] = node.css
 
 ; adds placeholder support
 scripts[] = js/base.js
 scripts[] = js/jquery.placeholder.js
 
-
 ;----------// Page manager
-  api[page_manager][pages_default][version] = 1
-  api[page_manager][pages_default][path] = pages
+api[page_manager][pages_default][version] = 1
+api[page_manager][pages_default][path] = pages
