@@ -310,9 +310,6 @@ ul {
     .search-wrapper{
       @include rgba-background($theme-tertiary-color, 1);
       margin-top: 0px;
-      h2 {
-        margin-left: $default-spacing;
-      }
       form {
         margin: 0px;
         position: relative;
@@ -479,7 +476,7 @@ ul {
     }
 
     .pane-user-login {
-      min-height: 141px;
+      min-height: 158px;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       background: $theme-tertiary-color;    
@@ -534,6 +531,7 @@ ul {
       background: $theme-tertiary-color;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      min-height: 158px;
     }
 
     /* ==========================================================================
@@ -605,6 +603,9 @@ ul {
       padding: 0.4em 0.6em 0.4em 1.6em;   
       color: $gray-light2;
     }
+    #edit-keys_placeholder{
+      top: 35px!important;
+      }
     .pane-user-login input[placeholder]{
       padding-left: 17px;
       }

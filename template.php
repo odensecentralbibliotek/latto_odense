@@ -1,5 +1,14 @@
 <?php
 /**
+ * @brief Implementation of hook_form_FORM_ID_alter() for form search_block_form.
+ */
+function latto_odense_form_search_form_alter(&$form, &$form_state, $form_id) {
+    $form['actions']['reset'] = array(
+      '#markup' => '<input id="reset" class="btn-info" type="button" value='.t('reset').' />', 
+      '#weight' => -1,
+      ); 
+}
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
