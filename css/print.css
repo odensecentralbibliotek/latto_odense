@@ -55,6 +55,9 @@ img.print-logo {border: 0;}
 .print-links {font-size: small;}
 .print-footer {text-align: center;}
 
+.table{
+  width: 100%;
+}
 
 .table .field-name-ting-type.field-type-ting-type li {
   list-style: none;
@@ -80,3 +83,10 @@ img.print-logo {border: 0;}
 .table .title h2 {
   font-size: 14px;
 }
+
+#ding-reservation-reservations-notready-form th:nth-child(4) {
+    display: none;
+  }
+  #ding-reservation-reservations-notready-form .expire-date{
+    display: none;
+  }

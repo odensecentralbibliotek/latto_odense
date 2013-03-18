@@ -1,6 +1,12 @@
 (function($){
  
   $(document).ready(function($) {
+    
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) {
+        $('.facetbrowser_overlay').remove();
+      }
+    });
     //choose all checkbox on user status list
     var alle = $('.select-all input[type=checkbox]').attr('title');
     $('<span> '+alle+'</span>').appendTo('.select-all');
