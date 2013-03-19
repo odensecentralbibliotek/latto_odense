@@ -983,6 +983,36 @@ ding-user
   font-size: 14px;
 }
 
+/* line 712, ../sass/latto.subtheme.base.scss */
+.field-name-field-ding-library-list-image {
+  position: relative;
+}
+
+/* line 715, ../sass/latto.subtheme.base.scss */
+.library-openstatus.open {
+  background: none repeat scroll 0 0 #2C9D01;
+}
+
+/* line 718, ../sass/latto.subtheme.base.scss */
+.library-openstatus.closed {
+  background: none repeat scroll 0 0 red;
+}
+
+/* line 721, ../sass/latto.subtheme.base.scss */
+.library-openstatus {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  color: white;
+  float: right;
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
 /* equivalent to font-size: 100% */
 /*
 
