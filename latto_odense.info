@@ -18,6 +18,7 @@ stylesheets[all][] = system.menus.css
 
 ; adds placeholder support
 scripts[] = js/base.js
+scripts[] = js/openhours.js
 scripts[] = js/jquery.placeholder.js
 
 ;----------// Page manager
