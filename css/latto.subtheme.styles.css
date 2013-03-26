@@ -59,9 +59,9 @@ header .grid-inner {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   position: relative;
-  background-color: rgba(0, 152, 217, 0.8);
+  background-color: rgba(105, 200, 207, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0098D9,endColorstr=#CC0098D9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
 }
 
 /* line 56, ../sass/latto.subtheme.base.scss */
@@ -138,8 +138,8 @@ hr.primary {
 }
 /* line 102, ../sass/latto.subtheme.base.scss */
 hr.secondary {
-  background: #0098d9;
-  color: #0098d9;
+  background: #69c8cf;
+  color: #69c8cf;
   clear: both;
   float: none;
   width: 100%;
@@ -150,8 +150,8 @@ hr.secondary {
 }
 /* line 105, ../sass/latto.subtheme.base.scss */
 hr.tertiary {
-  background: #0098d9;
-  color: #0098d9;
+  background: #99d7db;
+  color: #99d7db;
   clear: both;
   float: none;
   width: 100%;
@@ -166,7 +166,7 @@ Date
 ========================================================================== */
 /* line 115, ../sass/latto.subtheme.base.scss */
 .date-list .date-wrapper .day {
-  background-color: #0098d9 !important;
+  background-color: #69c8cf !important;
   color: white;
 }
 
@@ -223,7 +223,7 @@ ul {
 }
 /* line 170, ../sass/latto.subtheme.base.scss */
 .main-menu li {
-  border-left: 1px solid #26beff;
+  border-left: 1px solid #a3dde2;
   display: table-cell;
   text-align: center;
 }
@@ -238,7 +238,7 @@ ul {
 }
 /* line 181, ../sass/latto.subtheme.base.scss */
 .main-menu li a {
-  border-left: 1px solid #00a3e8;
+  border-left: 1px solid #75ccd3;
   color: white;
   display: block;
   height: 100%;
@@ -248,7 +248,7 @@ ul {
 }
 /* line 189, ../sass/latto.subtheme.base.scss */
 .main-menu li a.active {
-  background-color: #84b9e5;
+  background-color: #999999;
 }
 /* line 192, ../sass/latto.subtheme.base.scss */
 .main-menu li a i {
@@ -327,12 +327,12 @@ ul {
 
 /* line 246, ../sass/latto.subtheme.base.scss */
 .label.label-info > a {
-  color: white;
+  color: #0077a2;
 }
 
 /* line 249, ../sass/latto.subtheme.base.scss */
 .label-info, .badge-info {
-  background-color: #0098d9;
+  background-color: #99d7db;
 }
 
 /* line 252, ../sass/latto.subtheme.base.scss */
@@ -429,30 +429,30 @@ footer .grid-inner {
 
 /* line 305, ../sass/latto.subtheme.base.scss */
 .btn-info {
-  background-color: #f5f5f5;
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
-  background-image: -ms-linear-gradient(top, white, #e6e6e6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-color: #4ab9da;
+  background-image: -moz-linear-gradient(top, #5bc0de, #31b0d5);
+  background-image: -ms-linear-gradient(top, #5bc0de, #31b0d5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#31b0d5));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #31b0d5);
+  background-image: -o-linear-gradient(top, #5bc0de, #31b0d5);
+  background-image: linear-gradient(top, #5bc0de, #31b0d5);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57bedd', endColorstr='#2caed5', GradientType=0);
+  border-color: #31b0d5 #31b0d5 #1f7e9a;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e6e6e6;
+  *background-color: #31b0d5;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   color: black;
 }
 /* line 38, ../sass/latto.mixins.scss */
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
-  background-color: #e6e6e6;
-  *background-color: #d9d9d9;
+  background-color: #31b0d5;
+  *background-color: #28a1c5;
 }
 /* line 45, ../sass/latto.mixins.scss */
 .btn-info:active, .btn-info.active {
-  background-color: #cccccc \9;
+  background-color: #2390b0 \9;
 }
 
 /* ==========================================================================
@@ -471,17 +471,17 @@ Search pane styling
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(0, 152, 217, 0.8);
+  background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0098D9,endColorstr=#CC0098D9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
   min-height: 145px;
 }
 
 /* line 322, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
-  background-color: #0098d9;
+  background-color: #99d7db;
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0098D9,endColorstr=#FF0098D9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
   margin-top: 0px;
 }
 /* line 325, ../sass/latto.subtheme.base.scss */
@@ -688,9 +688,9 @@ input#edit-search-block-form--2.spinner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(0, 152, 217, 0.8);
+  background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0098D9,endColorstr=#CC0098D9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
 }
 
 /* line 480, ../sass/latto.subtheme.base.scss */
@@ -702,9 +702,9 @@ input#edit-search-block-form--2.spinner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(0, 152, 217, 0.8);
+  background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0098D9,endColorstr=#CC0098D9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
 }
 /* line 485, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-item-name input {
@@ -753,7 +753,7 @@ input#edit-search-block-form--2.spinner {
 
 /* line 525, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
-  background: #0098d9;
+  background: #99d7db;
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
@@ -1015,11 +1015,11 @@ ding-user
 
 /* line 730, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected {
-  border-color: transparent #0098d9 transparent transparent;
+  border-color: transparent #99d7db transparent transparent;
 }
 /* line 732, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected a {
-  background-color: #0098d9;
+  background-color: #99d7db;
 }
 
 /* equivalent to font-size: 100% */
@@ -1106,21 +1106,21 @@ h3 {
 
 /* line 53, ../sass/latto.subtheme.typography.scss */
 a:link {
-  color: #0098d9;
+  color: #0077a2;
   text-decoration: none;
 }
 /* line 57, ../sass/latto.subtheme.typography.scss */
 a:visited {
-  color: #00628c;
+  color: #003f55;
 }
 /* line 60, ../sass/latto.subtheme.typography.scss */
 a:hover {
-  color: #005173;
+  color: #002c3c;
   text-decoration: underline;
 }
 /* line 64, ../sass/latto.subtheme.typography.scss */
 a:focus {
-  color: #005173;
+  color: #002c3c;
 }
 /* line 67, ../sass/latto.subtheme.typography.scss */
 a:active {
@@ -1270,7 +1270,7 @@ a:active {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background: #0098d9;
+  background: #99d7db;
   padding-left: 15px;
   margin-bottom: 7.5px;
   border-bottom: 0px;
@@ -1375,7 +1375,7 @@ div.availability {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background: #0098d9;
+  background: #99d7db;
   margin-top: 7.5px;
   margin-bottom: 7.5px;
   padding-left: 15px;
@@ -1429,7 +1429,7 @@ li.ding-periodical-foldable {
 
 /* line 243, ../sass/latto.ting.scss */
 .availability.processed {
-  background-color: #0098d9;
+  background-color: #0077a2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
@@ -1488,7 +1488,7 @@ li.ding-periodical-foldable {
 
 /* line 281, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
-  background-color: #0098d9;
+  background-color: #0077a2;
 }
 
 /* line 285, ../sass/latto.ting.scss */
