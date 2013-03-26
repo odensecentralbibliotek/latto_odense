@@ -1,14 +1,5 @@
 <?php
 /**
- * @brief Implementation of hook_form_FORM_ID_alter() for form search_block_form.
- */
-function latto_odense_form_search_form_alter(&$form, &$form_state, $form_id) {
-    $form['actions']['reset'] = array(
-      '#markup' => '<input id="reset" class="btn-info" type="button" value='.t('reset').' />', 
-      '#weight' => -1,
-      ); 
-}
-/**
  * Implements hook_form_FORM_ID_alter().
  */
 function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
@@ -72,6 +63,12 @@ function latto_odense_preprocess_table(&$variables) {
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'search_form':
+      
+      $form['actions']['reset'] = array(
+      '#markup' => '<i value='.t('reset').' id="reset" class="icon-remove-sign fixed-icon-remove-sign"></i>', 
+      '#weight' => -1,
+      ); 
+      
       $path_parts = explode('/', drupal_get_path_alias($_GET['q']));
       /* @var $path_parts type */
       if (isset($path_parts[1]) && $path_parts[1] == 'node') {
@@ -91,8 +88,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['basic']['submit']['#submit'][] = 'search_form_alter_submit';
       unset($form['basic']['keys']['#title']);
       $form['basic']['keys']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
+      $form['basic']['keys']['#suffix'] = '<i class="icon-search fixed-icon-search"></i>';      
       $form['basic']['keys']['#attributes']['placeholder'] = t('Søg efter materialer fra biblioteket..');
-      $form['basic']['adv-shortcut']['#prefix'] = '<div class="adv-button" onClick=\'jQuery(".search-wrapper .fieldset-title").click()\'><a href="#">';
+      $form['basic']['adv-shortcut']['#prefix'] = '<div class="btn" onClick=\'jQuery(".search-wrapper .fieldset-title").click()\'><a href="#">';
       $form['basic']['adv-shortcut']['#markup'] = 'Avanceret søgning';
       $form['basic']['adv-shortcut']['#suffix'] = '</a></div>';
       $form['basic']['adv-shortcut']['#weight'] = -1;
@@ -134,7 +132,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'ding_facetbrowser_form':
       $form['span']['#expand-more']['class'][] = 'btn';
       break;
-  }
+}
 }
 
 /**

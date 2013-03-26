@@ -1,7 +1,7 @@
 (function($){
  
   $(document).ready(function($) {
-    
+   
     $(document).keyup(function(e) {
       if (e.keyCode == 27) {
         $('.facetbrowser_overlay').remove();
@@ -33,7 +33,7 @@ if (jQuery.browser.msie && jQuery.browser.version <= 8) {
       $(window).load(function(){  
         $('footer .grid-inner').equalize('height');
     //initialize after images are loaded  
-     $('.ting-cover img').parent().removeClass('ting-cover');
+      $('.ting-cover img').parent().removeClass('ting-cover');
   });  
     
   });
@@ -62,6 +62,7 @@ if (jQuery.browser.msie && jQuery.browser.version <= 8) {
   $("#reset").click(function(){
     $("#search-form select, #search-form input[type=text]").each(function() {
       $(this).val("");
+      $(".ui-autocomplete").remove();
     });
   });
 }

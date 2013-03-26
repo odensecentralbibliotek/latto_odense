@@ -176,7 +176,7 @@ div.pane-search-result {
   
 .pane-search-result h2 {
     font-size: $theme-font-size * 1.5;
-    color: #CCC;
+    color: $gray-light2;
   }
 
 div.availability {
@@ -195,7 +195,7 @@ div.availability {
   font-size: $theme-font-size * 1.5;
   font-weight: normal;
   width: 141px;
-  color: #333;
+  color: $gray-dark;
 }  
  
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors { 
@@ -241,11 +241,11 @@ li.ding-periodical-foldable {
 //availability & availability icons
 
 .availability.processed {
-  background-color: #0077A2;
+  background-color: $link-color;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
-  color: #FFF;
-  a {color: #FFF; }
+  color: $white;
+  a {color: $white; }
 }
 .availability.available.reservable {
   background-color: #40854B;
@@ -258,15 +258,15 @@ li.ding-periodical-foldable {
   background-color: #CC0000;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
-  color: #FFF;
-  a {color: #FFF; }
+  color: $white;
+  a {color: $white; }
 }
 .availability.available {
   background-color: #40854B;
   padding: $default-spacing / 4;
   margin-right: $default-spacing / 2;
-  color: #FFF;
-  a {color: #FFF; }
+  color: $white;
+  a {color: $white; }
 }
 
 .availability-legend {
@@ -279,7 +279,7 @@ li.ding-periodical-foldable {
 }
 
 .availability-legend-item.unavailable img {
-  background-color: #0077A2;
+  background-color: $link-color;
 }
 
 .availability-legend-item.on-loan img {

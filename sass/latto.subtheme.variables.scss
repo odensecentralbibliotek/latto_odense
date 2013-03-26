@@ -7,7 +7,7 @@
 // Basic settings
 // Grid, spacing etc.
 $grid-max-width:    960px;
-$grid-column-count: 16;
+$grid-column-count: 12;
 
 // Standard color definitions.
 $black:                 #000 !default;
@@ -18,8 +18,6 @@ $gray-light:            #999 !default;
 $gray-light2:           #ccc;
 $gray-lighter:          #eee !default;
 $white:                 #fff !default;
-$green:                 #2BE01B !default;
-$recommendation-list:   #F6F6F2;
 // Theme variables.
 $theme-background-color:  $gray-lighter;
 $theme-background:        url('../images/Baggrund_1920x1231_sh_20.jpg') $theme-background-color ;
@@ -27,10 +25,10 @@ $theme-background:        url('../images/Baggrund_1920x1231_sh_20.jpg') $theme-b
 
 // Font variables.
 // -------------------------
-$base-font-size:      16px !default; /* equivalent to font-size: 100% */
+$base-font-size:          16px !default; /* equivalent to font-size: 100% */
 $theme-font-size:         13px !default;
 $theme-line-height:       18px;
-$theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
+$theme-font-family:       $theme_font_family;
 
 // Baseline for rem() mixin, measured in pixels
 // The value should be the same as the base-font-size value for the html element
@@ -38,51 +36,32 @@ $theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 // then the variable below would be 10px.
 $baseline-px: $base-font-size;
 
-$theme-primary-color:         $black;
-$theme-secondary-color:       #69C9CF !default;
-$theme-tertiary-color:        #99D7DB !default;
-$menu-active:                 #737577;
-$theme-selection-color:       $gray-lighter;
-$theme-selection-background:  $gray;
-
-
-// Text colors
-$text-primary-color:         $black;
-$text-selection-color:       $text-primary-color !default;
-$text-selection-background:  $gray-light !default;
-
-
 // Links
 // -------------------------
-$link-color:              #0077a2 !default;
-$link-color-hover:        darken($link-color, 20%) !default;
+$link-color:                  $linkcolor;
+$link-color-hover:            darken($link-color, 20%) !default;
 
-// Headers
-$theme-header-background: $theme-secondary-color;
-$theme-header-color:      $gray-light;
-$theme-subheader-color:   $gray-light;
-$theme-blockheader-color: $gray-light;
+// Master colors
+$theme-primary-color:         $black;
+$theme-secondary-color:       $secondary_color !default;
+$theme-tertiary-color:        $tertiarycolor !default;
+$menu-active:                 $menu_active;
+$label-info-text-color:       $label_info_text_color;
+$date-list-text-color:        $date_list_text_color;
+$recommendation-list:         #F6F6F2;
 
-$theme-breadcrumb-background: transparent;
-$theme-breadcrumb-border-bottom: 1px solid $gray-light;
+// Buttons
+// -------------------------
+$btnBackground:               $btn_bg_color !default;
+$btnBackgroundHighlight:      darken($btnBackground, 10%) !default;
+$btnBorder:                   $gray-light2 !default;
 
-// Blocks
-$theme-block-background:  $gray-light;
-$theme-block-color:       $gray-light;
-$theme-block-color-hover: $gray-light;
-$theme-block-inverse-background: $gray-light;
-$theme-block-inverse-color: $gray-light;
+$btnInfoBackground:           $btn_info_bg_color !default;
+$btn-info-text-color:         $btn_info_text_color;
 
-// Content
-$theme-content-background:  $gray-light;
-$theme-content-color:       $gray-light;
-$theme-image-border:        $gray-light;
+$btnInfoBackgroundHighlight:  darken($btnInfoBackground, 10%) !default;
 
-// Footers
-$theme-footer-background:   $gray-light;
-$theme-footer-color:        $gray;
-$theme-footer-color-hover:  $gray-light;
-// Grids and spacing
+// Spacing
 // -------------------------
 $default-spacing: 15px;
 
@@ -92,64 +71,22 @@ $form-border-radius: 5px !default;
 // Navigation
 //--------------------------
 $navbar-background-color:   $theme-secondary-color !default;
-$navbar-font-size:        15px !default;
-$navbar-text-color:       $white !default;
-$navbar-item-spacing:     $default-spacing / 2 $default-spacing !default;
+$navbar-font-size:          15px !default;
+$navbar-text-color:         $white !default;
+$navbar-item-spacing:       $default-spacing / 2 $default-spacing !default;
 
 // Lists
 $list-item-spacing:         10px !default;
 $list-picture-width:        25% !default;
 
+// Text selection colors
+$theme-selection-color:       $gray-lighter;
+$theme-selection-background:  $gray;
+
 // Search field
 $search-font-size:          20px !default;
 $search-field-height:       50px !default;
-/*
 
-#Theme elements
-background
-header background
-logo
-menu background
-menu colors
-submenu background
-submenu colors
-breadcrumb background
-breadcrumb colors
-block background
-block colors
-block inverse background
-block inverse colors
-content background
-content colors
-image border
-footer background
-footer colors
-
-#Text elements
-
-h1: header
-h2: subheader
-
-h2 -> block: blockheader
-
-h3, h4, h5
-
-h6
-
-a: inline
-
-a: read-more
-
-p
-
-p: manchet
-
-#Other elements
-
-btn: background
-
-btn: text
-
-
-
-*/
+// Footers
+$theme-footer-background:    $footer_background;
+$theme-footer-color:         $footer_text_color;

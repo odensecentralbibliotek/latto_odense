@@ -49,9 +49,7 @@ header {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       position: relative;
-      background: $theme-secondary-color;
-      opacity: 0.8;
-      filter: alpha(opacity=80);
+      @include rgba-background($theme-secondary-color, 0.8);
     } 
   }
   
@@ -116,6 +114,7 @@ header {
 
     .date-list .date-wrapper .day {
       background-color: $theme-secondary-color!important;
+      color: $date-list-text-color;
     }
    .list-compact .date{
     margin-right: $default-spacing;
@@ -188,7 +187,7 @@ ul {
         padding: $default-spacing;
         text-decoration: none;
         &.active {
-          background-color: $gray-light;
+          background-color: $menu-active;
         }
         i{
           font-size: 38px;
@@ -200,21 +199,7 @@ ul {
       }
     }
   }
-  
-.pane-menu-kviklinks ul li a{   
-    color: black;
-    text-decoration: none !important;
-    &i{
-      float: left;
-      }
-    } 
-.pane-menu-kviklinks .pane-title {
-    background: none repeat scroll 0 0 $gray-light2;
-    padding-left: $default-spacing /2;
-   } 
-   .pane-menu-kviklinks h2{
-     font-size: 18px;
-     }
+   
   .ding-entity-button {
     margin-left: $default-spacing / 2;
   }
@@ -258,8 +243,10 @@ ul {
   .field-name-field-ding-library-mail a{
     font-size: 12px;
     }
-  .label-info,
-  .badge-info {
+  .label.label-info > a {
+    color: $label-info-text-color;
+    }
+  .label-info, .badge-info {    
     background-color: $theme-tertiary-color;
   }
   footer .grid-inner {
@@ -267,15 +254,14 @@ ul {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
     position: relative;
-    background: rgba(238, 238, 238, 0.7);
+    @include rgba-background($theme-footer-background, 0.7);
   }
   
   .footer-menu {
     border-right: 2px solid white;
-    height: auto!important;
     &h2 {
-      color: $gray!important; 
-      font-family: din,sans-serif,verdana;
+      color: $theme-footer-color!important; 
+      font-family: $theme-font-family;
       font-size: $theme-font-size * 1.05;
       font-weight: normal;
       margin: 0;
@@ -292,6 +278,34 @@ ul {
   .pane-menu-block-4 { 
     border-right: none;
   }
+ .fixed-icon-search{
+    left: 7px;
+    opacity: 0.5;
+    position: absolute;
+    top: 40px;
+    font-size: 20px;
+    }
+.fixed-icon-remove-sign {
+    font-size: 22px;
+    opacity: 0.5;
+    position: absolute;
+    right: 270px;
+    top: 41px;
+}
+.icon-remove-sign:before{
+  cursor:pointer;
+  cursor:hand;
+}
+
+  // Buttons 
+  .btn {
+    @include buttonBackground($btnBackground, $btnBackgroundHighlight);
+  }
+  // Info appears as a neutral blue
+  .btn-info {
+    @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
+    color: $btn-info-text-color;
+  } 
   
     /* ==========================================================================
     Search pane styling
@@ -302,10 +316,8 @@ ul {
   .panel-pane.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;     
-      min-height: 141px;
-      opacity: 0.8;
-      filter: alpha(opacity=80);
+      @include rgba-background($theme-tertiary-color, 0.8);     
+      min-height: 145px;
     }
     .search-wrapper{
       @include rgba-background($theme-tertiary-color, 1);
@@ -319,43 +331,35 @@ ul {
           width: 100%;
           -webkit-border-radius: 4px 0px 0px 4px;
           -moz-border-radius: 4px 0px 0px 4px;
-          border-radius: 4px 0px 0px 4px;
+          border-radius: 4px 0px 0px 4px;         
         }
+    .ui-autocomplete-input{
+            padding-left: 30px;
+      }
       .btn {
         height: 38px;
         position: static;
         float: right;
-      }
-      .adv-button {
-        float: right;
-        background-color: whiteSmoke;
-        background-image: -moz-linear-gradient(top, white, #E6E6E6);
-        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
-        background-image: -webkit-linear-gradient(top, white, #E6E6E6);
-        background-image: -o-linear-gradient(top, white, #E6E6E6);
-        background-image: linear-gradient(to bottom, white, #E6E6E6);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#E6E6E6');
         padding: 0px 5px 0px 0px;
         margin-right: 15px;
-      }
-      .adv-button a {
-        background: url(../../../../../misc/menu-expanded.png) no-repeat;
-        background-position: 95% 50%;
-        font-size: 13px;
-        color: $gray;
-        font-weight: 400px;
-        padding-left: $default-spacing / 2;
-        padding-right: 30px;
-        line-height: 40px;
-      }
-      .adv-button a:hover {
+      }          
+    &a {
+      background: url(../../../../../misc/menu-expanded.png) no-repeat;
+      background-position: 95% 50%;
+      font-size: 13px;
+      font-weight: 400px;
+      padding-left: $default-spacing / 2;
+      padding-right: 30px;
+      line-height: 40px;
+    }
+      .btn a:hover {
         text-decoration: none;
-      }
+    }   
       .form-item-keys {
         display: block;
         overflow: hidden;
       }
-    }
+    }    
    .form-item, .form-actions {
     background-color: transparent;
     border-top: 0px solid transparent;
@@ -363,12 +367,15 @@ ul {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  #edit-search-type .form-item-search-type{
-  float: left;
-  margin-right: $default-spacing;
-  }    
-  
-  #edit-search-type {height: 30px; overflow: hidden; display: block;}
+  #edit-search-type {
+    height: 30px; 
+    overflow: hidden; 
+    display: block;
+    .form-item-search-type{
+      float: left;
+      margin-right: $default-spacing;
+    }    
+  }  
 
   .search-wrapper #edit-advanced {
     margin: 0;
@@ -388,12 +395,7 @@ ul {
 
 .facetbrowser_overlay {
   z-index: 10000;
-  filter: alpha(opacity=50); /*older IE*/
-  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE */
-  -moz-opacity: .50; /*older Mozilla*/
-  -khtml-opacity: 0.5;   /*older Safari*/
-  opacity: 0.5;   /*supported by current Mozilla, Safari, and Opera*/
-  background-color: $black;
+  @include rgba-background($black, 0.5);
   position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
 }
 
@@ -445,13 +447,13 @@ ul {
       max-width: 432px!important;
       z-index:100;
     }
-      
-  .ui-menu .ui-menu-item a{
+    
+    .ui-menu .ui-menu-item a{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-        input#edit-search-block-form--2.spinner {
+    input#edit-search-block-form--2.spinner {
       background-position: 97%!important;
     }
     .search-results .content{
@@ -466,40 +468,33 @@ ul {
     }
     .subjects.content{
       padding-top: $default-spacing /2;
-}
-
+    }
+    
     //user menu
     .pane-system-user-menu {
-      background: $theme-tertiary-color;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+      @include rgba-background($theme-tertiary-color, 0.8);
     }
-
+    
     .pane-user-login {
-      min-height: 158px;
+      min-height: 145px;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;    
-      opacity: 0.8;
-      filter: alpha(opacity=80);
+      @include rgba-background($theme-tertiary-color, 0.8);
       .form-item-name input {
         width: 90%;
         float: left;
-        }
+      }
       .form-item-pass input {
         width: 58%;
         float: left;
-        }
+      }
       .form-actions {
         width: 40px;
         float: left;
         margin-left: $default-spacing / 2;
-        }
-      .btn-info {
-        //-webkit-border-radius: 0px 4px 4px 0px;
-        //-moz-border-radius: 0px 4px 4px 0px;
-        //border-radius: 0px 4px 4px 0px;
-      }  
+      } 
     }
   .pane-user-login {
     .icon-user {
@@ -531,7 +526,7 @@ ul {
       background: $theme-tertiary-color;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      min-height: 158px;
+      min-height: 145px;
     }
 
     /* ==========================================================================
@@ -605,6 +600,7 @@ ul {
     }
     #edit-keys_placeholder{
       top: 35px!important;
+      padding-left: 30px;
       }
     .pane-user-login input[placeholder]{
       padding-left: 17px;
@@ -731,3 +727,9 @@ ding-user
     line-height: 17px;
     text-transform: uppercase;
 }
+  #featured .ui-tabs-nav li.ui-tabs-selected {
+    border-color: transparent $theme-tertiary-color transparent transparent;
+    &a {
+      background-color: $theme-tertiary-color;
+    }
+  }
