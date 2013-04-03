@@ -25,9 +25,11 @@ function latto_odense_form_user_profile_form_alter(&$form, &$form_state) {
  * Implementation of hook_menu_alter().
  */
 function latto_odense_menu_alter(&$items, $account) {
-
-  unset($items['user/%user/edit']);
-  $items['user/%user/edit']['type'] = MENU_CALLBACK;
+  global $user;
+  if (ding_user_is_provider_user($user)) {
+    unset($items['user/%user/edit']);
+    $items['user/%user/edit']['type'] = MENU_CALLBACK;
+  }
 
   $items['user/%user/provider_alma'] = array(
     'title' => 'Edit user profile',
