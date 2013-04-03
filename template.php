@@ -29,14 +29,14 @@ function latto_odense_menu_alter(&$items, $account) {
   if (ding_user_is_provider_user($user)) {
     unset($items['user/%user/edit']);
     $items['user/%user/edit']['type'] = MENU_CALLBACK;
-  }
 
-  $items['user/%user/provider_alma'] = array(
-    'title' => 'Edit user profile',
-    'page callback' => 'latto_odense_redirect_add_listing',
-    'access callback' => TRUE,
-    'type' => MENU_LOCAL_TASK,
-  );
+    $items['user/%user/provider_alma'] = array(
+      'title' => 'Edit user profile',
+      'page callback' => 'latto_odense_redirect_add_listing',
+      'access callback' => TRUE,
+      'type' => MENU_LOCAL_TASK,
+    );
+  }
   return $items;
 }
 /**
