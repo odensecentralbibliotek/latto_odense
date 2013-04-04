@@ -113,7 +113,7 @@ header {
   ========================================================================== */   
 
     .date-list .date-wrapper .day {
-      background-color: $theme-secondary-color!important;
+      background-color: $theme-secondary-color;
       color: $date-list-text-color;
     }
    .list-compact .date{
@@ -242,9 +242,6 @@ ul {
   }
   .field-name-field-ding-library-mail a{
     font-size: 12px;
-    }
-  .label.label-info > a {
-    color: $label-info-text-color;
     }
   .label-info, .badge-info {    
     background-color: $theme-tertiary-color;
@@ -634,6 +631,10 @@ ul {
   .view-display-id-ding_event_simple_list .heading {
       padding-left: $default-spacing;  
     }
+    .list .image-container{
+      float: left;
+      margin-right: $default-spacing / 2; 
+      }
     /* ==========================================================================
     Content pane styling
     ========================================================================== */

@@ -28,7 +28,7 @@ $theme-background:        url('../images/Baggrund_1920x1231_sh_20.jpg') $theme-b
 $base-font-size:          16px !default; /* equivalent to font-size: 100% */
 $theme-font-size:         13px !default;
 $theme-line-height:       18px;
-$theme-font-family:       $theme_font_family;
+$theme-font-family:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Baseline for rem() mixin, measured in pixels
 // The value should be the same as the base-font-size value for the html element
@@ -38,26 +38,26 @@ $baseline-px: $base-font-size;
 
 // Links
 // -------------------------
-$link-color:                  $linkcolor;
+$link-color:                  #0077a2;
 $link-color-hover:            darken($link-color, 20%) !default;
 
 // Master colors
 $theme-primary-color:         $black;
-$theme-secondary-color:       $secondary_color !default;
-$theme-tertiary-color:        $tertiarycolor !default;
-$menu-active:                 $menu_active;
-$label-info-text-color:       $label_info_text_color;
-$date-list-text-color:        $date_list_text_color;
+$theme-secondary-color:       #69c8cf !default;
+$theme-tertiary-color:        #99d7db !default;
+$menu-active:                 $gray-light;
+$label-info-text-color:       #000000;
+$date-list-text-color:        $white;
 $recommendation-list:         #F6F6F2;
 
 // Buttons
 // -------------------------
-$btnBackground:               $btn_bg_color !default;
+$btnBackground:               $white !default;
 $btnBackgroundHighlight:      darken($btnBackground, 10%) !default;
 $btnBorder:                   $gray-light2 !default;
 
-$btnInfoBackground:           $btn_info_bg_color !default;
-$btn-info-text-color:         $btn_info_text_color;
+$btnInfoBackground:           #5bc0de !default;
+$btn-info-text-color:         #000000;
 
 $btnInfoBackgroundHighlight:  darken($btnInfoBackground, 10%) !default;
 
@@ -88,5 +88,5 @@ $search-font-size:          20px !default;
 $search-field-height:       50px !default;
 
 // Footers
-$theme-footer-background:    $footer_background;
-$theme-footer-color:         $footer_text_color;
+$theme-footer-background:    $gray-lighter;
+$theme-footer-color:         $gray;

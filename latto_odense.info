@@ -16,19 +16,6 @@ stylesheets-conditional[IE 8][all][] = css/ie8.css
 
 stylesheets[all][] = system.menus.css
 
-settings[sass_variable][theme_font_family]     = "Helvetica Neue", Helvetica, Arial, sans-serif
-settings[sass_variable][secondary_color]     = 69C9CF
-settings[sass_variable][menu_active]           = 999999
-settings[sass_variable][tertiarycolor]         = 99D7DB
-settings[sass_variable][linkcolor]             = 0077a2
-settings[sass_variable][date_list_text_color]  = FFFFFF
-settings[sass_variable][label_info_text_color] = 0077a2
-settings[sass_variable][footer_background]     = EEEEEE
-settings[sass_variable][footer_text_color]     = 555555
-settings[sass_variable][btn_bg_color]          = FFFFFF
-settings[sass_variable][btn_info_bg_color]     = 5BC0DE
-settings[sass_variable][btn_info_text_color]   = FFFFFF
-
 ; adds placeholder support
 scripts[] = js/base.js
 scripts[] = js/openhours.js

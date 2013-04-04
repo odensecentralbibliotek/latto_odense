@@ -59,11 +59,11 @@ if (jQuery.browser.msie && jQuery.browser.version <= 8) {
 
  Drupal.behaviors.resetSearch = {
     attach: function(context) {
-  $("#reset").click(function(){
+  $("#reset, #adv-reset").click(function(){
     $("#search-form select, #search-form input[type=text]").each(function() {
       $(this).val("");
       $(".ui-autocomplete").remove();
-    });
+  });
   });
 }
   };
