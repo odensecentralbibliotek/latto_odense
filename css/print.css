@@ -92,6 +92,10 @@ img.print-logo {border: 0;}
   width: 100%;
 }
 
+.table div {
+  display: inline-block;
+}
+
 .table .field-name-ting-type.field-type-ting-type ul {
   list-style: none;
   padding: 0;
