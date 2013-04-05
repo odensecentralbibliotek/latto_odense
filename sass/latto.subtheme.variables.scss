@@ -57,7 +57,7 @@ $btnBackgroundHighlight:      darken($btnBackground, 10%) !default;
 $btnBorder:                   $gray-light2 !default;
 
 $btnInfoBackground:           #5bc0de !default;
-$btn-info-text-color:         #000000;
+$btn-info-text-color:         $white;
 
 $btnInfoBackgroundHighlight:  darken($btnInfoBackground, 10%) !default;
 

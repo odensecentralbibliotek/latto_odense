@@ -438,7 +438,7 @@ footer .grid-inner {
   *background-color: #31b0d5;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  color: black;
+  color: white;
 }
 /* line 38, ../sass/latto.mixins.scss */
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
