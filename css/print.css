@@ -9,6 +9,17 @@ th {
   color: #006;
   border-bottom: 1px solid #ccc;
 }
+th:first-child,
+td:first-child,
+th:last-child,
+td:last-child {
+  display: none;
+}
+.clearfix:after {
+  clear: none;
+  content: none;
+  display: none;
+}
 tr.odd {
   background-color: #ddd;
 }
@@ -59,29 +70,29 @@ img.print-logo {border: 0;}
   width: 100%;
 }
 
-.table .field-name-ting-type.field-type-ting-type li {
+.table .field-name-ting-type.field-type-ting-type ul {
   list-style: none;
-  padding-top: 7.5px;
+  padding: 0;
+  margin: 0;
 }
 /* line 688, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-title.field-type-ting-title {
-  float: left;
   padding-right: 7.5px;
-}
-/* line 691, ../sass/latto.subtheme.base.scss */
-.table .field.field-name-ting-title.field-type-ting-title h2 {
-  font-size: 14px;
 }
 /* line 695, ../sass/latto.subtheme.base.scss */
 .table .field-name-ting-author.field-type-ting-author {
-  float: left;
   padding-right: 7.5px;
-  padding-top: 7.5px;
 }
 
 /* line 704, ../sass/latto.subtheme.base.scss */
-.table .title h2 {
+.table h2 {
   font-size: 14px;
+  margin: 0;
+}
+
+.table p {
+  display: inline-block;
+  margin: 0;
 }
 
 #ding-reservation-reservations-notready-form th:nth-child(4) {
