@@ -11,6 +11,7 @@ plugins[panels][layouts] = layouts/panels
 
 stylesheets[all][] = css/latto.subtheme.styles.css
 stylesheets[all][] = css/base.css
+stylesheets[print][] = css/media-print.css
 stylesheets-conditional[IE 7][all][] = css/ie7.css
 stylesheets-conditional[IE 8][all][] = css/ie8.css
 
