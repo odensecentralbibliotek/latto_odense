@@ -4,6 +4,15 @@ body {
   font-family: sans-serif;
 }
 
+input {
+  display: none;
+}
+
+/* Hide the print block */
+.print_html {
+  display: none;
+}
+
 th {
   text-align: left; /* LTR */
   color: #006;
