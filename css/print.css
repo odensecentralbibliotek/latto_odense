@@ -1,40 +1,48 @@
-
 body {
   margin: 1em;
   background-color: #fff;
   font-family: sans-serif;
 }
+
 th {
   text-align: left; /* LTR */
   color: #006;
   border-bottom: 1px solid #ccc;
 }
+
 th:first-child,
 td:first-child,
 th:last-child,
 td:last-child {
   display: none;
 }
+
 .clearfix:after {
   clear: none;
   content: none;
   display: none;
 }
+
 tr.odd {
   background-color: #ddd;
 }
+
 tr.even {
   background-color: #fff;
 }
+
 td {
   padding: 5px;
 }
+
 #menu {
   visibility: hidden;
 }
+
 #main {
   margin: 1em;
 }
+
 a:link {color: #000;}
 a:visited {color: #000;}
 a:hover {color: #00f;}
@@ -46,11 +54,14 @@ img.print-logo {border: 0;}
 .print-title {}
 .print-submitted {font-size: small;}
 .print-created {font-size: small;}
+
 .print-taxonomy {
   text-align: right;
 }
+
 .print-taxonomy li {display: inline;}
 .print-content {}
+
 .print-hr {
   border: 0;
   height: 1px;
@@ -58,10 +69,12 @@ img.print-logo {border: 0;}
   color: #9E9E9E;
   background-color: #9E9E9E;
 }
+
 .print-message {
   border: medium dotted blue;
   padding: 1em;
 }
+
 .print-source_url {font-size: small;}
 .print-links {font-size: small;}
 .print-footer {text-align: center;}
@@ -75,16 +88,15 @@ img.print-logo {border: 0;}
   padding: 0;
   margin: 0;
 }
-/* line 688, ../sass/latto.subtheme.base.scss */
+
 .table .field.field-name-ting-title.field-type-ting-title {
   padding-right: 7.5px;
 }
-/* line 695, ../sass/latto.subtheme.base.scss */
+
 .table .field-name-ting-author.field-type-ting-author {
   padding-right: 7.5px;
 }
 
-/* line 704, ../sass/latto.subtheme.base.scss */
 .table h2 {
   font-size: 14px;
   margin: 0;
