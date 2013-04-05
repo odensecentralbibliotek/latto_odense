@@ -19,14 +19,19 @@ th {
   border-bottom: 1px solid #ccc;
 }
 
-th:first-child,
-td:first-child,
-th:last-child,
-td:last-child {
+/** Stuff specific for user status */
+/** Hide the form input specific stuff */
+form .table td:first-child,
+form .table th:first-child,
+form .table td:last-child,
+form .table th:last-child,
+form .table input,
+form .table .ting-cover,
+form .table .ting-object img {
   display: none;
 }
 
-.table .clearfix:after {
+form .table .clearfix:after {
   clear: none;
   content: none;
   display: none;
