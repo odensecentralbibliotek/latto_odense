@@ -28,20 +28,24 @@ form .table .ting-object img {
   display: none;
 }
 
+/** Stuff specific for user status */
 form .table .ting-object .field {
   display: inline-block;
   padding-top: 0 !important;
 }
 
+/** Stuff specific for user status */
 form .table .ting-object .field h2 {
   line-height: normal;
 }
 
+/** Stuff specific for user reservation status */
 .delete-reservations input,
 .update-reservations input {
   display: none;
 }
 
+/** Stuff specific for user loans status */
 .renew-loan-button input {
   display: none;
 }
