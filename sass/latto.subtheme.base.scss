@@ -652,11 +652,11 @@ ul {
   margin-bottom: $default-spacing / 2;
 }
 
-.fffW-widget {
+.fffW-widget, .fffw-dialog {
   margin: 0px !important;
   padding: 0px !important;
   border: none !important;
-  font-family: $theme-font-family;
+  font-family: inherit!important;
 }
 
 .fffW-widget .fffW-title {
