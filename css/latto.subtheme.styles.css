@@ -637,7 +637,7 @@ Search pane styling
 }
 /* line 432, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-text {
-  width: 235px;
+  width: 225px;
   height: 30px;
 }
 /* line 436, ../sass/latto.subtheme.base.scss */
@@ -649,7 +649,7 @@ Search pane styling
 #edit-advanced .fieldset-wrapper .form-type-textfield label {
   float: left;
   padding: 3px 10px 2px;
-  width: 60px;
+  width: 80px;
 }
 /* line 445, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-type-select label {
