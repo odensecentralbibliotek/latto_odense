@@ -684,6 +684,9 @@ ding-user
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.rounded-corner {
+    margin-bottom: $default-spacing / 2;
+}
 #ding-reservation-reservations-notready-form th:nth-child(4) {
     display: none;
   }
