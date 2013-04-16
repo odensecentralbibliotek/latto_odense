@@ -1132,56 +1132,61 @@ h1 {
   color: black;
 }
 
-/* line 44, ../sass/latto.subtheme.typography.scss */
+/* line 43, ../sass/latto.subtheme.typography.scss */
+h2 {
+  font-size: 23px;
+}
+
+/* line 47, ../sass/latto.subtheme.typography.scss */
 h3 {
   line-height: 22.5px;
   font-size: 18px;
 }
 
-/* line 53, ../sass/latto.subtheme.typography.scss */
+/* line 56, ../sass/latto.subtheme.typography.scss */
 a:link {
   color: #0077a2;
   text-decoration: none;
 }
-/* line 57, ../sass/latto.subtheme.typography.scss */
+/* line 60, ../sass/latto.subtheme.typography.scss */
 a:visited {
   color: #003f55;
 }
-/* line 60, ../sass/latto.subtheme.typography.scss */
+/* line 63, ../sass/latto.subtheme.typography.scss */
 a:hover {
   color: #002c3c;
   text-decoration: underline;
 }
-/* line 64, ../sass/latto.subtheme.typography.scss */
+/* line 67, ../sass/latto.subtheme.typography.scss */
 a:focus {
   color: #002c3c;
 }
-/* line 67, ../sass/latto.subtheme.typography.scss */
+/* line 70, ../sass/latto.subtheme.typography.scss */
 a:active {
   color: black;
 }
 
-/* line 85, ../sass/latto.subtheme.typography.scss */
+/* line 88, ../sass/latto.subtheme.typography.scss */
 .small {
   font-size: 6.5px;
 }
 
-/* line 89, ../sass/latto.subtheme.typography.scss */
+/* line 92, ../sass/latto.subtheme.typography.scss */
 .medium {
   font-size: 9.75px;
 }
 
-/* line 93, ../sass/latto.subtheme.typography.scss */
+/* line 96, ../sass/latto.subtheme.typography.scss */
 .big {
   font-size: 16.25px;
 }
 
-/* line 97, ../sass/latto.subtheme.typography.scss */
+/* line 100, ../sass/latto.subtheme.typography.scss */
 .bigger {
   font-size: 17.875px;
 }
 
-/* line 101, ../sass/latto.subtheme.typography.scss */
+/* line 104, ../sass/latto.subtheme.typography.scss */
 .biggest {
   font-size: 19.5px;
 }

@@ -4,7 +4,7 @@ body {
 
 footer,
 header,
-div.search-login {
+div.search-login,aside {
   display: none;
 }
 
