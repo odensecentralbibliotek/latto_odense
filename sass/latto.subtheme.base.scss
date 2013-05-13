@@ -476,6 +476,7 @@ ul {
     .pane-recommendation-list .list-item{      
       margin-bottom: $default-spacing /2;
       padding-bottom: $default-spacing /2;
+      min-height: 160px;
     }
     .subjects.content{
       padding-top: $default-spacing /2;
