@@ -906,7 +906,7 @@ input:placeholder, textarea:placeholder {
 
 /* NEWS & EVENTS */
 /* line 637, ../sass/latto.subtheme.base.scss */
-list-item {
+.list-item {
   min-height: 160px;
 }
 
