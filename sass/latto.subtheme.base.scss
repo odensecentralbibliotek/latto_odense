@@ -50,6 +50,7 @@ header {
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       position: relative;
       @include rgba-background($theme-secondary-color, 0.8);
+      @include gradient-reset-filter();
     } 
   }
   
@@ -313,7 +314,8 @@ ul {
   .panel-pane.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      @include rgba-background($theme-tertiary-color, 0.8);     
+      @include rgba-background($theme-tertiary-color, 0.8);
+      @include gradient-reset-filter();
       min-height: 145px;
     }
     .search-wrapper{
@@ -491,6 +493,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       @include rgba-background($theme-tertiary-color, 0.8);
+      @include gradient-reset-filter();
       .form-item-name input {
         width: 90%;
         float: left;
