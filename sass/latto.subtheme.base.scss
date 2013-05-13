@@ -486,6 +486,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       @include rgba-background($theme-tertiary-color, 0.8);
+      @include gradient-reset-filter();
     }
     
     .pane-user-login {
@@ -539,6 +540,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       min-height: 145px;
+      @include gradient-reset-filter();
     }
 
     /* ==========================================================================
