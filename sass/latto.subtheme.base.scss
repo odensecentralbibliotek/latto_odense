@@ -634,6 +634,9 @@ ul {
     }
     
     /* NEWS & EVENTS */
+    list-item {
+    min-height: 160px;     
+    }
     
     ul.promoted li.list-item.last {
       border-bottom: 1px solid #E7E7E7;
