@@ -48,8 +48,10 @@ header {
     .grid-inner {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      position: relative;            
+      position: relative;
+      @include rgba-background($theme-secondary-color, 0.8);
       background: $theme-secondary-color;
+      @include gradient-reset-filter();
     } 
   }
   
@@ -313,7 +315,9 @@ ul {
   .panel-pane.pane-search-form {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;      
+      @include rgba-background($theme-tertiary-color, 0.8);
+      background: $theme-tertiary-color;
+      @include gradient-reset-filter();
       min-height: 145px;
     }
     .search-wrapper{
@@ -484,14 +488,17 @@ ul {
     .pane-system-user-menu {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;      
+      @include rgba-background($theme-tertiary-color, 0.8);
+      background: $theme-secondary-color;
+      @include gradient-reset-filter();
     }
     
     .pane-user-login {
       min-height: 145px;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      background: $theme-tertiary-color;     
+      @include rgba-background($theme-tertiary-color, 0.8);
+      @include gradient-reset-filter();
       .form-item-name input {
         width: 90%;
         float: left;
@@ -533,10 +540,9 @@ ul {
     }  
     
     .pane-ding-user-frontend-ding-user-loan-number {
-      background: $theme-tertiary-color;
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      min-height: 145px;     
+      min-height: 145px;
     }
 
     /* ==========================================================================
