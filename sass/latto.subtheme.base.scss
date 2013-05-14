@@ -50,7 +50,7 @@ header {
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       position: relative;
       @include rgba-background($theme-secondary-color, 0.8);
-      background: $theme-secondary-color;
+      -ms-background: $theme-secondary-color;
       @include gradient-reset-filter();
     } 
   }
@@ -316,7 +316,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       @include rgba-background($theme-tertiary-color, 0.8);
-      background: $theme-tertiary-color;
+      -ms-background: $theme-tertiary-color;
       @include gradient-reset-filter();
       min-height: 145px;
     }
@@ -489,7 +489,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       @include rgba-background($theme-tertiary-color, 0.8);
-      background: $theme-secondary-color;
+      -ms-background: $theme-secondary-color;
       @include gradient-reset-filter();
     }
     
@@ -498,6 +498,7 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       @include rgba-background($theme-tertiary-color, 0.8);
+      -ms-background: $theme-tertiary-color;
       @include gradient-reset-filter();
       .form-item-name input {
         width: 90%;
