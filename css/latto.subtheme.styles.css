@@ -62,7 +62,7 @@ header .grid-inner {
   background-color: rgba(105, 200, 207, 0.8);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
-  -ms-background: #69c8cf;
+  background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -471,7 +471,7 @@ Search pane styling
   background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
-  -ms-background: #99d7db;
+  background: #99d7db;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   min-height: 145px;
 }
@@ -713,7 +713,7 @@ input#edit-search-block-form--2.spinner {
   background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
-  -ms-background: #69c8cf;
+  background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -729,7 +729,7 @@ input#edit-search-block-form--2.spinner {
   background-color: rgba(153, 215, 219, 0.8);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
-  -ms-background: #99d7db;
+  background: #99d7db;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 503, ../sass/latto.subtheme.base.scss */
