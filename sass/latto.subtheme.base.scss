@@ -544,6 +544,9 @@ ul {
       @include single-box-shadow;
       @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
       min-height: 145px;
+      @include rgba-background($theme-secondary-color, 0.8);
+      background: $theme-secondary-color;
+      @include gradient-reset-filter();
     }
 
     /* ==========================================================================
