@@ -1,0 +1,15 @@
+// Grid system based on http://zengrids.com.
+//
+// Zen Grids version 1.2
+
+@import "zen";
+
+$zen-column-count: 16;
+$zen-gutter-width: $default-spacing;
+
+/* See: http://zengrids.com/help/#vars-legacy */
+$box-sizing-polyfill-path: '../scripts/boxsizing.htc';
+
+.grid-9-center {
+  @include zen-grid-item(9, 4);
+}
