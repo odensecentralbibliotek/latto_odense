@@ -77,11 +77,11 @@ header {
   ========================================================================== */
   
   .pane-page-content {
-      padding: $default-spacing / 2;
-    }
+    padding: $default-spacing / 2;
+  }
   .grid-content .grid-inner {
     padding: 0px!important;
-}
+  }
   /* ==========================================================================
   Basic elements
   ========================================================================== */
@@ -108,62 +108,62 @@ header {
       @include colruler($theme-tertiary-color);
     }
   }
- 
-
+  
+  
   /* ==========================================================================
   Date
   ========================================================================== */   
-
-    .date-list .date-wrapper .day {
-      background-color: $theme-secondary-color;
-      color: $date-list-text-color;
-    }
-   .list-compact .date{
+  
+  .date-list .date-wrapper .day {
+    background-color: $theme-secondary-color;
+    color: $date-list-text-color;
+  }
+  .list-compact .date{
     margin-right: $default-spacing;
-      }
+  }
   
   /* ==========================================================================
   Navigation
   ========================================================================== */ 
   // The navigation bar used for the main-menu.
   // No styleguide reference
-ul {
-  &.menu {
-    border: none;
-    list-style: none;
-    text-align: left;
-    /* LTR */
-  }
-  li {
-    &.leaf {
-      list-style-image: none;
-      list-style-type: none;
+  ul {
+    &.menu {
+      border: none;
+      list-style: none;
+      text-align: left;
+      /* LTR */
+    }
+    li {
+      &.leaf {
+        list-style-image: none;
+        list-style-type: none;
+      }
     }
   }
-}
-
-li {
-   &.leaf {
-    padding: 0.2em 0 0 0;
-    /* LTR */
-    margin: 0;
+  
+  li {
+    &.leaf {
+      padding: 0.2em 0 0 0;
+      /* LTR */
+      margin: 0;
+    }
+    a.active {
+      text-decoration: underline;
+    }
   }
-  a.active {
-    text-decoration: underline;
+  
+  .expanded .menu {
+    margin-left: $default-spacing;
   }
-}
-
-.expanded .menu {
-  margin-left: $default-spacing;
-}
-
-ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0;
-}
-
-    
+  
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+  }
+  
+  
   .main-menu {
     display: table;
     font-size: $navbar-font-size;
@@ -201,7 +201,7 @@ ul {
       }
     }
   }
-   
+  
   .ding-entity-button {
     margin-left: $default-spacing / 2;
   }
@@ -214,10 +214,14 @@ ul {
   }
   .libraries {
     float: left;
+    width: 40%;
+  }
+  .field-name-field-field-ding-library-obs{
+    margin-top: 10px;
   }
   #ding-library-front .panel-separator{
     height: $default-spacing;
-    }   
+  }   
   .libraries-opening-hours{
     float: right;
     padding: 0;
@@ -244,7 +248,7 @@ ul {
   }
   .field-name-field-ding-library-mail a{
     font-size: 12px;
-    }
+  }
   .label-info, .badge-info {    
     background-color: $theme-tertiary-color;
   }
@@ -277,70 +281,70 @@ ul {
   .pane-menu-block-4 { 
     border-right: none;
   }
- .fixed-icon-search{
+  .fixed-icon-search{
     left: 7px;
     opacity: 0.5;
     position: absolute;
     top: 40px;
     font-size: 20px;
-    }
-.fixed-icon-remove-sign {
+  }
+  .fixed-icon-remove-sign {
     font-size: 22px;
     opacity: 0.5;
     position: absolute;
     right: 270px;
     top: 41px;
-}
-.icon-remove-sign:before{
-  cursor:pointer;
-  cursor:hand;
-}
-
-
+  }
+  .icon-remove-sign:before{
+    cursor:pointer;
+    cursor:hand;
+  }
+  
+  
   // Info appears as a neutral blue
   .btn-info {
     @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
     color: $btn-info-text-color;
   } 
   
-    /* ==========================================================================
-    Search pane styling
-    ========================================================================== */
+  /* ==========================================================================
+  Search pane styling
+  ========================================================================== */
   .search-login .grid-inner{
-        margin-bottom: $default-spacing;
-    }
+    margin-bottom: $default-spacing;
+  }
   .panel-pane.pane-search-form {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      @include rgba-background($theme-tertiary-color, 0.8);
-      background: $theme-tertiary-color;
-      @include gradient-reset-filter();
-      min-height: 145px;
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    @include rgba-background($theme-tertiary-color, 0.8);
+    background: $theme-tertiary-color;
+    @include gradient-reset-filter();
+    min-height: 145px;
+  }
+  .search-wrapper{
+    @include rgba-background($theme-tertiary-color, 1);
+    margin-top: 0px;
+    form {
+      margin: 0px;
+      position: relative;
+      width: 100%;
+      }.form-text {
+      height: 40px;
+      width: 100%;
+      -webkit-border-radius: 4px 0px 0px 4px;
+      -moz-border-radius: 4px 0px 0px 4px;
+      border-radius: 4px 0px 0px 4px;         
     }
-    .search-wrapper{
-      @include rgba-background($theme-tertiary-color, 1);
-      margin-top: 0px;
-      form {
-        margin: 0px;
-        position: relative;
-        width: 100%;
-        }.form-text {
-          height: 40px;
-          width: 100%;
-          -webkit-border-radius: 4px 0px 0px 4px;
-          -moz-border-radius: 4px 0px 0px 4px;
-          border-radius: 4px 0px 0px 4px;         
-        }
     .ui-autocomplete-input{
-            padding-left: 30px;
-      }
-      .btn {
-        height: 38px;
-        position: static;
-        float: right;
-        padding: 0px 5px 0px 0px;
-        margin-right: 15px;
-      }          
+      padding-left: 30px;
+    }
+    .btn {
+      height: 38px;
+      position: static;
+      float: right;
+      padding: 0px 5px 0px 0px;
+      margin-right: 15px;
+    }          
     &a {
       background: url(../../../../../misc/menu-expanded.png) no-repeat;
       background-position: 95% 50%;
@@ -350,15 +354,15 @@ ul {
       padding-right: 30px;
       line-height: 40px;
     }
-      .btn a:hover {
-        text-decoration: none;
+    .btn a:hover {
+      text-decoration: none;
     }   
-      .form-item-keys {
-        display: block;
-        overflow: hidden;
-      }
-    }    
-   .form-item, .form-actions {
+    .form-item-keys {
+      display: block;
+      overflow: hidden;
+    }
+  }    
+  .form-item, .form-actions {
     background-color: transparent;
     border-top: 0px solid transparent;
     padding: 0px;
@@ -374,7 +378,7 @@ ul {
       margin-right: $default-spacing;
     }    
   }  
-
+  
   .search-wrapper #edit-advanced {
     margin: 0;
     position: static;
@@ -389,25 +393,25 @@ ul {
       width: 100%;
       z-index: 50;
     }
-}
-
-.facetbrowser_overlay {
-  z-index: 10000;
-  @include rgba-background($black, 0.5);
-  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
-}
-
-.facetbrowser_overlay .spinner {
-  z-index:10001;
-  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
-  background: transparent url(../images/spinner.gif) no-repeat 50% 50%;
-}
-
-/* facet link color */
-.pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: $black; }
-.pane-ding-facetbrowser a:hover { color: $black; text-decoration: none; }
-
-    //advanced search
+  }
+  
+  .facetbrowser_overlay {
+    z-index: 10000;
+    @include rgba-background($black, 0.5);
+    position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
+  }
+  
+  .facetbrowser_overlay .spinner {
+    z-index:10001;
+    position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
+    background: transparent url(../images/spinner.gif) no-repeat 50% 50%;
+  }
+  
+  /* facet link color */
+  .pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: $black; }
+  .pane-ding-facetbrowser a:hover { color: $black; text-decoration: none; }
+  
+  //advanced search
   
   #edit-advanced {
     margin: 0;
@@ -450,67 +454,67 @@ ul {
       }
     }
   }
-        
-    //
-    
-    ul.ui-autocomplete { 
-      max-width: 432px!important;
-      z-index:100;
+  
+  //
+  
+  ul.ui-autocomplete { 
+    max-width: 432px!important;
+    z-index:100;
+  }
+  
+  .ui-menu .ui-menu-item a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  input#edit-search-block-form--2.spinner {
+    background-position: 97%!important;
+  }
+  .search-results .content{
+    display: block!important;
+  }
+  .panel-pane.pane-recommendation-list{
+    background: $recommendation-list;
+  }
+  .pane-recommendation-list .list-item{      
+    margin-bottom: $default-spacing /2;
+    padding-bottom: $default-spacing /2;
+    min-height: 160px;
+  }
+  .subjects.content{
+    padding-top: $default-spacing /2;
+  }
+  
+  //user menu
+  .pane-system-user-menu {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    @include rgba-background($theme-tertiary-color, 0.8);
+    background: $theme-secondary-color;
+    @include gradient-reset-filter();
+  }
+  
+  .pane-user-login {
+    min-height: 145px;
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    @include rgba-background($theme-tertiary-color, 0.8);
+    background: $theme-tertiary-color;
+    @include gradient-reset-filter();
+    .form-item-name input {
+      width: 90%;
+      float: left;
     }
-    
-    .ui-menu .ui-menu-item a{
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .form-item-pass input {
+      width: 58%;
+      float: left;
     }
-    input#edit-search-block-form--2.spinner {
-      background-position: 97%!important;
-    }
-    .search-results .content{
-      display: block!important;
-    }
-    .panel-pane.pane-recommendation-list{
-      background: $recommendation-list;
-    }
-    .pane-recommendation-list .list-item{      
-      margin-bottom: $default-spacing /2;
-      padding-bottom: $default-spacing /2;
-      min-height: 160px;
-    }
-    .subjects.content{
-      padding-top: $default-spacing /2;
-    }
-    
-    //user menu
-    .pane-system-user-menu {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      @include rgba-background($theme-tertiary-color, 0.8);
-      background: $theme-secondary-color;
-      @include gradient-reset-filter();
-    }
-    
-    .pane-user-login {
-      min-height: 145px;
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      @include rgba-background($theme-tertiary-color, 0.8);
-      background: $theme-tertiary-color;
-      @include gradient-reset-filter();
-      .form-item-name input {
-        width: 90%;
-        float: left;
-      }
-      .form-item-pass input {
-        width: 58%;
-        float: left;
-      }
-      .form-actions {
-        width: 40px;
-        float: left;
-        margin-left: $default-spacing / 2;
-      } 
-    }
+    .form-actions {
+      width: 40px;
+      float: left;
+      margin-left: $default-spacing / 2;
+    } 
+  }
   .pane-user-login {
     .icon-user {
       display: block;
@@ -533,155 +537,155 @@ ul {
       z-index: 3;
     }
   }
-    .search-login .pane-system-user-menu {
-      min-height: 135px;
-    }  
-    
-    .pane-ding-user-frontend-ding-user-loan-number {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      min-height: 145px;
-      @include rgba-background($theme-secondary-color, 0.8);
-      background: $theme-secondary-color;
-      @include gradient-reset-filter();
-    }
-
-    /* ==========================================================================
-    custom grid
-    ========================================================================== */
-    .grid-11-left {
-      -moz-box-sizing: border-box;
-      float: left;
-      margin-left: 0;
-      margin-right: -72%;
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 72%;
-      word-wrap: break-word;
-    }
-    article .grid-inner{
-      background-color: $white;
-    }
-    .ctools-collapsible-handle{
-      background: $gray-light;
-    }
-    .collapsall{
-      display: block!important;
-    }
+  .search-login .pane-system-user-menu {
+    min-height: 135px;
+  }  
   
-    
-    .breadcrumb {
-      margin-left: $default-spacing;
-      margin-right: $default-spacing;
-    } 
-    /* ==========================================================================
-    Login pane styling
-    ========================================================================== */
-
-    #edit-profile-provider-alma-field-alma-phone-id{
-      display:none;
-      }
-      #edit-profile-provider-alma-field-absent-id{
-        display:none;
-        }
-        #edit-profile-provider-alma-field-alma-reservation-pause{
-          display:none;
-        }
-    .ctools-collapsible-container .ctools-toggle {
-      background-image: url("../images/new_arrow.png");
-      background-position: 3px 3px;
-      background-repeat: no-repeat;
-      cursor: pointer;
-      float: left;  
-      width: 21px;
-    }
-    .ctools-collapsible-content{
-      padding-top: 10px;
-    }
-    .ctools-collapsible-container .ctools-toggle-collapsed {
-      background-image: url("../images/new_arrow_collapsed.png");
-      background-position: 6px 3px;
-    }
-    .ctools-collapsible-container h2{
-      font-size: 12px;
-      line-height: 20px;
-      color: $white;
-      text-transform: uppercase;
-    }
-    /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-    
-    label.placeholder {
-      cursor: text;
-      padding: 0.4em 0.6em 0.4em 1.6em;   
-      color: $gray-light2;
-    }
-    #edit-keys_placeholder{
-      top: 35px!important;
-      padding-left: 30px;
-      }
-    .pane-user-login input[placeholder]{
-      padding-left: 17px;
-      }
-    /* html5 placeholder support */
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-      color: $gray-light2;
-    }
-    
-    input:placeholder, textarea:placeholder {
-      color: $gray-light2;
-    }
-    
-    .tags a{
-      padding: $default-spacing / 2;
-    }
-    
-    /* NEWS & EVENTS */
-    .list-item {
+  .pane-ding-user-frontend-ding-user-loan-number {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    min-height: 145px;
+    @include rgba-background($theme-secondary-color, 0.8);
+    background: $theme-secondary-color;
+    @include gradient-reset-filter();
+  }
+  
+  /* ==========================================================================
+  custom grid
+  ========================================================================== */
+  .grid-11-left {
+    -moz-box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+    margin-right: -72%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 72%;
+    word-wrap: break-word;
+  }
+  article .grid-inner{
+    background-color: $white;
+  }
+  .ctools-collapsible-handle{
+    background: $gray-light;
+  }
+  .collapsall{
+    display: block!important;
+  }
+  
+  
+  .breadcrumb {
+    margin-left: $default-spacing;
+    margin-right: $default-spacing;
+  } 
+  /* ==========================================================================
+  Login pane styling
+  ========================================================================== */
+  
+  #edit-profile-provider-alma-field-alma-phone-id{
+    display:none;
+  }
+  #edit-profile-provider-alma-field-absent-id{
+    display:none;
+  }
+  #edit-profile-provider-alma-field-alma-reservation-pause{
+    display:none;
+  }
+  .ctools-collapsible-container .ctools-toggle {
+    background-image: url("../images/new_arrow.png");
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;  
+    width: 21px;
+  }
+  .ctools-collapsible-content{
+    padding-top: 10px;
+  }
+  .ctools-collapsible-container .ctools-toggle-collapsed {
+    background-image: url("../images/new_arrow_collapsed.png");
+    background-position: 6px 3px;
+  }
+  .ctools-collapsible-container h2{
+    font-size: 12px;
+    line-height: 20px;
+    color: $white;
+    text-transform: uppercase;
+  }
+  /* ***** match placeholder/watermark padding to border+padding for input element ***** */
+  
+  label.placeholder {
+    cursor: text;
+    padding: 0.4em 0.6em 0.4em 1.6em;   
+    color: $gray-light2;
+  }
+  #edit-keys_placeholder{
+    top: 35px!important;
+    padding-left: 30px;
+  }
+  .pane-user-login input[placeholder]{
+    padding-left: 17px;
+  }
+  /* html5 placeholder support */
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: $gray-light2;
+  }
+  
+  input:placeholder, textarea:placeholder {
+    color: $gray-light2;
+  }
+  
+  .tags a{
+    padding: $default-spacing / 2;
+  }
+  
+  /* NEWS & EVENTS */
+  .list-item {
     min-height: 160px;     
-    }
-    
-    ul.promoted li.list-item.last {
-      border-bottom: 1px solid #E7E7E7;
-      padding-bottom: 15px;
-      margin-bottom: 15px;
-    }
-    
-    div.subheading span {
-      padding-right: $default-spacing / 4;
-      padding-left: $default-spacing / 4;
-    }
- 
+  }
+  
+  ul.promoted li.list-item.last {
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  
+  div.subheading span {
+    padding-right: $default-spacing / 4;
+    padding-left: $default-spacing / 4;
+  }
+  
   .view-display-id-ding_event_simple_list .heading {
-      padding-left: $default-spacing;  
-    }
-    .list .image-container{
-      float: left;
-      margin-right: $default-spacing / 2; 
-      }
-    /* ==========================================================================
-    Content pane styling
-    ========================================================================== */
-    
+    padding-left: $default-spacing;  
+  }
+  .list .image-container{
+    float: left;
+    margin-right: $default-spacing / 2; 
+  }
+  /* ==========================================================================
+  Content pane styling
+  ========================================================================== */
+  
   .pane-event-category-menu, .pane-news-category-menu {
     padding: $default-spacing;   
   }
-
+  
   //cookie slider
   #sliding-popup {
-      background: url("../images/gradient.png") repeat-y scroll center center transparent;
-      }     
+    background: url("../images/gradient.png") repeat-y scroll center center transparent;
+  }     
   
-.pane-similarterms-ding-content-tags ul li {
-  margin-bottom: $default-spacing / 2;
-}
-
-.fffW-widget, .fffw-dialog {
-  margin: 0px !important;
-  padding: 0px !important;
-  border: none !important;
-  font-family: inherit!important;
-}
-
+  .pane-similarterms-ding-content-tags ul li {
+    margin-bottom: $default-spacing / 2;
+  }
+  
+  .fffW-widget, .fffw-dialog {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+    font-family: inherit!important;
+  }
+  
   .fffW-widget {
     color: inherit !important;
     font-size: inherit !important;
@@ -690,19 +694,19 @@ ul {
     font-size: 18px !important;
     margin: 10px 0 0 !important;
   }
-    
-.fffW-widget p {
-  font-size: 12px !important;
-}
-
-#ding-library-front .rounded-corner {
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-.rounded-corner {
+  
+  .fffW-widget p {
+    font-size: 12px !important;
+  }
+  
+  #ding-library-front .rounded-corner {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .rounded-corner {
     margin-bottom: $default-spacing / 2;
-}
-#ding-reservation-reservations-notready-form th:nth-child(4) {
+  }
+  #ding-reservation-reservations-notready-form th:nth-child(4) {
     display: none;
   }
   #ding-reservation-reservations-notready-form .expire-date{
@@ -710,8 +714,8 @@ ul {
   }
   .pickup-order-id{
     font-size: 18px;
-    }
- 
+  }
+  
   //logged in table list fixes.
   .table {
     .field.field-name-ting-title.field-type-ting-title {
@@ -727,29 +731,29 @@ ul {
       padding-top: $default-spacing /2;
     }
     .field.field-name-ting-type.field-type-ting-type{
-       padding-top: $default-spacing / 2;
-      }
-  }
-.table  .title h2 {
-    font-size: 14px;
-}
-
-
-//openhours
-
-.field-name-field-ding-library-list-image{
-  position: relative;
+      padding-top: $default-spacing / 2;
     }
-.library-openstatus.open {
+  }
+  .table  .title h2 {
+    font-size: 14px;
+  }
+  
+  
+  //openhours
+  
+  .field-name-field-ding-library-list-image{
+    position: relative;
+  }
+  .library-openstatus.open {
     background: none repeat scroll 0 0 #2C9D01;
-}
-.library-openstatus.closed {
+  }
+  .library-openstatus.closed {
     background: none repeat scroll 0 0 red;
-}
-.library-openstatus.self-service {
+  }
+  .library-openstatus.self-service {
     background: none repeat scroll 0 0 orange;
-}
-.library-openstatus {
+  }
+  .library-openstatus {
     border-bottom: 1px solid white;
     border-left: 1px solid white;
     color: white;
@@ -761,7 +765,7 @@ ul {
     font-size: 10px;
     line-height: 17px;
     text-transform: uppercase;
-}
+  }
   #featured .ui-tabs-nav li.ui-tabs-selected {
     border-color: transparent $theme-tertiary-color transparent transparent;
     &a {
