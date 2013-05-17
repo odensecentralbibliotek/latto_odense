@@ -11,6 +11,7 @@
       // Constructor for the updater.
       self.constructor = function () {
         self.isOpen = false;
+        self.isselfService = false;
         self.options = options;
 
         self.date = options.date;
@@ -40,7 +41,7 @@
       // Returns true if library is open, false if not.
       self.calculateOpenStatus = function () {
         var instances, isOpen = false;
-        var instances, isselfService = true;
+        var instances, isselfService = false;
 
         // Get opening hours instances for the date in question.
         instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
@@ -52,17 +53,19 @@
           minutes = self.date.getMinutes();
 
           // Now we have all the data we need, figure out if we're open.
-          if (this.notice){
-            self.isselfService = isselfService;
-          }
-          else if ((hours > open.hours ||
+          
+         if ((hours > open.hours ||
             hours === open.hours && minutes >= open.minutes) &&
           (hours < close.hours ||
             hours === close.hours && minutes < close.minutes)) {
             isOpen = true;
           }
+          if (this.notice && isOpen){
+            isselfService = true;
+          }
         });
-
+                 
+        self.isselfService = isselfService;
         self.isOpen = isOpen;
       };
 
@@ -80,13 +83,13 @@
           // Save the view instance for later reference.
           self.el.data('statusIndicatorInstance', self);
         }
-        if (self.isselfService) {
+        if ((self.isselfService) && (self.isOpen)) {
           self.el.removeClass('closed');
           self.el.removeClass('open');
           self.el.addClass('self-service');
           self.el.text(Drupal.t('open without service.'));
       }
-       else if (self.isOpen) {
+       else if (self.isOpen && !(self.isselfService)) {
           self.el.removeClass('self-service');
           self.el.removeClass('closed');
           self.el.addClass('open');
@@ -100,12 +103,13 @@
         }
 
         // Trigger an evert so other scripts can react to the change.
-        $(window).trigger('DingLibraryStatusChange', [self.nid, self.isOpen]);
+        $(window).trigger('DingLibraryStatusChange', [self.nid, self.isOpen, self.isselfService]);
       };
 
       // Update our display with a new date value.
       self.update = function (date) {
         var currentState = self.isOpen;
+         var currentState = self.isselfService;
 
         // Make sure we have a proper date object (Firefox gives us a
         // lateness parameter, where we'd normally get undefined).
@@ -119,6 +123,10 @@
 
         // If state changed, re-render.
         if (currentState !== self.isOpen) {
+          self.render();
+        }
+        // If state changed, re-render.
+        if (currentState !== self.isselfService) {
           self.render();
         }
       };
