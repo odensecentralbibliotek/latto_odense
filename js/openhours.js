@@ -40,6 +40,7 @@
       // Returns true if library is open, false if not.
       self.calculateOpenStatus = function () {
         var instances, isOpen = false;
+        var instances, isselfService = true;
 
         // Get opening hours instances for the date in question.
         instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
@@ -51,7 +52,10 @@
           minutes = self.date.getMinutes();
 
           // Now we have all the data we need, figure out if we're open.
-          if ((hours > open.hours ||
+          if (this.notice){
+            self.isselfService = isselfService;
+          }
+          else if ((hours > open.hours ||
             hours === open.hours && minutes >= open.minutes) &&
           (hours < close.hours ||
             hours === close.hours && minutes < close.minutes)) {
@@ -76,8 +80,14 @@
           // Save the view instance for later reference.
           self.el.data('statusIndicatorInstance', self);
         }
-
-        if (self.isOpen) {
+        if (self.isselfService) {
+          self.el.removeClass('closed');
+          self.el.removeClass('open');
+          self.el.addClass('self-service');
+          self.el.text(Drupal.t('open without service.'));
+      }
+       else if (self.isOpen) {
+          self.el.removeClass('self-service');
           self.el.removeClass('closed');
           self.el.addClass('open');
           self.el.text(Drupal.t('Open'));
@@ -85,6 +95,7 @@
         else {
           self.el.addClass('closed');
           self.el.removeClass('open');
+          self.el.removeClass('self-service');
           self.el.text(Drupal.t('Closed'));
         }
 

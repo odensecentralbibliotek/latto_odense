@@ -296,10 +296,7 @@ ul {
   cursor:hand;
 }
 
-  // Buttons 
-  .btn {
-    @include buttonBackground($btnBackground, $btnBackgroundHighlight);
-  }
+
   // Info appears as a neutral blue
   .btn-info {
     @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
@@ -748,6 +745,9 @@ ul {
 }
 .library-openstatus.closed {
     background: none repeat scroll 0 0 red;
+}
+.library-openstatus.self-service {
+    background: none repeat scroll 0 0 orange;
 }
 .library-openstatus {
     border-bottom: 1px solid white;
