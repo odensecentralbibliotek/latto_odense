@@ -641,7 +641,7 @@ header {
   
   /* NEWS & EVENTS */
   .list-item {
-    min-height: 160px;     
+    display: table;    
   }
   
   ul.promoted li.list-item.last {

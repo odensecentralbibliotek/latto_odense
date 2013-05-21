@@ -893,7 +893,7 @@ input:placeholder, textarea:placeholder {
 /* NEWS & EVENTS */
 /* line 643, ../sass/latto.subtheme.base.scss */
 .list-item {
-  min-height: 160px;
+  display: table;
 }
 
 /* line 647, ../sass/latto.subtheme.base.scss */
