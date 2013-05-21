@@ -1,5 +1,5 @@
 <?php
-$plugin['three_4_9_4'] = array(
+$plugin['three_3_9_4'] = array(
   'title' => t('Three Columns, 3-9-4'),
   'icon' => 'three_3_9_4.png',
   'theme' => 'three_3_9_4',
