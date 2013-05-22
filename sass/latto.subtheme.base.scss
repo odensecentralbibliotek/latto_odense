@@ -637,8 +637,8 @@ header {
   }
   
   /* NEWS & EVENTS */
-  .list.promoted .list-item {
-    display: table;    
+  .list-item {
+    display: inline-block;    
   }
   
   ul.promoted li.list-item.last {
