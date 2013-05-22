@@ -887,7 +887,7 @@ input:placeholder, textarea:placeholder {
 
 /* NEWS & EVENTS */
 /* line 640, ../sass/latto.subtheme.base.scss */
-.list-item {
+.list.promoted .list-item {
   display: table;
 }
 
