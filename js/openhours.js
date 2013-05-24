@@ -42,6 +42,7 @@
       self.calculateOpenStatus = function () {
         var instances, isOpen = false;
         var instances, isselfService = false;
+        var instances, dontShow = false;
 
         // Get opening hours instances for the date in question.
         instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
@@ -60,13 +61,22 @@
             hours === close.hours && minutes < close.minutes)) {
             isOpen = true;
           }
-          if (this.notice && isOpen){
+
+            if (this.notice && isOpen){
             isselfService = true;
           }
+          else if (this.notice){
+          jQuery.each(jQuery('.instance[original-title="Betjent åbningstid"]'), function(){
+
+           dontShow = true;
+ 
+          });
+          }
         });
-                 
+
         self.isselfService = isselfService;
         self.isOpen = isOpen;
+        self.dontShow = dontShow;
       };
 
       // Render the current opening status.
@@ -83,7 +93,12 @@
           // Save the view instance for later reference.
           self.el.data('statusIndicatorInstance', self);
         }
-        if ((self.isselfService) && (self.isOpen)) {
+        if (self.dontShow){
+           self.el.removeClass('closed');
+           self.el.removeClass('open');
+           self.el.removeClass('self-service');
+        }
+        else if ((self.isselfService) && (self.isOpen)) {
           self.el.removeClass('closed');
           self.el.removeClass('open');
           self.el.addClass('self-service');

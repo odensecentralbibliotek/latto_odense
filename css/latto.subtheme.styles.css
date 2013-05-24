@@ -1630,25 +1630,26 @@ div[class*='ting-cover-'] {
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
+  display: block;
 }
 
-/* line 373, ../sass/latto.ting.scss */
+/* line 374, ../sass/latto.ting.scss */
 .view-mode-collection-list .search-ting-cover:after, .view-mode-collection-list .ting-cover:after {
   right: 15px;
 }
 
-/* line 377, ../sass/latto.ting.scss */
+/* line 378, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover {
   margin-right: 0;
 }
 
-/* line 382, ../sass/latto.ting.scss */
+/* line 383, ../sass/latto.ting.scss */
 .pane-ting-object .ting-cover {
   width: 23%;
   min-height: 250px;
 }
 
-/* line 388, ../sass/latto.ting.scss */
+/* line 389, ../sass/latto.ting.scss */
 .view-mode-user-list .ting-cover {
   width: 8%;
 }
