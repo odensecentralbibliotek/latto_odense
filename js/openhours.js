@@ -62,7 +62,7 @@
             isOpen = true;
           }
 
-        if (this.notice && isOpen){
+        if (this.notice){
             
           isselfService = true;
           jQuery.each(jQuery('.instance[original-title="Betjent åbningstid"]'), function(){
@@ -70,9 +70,6 @@
             dontShow = true; 
           });
         }
-        else if (this.notice){
-          
-      }
       });
 
         self.isselfService = isselfService;
