@@ -21,8 +21,7 @@ header {
   padding-bottom: $default-spacing;
   padding-top: $default-spacing;
   .site-name {
-    font-size: 85%;
-    margin-left: 23px;
+    display: none;
   }
   .logo {
     float: left;
