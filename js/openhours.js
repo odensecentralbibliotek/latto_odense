@@ -62,17 +62,17 @@
             isOpen = true;
           }
 
-        if (this.notice && isOpen){
-            
-          isselfService = true;
-        }
-        else if(this.notice){
-           jQuery.each(jQuery('.instance[original-title="Betjent åbningstid"]'), function(){
-            isselfService = false;
-            dontShow = true; 
-          });
-        }
-      });
+          if(this.notice){
+            jQuery.each(jQuery('.instance[original-title="Betjent åbningstid"]'), function(){
+              isselfService = false;
+              dontShow = true; 
+            });
+          }
+            else if (this.notice && isOpen){
+              
+              isselfService = true;
+            }
+        });
 
         self.isselfService = isselfService;
         self.isOpen = isOpen;
