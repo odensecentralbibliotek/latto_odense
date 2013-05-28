@@ -42,7 +42,6 @@
       self.calculateOpenStatus = function () {
         var instances, isOpen = false;
         var instances, isselfService = false;
-        var instances, dontShow = false;
 
         // Get opening hours instances for the date in question.
         instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
@@ -61,22 +60,13 @@
             hours === close.hours && minutes < close.minutes)) {
             isOpen = true;
           }
-
-          if(this.notice){
-            jQuery.each(jQuery('.instance[original-title="Betjent åbningstid"]'), function(){
-              isselfService = false;
-              dontShow = true; 
-            });
-          }
-            else if (this.notice && isOpen){
-              
+           if (this.notice && isOpen){             
               isselfService = true;
-            }
+            }            
         });
-
+                 
         self.isselfService = isselfService;
         self.isOpen = isOpen;
-        self.dontShow = dontShow;
       };
 
       // Render the current opening status.
@@ -89,19 +79,14 @@
         if (!self.el) {
           self.el = $('<div class="library-openstatus"></div>');
           self.el.appendTo($(self.options.container).parent().siblings('.field-name-field-ding-library-list-image').find('.field-items'));
-
+          
           // Save the view instance for later reference.
           self.el.data('statusIndicatorInstance', self);
         }
-        if (self.dontShow){
-           self.el.removeClass('closed');
-           self.el.removeClass('open');
-           self.el.removeClass('self-service');
-        }
-        else if ((self.isselfService) && (self.isOpen)) {
+        if ((self.isselfService) && (self.isOpen)) {
           self.el.removeClass('closed');
           self.el.removeClass('open');
-          self.el.addClass('self-service');
+          self.el.addClass('self-service');        
           self.el.text(Drupal.t('open without service.'));
       }
        else if (self.isOpen && !(self.isselfService)) {
@@ -124,7 +109,7 @@
       // Update our display with a new date value.
       self.update = function (date) {
         var currentState = self.isOpen;
-         var currentState = self.isselfService;
+        var currentState = self.isselfService;
 
         // Make sure we have a proper date object (Firefox gives us a
         // lateness parameter, where we'd normally get undefined).
