@@ -670,7 +670,7 @@ input#edit-search-block-form--2.spinner {
 .pane-recommendation-list .list-item {
   margin-bottom: 7.5px;
   padding-bottom: 7.5px;
-  min-height: 160px;
+  display: table;
 }
 
 /* line 483, ../sass/latto.subtheme.base.scss */
