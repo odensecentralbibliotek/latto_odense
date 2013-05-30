@@ -128,7 +128,7 @@ header {
   ul {
     &.menu {
       border: none;
-      list-style: disc inside none;
+      list-style: none;
       text-align: left;
       /* LTR */
     }
@@ -156,7 +156,7 @@ header {
   }
   
   ul {
-    list-style: none;
+    list-style: disc inside none;
     margin: 0px;
     padding: 0;
   }

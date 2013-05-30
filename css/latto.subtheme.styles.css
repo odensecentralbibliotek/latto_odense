@@ -179,7 +179,7 @@ Navigation
 /* line 129, ../sass/latto.subtheme.base.scss */
 ul.menu {
   border: none;
-  list-style: disc inside none;
+  list-style: none;
   text-align: left;
   /* LTR */
 }
@@ -207,7 +207,7 @@ li a.active {
 
 /* line 158, ../sass/latto.subtheme.base.scss */
 ul {
-  list-style: none;
+  list-style: disc inside none;
   margin: 0px;
   padding: 0;
 }
