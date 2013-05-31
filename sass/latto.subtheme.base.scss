@@ -586,9 +586,6 @@ header {
   }
   #edit-profile-provider-alma-field-absent-id{
     display:none;
-  }
-  #edit-profile-provider-alma-field-alma-reservation-pause {
-    display: none;
   } 
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");
@@ -739,7 +736,11 @@ header {
   
   
   //openhours
-  
+  .day.odd {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+  }
   .field-name-field-ding-library-list-image{
     position: relative;
   }
