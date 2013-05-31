@@ -539,15 +539,21 @@ header {
   .search-login .pane-system-user-menu {
     min-height: 135px;
   }  
-  
-  .pane-ding-user-frontend-ding-user-loan-number {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    min-height: 145px;
-    @include rgba-background($theme-secondary-color, 0.8);
-    background: $theme-secondary-color;
-    @include gradient-reset-filter();
+.pane-ding-user-frontend-ding-user-loan-number {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  min-height: 145px;
+  @include rgba-background($theme-secondary-color, 0.8);
+  background: $theme-secondary-color;
+  @include gradient-reset-filter();
+  &a{
+    color: inherit;
+    font-weight: bold;
   }
+}
+#ding-user-profile{
+  margin-bottom: $default-spacing /2;
+}
   
   /* ==========================================================================
   custom grid
@@ -584,9 +590,6 @@ header {
   #edit-profile-provider-alma-field-alma-phone-id{
     display:none;
   }
-  #edit-profile-provider-alma-field-absent-id{
-    display:none;
-  } 
   .ctools-collapsible-container .ctools-toggle {
     background-image: url("../images/new_arrow.png");
     background-position: 3px 3px;
