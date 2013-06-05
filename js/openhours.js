@@ -60,7 +60,7 @@
             hours === close.hours && minutes < close.minutes)) {
             isOpen = true;
           }
-           if (this.notice && isOpen){             
+           if (this.notice && isOpen){
               isselfService = true;
             }            
         });

@@ -13,6 +13,7 @@
 
 body {
   background: $theme-background fixed no-repeat;
+  color: rgba(0, 0, 0, 0.7)!important;
 }
 
 header {
@@ -228,9 +229,18 @@ header {
     margin-bottom: $default-spacing;
     width: 35%;
   }
-  .opening-hours-week{ 
-    padding: 0;
-  }    
+.opening-hours-week .notice-star:before {
+    font-family: "FontAwesome";
+    visibility: visible;
+}
+.icon-info-sign:before, .opening-hours-week .notice-star:before {
+    content: "";
+}
+.opening-hours-week .notice-star {
+    margin-right: 0;
+    padding-left: 5px;
+    visibility: hidden;
+}
   .opening-hours-week .days{ 
     padding: 0;
   }
