@@ -229,21 +229,22 @@ header {
     margin-bottom: $default-spacing;
     width: 35%;
   }
+.opening-hours-week .notice-star {
+  margin-right: 0;
+  padding-left: 5px;
+  visibility: hidden;
+  float: right;
+}
 .opening-hours-week .notice-star:before {
-    font-family: "FontAwesome";
-    visibility: visible;
+  font-family: "FontAwesome";
+  visibility: visible;
 }
 .icon-info-sign:before, .opening-hours-week .notice-star:before {
-    content: "";
+  content: "";
 }
-.opening-hours-week .notice-star {
-    margin-right: 0;
-    padding-left: 5px;
-    visibility: hidden;
+.opening-hours-week .days{ 
+  padding: 0;
 }
-  .opening-hours-week .days{ 
-    padding: 0;
-  }
   .opening-hours-week .times {
     margin-right: $default-spacing /2!important;
   }
