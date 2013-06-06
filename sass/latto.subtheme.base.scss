@@ -230,14 +230,13 @@ header {
     width: 35%;
   }
 .opening-hours-week .notice-star {
-  margin-right: 0;
   color: transparent;
+  margin-right: -2em;
 }
 .opening-hours-week .notice-star:before {
   font-family: "FontAwesome";
   color: #555555;
   opacity: 0.5;
-  float: right;
 }
 .icon-info-sign:before, .opening-hours-week .notice-star:before {
   content: "";
