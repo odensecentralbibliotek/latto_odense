@@ -302,15 +302,15 @@ ul {
 /* line 232, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .notice-star {
   margin-right: 0;
-  padding-left: 5px;
-  visibility: hidden;
-  float: right;
+  color: transparent;
 }
 
-/* line 238, ../sass/latto.subtheme.base.scss */
+/* line 236, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .notice-star:before {
   font-family: "FontAwesome";
-  visibility: visible;
+  color: #555555;
+  opacity: 0.5;
+  float: right;
 }
 
 /* line 242, ../sass/latto.subtheme.base.scss */
