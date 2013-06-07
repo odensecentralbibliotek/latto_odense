@@ -75,7 +75,7 @@
 
     $('.name').each(function( ) {
       if ($(this).text() == Drupal.t(weekday[date.getDay()])){
-        $(this).parent().css( "color", "green" );
+        $(this).parent().css( "font-weight", "bold" );
       }
     });
       // Render the current opening status.
