@@ -69,6 +69,15 @@
         self.isOpen = isOpen;
       };
 
+    //Added color for today
+    var date = new Date();
+    var weekday=new Array("Sunday","Monday","Tuesday" ,"Wednesday","Thursday","Friday","Saturday");
+
+    $('.name').each(function( ) {
+      if ($(this).text() == Drupal.t(weekday[date.getDay()])){
+        $(this).parent().css( "color", "green" );
+      }
+    });
       // Render the current opening status.
       self.render = function () {
         if (Drupal.OpeningHours.dataStore[self.nid]) {
