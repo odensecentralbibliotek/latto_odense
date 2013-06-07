@@ -54,21 +54,21 @@
 
           // Now we have all the data we need, figure out if we're open.
           
-         if ((hours > open.hours ||
-            hours === open.hours && minutes >= open.minutes) &&
-          (hours < close.hours ||
-            hours === close.hours && minutes < close.minutes)) {
-            isOpen = true;
+        if ((hours > open.hours ||
+          hours === open.hours && minutes >= open.minutes) &&
+        (hours < close.hours ||
+          hours === close.hours && minutes < close.minutes)) {
+          isOpen = true;
+          if (this.notice) {
+            isselfService = true;
           }
-           if (this.notice && isOpen){
-              isselfService = true;
-            }            
-        });
-                 
-        self.isselfService = isselfService;
-        self.isOpen = isOpen;
-      };
-
+        }
+      });
+          
+          self.isselfService = isselfService;
+          self.isOpen = isOpen;
+        };
+       
     //Added color for today
     var date = new Date();
     var weekday=new Array("Sunday","Monday","Tuesday" ,"Wednesday","Thursday","Friday","Saturday");
@@ -78,7 +78,7 @@
         $(this).parent().css( "font-weight", "bold" );
       }
     });
-      // Render the current opening status.
+    // Render the current opening status.
       self.render = function () {
         if (Drupal.OpeningHours.dataStore[self.nid]) {
           self.calculateOpenStatus();
