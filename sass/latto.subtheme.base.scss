@@ -317,7 +317,10 @@ header {
     @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
     color: $btn-info-text-color;
   } 
-  
+  .btn.btn-primary.btn-large {
+    background: none repeat scroll 0 0 green;
+    color: white;
+}
   /* ==========================================================================
   Search pane styling
   ========================================================================== */
