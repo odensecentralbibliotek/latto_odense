@@ -116,12 +116,14 @@
 span#expand_more {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 20px;
+  cursor: row-resize;
   }  
   
 span#expand_less {
   background: url(../images/minus-icon.png) no-repeat;
   margin-left: $default-spacing;
   padding-left: 20px;
+  cursor: row-resize;
 }
   
   
@@ -319,7 +321,7 @@ div.unreservable {
   padding-left: 30px;
   }
 .view-mode-collection-list span.field-group-format-toggler a{
-  background: url(../images/plus-icon.png) no-repeat;
+  background: url(../images/minus-icon.png) no-repeat;
   padding-left: 30px;
   }
 .pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a{
