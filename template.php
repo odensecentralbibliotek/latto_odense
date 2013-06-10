@@ -154,7 +154,7 @@ function search_form_alter_submit($form, &$form_state) {
  *
  * Addes wrapper clases for the default menu.
  */
-function latto_odense_menu_tree__menu_block__1($vars) {
+function latto_odense_menu_tree__main_menu($vars) {
   return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
 }
 
