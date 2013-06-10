@@ -755,7 +755,13 @@ header {
     font-size: 14px;
   }
   
-  
+   .lead {
+    margin-top: $default-spacing / 2;
+  }
+  .field-name-field-ding-page-body {
+    margin-top: $default-spacing / 2;
+    margin-bottom: $default-spacing / 2;
+  }
   //openhours
   .day.odd {
     background: none repeat scroll 0 0 #EEEEEE;

@@ -1038,34 +1038,45 @@ Content pane styling
   font-size: 14px;
 }
 
-/* line 760, ../sass/latto.subtheme.base.scss */
+/* line 758, ../sass/latto.subtheme.base.scss */
+.lead {
+  margin-top: 7.5px;
+}
+
+/* line 761, ../sass/latto.subtheme.base.scss */
+.field-name-field-ding-page-body {
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+}
+
+/* line 766, ../sass/latto.subtheme.base.scss */
 .day.odd {
   background: none repeat scroll 0 0 #EEEEEE;
   margin-bottom: 7.5px;
   margin-top: 7.5px;
 }
 
-/* line 765, ../sass/latto.subtheme.base.scss */
+/* line 771, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-list-image {
   position: relative;
 }
 
-/* line 768, ../sass/latto.subtheme.base.scss */
+/* line 774, ../sass/latto.subtheme.base.scss */
 .library-openstatus.open {
   background: none repeat scroll 0 0 #2C9D01;
 }
 
-/* line 771, ../sass/latto.subtheme.base.scss */
+/* line 777, ../sass/latto.subtheme.base.scss */
 .library-openstatus.closed {
   background: none repeat scroll 0 0 red;
 }
 
-/* line 774, ../sass/latto.subtheme.base.scss */
+/* line 780, ../sass/latto.subtheme.base.scss */
 .library-openstatus.self-service {
   background: none repeat scroll 0 0 orange;
 }
 
-/* line 777, ../sass/latto.subtheme.base.scss */
+/* line 783, ../sass/latto.subtheme.base.scss */
 .library-openstatus {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
@@ -1080,11 +1091,11 @@ Content pane styling
   text-transform: uppercase;
 }
 
-/* line 790, ../sass/latto.subtheme.base.scss */
+/* line 796, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected {
   border-color: transparent #99d7db transparent transparent;
 }
-/* line 792, ../sass/latto.subtheme.base.scss */
+/* line 798, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected a {
   background-color: #99d7db;
 }
