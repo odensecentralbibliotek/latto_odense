@@ -17,6 +17,10 @@
       count = $('.ting-search-amount-block em:eq(2)').clone().addClass('navcount');
       $('.nav li a').first().append(count);
     }
+    if ($('.view-header')) {
+      countNode = $('.view-header').clone().addClass('navcount');
+      $('.nav li:nth-child(2) a').first().append(countNode);
+    }
     $("a.infomedia_group").addClass("btn");
     $("#edit-submit").css('display', '');
     

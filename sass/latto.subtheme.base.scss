@@ -661,7 +661,10 @@ header {
     display: inline-block;
     width: 100%;
   }
-  
+  .search-results .list-item {
+    width: auto;
+  }
+
   ul.promoted li.list-item.last {
     border-bottom: 1px solid #E7E7E7;
     padding-bottom: 15px;
