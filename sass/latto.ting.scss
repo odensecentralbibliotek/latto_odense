@@ -16,6 +16,10 @@
 .navcount:after {
   content: ")";
 }
+.view-header.navcount {
+    float: right;
+    margin-left: 7.5px;
+}
 .availability {
   float: right; 
   ul {
@@ -179,7 +183,9 @@ span#expand_less {
 /* ==========================================================================
   Search results
   ========================================================================== */        
-       
+ #search-counter{
+    display: none;
+  }
 div.pane-search-result {
     margin-top: $default-spacing;
   }  
