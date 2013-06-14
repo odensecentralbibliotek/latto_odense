@@ -658,7 +658,8 @@ header {
   
   /* NEWS & EVENTS */
   .list-item {
-    display: inline-block;    
+    display: inline-block;
+    width: 100%;
   }
   
   ul.promoted li.list-item.last {

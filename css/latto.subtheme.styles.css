@@ -918,27 +918,28 @@ input:placeholder, textarea:placeholder {
 /* line 660, ../sass/latto.subtheme.base.scss */
 .list-item {
   display: inline-block;
+  width: 100%;
 }
 
-/* line 664, ../sass/latto.subtheme.base.scss */
+/* line 665, ../sass/latto.subtheme.base.scss */
 ul.promoted li.list-item.last {
   border-bottom: 1px solid #E7E7E7;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-/* line 670, ../sass/latto.subtheme.base.scss */
+/* line 671, ../sass/latto.subtheme.base.scss */
 div.subheading span {
   padding-right: 3.75px;
   padding-left: 3.75px;
 }
 
-/* line 675, ../sass/latto.subtheme.base.scss */
+/* line 676, ../sass/latto.subtheme.base.scss */
 .view-display-id-ding_event_simple_list .heading {
   padding-left: 15px;
 }
 
-/* line 678, ../sass/latto.subtheme.base.scss */
+/* line 679, ../sass/latto.subtheme.base.scss */
 .list .image-container {
   float: left;
   margin-right: 7.5px;
@@ -947,22 +948,22 @@ div.subheading span {
 /* ==========================================================================
 Content pane styling
 ========================================================================== */
-/* line 686, ../sass/latto.subtheme.base.scss */
+/* line 687, ../sass/latto.subtheme.base.scss */
 .pane-event-category-menu, .pane-news-category-menu {
   padding: 15px;
 }
 
-/* line 691, ../sass/latto.subtheme.base.scss */
+/* line 692, ../sass/latto.subtheme.base.scss */
 #sliding-popup {
   background: url("../images/gradient.png") repeat-y scroll center center transparent;
 }
 
-/* line 695, ../sass/latto.subtheme.base.scss */
+/* line 696, ../sass/latto.subtheme.base.scss */
 .pane-similarterms-ding-content-tags ul li {
   margin-bottom: 7.5px;
 }
 
-/* line 699, ../sass/latto.subtheme.base.scss */
+/* line 700, ../sass/latto.subtheme.base.scss */
 .fffW-widget, .fffw-dialog {
   margin: 0px !important;
   padding: 0px !important;
@@ -970,113 +971,113 @@ Content pane styling
   font-family: inherit!important;
 }
 
-/* line 706, ../sass/latto.subtheme.base.scss */
+/* line 707, ../sass/latto.subtheme.base.scss */
 .fffW-widget {
   color: inherit !important;
   font-size: inherit !important;
 }
 
-/* line 710, ../sass/latto.subtheme.base.scss */
+/* line 711, ../sass/latto.subtheme.base.scss */
 .fffW-title {
   font-size: 18px !important;
   margin: 10px 0 0 !important;
 }
 
-/* line 715, ../sass/latto.subtheme.base.scss */
+/* line 716, ../sass/latto.subtheme.base.scss */
 .fffW-widget p {
   font-size: 12px !important;
 }
 
-/* line 719, ../sass/latto.subtheme.base.scss */
+/* line 720, ../sass/latto.subtheme.base.scss */
 #ding-library-front .rounded-corner {
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
-/* line 723, ../sass/latto.subtheme.base.scss */
+/* line 724, ../sass/latto.subtheme.base.scss */
 .rounded-corner {
   margin-bottom: 7.5px;
 }
 
-/* line 726, ../sass/latto.subtheme.base.scss */
+/* line 727, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form th:nth-child(4) {
   display: none;
 }
 
-/* line 729, ../sass/latto.subtheme.base.scss */
+/* line 730, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form .expire-date {
   display: none;
 }
 
-/* line 732, ../sass/latto.subtheme.base.scss */
+/* line 733, ../sass/latto.subtheme.base.scss */
 .pickup-order-id {
   font-size: 18px;
 }
 
-/* line 738, ../sass/latto.subtheme.base.scss */
+/* line 739, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-title.field-type-ting-title {
   float: left;
   padding-right: 7.5px;
 }
-/* line 741, ../sass/latto.subtheme.base.scss */
+/* line 742, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-title.field-type-ting-title h2 {
   font-size: 14px;
 }
-/* line 745, ../sass/latto.subtheme.base.scss */
+/* line 746, ../sass/latto.subtheme.base.scss */
 .table .field-name-ting-author.field-type-ting-author {
   float: left;
   padding-right: 7.5px;
   padding-top: 7.5px;
 }
-/* line 750, ../sass/latto.subtheme.base.scss */
+/* line 751, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-type.field-type-ting-type {
   padding-top: 7.5px;
 }
 
-/* line 754, ../sass/latto.subtheme.base.scss */
+/* line 755, ../sass/latto.subtheme.base.scss */
 .table .title h2 {
   font-size: 14px;
 }
 
-/* line 758, ../sass/latto.subtheme.base.scss */
+/* line 759, ../sass/latto.subtheme.base.scss */
 .lead {
   margin-top: 7.5px;
 }
 
-/* line 761, ../sass/latto.subtheme.base.scss */
+/* line 762, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-page-body {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
 
-/* line 766, ../sass/latto.subtheme.base.scss */
+/* line 767, ../sass/latto.subtheme.base.scss */
 .day.odd {
   background: none repeat scroll 0 0 #EEEEEE;
   margin-bottom: 7.5px;
   margin-top: 7.5px;
 }
 
-/* line 771, ../sass/latto.subtheme.base.scss */
+/* line 772, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-list-image {
   position: relative;
 }
 
-/* line 774, ../sass/latto.subtheme.base.scss */
+/* line 775, ../sass/latto.subtheme.base.scss */
 .library-openstatus.open {
   background: none repeat scroll 0 0 #2C9D01;
 }
 
-/* line 777, ../sass/latto.subtheme.base.scss */
+/* line 778, ../sass/latto.subtheme.base.scss */
 .library-openstatus.closed {
   background: none repeat scroll 0 0 red;
 }
 
-/* line 780, ../sass/latto.subtheme.base.scss */
+/* line 781, ../sass/latto.subtheme.base.scss */
 .library-openstatus.self-service {
   background: none repeat scroll 0 0 orange;
 }
 
-/* line 783, ../sass/latto.subtheme.base.scss */
+/* line 784, ../sass/latto.subtheme.base.scss */
 .library-openstatus {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
@@ -1091,16 +1092,16 @@ Content pane styling
   text-transform: uppercase;
 }
 
-/* line 796, ../sass/latto.subtheme.base.scss */
+/* line 797, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected {
   border-color: transparent #99d7db transparent transparent;
 }
-/* line 798, ../sass/latto.subtheme.base.scss */
+/* line 799, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected a {
   background-color: #99d7db;
 }
 
-/* line 802, ../sass/latto.subtheme.base.scss */
+/* line 803, ../sass/latto.subtheme.base.scss */
 .openlayers-popup a {
   color: #99d7db !important;
 }
