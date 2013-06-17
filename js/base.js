@@ -24,10 +24,10 @@
     viewElem = $('.view-header');
     if (viewElem.exists()) {
       countNode = viewElem.clone().addClass('navcount');
-      $('.nav li:nth-child(2) a').first().append(countNode);
+      $('#search-tabs li:nth-child(2) a').first().append(countNode);
     }
     else {
-      $('.nav li:nth-child(2) a').first().append(' (0)');
+      $('#search-tabs li:nth-child(2) a').first().append(' (0)');
     }
     $("a.infomedia_group").addClass("btn");
     $("#edit-submit").css('display', '');
