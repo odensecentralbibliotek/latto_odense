@@ -1470,22 +1470,27 @@ span#expand_less {
 }
 
 /* line 189, ../sass/latto.ting.scss */
+.view-ding-node-search .view-header {
+  display: none;
+}
+
+/* line 192, ../sass/latto.ting.scss */
 div.pane-search-result {
   margin-top: 15px;
 }
 
-/* line 193, ../sass/latto.ting.scss */
+/* line 196, ../sass/latto.ting.scss */
 .pane-search-result h2 {
   font-size: 19.5px;
   color: #cccccc;
 }
 
-/* line 198, ../sass/latto.ting.scss */
+/* line 201, ../sass/latto.ting.scss */
 div.availability {
   margin-top: 7.5px;
 }
 
-/* line 204, ../sass/latto.ting.scss */
+/* line 207, ../sass/latto.ting.scss */
 .ting-collection-types-header, .ting-object-types-header, .ting-relations-header {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1503,16 +1508,16 @@ div.availability {
   color: #333333;
 }
 
-/* line 217, ../sass/latto.ting.scss */
+/* line 220, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors {
   margin-bottom: 15px;
 }
-/* line 219, ../sass/latto.ting.scss */
+/* line 222, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types li, .pane-ting-ting-object-types li, .pane-ting-ting-relation-anchors li {
   margin: 5px 0px;
 }
 
-/* line 224, ../sass/latto.ting.scss */
+/* line 227, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #333;
@@ -1520,135 +1525,135 @@ div.availability {
   font-size: 19.5px;
 }
 
-/* line 232, ../sass/latto.ting.scss */
+/* line 235, ../sass/latto.ting.scss */
 .ting-relation h2, .field-name-ding-availability-holdings h2, .group-material-details h2 {
   font-size: 19.5px;
 }
 
-/* line 239, ../sass/latto.ting.scss */
+/* line 242, ../sass/latto.ting.scss */
 .field-name-ding-periodical-issues {
   margin-top: 15px;
 }
 
-/* line 243, ../sass/latto.ting.scss */
+/* line 246, ../sass/latto.ting.scss */
 li.ding-periodical-foldable {
   padding-top: 15px;
 }
 
-/* line 247, ../sass/latto.ting.scss */
+/* line 250, ../sass/latto.ting.scss */
 .ding-periodical-fold {
   cursor: pointer;
 }
 
-/* line 250, ../sass/latto.ting.scss */
+/* line 253, ../sass/latto.ting.scss */
 .ding-periodical-fold:hover {
   text-decoration: underline;
 }
 
-/* line 259, ../sass/latto.ting.scss */
+/* line 262, ../sass/latto.ting.scss */
 .availability.processed {
   background-color: #0077a2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 264, ../sass/latto.ting.scss */
+/* line 267, ../sass/latto.ting.scss */
 .availability.processed a {
   color: white;
 }
 
-/* line 266, ../sass/latto.ting.scss */
+/* line 269, ../sass/latto.ting.scss */
 .availability.available.reservable {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 271, ../sass/latto.ting.scss */
+/* line 274, ../sass/latto.ting.scss */
 .availability.available.reservable a {
   color: #FFF;
 }
 
-/* line 273, ../sass/latto.ting.scss */
+/* line 276, ../sass/latto.ting.scss */
 .availability.reservable {
   background-color: #CC0000;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 278, ../sass/latto.ting.scss */
+/* line 281, ../sass/latto.ting.scss */
 .availability.reservable a {
   color: white;
 }
 
-/* line 280, ../sass/latto.ting.scss */
+/* line 283, ../sass/latto.ting.scss */
 .availability.available {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 285, ../sass/latto.ting.scss */
+/* line 288, ../sass/latto.ting.scss */
 .availability.available a {
   color: white;
 }
 
-/* line 288, ../sass/latto.ting.scss */
+/* line 291, ../sass/latto.ting.scss */
 .availability-legend {
   border-top: none;
   border-bottom: 1px solid #999999;
 }
 
-/* line 293, ../sass/latto.ting.scss */
+/* line 296, ../sass/latto.ting.scss */
 .availability-legend-item.available img {
   background-color: #40854B;
 }
 
-/* line 297, ../sass/latto.ting.scss */
+/* line 300, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
   background-color: #0077a2;
 }
 
-/* line 301, ../sass/latto.ting.scss */
+/* line 304, ../sass/latto.ting.scss */
 .availability-legend-item.on-loan img {
   background-color: #CC0000;
 }
 
-/* line 304, ../sass/latto.ting.scss */
+/* line 307, ../sass/latto.ting.scss */
 div.unreservable {
   display: none;
 }
 
-/* line 308, ../sass/latto.ting.scss */
+/* line 311, ../sass/latto.ting.scss */
 .availability-legend-item .availability-label {
   font-size: 1em;
   font-weight: normal;
 }
 
-/* line 315, ../sass/latto.ting.scss */
+/* line 318, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-group-format {
   clear: none;
 }
 
-/* line 320, ../sass/latto.ting.scss */
+/* line 323, ../sass/latto.ting.scss */
 .group-material-details .field-label {
   width: 132px;
   padding-right: 15px;
 }
 
-/* line 325, ../sass/latto.ting.scss */
+/* line 328, ../sass/latto.ting.scss */
 .view-mode-collection-list .collapsed span.field-group-format-toggler a {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 329, ../sass/latto.ting.scss */
+/* line 332, ../sass/latto.ting.scss */
 .view-mode-collection-list span.field-group-format-toggler a {
   background: url(../images/minus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 333, ../sass/latto.ting.scss */
+/* line 336, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a {
   border-right: 1px solid #112338;
   margin-left: 10px;
@@ -1656,19 +1661,19 @@ div.unreservable {
   text-decoration: none;
 }
 
-/* line 339, ../sass/latto.ting.scss */
+/* line 342, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
   border-right: medium none;
 }
 
-/* line 343, ../sass/latto.ting.scss */
+/* line 346, ../sass/latto.ting.scss */
 .search-ting-cover, .ting-cover {
   position: relative;
   width: 10%;
   min-height: 100px;
   z-index: 1;
 }
-/* line 351, ../sass/latto.ting.scss */
+/* line 354, ../sass/latto.ting.scss */
 .search-ting-cover:after, .ting-cover:after {
   content: "";
   background: url("../images/image-missing.png");
@@ -1686,41 +1691,41 @@ div.unreservable {
   min-height: 100px;
 }
 
-/* line 367, ../sass/latto.ting.scss */
+/* line 370, ../sass/latto.ting.scss */
 .ting-cover {
   margin-right: 15px;
 }
 
-/* line 371, ../sass/latto.ting.scss */
+/* line 374, ../sass/latto.ting.scss */
 div[class*='ting-cover-'] {
   float: left;
   padding-right: 15px;
 }
 
-/* line 375, ../sass/latto.ting.scss */
+/* line 378, ../sass/latto.ting.scss */
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
   display: block;
 }
 
-/* line 382, ../sass/latto.ting.scss */
+/* line 385, ../sass/latto.ting.scss */
 .view-mode-collection-list .search-ting-cover:after, .view-mode-collection-list .ting-cover:after {
   right: 15px;
 }
 
-/* line 386, ../sass/latto.ting.scss */
+/* line 389, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover {
   margin-right: 0;
 }
 
-/* line 391, ../sass/latto.ting.scss */
+/* line 394, ../sass/latto.ting.scss */
 .pane-ting-object .ting-cover {
   width: 23%;
   min-height: 250px;
 }
 
-/* line 397, ../sass/latto.ting.scss */
+/* line 400, ../sass/latto.ting.scss */
 .view-mode-user-list .ting-cover {
   width: 8%;
 }

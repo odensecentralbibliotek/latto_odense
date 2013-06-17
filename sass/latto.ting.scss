@@ -186,6 +186,9 @@ span#expand_less {
  #search-counter{
     display: none;
   }
+.view-ding-node-search .view-header {
+    display: none;
+}
 div.pane-search-result {
     margin-top: $default-spacing;
   }  
