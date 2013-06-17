@@ -189,6 +189,9 @@ span#expand_less {
 .view-ding-node-search .view-header {
     display: none;
 }
+.nav > li > a{
+  display: inline-table;
+  }
 div.pane-search-result {
     margin-top: $default-spacing;
   }  
