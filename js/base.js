@@ -1,5 +1,9 @@
 (function($){
- 
+  
+ jQuery.fn.exists = function(){
+   return this.length>0;
+ }
+
   $(document).ready(function($) {
    
     $(document).keyup(function(e) {
@@ -17,9 +21,13 @@
       count = $('.ting-search-amount-block em:eq(2)').clone().addClass('navcount');
       $('.nav li a').first().append(count);
     }
-    if ($('.view-header')) {
-      countNode = $('.view-header').clone().addClass('navcount');
+    viewElem = $('.view-header');
+    if (viewElem.exists()) {
+      countNode = viewElem.clone().addClass('navcount');
       $('.nav li:nth-child(2) a').first().append(countNode);
+    }
+    else {
+      $('.nav li:nth-child(2) a').first().append(' (0)');
     }
     $("a.infomedia_group").addClass("btn");
     $("#edit-submit").css('display', '');
