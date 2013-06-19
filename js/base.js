@@ -23,7 +23,8 @@
     }
     viewElem = $('.view-header');
     if (viewElem.exists()) {
-      countNode = viewElem.clone().addClass('navcount');
+      viewElem.text(viewElem.text().trim());
+      countNode = viewElem.addClass('navcount');
       $('#search-tabs li:nth-child(2) a').first().append(countNode);
     }
     else {
