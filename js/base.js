@@ -30,6 +30,13 @@
     else {
       $('#search-tabs li:nth-child(2) a').first().append(' (0)');
     }
+    
+    input = jQuery('#ding-loan-loans-form .table .form-type-checkbox');
+    disabled = jQuery('#ding-loan-loans-form .table .form-type-checkbox.form-disabled');
+    if (input.length == disabled.length){
+      jQuery('.select-all').remove();  
+    }
+    
     $("a.infomedia_group").addClass("btn");
     $("#edit-submit").css('display', '');
     
