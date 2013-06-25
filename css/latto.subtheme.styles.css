@@ -372,7 +372,7 @@ footer .grid-inner {
 }
 /* line 277, ../sass/latto.subtheme.base.scss */
 .footer-menu h2 {
-  color: #555555 !important;
+  color: #333333 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13.65px;
   font-weight: normal;
@@ -381,7 +381,7 @@ footer .grid-inner {
 }
 /* line 285, ../sass/latto.subtheme.base.scss */
 .footer-menu a {
-  color: #555555 !important;
+  color: #333333 !important;
   font-size: 12px;
   list-style: none;
   text-decoration: none;
@@ -434,12 +434,12 @@ footer .grid-inner {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   color: white;
 }
-/* line 38, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 38, ../sass/latto.mixins.scss */
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
   background-color: #31b0d5;
   *background-color: #28a1c5;
 }
-/* line 45, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 45, ../sass/latto.mixins.scss */
 .btn-info:active, .btn-info.active {
   background-color: #2390b0 \9;
 }
@@ -1120,25 +1120,25 @@ body {
   line-height: 18px;
 }
 
-/* line 108, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 108, ../sass/latto.mixins.scss */
 ::-webkit-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 108, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 108, ../sass/latto.mixins.scss */
 ::-moz-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 108, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 108, ../sass/latto.mixins.scss */
 ::-o-selection {
   color: #eeeeee;
   background: #555555;
 }
 
-/* line 108, /var/aegir/platforms/odense-722-6/sites/all/themes/latto_odense/sass/latto.mixins.scss */
+/* line 108, ../sass/latto.mixins.scss */
 ::selection {
   color: #eeeeee;
   background: #555555;
@@ -1205,7 +1205,7 @@ a:link {
 }
 /* line 60, ../sass/latto.subtheme.typography.scss */
 a:visited {
-  color: #003f55;
+  color: #0077a2;
 }
 /* line 63, ../sass/latto.subtheme.typography.scss */
 a:hover {
