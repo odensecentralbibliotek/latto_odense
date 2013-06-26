@@ -372,7 +372,7 @@ footer .grid-inner {
 }
 /* line 292, ../sass/latto.subtheme.base.scss */
 .footer-menu h2 {
-  color: #555555 !important;
+  color: #333333 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13.65px;
   font-weight: normal;
@@ -381,7 +381,7 @@ footer .grid-inner {
 }
 /* line 300, ../sass/latto.subtheme.base.scss */
 .footer-menu a {
-  color: #555555 !important;
+  color: #333333 !important;
   font-size: 12px;
   list-style: none;
   text-decoration: none;
@@ -1205,7 +1205,7 @@ a:link {
 }
 /* line 60, ../sass/latto.subtheme.typography.scss */
 a:visited {
-  color: #003f55;
+  color: #0077a2;
 }
 /* line 63, ../sass/latto.subtheme.typography.scss */
 a:hover {
