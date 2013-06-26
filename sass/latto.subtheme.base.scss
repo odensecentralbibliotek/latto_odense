@@ -30,531 +30,550 @@ header {
     margin-right: $default-spacing;
     margin-left: $default-spacing / 2;
   }
-    .site-slogan {
-      color: $black;
-      margin-left: $default-spacing / 2;
-      position: absolute;
-      top: 75px;
-      font-size: 12px
-    }
-    
-    .header-inner {
-      background: transparent;
-      padding-bottom: 0px;
-      padding-top: $default-spacing / 2;
-      margin-left: 0px;
-    } 
-    .grid-inner {
-      @include single-box-shadow;
-      @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-      position: relative;
-      @include rgba-background($theme-secondary-color, 0.8);
-      background: $theme-secondary-color;
-      @include gradient-reset-filter();
-    } 
+  .site-slogan {
+    color: $black;
+    margin-left: $default-spacing / 2;
+    position: absolute;
+    top: 75px;
+    font-size: 12px
   }
   
-  .rs-carousel-tabs ul li.active {
-    border-color: $gray-light;
-    a {
-      background-color: $gray-light;
-      &:before {
-        border-bottom: 8px solid $gray-light;
-      }
-    }
-  }
-  
-  .rs-carousel-title {
-    padding-top: 0px;
-  }
-  
-  .rs-carousel-compact .rs-carousel-mask {
-    max-width: 75%;
-  }
-  /* ==========================================================================
-  Theme specific grid styling
-  ========================================================================== */
-  
-  .pane-page-content {
-    padding: $default-spacing / 2;
-  }
-  .grid-content .grid-inner {
-    padding: 0px!important;
-  }
-  /* ==========================================================================
-  Basic elements
-  ========================================================================== */
-  
-  /* Paragraphs
-  ========================================================================== */
-  
-  p {
-    margin-bottom: $default-spacing / 3;
-  }
-  
-  /* Default horizontal ruler styles
-  ========================================================================== */
-  
-  hr {
-    @include colruler();
-    &.primary {
-      @include colruler($theme-primary-color);
-    }
-    &.secondary {
-      @include colruler($theme-secondary-color);
-    }
-    &.tertiary {
-      @include colruler($theme-tertiary-color);
+  .header-inner {
+    background: transparent;
+    padding-bottom: 0px;
+    padding-top: $default-spacing / 2;
+    margin-left: 0px;
+  } 
+  .grid-inner {
+    @include single-box-shadow;
+    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+    position: relative;
+    @include rgba-background($theme-secondary-color, 0.8);
+    background: $theme-secondary-color;
+    @include gradient-reset-filter();
+  } 
+}
+
+.rs-carousel-tabs ul li.active {
+  border-color: $gray-light;
+  a {
+    background-color: $gray-light;
+    &:before {
+      border-bottom: 8px solid $gray-light;
     }
   }
-  
-  
-  /* ==========================================================================
-  Date
-  ========================================================================== */   
-  
-  .date-list .date-wrapper .day {
-    background-color: $theme-secondary-color;
-    color: $date-list-text-color;
+}
+
+.rs-carousel-title {
+  padding-top: 0px;
+}
+
+.rs-carousel-compact .rs-carousel-mask {
+  max-width: 75%;
+}
+/* ==========================================================================
+Theme specific grid styling
+========================================================================== */
+
+.pane-page-content {
+  padding: $default-spacing / 2;
+}
+.grid-content .grid-inner {
+  padding: 0px!important;
+}
+/* ==========================================================================
+Basic elements
+========================================================================== */
+
+/* Paragraphs
+========================================================================== */
+
+p {
+  margin-bottom: $default-spacing / 3;
+}
+
+/* Default horizontal ruler styles
+========================================================================== */
+
+hr {
+  @include colruler();
+  &.primary {
+    @include colruler($theme-primary-color);
   }
-  .list-compact .date{
-    margin-right: $default-spacing;
+  &.secondary {
+    @include colruler($theme-secondary-color);
   }
-  
-  /* ==========================================================================
-  Navigation
-  ========================================================================== */ 
-  // The navigation bar used for the main-menu.
-  // No styleguide reference
-  ul {
-    &.menu {
-      border: none;
-      list-style: none;
-      text-align: left;
-      /* LTR */
-    }
-    li {
-      &.leaf {
-        list-style-image: none;
-        list-style-type: none;
-      }
-    }
+  &.tertiary {
+    @include colruler($theme-tertiary-color);
   }
-  
+}
+
+
+/* ==========================================================================
+Date
+========================================================================== */   
+
+.date-list .date-wrapper .day {
+  background-color: $theme-secondary-color;
+  color: $date-list-text-color;
+}
+.list-compact .date{
+  margin-right: $default-spacing;
+}
+
+/* ==========================================================================
+Navigation
+========================================================================== */ 
+// The navigation bar used for the main-menu.
+// No styleguide reference
+ul {
+  &.menu {
+    border: none;
+    list-style: none;
+    text-align: left;
+    /* LTR */
+  }
   li {
     &.leaf {
-      padding: 0.2em 0 0 0;
-      /* LTR */
-      margin: 0;
+      list-style-image: none;
+      list-style-type: none;
     }
-    a.active {
-      text-decoration: underline;
+  }
+}
 
+li {
+  &.leaf {
+    padding: 0.2em 0 0 0;
+    /* LTR */
+    margin: 0;
+  }
+  a.active {
+    text-decoration: underline;
+    
+  }
+}
+
+.expanded .menu {
+  margin-left: $default-spacing;
+}
+
+ul {
+  list-style: disc inside none;
+  margin: 0px;
+  padding: 0;
+}
+
+.main-menu {
+  display: table;
+  font-size: $navbar-font-size;
+  width: 100%;
+  margin: 0px;
+  li {
+    border-left: 1px solid lighten($navbar-background-color, 15%);
+    display: table-cell;
+    text-align: center;
+    &.expanded, &.collapsed, &.leaf {
+      margin: 0;
+      padding: 0;
     }
-  }
-  
-  .expanded .menu {
-    margin-left: $default-spacing;
-  }
-  
-  ul {
-    list-style: disc inside none;
-    margin: 0px;
-    padding: 0;
-  }
-  
-  
-  .main-menu {
-    display: table;
-    font-size: $navbar-font-size;
-    width: 100%;
-    margin: 0px;
-    li {
-      border-left: 1px solid lighten($navbar-background-color, 15%);
-      display: table-cell;
-      text-align: center;
-      &.expanded, &.collapsed, &.leaf {
-        margin: 0;
-        padding: 0;
+    &:hover {
+      background: darken($navbar-text-color, 15%);
+    }
+    a {
+      border-left: 1px solid lighten($navbar-background-color, 3%);
+      color: $navbar-text-color;
+      display: block;
+      height: 100%;
+      min-width: 90px;
+      padding: $default-spacing;
+      text-decoration: none;
+      &.active {
+        background-color: $menu-active;
       }
-      &:hover {
-        background: darken($navbar-text-color, 15%);
-      }
-      a {
-        border-left: 1px solid lighten($navbar-background-color, 3%);
-        color: $navbar-text-color;
+      i{
+        font-size: 38px;
+        padding-top: $default-spacing;
         display: block;
-        height: 100%;
-        min-width: 90px;
-        padding: $default-spacing;
-        text-decoration: none;
-        &.active {
-          background-color: $menu-active;
-        }
-        i{
-          font-size: 38px;
-          padding-top: $default-spacing;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        
+        margin-left: auto;
+        margin-right: auto;
       }
+      
     }
   }
-  
-  .ding-entity-button {
-    margin-left: $default-spacing / 2;
-  }
-  .country {
-    padding-right: $default-spacing / 2;
-  }
-  .field-name-field-ding-library-list-image {
-    float: left;
-    margin-right: 7.5px;
-  }
-  .libraries {
-    float: left;
-    width: 40%;
-  }
-  .field-name-field-ding-library-obs{
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  #ding-library-front .panel-separator{
-    height: $default-spacing;
-  }   
-  .libraries-opening-hours{
-    float: right;
-    padding: 0;
-    margin-bottom: $default-spacing;
-    width: 35%;
-  }
+}
+
+.ding-entity-button {
+  margin-left: $default-spacing / 2;
+}
+
+.country {
+  padding-right: $default-spacing / 2;
+}
+
+.field-name-field-ding-library-list-image {
+  float: left;
+  margin-right: 7.5px;
+}
+
+.libraries {
+  float: left;
+  width: 40%;
+}
+
+.field-name-field-ding-library-obs{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#ding-library-front .panel-separator{
+  height: $default-spacing;
+}
+
+.libraries-opening-hours{
+  float: right;
+  padding: 0;
+  margin-bottom: $default-spacing;
+  width: 35%;
+}
+
 .opening-hours-week .notice-star {
   color: transparent;
   margin-left: 5px;
   margin-right: -25px;
 }
+
 .opening-hours-week .notice-star:before {
   font-family: "FontAwesome";
   color: #555555;
   opacity: 0.5;
 }
+
 .icon-info-sign:before, .opening-hours-week .notice-star:before {
   content: "";
 }
+
 .opening-hours-week .days{ 
   padding: 0;
 }
-  .opening-hours-week .times {
-    margin-right: $default-spacing /2!important;
-  }
-  .library-list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .vcard{
-    margin-bottom: $default-spacing /2;
-  }
-  .field-name-field-ding-library-mail a{
-    font-size: 12px;
-  }
-  .label-info, .badge-info {    
-    background-color: $theme-tertiary-color;
-  }
-  footer .grid-inner {
-    margin-top: $default-spacing;
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    position: relative;
-    @include rgba-background($theme-footer-background, 0.7);
-  }
-  
-  .footer-menu {
-    border-right: 2px solid white;
-    &h2 {
-      color: $theme-footer-color!important; 
-      font-family: $theme-font-family;
-      font-size: $theme-font-size * 1.05;
-      font-weight: normal;
-      margin: 0;
-      text-transform: uppercase;
-    }
-    &a {
-      color: $theme-footer-color!important; 
-      font-size: 12px;
-      list-style: none;
-      text-decoration: none;
-    }
-  }
-  
-  .pane-menu-footer-menu-4 {
-    border-right: none;
-  }
-  .fixed-icon-search{
-    left: 7px;
-    opacity: 0.5;
-    position: absolute;
-    top: 40px;
-    font-size: 20px;
-  }
-  .fixed-icon-remove-sign {
-    font-size: 22px;
-    opacity: 0.5;
-    position: absolute;
-    right: 270px;
-    top: 41px;
-  }
-  .icon-remove-sign:before{
-    cursor:pointer;
-    cursor:hand;
-  }
-  
-  
-  // Info appears as a neutral blue
-  .btn-info {
-    @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
-    color: $btn-info-text-color;
-  } 
-  .btn.btn-primary.btn-large {
-    background: none repeat scroll 0 0 green;
-    color: white;
+
+.opening-hours-week .times {
+  margin-right: $default-spacing /2!important;
 }
-  /* ==========================================================================
-  Search pane styling
-  ========================================================================== */
-  .search-login .grid-inner{
-    margin-bottom: $default-spacing;
+
+.library-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.vcard{
+  margin-bottom: $default-spacing /2;
+}
+
+.field-name-field-ding-library-mail a{
+  font-size: 12px;
+}
+
+.label-info, .badge-info {    
+  background-color: $theme-tertiary-color;
+}
+
+footer .grid-inner {
+  margin-top: $default-spacing;
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  position: relative;
+  @include rgba-background($theme-footer-background, 0.7);
+}
+
+.footer-menu {
+  border-right: 2px solid white;
+  & h2 {
+    color: $theme-footer-color!important; 
+    font-family: $theme-font-family;
+    font-size: $theme-font-size * 1.05;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
   }
-  .panel-pane.pane-search-form {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    @include rgba-background($theme-tertiary-color, 0.8);
-    background: $theme-tertiary-color;
-    @include gradient-reset-filter();
-    min-height: 145px;
+  & a {
+    color: $theme-footer-color!important; 
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
   }
-  .search-wrapper{
-    @include rgba-background($theme-tertiary-color, 1);
-    margin-top: 0px;
-    form {
-      margin: 0px;
-      position: relative;
-      width: 100%;
-      }.form-text {
-      height: 40px;
-      width: 100%;
-      -webkit-border-radius: 4px 0px 0px 4px;
-      -moz-border-radius: 4px 0px 0px 4px;
-      border-radius: 4px 0px 0px 4px;         
-    }
-    .ui-autocomplete-input{
-      padding-left: 30px;
-    }
-    .btn {
-      height: 38px;
-      position: static;
-      float: right;
-      padding: 0px 5px 0px 0px;
-      margin-right: 15px;
-    }          
-    &a {
-      background: url(../../../../../misc/menu-expanded.png) no-repeat;
-      background-position: 95% 50%;
-      font-size: 13px;
-      font-weight: 400px;
-      padding-left: $default-spacing / 2;
-      padding-right: 30px;
-      line-height: 40px;
-    }
-    .btn a:hover {
-      text-decoration: none;
-    }   
-    .form-item-keys {
-      display: block;
-      overflow: hidden;
-    }
-  }    
-  .form-item, .form-actions {
-    background-color: transparent;
-    border-top: 0px solid transparent;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+}
+
+.pane-menu-footer-menu-4 {
+  border-right: none;
+}
+
+.fixed-icon-search{
+  left: 7px;
+  opacity: 0.5;
+  position: absolute;
+  top: 40px;
+  font-size: 20px;
+}
+
+.fixed-icon-remove-sign {
+  font-size: 22px;
+  opacity: 0.5;
+  position: absolute;
+  right: 270px;
+  top: 41px;
+}
+
+.icon-remove-sign:before{
+  cursor:pointer;
+  cursor:hand;
+}
+
+
+// Info appears as a neutral blue
+.btn-info {
+  @include buttonBackground($btnInfoBackground, $btnInfoBackgroundHighlight);
+  color: $btn-info-text-color;
+}
+
+.btn.btn-primary.btn-large {
+  background: none repeat scroll 0 0 green;
+  color: white;
+}
+/* ==========================================================================
+Search pane styling
+========================================================================== */
+.search-login .grid-inner{
+  margin-bottom: $default-spacing;
+}
+.panel-pane.pane-search-form {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  @include rgba-background($theme-tertiary-color, 0.8);
+  background: $theme-tertiary-color;
+  @include gradient-reset-filter();
+  min-height: 145px;
+}
+.search-wrapper{
+  @include rgba-background($theme-tertiary-color, 1);
+  margin-top: 0px;
+  form {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    }.form-text {
+    height: 40px;
+    width: 100%;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    -moz-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;         
   }
-  #edit-search-type {
-    height: 30px; 
-    overflow: hidden; 
+  .ui-autocomplete-input{
+    padding-left: 30px;
+  }
+  .btn {
+    height: 38px;
+    position: static;
+    float: right;
+    padding: 0px 5px 0px 0px;
+    margin-right: 15px;
+  }          
+  & a {
+    background: url(../../../../../misc/menu-expanded.png) no-repeat;
+    background-position: 95% 50%;
+    font-size: 13px;
+    font-weight: 400px;
+    padding-left: $default-spacing / 2;
+    padding-right: 30px;
+    line-height: 40px;
+  }
+  .btn a:hover {
+    text-decoration: none;
+  }   
+  .form-item-keys {
     display: block;
-    .form-item-search-type{
-      float: left;
-      margin-right: $default-spacing;
-    }    
-  }  
-  
-  .search-wrapper #edit-advanced {
-    margin: 0;
-    position: static;
-    padding-top: $default-spacing / 2;
-    legend {
-      display: none;
-    }
-    .fieldset-wrapper {
-      left: -20px;
-      padding: 0 10px 0 13px;
-      position: relative;;
-      width: 100%;
-      z-index: 50;
-    }
-  }
-  
-  .facetbrowser_overlay {
-    z-index: 10000;
-    @include rgba-background($black, 0.5);
-    position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
-  }
-  
-  .facetbrowser_overlay .spinner {
-    z-index:10001;
-    position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
-    background: transparent url(../images/spinner.gif) no-repeat 50% 50%;
-  }
-  
-  /* facet link color */
-  .pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: $black; }
-  .pane-ding-facetbrowser a:hover { color: $black; text-decoration: none; }
-  
-  //advanced search
-  
-  #edit-advanced {
-    margin: 0;
-    position: static;
-    padding-top: $default-spacing / 2;
-    legend {
-      display: none;
-    }
-    .fieldset-wrapper {   
-      left: -20px;
-      padding: 0 10px 0 13px;
-      position: relative;;
-      width: 100%;
-      z-index: 50;
-      .form-item {
-        width: 50%;
-        float: left;
-        height: 40px;
-      }  
-      #adv-reset{
-        margin-left:  8px;
-      }
-      .form-text {
-        width: 225px;
-        height: 30px;
-      }    
-      .form-select {
-        width: 225px;
-        height: 30px;
-      }         
-      .form-type-textfield label  {     
-        float: left;
-        padding: 3px 10px 2px;
-        width: 80px;
-      }
-      .form-type-select label  {       
-        float: left;
-        padding: 3px 10px 2px;
-        width: 85px;
-      }
-    }
-  }
-  
-  //
-  
-  ul.ui-autocomplete { 
-    max-width: 432px!important;
-    z-index:100;
-  }
-  
-  .ui-menu .ui-menu-item a{
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
   }
-  input#edit-search-block-form--2.spinner {
-    background-position: 97%!important;
+}    
+.form-item, .form-actions {
+  background-color: transparent;
+  border-top: 0px solid transparent;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#edit-search-type {
+  height: 30px; 
+  overflow: hidden; 
+  display: block;
+  .form-item-search-type{
+    float: left;
+    margin-right: $default-spacing;
+  }    
+}  
+
+.search-wrapper #edit-advanced {
+  margin: 0;
+  position: static;
+  padding-top: $default-spacing / 2;
+  legend {
+    display: none;
   }
-  .search-results .content{
-    display: block!important;
+  .fieldset-wrapper {
+    left: -20px;
+    padding: 0 10px 0 13px;
+    position: relative;;
+    width: 100%;
+    z-index: 50;
   }
-  .panel-pane.pane-recommendation-list{
-    background: $recommendation-list;
+}
+
+.facetbrowser_overlay {
+  z-index: 10000;
+  @include rgba-background($black, 0.5);
+  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
+}
+
+.facetbrowser_overlay .spinner {
+  z-index:10001;
+  position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
+  background: transparent url(../images/spinner.gif) no-repeat 50% 50%;
+}
+
+/* facet link color */
+.pane-ding-facetbrowser a,.pane-ding-facetbrowser a:visited { color: $black; }
+.pane-ding-facetbrowser a:hover { color: $black; text-decoration: none; }
+
+//advanced search
+
+#edit-advanced {
+  margin: 0;
+  position: static;
+  padding-top: $default-spacing / 2;
+  legend {
+    display: none;
   }
-  .pane-recommendation-list .list-item{      
-    margin-bottom: $default-spacing /2;
-    padding-bottom: $default-spacing /2;
-    display: table;
-  }
-  .subjects.content{
-    padding-top: $default-spacing /2;
-  }
-  
-  //user menu
-  .pane-system-user-menu {
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    @include rgba-background($theme-tertiary-color, 0.8);
-    background: $theme-secondary-color;
-    @include gradient-reset-filter();
-  }
-  
-  .pane-user-login {
-    min-height: 145px;
-    @include single-box-shadow;
-    @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-    @include rgba-background($theme-tertiary-color, 0.8);
-    background: $theme-tertiary-color;
-    @include gradient-reset-filter();
-    .form-item-name input {
-      width: 90%;
+  .fieldset-wrapper {   
+    left: -20px;
+    padding: 0 10px 0 13px;
+    position: relative;;
+    width: 100%;
+    z-index: 50;
+    .form-item {
+      width: 50%;
       float: left;
+      height: 40px;
+    }  
+    #adv-reset{
+      margin-left:  8px;
     }
-    .form-item-pass input {
-      width: 58%;
+    .form-text {
+      width: 225px;
+      height: 30px;
+    }    
+    .form-select {
+      width: 225px;
+      height: 30px;
+    }         
+    .form-type-textfield label  {     
       float: left;
+      padding: 3px 10px 2px;
+      width: 80px;
     }
-    .form-actions {
-      width: 40px;
+    .form-type-select label  {       
       float: left;
-      margin-left: $default-spacing / 2;
-    } 
-  }
-  .pane-user-login {
-    .icon-user {
-      display: block;
-      float: left;
-      margin-left: 5px;
-      margin-top: 5px;
-      opacity: 0.4;
-      filter: alpha(opacity=40);
-      position: absolute;
-      z-index: 3;
-    }
-    .icon-lock {
-      display: block;
-      float: left;
-      margin-left: 5px;
-      margin-top: 42px;
-      opacity: 0.4;
-      filter: alpha(opacity=40);
-      position: absolute;
-      z-index: 3;
+      padding: 3px 10px 2px;
+      width: 85px;
     }
   }
-  .search-login .pane-system-user-menu {
-    min-height: 135px;
-  }  
+}
+
+//
+
+ul.ui-autocomplete { 
+  max-width: 432px!important;
+  z-index:100;
+}
+
+.ui-menu .ui-menu-item a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+input#edit-search-block-form--2.spinner {
+  background-position: 97%!important;
+}
+.search-results .content{
+  display: block!important;
+}
+.panel-pane.pane-recommendation-list{
+  background: $recommendation-list;
+}
+.pane-recommendation-list .list-item{      
+  margin-bottom: $default-spacing /2;
+  padding-bottom: $default-spacing /2;
+  display: table;
+}
+.subjects.content{
+  padding-top: $default-spacing /2;
+}
+
+//user menu
+.pane-system-user-menu {
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  @include rgba-background($theme-tertiary-color, 0.8);
+  background: $theme-secondary-color;
+  @include gradient-reset-filter();
+}
+
+.pane-user-login {
+  min-height: 145px;
+  @include single-box-shadow;
+  @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
+  @include rgba-background($theme-tertiary-color, 0.8);
+  background: $theme-tertiary-color;
+  @include gradient-reset-filter();
+  .form-item-name input {
+    width: 90%;
+    float: left;
+  }
+  .form-item-pass input {
+    width: 58%;
+    float: left;
+  }
+  .form-actions {
+    width: 40px;
+    float: left;
+    margin-left: $default-spacing / 2;
+  } 
+}
+.pane-user-login {
+  .icon-user {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 3;
+  }
+  .icon-lock {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 42px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    z-index: 3;
+  }
+}
+.search-login .pane-system-user-menu {
+  min-height: 145px;
+}  
 .pane-ding-user-frontend-ding-user-loan-number {
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
@@ -562,7 +581,7 @@ header {
   @include rgba-background($theme-secondary-color, 0.8);
   background: $theme-secondary-color;
   @include gradient-reset-filter();
-  &a{
+  & a{
     color: inherit;
     font-weight: bold;
   }
@@ -570,240 +589,240 @@ header {
 #ding-user-profile{
   margin-bottom: $default-spacing /2;
 }
-  
-  /* ==========================================================================
-  custom grid
-  ========================================================================== */
-  .grid-11-left {
-    -moz-box-sizing: border-box;
-    float: left;
-    margin-left: 0;
-    margin-right: -72%;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 72%;
-    word-wrap: break-word;
-  }
-  article .grid-inner{
-    background-color: $white;
-  }
-  .ctools-collapsible-handle{
-    background: $gray-light;
-  }
-  .collapsall{
-    display: block!important;
-  }
-  
-  
-  .breadcrumb {
-    margin-left: $default-spacing;
-    margin-right: $default-spacing;
-  } 
-  /* ==========================================================================
-  Login pane styling
-  ========================================================================== */
-  
-  #edit-profile-provider-alma-field-alma-phone-id{
-    display:none;
-  }
-  #edit-profile-provider-alma-field-absent-id{
-     display:none;
-  }
-  .ctools-collapsible-container .ctools-toggle {
-    background-image: url("../images/new_arrow.png");
-    background-position: 3px 3px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    float: left;  
-    width: 21px;
-  }
-  .ctools-collapsible-content{
-    padding-top: 10px;
-  }
-  .ctools-collapsible-container .ctools-toggle-collapsed {
-    background-image: url("../images/new_arrow_collapsed.png");
-    background-position: 6px 3px;
-  }
-  .ctools-collapsible-container h2{
-    font-size: 12px;
-    line-height: 20px;
-    color: $white;
-    text-transform: uppercase;
-  }
-  /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-  
-  label.placeholder {
-    cursor: text;
-    padding: 0.4em 0.6em 0.4em 1.6em;   
-    color: $gray-light2;
-  }
-  #edit-keys_placeholder{
-    top: 35px!important;
-    padding-left: 30px;
-  }
-  .pane-user-login input[placeholder]{
-    padding-left: 17px;
-  }
-  /* html5 placeholder support */
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: $gray-light2;
-  }
-  
-  input:placeholder, textarea:placeholder {
-    color: $gray-light2;
-  }
-  
-  .tags a{
-    padding: $default-spacing / 2;
-  }
-  
-  /* NEWS & EVENTS */
-  .list-item {
-    display: inline-block;
-    width: 100%;
-  }
-  .search-results .list-item {
-    width: auto;
-  }
 
-  ul.promoted li.list-item.last {
-    border-bottom: 1px solid #E7E7E7;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-  }
-  
-  div.subheading span {
-    padding-right: $default-spacing / 4;
-    padding-left: $default-spacing / 4;
-  }
-  
-  .view-display-id-ding_event_simple_list .heading {
-    padding-left: $default-spacing;  
-  }
-  .list .image-container{
+/* ==========================================================================
+custom grid
+========================================================================== */
+.grid-11-left {
+  -moz-box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+  margin-right: -72%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 72%;
+  word-wrap: break-word;
+}
+article .grid-inner{
+  background-color: $white;
+}
+.ctools-collapsible-handle{
+  background: $gray-light;
+}
+.collapsall{
+  display: block!important;
+}
+
+
+.breadcrumb {
+  margin-left: $default-spacing;
+  margin-right: $default-spacing;
+} 
+/* ==========================================================================
+Login pane styling
+========================================================================== */
+
+#edit-profile-provider-alma-field-alma-phone-id{
+  display:none;
+}
+#edit-profile-provider-alma-field-absent-id{
+  display:none;
+}
+.ctools-collapsible-container .ctools-toggle {
+  background-image: url("../images/new_arrow.png");
+  background-position: 3px 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: left;  
+  width: 21px;
+}
+.ctools-collapsible-content{
+  padding-top: 10px;
+}
+.ctools-collapsible-container .ctools-toggle-collapsed {
+  background-image: url("../images/new_arrow_collapsed.png");
+  background-position: 6px 3px;
+}
+.ctools-collapsible-container h2{
+  font-size: 12px;
+  line-height: 20px;
+  color: $white;
+  text-transform: uppercase;
+}
+/* ***** match placeholder/watermark padding to border+padding for input element ***** */
+
+label.placeholder {
+  cursor: text;
+  padding: 0.4em 0.6em 0.4em 1.6em;   
+  color: $gray-light2;
+}
+#edit-keys_placeholder{
+  top: 35px!important;
+  padding-left: 30px;
+}
+.pane-user-login input[placeholder]{
+  padding-left: 17px;
+}
+/* html5 placeholder support */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: $gray-light2;
+}
+
+input:placeholder, textarea:placeholder {
+  color: $gray-light2;
+}
+
+.tags a{
+  padding: $default-spacing / 2;
+}
+
+/* NEWS & EVENTS */
+.list-item {
+  display: inline-block;
+  width: 100%;
+}
+.search-results .list-item {
+  width: auto;
+}
+
+ul.promoted li.list-item.last {
+  border-bottom: 1px solid #E7E7E7;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+div.subheading span {
+  padding-right: $default-spacing / 4;
+  padding-left: $default-spacing / 4;
+}
+
+.view-display-id-ding_event_simple_list .heading {
+  padding-left: $default-spacing;  
+}
+.list .image-container{
+  float: left;
+  margin-right: $default-spacing / 2; 
+}
+/* ==========================================================================
+Content pane styling
+========================================================================== */
+
+.pane-event-category-menu, .pane-news-category-menu {
+  padding: $default-spacing;   
+}
+
+//cookie slider
+#sliding-popup {
+  background: url("../images/gradient.png") repeat-y scroll center center transparent;
+}     
+
+.pane-similarterms-ding-content-tags ul li {
+  margin-bottom: $default-spacing / 2;
+}
+
+.fffW-widget, .fffw-dialog {
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+  font-family: inherit!important;
+}
+
+.fffW-widget {
+  color: inherit !important;
+  font-size: inherit !important;
+}
+.fffW-title {
+  font-size: 18px !important;
+  margin: 10px 0 0 !important;
+}
+
+.fffW-widget p {
+  font-size: 12px !important;
+}
+
+#ding-library-front .rounded-corner {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.rounded-corner {
+  margin-bottom: $default-spacing / 2;
+}
+#ding-reservation-reservations-notready-form th:nth-child(4) {
+  display: none;
+}
+#ding-reservation-reservations-notready-form .expire-date{
+  display: none;
+}
+.pickup-order-id{
+  font-size: 18px;
+}
+
+//logged in table list fixes.
+.table {
+  .field.field-name-ting-title.field-type-ting-title {
     float: left;
-    margin-right: $default-spacing / 2; 
-  }
-  /* ==========================================================================
-  Content pane styling
-  ========================================================================== */
-  
-  .pane-event-category-menu, .pane-news-category-menu {
-    padding: $default-spacing;   
-  }
-  
-  //cookie slider
-  #sliding-popup {
-    background: url("../images/gradient.png") repeat-y scroll center center transparent;
-  }     
-  
-  .pane-similarterms-ding-content-tags ul li {
-    margin-bottom: $default-spacing / 2;
-  }
-  
-  .fffW-widget, .fffw-dialog {
-    margin: 0px !important;
-    padding: 0px !important;
-    border: none !important;
-    font-family: inherit!important;
-  }
-  
-  .fffW-widget {
-    color: inherit !important;
-    font-size: inherit !important;
-  }
-  .fffW-title {
-    font-size: 18px !important;
-    margin: 10px 0 0 !important;
-  }
-  
-  .fffW-widget p {
-    font-size: 12px !important;
-  }
-  
-  #ding-library-front .rounded-corner {
-    margin-bottom: 1em;
-    margin-top: 1em;
-  }
-  .rounded-corner {
-    margin-bottom: $default-spacing / 2;
-  }
-  #ding-reservation-reservations-notready-form th:nth-child(4) {
-    display: none;
-  }
-  #ding-reservation-reservations-notready-form .expire-date{
-    display: none;
-  }
-  .pickup-order-id{
-    font-size: 18px;
-  }
-  
-  //logged in table list fixes.
-  .table {
-    .field.field-name-ting-title.field-type-ting-title {
-      float: left;
-      padding-right: $default-spacing / 2;
-      h2{
-        font-size: 14px;
-      }
-    }
-    .field-name-ting-author.field-type-ting-author{
-      float: left;
-      padding-right: $default-spacing / 2;
-      padding-top: $default-spacing /2;
-    }
-    .field.field-name-ting-type.field-type-ting-type{
-      padding-top: $default-spacing / 2;
+    padding-right: $default-spacing / 2;
+    h2{
+      font-size: 14px;
     }
   }
-  .table  .title h2 {
-    font-size: 14px;
+  .field-name-ting-author.field-type-ting-author{
+    float: left;
+    padding-right: $default-spacing / 2;
+    padding-top: $default-spacing /2;
   }
-  
-   .lead {
-    margin-top: $default-spacing / 2;
+  .field.field-name-ting-type.field-type-ting-type{
+    padding-top: $default-spacing / 2;
   }
-  .field-name-field-ding-page-body {
-    margin-top: $default-spacing / 2;
-    margin-bottom: $default-spacing / 2;
+}
+.table  .title h2 {
+  font-size: 14px;
+}
+
+.lead {
+  margin-top: $default-spacing / 2;
+}
+.field-name-field-ding-page-body {
+  margin-top: $default-spacing / 2;
+  margin-bottom: $default-spacing / 2;
+}
+//openhours
+.day.odd {
+  background: none repeat scroll 0 0 #EEEEEE;
+  margin-bottom: 7.5px;
+  margin-top: 7.5px;
+}
+.field-name-field-ding-library-list-image{
+  position: relative;
+}
+.library-openstatus.open {
+  background: none repeat scroll 0 0 #2C9D01;
+}
+.library-openstatus.closed {
+  background: none repeat scroll 0 0 red;
+}
+.library-openstatus.self-service {
+  background: none repeat scroll 0 0 orange;
+}
+.library-openstatus {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  color: white;
+  float: right;
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+#featured .ui-tabs-nav li.ui-tabs-selected {
+  border-color: transparent $theme-tertiary-color transparent transparent;
+  & a {
+    background-color: $theme-tertiary-color;
   }
-  //openhours
-  .day.odd {
-    background: none repeat scroll 0 0 #EEEEEE;
-    margin-bottom: 7.5px;
-    margin-top: 7.5px;
-  }
-  .field-name-field-ding-library-list-image{
-    position: relative;
-  }
-  .library-openstatus.open {
-    background: none repeat scroll 0 0 #2C9D01;
-  }
-  .library-openstatus.closed {
-    background: none repeat scroll 0 0 red;
-  }
-  .library-openstatus.self-service {
-    background: none repeat scroll 0 0 orange;
-  }
-  .library-openstatus {
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    color: white;
-    float: right;
-    padding: 0 5px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 10px;
-    line-height: 17px;
-    text-transform: uppercase;
-  }
-  #featured .ui-tabs-nav li.ui-tabs-selected {
-    border-color: transparent $theme-tertiary-color transparent transparent;
-    &a {
-      background-color: $theme-tertiary-color;
-    }
-  }
+}
 .openlayers-popup a{
   color: $theme-tertiary-color!important;
-  }
+}
