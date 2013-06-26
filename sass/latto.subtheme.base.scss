@@ -10,7 +10,7 @@
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
-
+for
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;
@@ -314,15 +314,15 @@ footer .grid-inner {
   opacity: 0.5;
   position: absolute;
   top: 40px;
-  font-size: 20px;
+  font-size: 160%;
 }
 
 .fixed-icon-remove-sign {
-  font-size: 22px;
+  font-size: 160%;
   opacity: 0.5;
   position: absolute;
   right: 270px;
-  top: 41px;
+  top: 40px;
 }
 
 .icon-remove-sign:before{
@@ -363,14 +363,13 @@ Search pane styling
     position: relative;
     width: 100%;
     }.form-text {
-    height: 40px;
-    width: 100%;
-    -webkit-border-radius: 4px 0px 0px 4px;
-    -moz-border-radius: 4px 0px 0px 4px;
-    border-radius: 4px 0px 0px 4px;         
-  }
-  .ui-autocomplete-input{
-    padding-left: 30px;
+      font-size: 160%;
+      height: 40px;
+      width: 100%;
+      -webkit-border-radius: 4px 0px 0px 4px;
+      -moz-border-radius: 4px 0px 0px 4px;
+      border-radius: 4px 0px 0px 4px;
+      padding-left: 30px;
   }
   .btn {
     height: 38px;
