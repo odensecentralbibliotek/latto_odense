@@ -34,7 +34,7 @@
     input = jQuery('#ding-loan-loans-form .table .form-type-checkbox');
     disabled = jQuery('#ding-loan-loans-form .table .form-type-checkbox.form-disabled');
     if (input.length == disabled.length){
-      jQuery('.select-all').remove();  
+       $("#ding-loan-loans-form .select-all .form-checkbox").attr("disabled", "disabled");
     }
     
     $("a.infomedia_group").addClass("btn");
