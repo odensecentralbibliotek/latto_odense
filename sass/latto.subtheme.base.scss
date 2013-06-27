@@ -588,7 +588,13 @@ input#edit-search-block-form--2.spinner {
 #ding-user-profile{
   margin-bottom: $default-spacing /2;
 }
-
+.form-item-profile-provider-alma-field-alma-interest-period-und {
+  display: none;
+  }
+  
+.field-name-field-alma-interest-period{
+  display: none;
+  }
 /* ==========================================================================
 custom grid
 ========================================================================== */
