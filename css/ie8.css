@@ -13,3 +13,7 @@ footer .grid-inner {
 .openlayers-container{
     display: none;
   }
+  
+ a:visited {
+   text-decoration: none;
+ }
