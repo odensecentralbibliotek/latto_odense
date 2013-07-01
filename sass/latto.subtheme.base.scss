@@ -222,7 +222,11 @@ ul {
   float: left;
   width: 40%;
 }
-
+//Hide library menu, events and news.
+.library-menu ul li:nth-child(2), .library-menu ul li:nth-child(3){
+  Display: none;
+  
+  }
 .field-name-field-ding-library-obs{
   margin-top: 10px;
   font-weight: bold;
