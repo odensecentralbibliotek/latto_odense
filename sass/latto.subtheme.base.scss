@@ -10,7 +10,7 @@
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
-for
+
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;
@@ -113,10 +113,13 @@ hr {
 Date
 ========================================================================== */   
 
-.date-list .date-wrapper .day {
-  background-color: $theme-secondary-color;
-  color: $date-list-text-color;
-}
+.date-list .date-wrapper {   
+  margin-right: 2px;
+  .day {
+    background-color: $theme-secondary-color;
+    color: $date-list-text-color;
+  }
+} 
 .list-compact .date{
   margin-right: $default-spacing;
 }
@@ -158,7 +161,7 @@ li {
 }
 
 ul {
-  list-style: disc inside none;
+  list-style: none;
   margin: 0px;
   padding: 0;
 }
@@ -708,6 +711,9 @@ div.subheading span {
   float: left;
   margin-right: $default-spacing / 2; 
 }
+.image-container{
+  margin-bottom: 0px!important;
+} 
 /* ==========================================================================
 Content pane styling
 ========================================================================== */

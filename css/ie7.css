@@ -67,3 +67,6 @@ footer .grid-inner {
 #ding-reservation-reservations-notready-form th:first-child + th + th + th {
     display: none;
   }
+  .openlayers-container{
+    display: none;
+  }
