@@ -5,6 +5,8 @@
  }
 
   $(document).ready(function($) {
+    
+   $('.pane-pane-header').wrap('<a href="/" />');
    
     $(document).keyup(function(e) {
       if (e.keyCode == 27) {
