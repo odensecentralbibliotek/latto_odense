@@ -5,7 +5,7 @@
  }
 
   $(document).ready(function($) {
-    
+   
    $('.pane-pane-header').wrap('<a href="/" />');
    
     $(document).keyup(function(e) {
@@ -32,7 +32,16 @@
     else {
       $('#search-tabs li:nth-child(2) a').first().append(' (0)');
     }
-    interestperiod = $(".profile2_provider_fields div.form-item label b:contains('Interesseperiode')");
+    interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
+
+$('.profile .form-item:not(:last-child)').each(function() {
+    $(this).addClass('list-item');
+    $(this).parent().addClass('list');
+});
+$('#user-profile-form').each(function() {
+    $(this).addClass('list');
+    $('.form-item-mail, .form-type-password-confirm, .smsservice, #edit-profile-provider-alma-field-alma-preferred-branch, .fieldset-wrapper').addClass('list-item');
+});
     
     if(interestperiod.exists()){
       $(interestperiod).parent().parent().remove();      
