@@ -42,7 +42,7 @@
 
     $('#user-profile-form').addClass('list');
     $('#user-profile-form').each(function() {
-      $('.form-item-mail, .form-type-password-confirm, .smsservice, #edit-profile-provider-alma-field-alma-preferred-branch, .fieldset-wrapper').addClass('list-item');
+      $('.form-item-mail, .form-type-password-confirm, .smsservice, #profile-provider-alma-field-alma-mobile-phone-add-more-wrapper, .fieldset-wrapper').addClass('list-item');
     });
     
     interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
