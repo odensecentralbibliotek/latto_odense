@@ -32,16 +32,20 @@
     else {
       $('#search-tabs li:nth-child(2) a').first().append(' (0)');
     }
-    interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
+    
+    $('.profile .form-item:not(:last-child)').each(function() {
+      $(this).addClass('list-item');
+      $(this).parent().addClass('list');
+      $('.profile2_provider_reservation_pause div.form-item label:contains("Start")').parent().removeClass('list-item');
+      $('.profile2_provider_reservation_pause div.form-item label:contains("Stop")').parent().addClass('list-item');
+    });
 
-$('.profile .form-item:not(:last-child)').each(function() {
-    $(this).addClass('list-item');
-    $(this).parent().addClass('list');
-});
-$('#user-profile-form').each(function() {
-    $(this).addClass('list');
-    $('.form-item-mail, .form-type-password-confirm, .smsservice, #edit-profile-provider-alma-field-alma-preferred-branch, .fieldset-wrapper').addClass('list-item');
-});
+    $('#user-profile-form').addClass('list');
+    $('#user-profile-form').each(function() {
+      $('.form-item-mail, .form-type-password-confirm, .smsservice, #edit-profile-provider-alma-field-alma-preferred-branch, .fieldset-wrapper').addClass('list-item');
+    });
+    
+    interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
     
     if(interestperiod.exists()){
       $(interestperiod).parent().parent().remove();      
