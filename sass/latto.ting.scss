@@ -36,12 +36,6 @@
   }
 }
 
-//Collaction style
-.view-mode-collection-list .ting-cover-style-ding_medium {
-  height: 131px;
-  width: 85px;
-}
-
 .field-name-ting-details-version .field-label{
   float: left;
 }
@@ -63,11 +57,8 @@
   color: #790F21;
   margin: 10px 0;
 }
-.view-mode-collection-list .field-name-ting-abstract{
-  margin-left: 100px;
-}
 .view-mode-collection-list .field-name-ting-subjects{
-  margin-left: 100px;
+  margin: $default-spacing 0;
 }
 
 .field-name-field-ding-news-materials .field-name-ting-series{
@@ -346,34 +337,7 @@ div.unreservable {
     border-right: medium none;
 }
 
-.search-ting-cover {
-  @extend .pull-left;
-  position: relative;
-  width: 10%;
-  min-height: 100px;
-  z-index: 1;
 
-  // Insert a background with image missing icon
-  &:after {
-    content: "";
-    background: url("../images/image-missing.png");
-    @include opacity(0.3);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-    min-height: 100px;
-  }
-}
-.ting-cover {
-        @extend .search-ting-cover;
-        margin-right: $default-spacing;
-      }
 div[class*='ting-cover-'] {
       float: left;
       padding-right: $default-spacing;
@@ -395,10 +359,6 @@ div[class*='ting-cover-'] {
 
 .pane-ting-object {
   margin-top: $default-spacing;
-  .ting-cover {
-   width: 23%;
-    min-height: 250px;
-}
 }
 .view-mode-user-list {
   .ting-cover {

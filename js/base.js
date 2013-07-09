@@ -64,15 +64,9 @@
     $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function(){     
       $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
     });
-   // Select Internet Explorer 7 and below
-if (jQuery.browser.msie && jQuery.browser.version <= 8) {
-    // do sth.
-        $('.ting-cover').removeClass('ting-cover');
-  }
+    
       $(window).load(function(){  
         $('footer .grid-inner').equalize('height');
-    //initialize after images are loaded  
-      $('.ting-cover img').parent().removeClass('ting-cover');
   });  
     
   });
