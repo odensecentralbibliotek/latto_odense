@@ -21,7 +21,10 @@
     margin-left: 7.5px;
 }
 .availability {
-  float: right; 
+  float: right;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+   border-radius: 8px;
   ul {
     float: right;
     li {
