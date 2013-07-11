@@ -5,7 +5,20 @@
  }
 
   $(document).ready(function($) {
-   
+ 
+$('#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table').each(function(a, tbl) {
+        $(tbl).find('th').each(function(i) {
+            var remove = true;
+            var currentTable = $(this).parents('table');
+            var tds = currentTable.find('tr td:nth-child(' + (i + 1) + ')');
+            tds.each(function(j) { if (this.innerHTML != '') remove = false; });
+            if (remove) {
+                $(this).hide();
+                tds.hide();
+            }
+        });
+    });
+ 
    $('.pane-pane-header').wrap('<a href="/" />');
    
     $(document).keyup(function(e) {
