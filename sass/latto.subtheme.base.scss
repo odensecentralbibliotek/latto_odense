@@ -513,6 +513,7 @@ input#edit-search-block-form--2.spinner {
 }
 .panel-pane.pane-recommendation-list{
   background: $recommendation-list;
+  margin-top: $default-spacing /2;
 }
 .pane-recommendation-list .list-item{      
   margin-bottom: $default-spacing /2;
@@ -837,4 +838,7 @@ Content pane styling
 }
 .openlayers-popup a{
   color: $theme-tertiary-color!important;
+}
+.webform-component {
+    margin-top: 1.5em;
 }
