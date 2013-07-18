@@ -1,14 +1,6 @@
 // This files contains styling of specific for ting objects and the search
 // results page.
 
-// Place () around .availability-status
-.availability-status:before {
-  content: " (";
-}
-.availability-status:after {
-  content: ")";
-}
-
 // Place () around .navcount
 .navcount:before {
   content: " (";
