@@ -3,7 +3,9 @@ body {
   background-color: #fff;
   font-family: sans-serif;
 }
-
+.not-renewable{
+  font-size: 10px;
+}
 input {
   display: none;
 }

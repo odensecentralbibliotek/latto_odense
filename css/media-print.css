@@ -1,7 +1,9 @@
 body {
   background: none;
 }
-
+.not-renewable{
+  font-size: 10px;
+}
 footer,
 header,
 div.search-login,aside {
