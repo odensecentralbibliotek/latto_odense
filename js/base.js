@@ -6,7 +6,7 @@
 
   $(document).ready(function($) {
  
-$('#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table').each(function(a, tbl) {
+$('#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table').each(function(a, tbl) {
         $(tbl).find('th').each(function(i) {
             var remove = true;
             var currentTable = $(this).parents('table');
