@@ -1141,13 +1141,13 @@ Content pane styling
 }
 
 /* line 845, ../sass/latto.subtheme.base.scss */
-div[class*='pane-aggregator-feed-'] {
+div[class*='pane-aggregator-feed-'], div[class*='pane-aggregator-category-'] {
   padding: 0;
   margin: 0;
   line-height: 1.4;
 }
 /* line 849, ../sass/latto.subtheme.base.scss */
-div[class*='pane-aggregator-feed-'] a {
+div[class*='pane-aggregator-feed-'] a, div[class*='pane-aggregator-category-'] a {
   display: block;
   overflow: hidden;
   white-space: nowrap;

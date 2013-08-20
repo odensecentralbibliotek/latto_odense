@@ -842,7 +842,7 @@ Content pane styling
   color: red;
 }
 
-div[class*='pane-aggregator-feed-'] {
+div[class*='pane-aggregator-feed-'], div[class*='pane-aggregator-category-'] {
   padding: 0;
   margin: 0;
   line-height: 1.4;
