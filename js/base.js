@@ -5,13 +5,13 @@
  }
 
   $(document).ready(function($) {
- 
+
 $('#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table').each(function(a, tbl) {
         $(tbl).find('th').each(function(i) {
             var remove = true;
             var currentTable = $(this).parents('table');
             var tds = currentTable.find('tr td:nth-child(' + (i + 1) + ')');
-            tds.each(function(j) { if (this.innerHTML != '') remove = false; });
+            tds.each(function(j) {if (this.innerHTML != '') remove = false;});
             if (remove) {
                 $(this).hide();
                 tds.hide();
@@ -113,5 +113,22 @@ $('#ding-reservation-reservations-notready-form table, #ding-reservation-reserva
   });
 }
   };
+
+Drupal.behaviors.localeDatepicker = {   
+  attach: function (context, settings) {
+      //Added overdue for expire-date
+         loanspage = $('#ding-loan-loans-form');
+    if (loanspage.exists()) {
+      var ny =new Date();
+      var overdue = Drupal.t('overdue');
+      $('.expire-date').each(function( ) {
+        var expire = $.datepicker.parseDate('dd/m yy', $(this).text());
+        if (ny > expire) {
+          $('<span> '+overdue+'</span>').appendTo(this); 
+          $(this).css( "color", "red" );
+        }
+      }); 
+    }
+  }};
 
 })(jQuery);
