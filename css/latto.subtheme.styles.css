@@ -1148,29 +1148,57 @@ div[class*='pane-aggregator-feed-'], div[class*='pane-aggregator-category-'] {
 }
 /* line 849, ../sass/latto.subtheme.base.scss */
 div[class*='pane-aggregator-feed-'] a, div[class*='pane-aggregator-category-'] a {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
 }
 
-/* line 859, ../sass/latto.subtheme.base.scss */
+/* line 857, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] a {
   text-decoration: none;
   display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  margin-bottom: 10px;
 }
-/* line 867, ../sass/latto.subtheme.base.scss */
+/* line 863, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] h2 {
   line-height: 1;
   margin-bottom: 6px;
 }
-/* line 872, ../sass/latto.subtheme.base.scss */
+/* line 868, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] .issues-list ul {
   margin: 2px 0px !important;
+}
+
+/* line 873, ../sass/latto.subtheme.base.scss */
+#aggregator {
+  padding: 8px;
+}
+
+/* line 878, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .blocklist-item {
+  margin-bottom: 10px;
+}
+/* line 880, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .blocklist-item .rss-date {
+  display: block;
+}
+/* line 883, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .blocklist-item .rss-link a {
+  text-decoration: none;
+}
+/* line 887, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .rss-image {
+  float: left;
+}
+/* line 890, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .more-link {
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 896, ../sass/latto.subtheme.base.scss */
+div.more-link a {
+  text-decoration: none;
 }
 
 /* equivalent to font-size: 100% */
