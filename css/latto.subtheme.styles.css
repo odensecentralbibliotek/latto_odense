@@ -1168,35 +1168,39 @@ div[class*='pane-simplenews-'] h2 {
 div[class*='pane-simplenews-'] .issues-list ul {
   margin: 2px 0px !important;
 }
+/* line 871, ../sass/latto.subtheme.base.scss */
+div[class*='pane-simplenews-'] input {
+  width: auto;
+}
 
-/* line 873, ../sass/latto.subtheme.base.scss */
+/* line 876, ../sass/latto.subtheme.base.scss */
 #aggregator {
   padding: 8px;
 }
 
-/* line 878, ../sass/latto.subtheme.base.scss */
+/* line 881, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .blocklist-item {
   margin-bottom: 10px;
 }
-/* line 880, ../sass/latto.subtheme.base.scss */
+/* line 883, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .blocklist-item .rss-date {
   display: block;
 }
-/* line 883, ../sass/latto.subtheme.base.scss */
+/* line 886, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .blocklist-item .rss-link a {
   text-decoration: none;
 }
-/* line 887, ../sass/latto.subtheme.base.scss */
+/* line 890, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .rss-image {
   float: left;
 }
-/* line 890, ../sass/latto.subtheme.base.scss */
+/* line 893, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .more-link {
   float: right;
   margin-top: 10px;
 }
 
-/* line 896, ../sass/latto.subtheme.base.scss */
+/* line 899, ../sass/latto.subtheme.base.scss */
 div.more-link a {
   text-decoration: none;
 }
