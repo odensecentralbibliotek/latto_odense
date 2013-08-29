@@ -529,33 +529,52 @@ input#edit-search-block-form--2.spinner {
 }
 
 .pane-user-login {
+  position: relative;
   min-height: 145px;
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   @include rgba-background($theme-tertiary-color, 0.8);
   background: $theme-tertiary-color;
   @include gradient-reset-filter();
-  .form-item-name input {
+  #user-login-form {
+    position: absolute;
+    bottom: 10px;
+    left: 11px;
+    padding-right: 10px;
+    height: 60px;
     width: 90%;
-    float: left;
+    &>div {
+      position: realtive;
+    }
   }
-  .form-item-pass input {
-    width: 58%;
-    float: left;
+  .form-item-name {
+   input {
+      width: 90%;
+      float: left;
+      height: 18px;
+    }
+  }
+  .form-item-pass {
+    input {
+      width: 58%;
+      float: left;
+      height: 18px;
+    }
   }
   .form-actions {
     width: 40px;
     float: left;
     margin-left: $default-spacing / 2;
+    input {
+      height: 27px;
+    }
   } 
-}
-.pane-user-login {
-  position: relative;
+  
   .icon-user {
     display: block;
     float: left;
-    left: 14px;
-    top: 62px;
+    left: 7px;
+    top: 7px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
@@ -564,14 +583,25 @@ input#edit-search-block-form--2.spinner {
   .icon-lock {
     display: block;
     float: left;
-    left: 14px;
-    top: 100px;
+    left: 7px;
+    top: 45px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
     z-index: 3;
   }
 }
+
+@-moz-document url-prefix() {
+/* firefox-only css goes here */
+  .icon-user {
+    top: 5px!important;
+  }
+  .icon-lock {
+    top: 43px!important;
+  }
+}
+
 .search-login .pane-system-user-menu {
   min-height: 145px;
 }  
