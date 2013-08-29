@@ -5,19 +5,23 @@
  }
 
   $(document).ready(function($) {
-
-$('#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table').each(function(a, tbl) {
+    
+    //Remove empty columns in user tables
+    emptyColumnRemove = $("#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table");   
+    if(emptyColumnRemove.exists()){
+      $(emptyColumnRemove).each(function(a, tbl) {
         $(tbl).find('th').each(function(i) {
-            var remove = true;
-            var currentTable = $(this).parents('table');
-            var tds = currentTable.find('tr td:nth-child(' + (i + 1) + ')');
-            tds.each(function(j) {if (this.innerHTML != '') remove = false;});
-            if (remove) {
-                $(this).hide();
-                tds.hide();
-            }
+          var remove = true;
+          var currentTable = $(this).parents('table');
+          var tds = currentTable.find('tr td:nth-child(' + (i + 1) + ')');
+          tds.each(function(j) {if (this.innerHTML != '') remove = false;});
+          if (remove) {
+            $(this).hide();
+            tds.hide();
+          }
         });
-    });
+      });
+    }
  
    $('.pane-pane-header').wrap('<a href="/" />');
    
@@ -36,6 +40,7 @@ $('#ding-reservation-reservations-notready-form table, #ding-reservation-reserva
       count = $('.ting-search-amount-block em:eq(2)').clone().addClass('navcount');
       $('.nav li a').first().append(count);
     }
+    //Insert a counter in search tabs
     viewElem = $('.view-header');
     if (viewElem.exists()) {
       viewElem.text(viewElem.text().trim());
@@ -96,21 +101,22 @@ $('#ding-reservation-reservations-notready-form table, #ding-reservation-reserva
 }
   };
 
-Drupal.behaviors.localeDatepicker = {   
-  attach: function (context, settings) {
+  Drupal.behaviors.localeDatepicker = {   
+    attach: function (context, settings) {
       //Added overdue for expire-date
-         loanspage = $('#ding-loan-loans-form');
-    if (loanspage.exists()) {
-      var ny =new Date();
-      var overdue = Drupal.t('overdue');
-      $('.expire-date').each(function( ) {
-        var expire = $.datepicker.parseDate('dd/m yy', $(this).text());
-        if (ny > expire) {
-          $('<span> '+overdue+'</span>').appendTo(this); 
-          $(this).css( "color", "red" );
-        }
-      }); 
+      loanspage = $('#ding-loan-loans-form');
+      if (loanspage.exists()) {
+        var ny =new Date();
+        var overdue = Drupal.t('overdue');
+        $('.expire-date').each(function( ) {
+          var expire = $.datepicker.parseDate('dd/m yy', $(this).text());
+          if (ny > expire) {
+            $('<span> '+overdue+'</span>').appendTo(this); 
+            $(this).css( "color", "red" );
+          }
+        }); 
+      }
     }
-  }};
+  };
 
 })(jQuery);
