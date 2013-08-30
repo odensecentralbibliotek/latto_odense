@@ -106,7 +106,8 @@
       //Added overdue for expire-date
       loanspage = $('#ding-loan-loans-form');
       if (loanspage.exists()) {
-        var ny =new Date();
+        var ny = new Date();
+        ny = new Date(ny.getFullYear(), ny.getMonth(), ny.getDate());
         var overdue = Drupal.t('overdue');
         $('.expire-date').each(function( ) {
           var expire = $.datepicker.parseDate('dd/m yy', $(this).text());
