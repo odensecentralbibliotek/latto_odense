@@ -1218,17 +1218,17 @@ div[class*='pane-simplenews-'] input {
 .rssblock-itemlist .blocklist-item .rss-link a {
   text-decoration: none;
 }
-/* line 920, ../sass/latto.subtheme.base.scss */
-.rssblock-itemlist .rss-image {
+/* line 921, ../sass/latto.subtheme.base.scss */
+.rssblock-itemlist .media-item {
   float: left;
 }
-/* line 923, ../sass/latto.subtheme.base.scss */
+/* line 925, ../sass/latto.subtheme.base.scss */
 .rssblock-itemlist .more-link {
   float: right;
   margin-top: 10px;
 }
 
-/* line 929, ../sass/latto.subtheme.base.scss */
+/* line 931, ../sass/latto.subtheme.base.scss */
 div.more-link a {
   text-decoration: none;
 }
