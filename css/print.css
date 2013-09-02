@@ -129,7 +129,7 @@ img.print-logo {border: 0;}
   margin: 0;
 }
 
-#ding-reservation-reservations-notready-form th:nth-child(4) {
+#ding-reservation-reservations-notready-form th:nth-child(5) {
   display: none;
 }
 #ding-reservation-reservations-notready-form .expire-date{

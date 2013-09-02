@@ -7,7 +7,7 @@
 footer .grid-inner {
    background: #eee;
 }
-#ding-reservation-reservations-notready-form th:first-child + th + th + th {
+#ding-reservation-reservations-notready-form th:first-child + th + th + th + th {
     display: none;
   }
 .openlayers-container{
