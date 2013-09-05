@@ -3,6 +3,19 @@
  * Implements hook_preprocess_table().
  * adds classes table table-striped
  */
+function latto_odense_query_alter($query) {
+
+  if (isset($query->alterMetaData)) {
+    if (isset($query->alterMetaData['view'])) {
+      if($query->alterMetaData['view']->name == 'ding_node_search' || 'node_search_counter') {
+        $fields =& $query->getGroupBy();
+        // Tried various fields to check which was the field creating the problem.
+        unset($fields['score']);
+        $query->groupBy('nid');
+      }
+    }
+  }
+}
 function latto_odense_preprocess_table(&$variables) {
   if (isset($variables['attributes']['class']) && is_string($variables['attributes']['class'])) {
     // Convert classes to an array.
