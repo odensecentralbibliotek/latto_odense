@@ -923,31 +923,6 @@ div[class*='pane-simplenews-'] {
   }
 }
 
-#aggregator {
-  padding: 8px;
-}
-
-.rssblock-itemlist {
-  .blocklist-item {
-    margin-bottom: 10px;
-    .rss-date {
-      display: block;
-    }
-    .rss-link a {
-      text-decoration: none;
-    }
-  }
-  
-  .media-item {
-    float: left;
-  }
-  
-  .more-link {
-    float: right;
-    margin-top: 10px;
-  }
-}
-
 div.more-link a {
   text-decoration: none;
 }
