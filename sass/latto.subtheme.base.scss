@@ -590,26 +590,26 @@ input#edit-search-block-form--2.spinner {
   }
 }
 
-.pane-ding-wayf-login {
+.pane-ding-wayf-login.btn.btn-info {
   position: absolute;
   right: 13px;
   top: 113px;
   padding: 0;
   a {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     font-size: 11px;
     line-height: 10px;
     padding: 4px 10px;
-  }
-  a:link {
-    color: #FFFFFF;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  a:visited{
-    color: #FFFFFF;
+    &:link {
+      color: #FFFFFF!important;
     }
+    &:hover {
+      text-decoration: none;
+    }
+    &:visited {
+      color: #FFFFFF!important;
+    }
+  }
 }
 
 @-moz-document url-prefix() {
