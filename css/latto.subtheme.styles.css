@@ -769,7 +769,7 @@ input#edit-search-block-form--2.spinner {
   display: block;
   float: left;
   left: 7px;
-  top: 7px;
+  top: 5px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
@@ -780,7 +780,7 @@ input#edit-search-block-form--2.spinner {
   display: block;
   float: left;
   left: 7px;
-  top: 45px;
+  top: 42px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
