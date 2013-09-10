@@ -572,7 +572,7 @@ input#edit-search-block-form--2.spinner {
     display: block;
     float: left;
     left: 7px;
-    top: 5px;
+    top: 4px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
@@ -582,7 +582,7 @@ input#edit-search-block-form--2.spinner {
     display: block;
     float: left;
     left: 7px;
-    top: 42px;
+    top: 41px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
@@ -615,10 +615,10 @@ input#edit-search-block-form--2.spinner {
 @-moz-document url-prefix() {
 /* firefox-only css goes here */
   .icon-user {
-    top: 6px!important;
+    top: 4px!important;
   }
   .icon-lock {
-    top: 43px!important;
+    top: 41px!important;
   }
 }
 
