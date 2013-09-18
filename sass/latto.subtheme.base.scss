@@ -280,7 +280,9 @@ li {
 .label-info, .badge-info {    
   background-color: $theme-tertiary-color;
 }
-
+.label a{
+    text-decoration: none!important;
+  }
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
