@@ -101,7 +101,10 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'ding_facetbrowser_form':
       $form['span']['#expand-more']['class'][] = 'btn';
       break;
-}
+    case 'user_profile_form':
+       $form['account']['mail']['#required'] = false; 
+      break;
+  }
 }
 
 /**
