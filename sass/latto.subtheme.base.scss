@@ -771,7 +771,9 @@ Content pane styling
 .pane-event-category-menu, .pane-news-category-menu {
   padding: $default-spacing;   
 }
-
+.pane-menu-news-category-menu-block{
+    margin-bottom: $default-spacing;
+}
 //cookie slider
 #sliding-popup {
   background: url("../images/gradient.png") repeat-y scroll center center transparent;
