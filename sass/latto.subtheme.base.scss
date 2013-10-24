@@ -286,6 +286,9 @@ li {
 .label a{
     text-decoration: none!important;
   }
+.label.label-info a{
+    color: $label-info-text-color;
+}
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
