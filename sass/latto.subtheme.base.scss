@@ -535,7 +535,7 @@ input#edit-search-block-form--2.spinner {
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   @include rgba-background($theme-tertiary-color, 0.8);
-  background: $theme-secondary-color;
+  background: $logged-in-menu-color;
   @include gradient-reset-filter();
 }
 
@@ -640,7 +640,7 @@ input#edit-search-block-form--2.spinner {
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   min-height: 145px;
   @include rgba-background($theme-secondary-color, 0.8);
-  background: $theme-secondary-color;
+  background: $logged-in-menu-color;
   @include gradient-reset-filter();
   & a{
     color: inherit;
