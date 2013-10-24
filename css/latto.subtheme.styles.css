@@ -729,9 +729,9 @@ input#edit-search-block-form--2.spinner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(105, 200, 207, 0.8);
+  background-color: rgba(243, 243, 243, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF3F3F3,endColorstr=#CCF3F3F3);
   background: #f3f3f3;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
@@ -860,9 +860,9 @@ input#edit-search-block-form--2.spinner {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   min-height: 145px;
-  background-color: rgba(105, 200, 207, 0.8);
+  background-color: rgba(243, 243, 243, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF3F3F3,endColorstr=#CCF3F3F3);
   background: #f3f3f3;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
