@@ -122,6 +122,7 @@ Date
   .day {
     background-color: $theme-secondary-color;
     color: $date-list-text-color;
+    font-weight: bold;
   }
 } 
 .list-compact .date{
@@ -285,6 +286,7 @@ li {
 }
 .label a{
     text-decoration: none!important;
+    font-weight: bold;
   }
 .label.label-info a{
     color: $label-info-text-color;
