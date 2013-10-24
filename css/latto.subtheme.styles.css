@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    This file imports all of the stylesheets used in the theme.
 
@@ -160,8 +161,8 @@ hr.secondary {
 }
 /* line 110, ../sass/latto.subtheme.base.scss */
 hr.tertiary {
-  background: #99d7db;
-  color: #99d7db;
+  background: #69c8cf;
+  color: #69c8cf;
   clear: both;
   float: none;
   width: 100%;
@@ -359,7 +360,7 @@ li a.active {
 
 /* line 283, ../sass/latto.subtheme.base.scss */
 .label-info, .badge-info {
-  background-color: #99d7db;
+  background-color: #69c8cf;
 }
 
 /* line 286, ../sass/latto.subtheme.base.scss */
@@ -482,19 +483,19 @@ Search pane styling
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(153, 215, 219, 0.8);
+  background-color: rgba(105, 200, 207, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
-  background: #99d7db;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
+  background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   min-height: 145px;
 }
 
 /* line 365, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
-  background-color: #99d7db;
+  background-color: #69c8cf;
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF99D7DB,endColorstr=#FF99D7DB);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69C8CF,endColorstr=#FF69C8CF);
   margin-top: 0px;
 }
 /* line 368, ../sass/latto.subtheme.base.scss */
@@ -721,9 +722,9 @@ input#edit-search-block-form--2.spinner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(153, 215, 219, 0.8);
+  background-color: rgba(105, 200, 207, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
   background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
@@ -738,10 +739,10 @@ input#edit-search-block-form--2.spinner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background-color: rgba(153, 215, 219, 0.8);
+  background-color: rgba(105, 200, 207, 0.8);
   zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC99D7DB,endColorstr=#CC99D7DB);
-  background: #99d7db;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC69C8CF,endColorstr=#CC69C8CF);
+  background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 545, ../sass/latto.subtheme.base.scss */
@@ -1186,16 +1187,16 @@ Content pane styling
 
 /* line 886, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected {
-  border-color: transparent #99d7db transparent transparent;
+  border-color: transparent #69c8cf transparent transparent;
 }
 /* line 888, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected a {
-  background-color: #99d7db;
+  background-color: #69c8cf;
 }
 
 /* line 892, ../sass/latto.subtheme.base.scss */
 .openlayers-popup a {
-  color: #99d7db !important;
+  color: #69c8cf !important;
 }
 
 /* line 895, ../sass/latto.subtheme.base.scss */
@@ -1503,7 +1504,7 @@ em {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background: #99d7db;
+  background: #69c8cf;
   padding-left: 15px;
   margin-bottom: 7.5px;
   border-bottom: 0px;
@@ -1625,7 +1626,7 @@ div.availability {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 4px 15px -2px;
-  background: #99d7db;
+  background: #69c8cf;
   margin-top: 7.5px;
   margin-bottom: 7.5px;
   padding-left: 15px;
