@@ -746,6 +746,7 @@ input:placeholder, textarea:placeholder {
 .field-name-field-ding-news-title-image {
     float: left;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 .list-item {
   display: inline-block;
@@ -856,6 +857,7 @@ Content pane styling
 
 .lead {
   margin-top: $default-spacing / 2;
+  font-size: $theme-line-height * 0.9;
 }
 .field-name-field-ding-page-body {
   margin-top: $default-spacing / 2;
