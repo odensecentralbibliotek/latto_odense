@@ -26,20 +26,6 @@ function latto_odense_preprocess_table(&$variables) {
 }
 
 /**
- * Implements hook_cache_actions_panels_cache_key_alter.
- *
- * Add user roles to the cache key.
- */
-function latto_odense_cache_actions_panels_cache_key_alter($cache) {
-  switch ($cache->pane->type) {
-    case 'campaign':
-      global $user;
-      $cache->key .= serialize($user->roles);
-      break;
-  }
-}
-
-/**
  * alters forms.
  */
 function latto_odense_form_alter(&$form, &$form_state, $form_id) {
