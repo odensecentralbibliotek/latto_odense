@@ -17,15 +17,11 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<div class="search-wrapper <?php print $classes; ?>" <?php print $id; ?>>
-  <div class="search-inner-wrapper">
-    <?php if ($admin_links): ?>
-      <?php print $admin_links; ?>
-    <?php endif; ?>
+<a href="#" onclick="javascript:window.history.back(-1);return false;">< tilbage</a>
+<div class="<?php print $classes; ?> sidebar-menu" <?php print $id; ?>>
+<?php if ($admin_links): ?>
+  <?php print $admin_links; ?>
+<?php endif; ?>
 
-    <?php if ($title): ?>
-      <h2><?php print $title; ?></h2>
-    <?php endif; ?> 
-    <?php print render($content); ?>
-  </div>
+<?php print render($content); ?>
 </div>
