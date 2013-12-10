@@ -30,7 +30,7 @@
 ?>
 
 
-<a href="#" onclick="javascript:window.history.back(-1);return false;">< tilbage</a>
+<a href="#" class="back" "onclick="javascript:window.history.back(-1);return false;">< tilbage</a>
 
 <?php if ($title): ?>
   <?php print render($title_prefix); ?>

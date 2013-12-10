@@ -1262,6 +1262,12 @@ div.more-link a {
   text-decoration: none;
 }
 
+/* line 947, ../sass/latto.subtheme.base.scss */
+.back {
+  display: block;
+  margin-top: 15px;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {

@@ -17,7 +17,7 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<a href="#" onclick="javascript:window.history.back(-1);return false;">< tilbage</a>
+<a href="#" class="back" onclick="javascript:window.history.back(-1);return false;">< tilbage</a>
 <div class="<?php print $classes; ?> sidebar-menu" <?php print $id; ?>>
 <?php if ($admin_links): ?>
   <?php print $admin_links; ?>
