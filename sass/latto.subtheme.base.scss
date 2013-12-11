@@ -122,6 +122,7 @@ Date
   .day {
     background-color: $theme-secondary-color;
     color: $date-list-text-color;
+    font-weight: bold;
   }
 } 
 .list-compact .date{
@@ -285,7 +286,11 @@ li {
 }
 .label a{
     text-decoration: none!important;
+    font-weight: bold;
   }
+.label.label-info a{
+    color: $label-info-text-color;
+}
 footer .grid-inner {
   margin-top: $default-spacing;
   @include single-box-shadow;
@@ -529,8 +534,8 @@ input#edit-search-block-form--2.spinner {
 .pane-system-user-menu {
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
-  @include rgba-background($theme-tertiary-color, 0.8);
-  background: $theme-secondary-color;
+  @include rgba-background($logged-in-menu-color, 0.8);
+  background: $logged-in-menu-color;
   @include gradient-reset-filter();
 }
 
@@ -634,8 +639,8 @@ input#edit-search-block-form--2.spinner {
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
   min-height: 145px;
-  @include rgba-background($theme-secondary-color, 0.8);
-  background: $theme-secondary-color;
+  @include rgba-background($logged-in-menu-color, 0.8);
+  background: $logged-in-menu-color;
   @include gradient-reset-filter();
   & a{
     color: inherit;
@@ -738,6 +743,11 @@ input:placeholder, textarea:placeholder {
 }
 
 /* NEWS & EVENTS */
+.field-name-field-ding-news-title-image {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
 .list-item {
   display: inline-block;
   width: 100%;
@@ -847,6 +857,7 @@ Content pane styling
 
 .lead {
   margin-top: $default-spacing / 2;
+  font-size: $theme-line-height * 0.9;
 }
 .field-name-field-ding-page-body {
   margin-top: $default-spacing / 2;
@@ -932,4 +943,8 @@ div[class*='pane-simplenews-'] {
 
 div.more-link a {
   text-decoration: none;
+}
+.back {
+    display: block;
+    margin-top: 15px;
 }
