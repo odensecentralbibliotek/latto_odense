@@ -104,6 +104,12 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'user_profile_form':
        $form['account']['mail']['#required'] = false; 
       break;
+    case 'ding_campaign_node_form':
+      $form['field_camp_image']['#access'] = FALSE;
+      $form['field_camp_link']['#access'] = FALSE;
+      $form['field_camp_text_plain']['#access'] = FALSE;
+      $form['field_camp_settings']['#access'] = FALSE;
+      break;
   }
 }
 
