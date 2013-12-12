@@ -58,7 +58,8 @@ $btnBorder:                   $gray-light2 !default;
 
 $btnInfoBackground:           #5bc0de !default;
 $btn-info-text-color:         $white;
-
+$btnBackground:               $white !default;
+$btnBackgroundHighlight:      darken($gray-lighter, 10%) !default;
 $btnInfoBackgroundHighlight:  darken($btnInfoBackground, 10%) !default;
 
 // Spacing
