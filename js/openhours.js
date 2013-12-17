@@ -3,7 +3,7 @@
  * @file
  * JavaScript behavior to update library open/closed status dynamically.
  */
- 
+      
   // Prototype for library opening status indicators.
     Drupal.DingLibraryStatusIndicator = function (options) {
       var self = this;
@@ -43,14 +43,14 @@
         var instances, isOpen = false;
         var instances, isselfService = false;
 
-        // Get opening hours instances for the date in question.
-        instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
+   // Get opening hours instances for the date in question.
+        instances = Drupal.OpeningHours.dataStore[self.nid][date.getISODate()] || [];
 
         $.each(instances, function () {
           var open = self.splitTime(this.start_time),
           close = self.splitTime(this.end_time),
-          hours = self.date.getHours(),
-          minutes = self.date.getMinutes();
+          hours = date.getHours(),
+          minutes = date.getMinutes();
 
           // Now we have all the data we need, figure out if we're open.
           
@@ -145,18 +145,27 @@
 
     // Set up our status indicators when the document is loaded.
     $(window).bind('OpeningHoursLoaded', function () {
-      var date = new Date();
+             
+    $.ajax({
+      type: "HEAD",
+      async: false,
+      cache: false,
+      url: '/',
+      success: function(data, status, xhr) {
+        var date = xhr.getResponseHeader('Date');
+        // Set up DingLibraryStatusIndicator instances for each presentation
+        // present on the page.
+        $('.opening-hours-week').each(function() {
+          var indicator = new Drupal.DingLibraryStatusIndicator({
+            container: this,
+            date: date,
+            nid: parseInt($(this).attr('data-nid'), 10)
+          });
 
-      // Set up DingLibraryStatusIndicator instances for each presentation
-      // present on the page.
-      $('.opening-hours-week').each(function () {
-        var indicator = new Drupal.DingLibraryStatusIndicator({
-          container: this,
-          date: date,
-          nid: parseInt($(this).attr('data-nid'), 10)
+          indicator.render();
         });
+      }
+    })     
 
-        indicator.render();
-      });
-    }); 
+    });
 })(jQuery);
