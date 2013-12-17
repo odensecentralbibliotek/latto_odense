@@ -42,7 +42,10 @@
     <p class="print-content"><?php print $print['node']->field_ding_news_lead['und'][0]['value']; ?></p>
     <p class="print-content"><?php print $print['node']->field_ding_event_lead['und'][0]['value']; ?></p>
     <p class="print-content"><?php print $print['node']->field_ding_page_lead['und'][0]['value']; ?></p>
-    <div class="print-content"><?php print $print['content']; ?></div>    
+    <p class="print-content"><?php print $print['node']->field_ding_news_body['und'][0]['value']; ?></p>
+    <p class="print-content"><?php print $print['node']->field_ding_event_body['und'][0]['value']; ?></p>
+    <p class="print-content"><?php print $print['node']->field_ding_page_body['und'][0]['value']; ?></p>
+    
     <div class="print-footer"><?php print $print['footer_message']; ?></div>
     <hr class="print-hr" />
     <div class="print-source_url"><?php print $print['source_url']; ?></div>
