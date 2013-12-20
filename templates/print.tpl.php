@@ -28,19 +28,7 @@
     <p />
     <div class="print-breadcrumb"><?php print $print['breadcrumb']; ?></div>
     <hr class="print-hr" />
-    <div class="print-content"><?php print $title; ?></div>
-    <?php if ($print['node']->field_ding_news_title_image['und'][0]['uri']) : ?>
-    <p class="print-content"><img src='<?php print file_create_url($print['node']->field_ding_news_title_image['und'][0]['uri']); ?>' style='width:240px; height:240px;' /></p>
-      <?php endif; ?>
-    <p class="print-content"><?php print $print['node']->field_ding_news_lead['und'][0]['value']; ?></p>
-    <?php if ($print['node']->field_ding_event_title_image['und'][0]['uri']) : ?>
-    <p class="print-content"><img src='<?php print file_create_url($print['node']->field_ding_event_title_image['und'][0]['uri']); ?>' style='width:240px; height:240px;' /></p>
-    <?php endif; ?>
-    <p class="print-content"><?php print $print['node']->field_ding_event_lead['und'][0]['value']; ?></p>
-      <p class="print-content"><?php print $print['node']->field_ding_page_lead['und'][0]['value']; ?></p>
-    <p class="print-content label label-info"><?php print $print['node']->field_ding_news_category['und'][0][taxonomy_term]->name; ?></p>    
-    <p class="print-content label label-info"><?php print $print['node']->field_ding_event_category['und'][0][taxonomy_term]->name; ?></p>      
-    <p class="print-content"><?php print $print['content']; ?></p>   
+    <p class="print-content"><?php print $print['content']; ?></p>
     <div class="print-footer"><?php print $print['footer_message']; ?></div>
     <hr class="print-hr" />
     <div class="print-source_url"><?php print $print['source_url']; ?></div>
