@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 3, 2014, 10:44:46 AM
+    Author     : gorkha
+*/
+
+table {
+  border: 1px solid #ccc;
+}
+
+table tr td, table tr th {
+  border: 1px dotted #ccc;
+}
