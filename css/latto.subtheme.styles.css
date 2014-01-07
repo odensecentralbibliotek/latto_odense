@@ -92,7 +92,7 @@ Theme specific grid styling
 ========================================================================== */
 /* line 76, ../sass/latto.subtheme.base.scss */
 section ul {
-  list-style: inherit;
+  list-style: outside !important;
   margin-left: 25px;
 }
 
