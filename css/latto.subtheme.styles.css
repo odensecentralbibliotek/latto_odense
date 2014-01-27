@@ -554,7 +554,7 @@ Search pane styling
 
 /* line 431, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay {
-  z-index: 10000;
+  z-index: 900;
   background-color: rgba(0, 0, 0, 0.5);
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
@@ -570,7 +570,7 @@ Search pane styling
 
 /* line 437, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay .spinner {
-  z-index: 10001;
+  z-index: 901;
   position: fixed;
   top: 0px;
   left: 0px;

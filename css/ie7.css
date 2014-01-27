@@ -70,6 +70,6 @@ footer .grid-inner {
   .openlayers-container{
     display: none;
   }
-  input, button, select option, textarea {
+.ui-widget, .ui-widget select, select option {
     font-family: Arial,sans-serif!important;
 }

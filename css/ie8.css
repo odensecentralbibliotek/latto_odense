@@ -17,6 +17,6 @@ footer .grid-inner {
  a:visited {
    text-decoration: none;
  }
-.ui-widget select, select option {
+.ui-widget, .ui-widget select, select option {
     font-family: Arial,sans-serif!important;
 }
