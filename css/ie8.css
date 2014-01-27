@@ -17,6 +17,6 @@ footer .grid-inner {
  a:visited {
    text-decoration: none;
  }
- input, button, select option, textarea {
-    font-family: Helvetica,Arial,sans-serif!important;
+.ui-widget select, select option {
+    font-family: Arial,sans-serif!important;
 }
