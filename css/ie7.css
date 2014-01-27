@@ -70,3 +70,6 @@ footer .grid-inner {
   .openlayers-container{
     display: none;
   }
+  input, button, select option, textarea {
+    font-family: Helvetica,Arial,sans-serif!important;
+}
