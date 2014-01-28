@@ -8,7 +8,7 @@
   <h2><?php print t('User menu'); ?></h2>
   <div id="ding-user-profile">
     <span><?php print l(t('My profile'), 'user/'); ?></span>
-    <span style="float:right;"><?php print l(t('Logout'), 'user/logout/'); ?></span>
+    <span style="float:right;"><?php print '<a href="javascript: Drupal.ninja_logout();">'.t('Logout').'</a>'; ?></span>
   </div>
   <div id="ding-user-loan-amount">
     <span class="label amount">(<?php print $loan_count; ?>)</span>
