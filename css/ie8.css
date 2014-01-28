@@ -17,6 +17,10 @@ footer .grid-inner {
  a:visited {
    text-decoration: none;
  }
+@font-face{
+   font-family: url('../verdana.ttf')format('truetype');
+}
+
 .ui-widget, .ui-widget select, select option {
-    font-family: Arial,sans-serif!important;
+    font-family: Verdana, Arial, sans-serif!important;
 }
