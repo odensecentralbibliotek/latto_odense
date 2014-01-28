@@ -21,6 +21,7 @@ stylesheets[all][] = system.menus.css
 scripts[] = js/base.js
 scripts[] = js/openhours.js
 scripts[] = js/jquery.placeholder.js
+scripts[] = js/onlinebooking.js
 
 settings[load_selectivizr ] = 1
 
