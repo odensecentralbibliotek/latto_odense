@@ -103,17 +103,55 @@
     }    
   }
   
-span#expand_more {
-  background: url(../images/plus-icon.png) no-repeat;
-  padding-left: 20px;
-  cursor: row-resize;
-  }  
-  
-span#expand_less {
-  background: url(../images/minus-icon.png) no-repeat;
-  margin-left: $default-spacing;
-  padding-left: 20px;
-  cursor: row-resize;
+.pane-search-backends .expand:before, .pane-ding-facetbrowser .expand:before, .pane-search-backends .selected-checkbox-group .unselect:before, .pane-ding-facetbrowser .selected-checkbox-group .unselect:before, .pane-search-backends .expand-facets:before, .pane-ding-facetbrowser .expand-facets:before {
+    float: left;
+    font-family: "FontAwesome";
+    font-size: 130%;
+    margin-right: 3px;
+    margin-top: -1px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.icon-plus-sign:before, .pane-search-backends .expand-more:before, .pane-ding-facetbrowser .expand-more:before, .pane-ting-object .collapsible.collapsed .field-group-format-title:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
+    content: "";
+}
+.pane-search-backends a:link, .pane-ding-facetbrowser a:link {
+    text-decoration: none;
+}
+.pane-search-backends .expand-more, .pane-ding-facetbrowser .expand-more {
+    display: block;
+    float: left;
+}
+.pane-search-backends .expand, .pane-ding-facetbrowser .expand, .pane-search-backends .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-search-backends .expand-facets, .pane-ding-facetbrowser .expand-facets {
+    margin-right: 10px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+
+.pane-search-backends .expand:before, .pane-ding-facetbrowser .expand:before, .pane-search-backends .selected-checkbox-group .unselect:before, .pane-ding-facetbrowser .selected-checkbox-group .unselect:before, .pane-search-backends .expand-facets:before, .pane-ding-facetbrowser .expand-facets:before {
+    float: left;
+    font-family: "FontAwesome";
+    font-size: 130%;
+    margin-right: 3px;
+    margin-top: -1px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.icon-minus-sign:before, .pane-search-backends .expand-less:before, .pane-ding-facetbrowser .expand-less:before, .pane-ting-object .collapsible .field-group-format-title:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
+    content: "";
+}
+.pane-search-backends a:link, .pane-ding-facetbrowser a:link {
+    text-decoration: none;
+}
+.pane-search-backends .expand-less, .pane-ding-facetbrowser .expand-less {
+    display: block;
+    float: left;
+}
+.pane-search-backends .expand, .pane-ding-facetbrowser .expand, .pane-search-backends .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-search-backends .expand-facets, .pane-ding-facetbrowser .expand-facets {
+    margin-right: 10px;
+    margin-top: 5px;
+    vertical-align: top;
 }
   
   
