@@ -119,5 +119,7 @@
       }
     }
   };
-
+  $(document).ajaxComplete(function() {
+    $(".list-item .btn-large").text('Bestil billet(ter)').remove();
+  });
 })(jQuery);
