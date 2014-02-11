@@ -741,11 +741,12 @@ input:placeholder, textarea:placeholder {
   display: inline-block;
   width: 100%;
 }
-.list-item .btn-large{
-    font-size: 10px;
-    line-height: normal;
-    padding: 6px 10px;
+.list-item .btn-large {
     float: right;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 5px 9px;
 }
 .search-results .list-item {
   width: auto;
