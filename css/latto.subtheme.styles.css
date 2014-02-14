@@ -753,7 +753,7 @@ input#edit-search-block-form--2.spinner {
   display: block;
   float: left;
   left: 7px;
-  top: 4px;
+  top: 6px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
@@ -764,7 +764,7 @@ input#edit-search-block-form--2.spinner {
   display: block;
   float: left;
   left: 7px;
-  top: 41px;
+  top: 43px;
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
@@ -802,12 +802,12 @@ input#edit-search-block-form--2.spinner {
   /* firefox-only css goes here */
   /* line 616, ../sass/latto.subtheme.base.scss */
   .icon-user {
-    top: 4px !important;
+    top: 6px !important;
   }
 
   /* line 619, ../sass/latto.subtheme.base.scss */
   .icon-lock {
-    top: 41px !important;
+    top: 43px !important;
   }
 }
 
@@ -934,7 +934,7 @@ Login pane styling
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.6em 0.4em 1.6em;
-  color: #cccccc;
+  color: black;
 }
 
 /* line 714, ../sass/latto.subtheme.base.scss */
@@ -945,18 +945,18 @@ label.placeholder {
 
 /* line 718, ../sass/latto.subtheme.base.scss */
 .pane-user-login input[placeholder] {
-  padding-left: 17px;
+  padding-left: 18px;
 }
 
 /* html5 placeholder support */
 /* line 722, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #cccccc;
+  color: black;
 }
 
 /* line 726, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
-  color: #cccccc;
+  color: black;
 }
 
 /* line 730, ../sass/latto.subtheme.base.scss */

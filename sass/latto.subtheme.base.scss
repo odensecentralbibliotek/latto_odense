@@ -571,7 +571,7 @@ input#edit-search-block-form--2.spinner {
     display: block;
     float: left;
     left: 7px;
-    top: 4px;
+    top: 6px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
@@ -581,7 +581,7 @@ input#edit-search-block-form--2.spinner {
     display: block;
     float: left;
     left: 7px;
-    top: 41px;
+    top: 43px;
     opacity: 0.4;
     filter: alpha(opacity=40);
     position: absolute;
@@ -614,10 +614,10 @@ input#edit-search-block-form--2.spinner {
 @-moz-document url-prefix() {
 /* firefox-only css goes here */
   .icon-user {
-    top: 4px!important;
+    top: 6px!important;
   }
   .icon-lock {
-    top: 41px!important;
+    top: 43px!important;
   }
 }
 
@@ -709,22 +709,22 @@ Login pane styling
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.6em 0.4em 1.6em;   
-  color: $gray-light2;
+  color: $black;
 }
 #edit-keys_placeholder {
   top: 35px!important;
   padding-left: 30px;
 }
 .pane-user-login input[placeholder] {
-  padding-left: 17px;
+  padding-left: 18px;
 }
 /* html5 placeholder support */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: $gray-light2;
+  color: $black;
 }
 
 input:placeholder, textarea:placeholder {
-  color: $gray-light2;
+  color: $black;
 }
 
 .tags a {
