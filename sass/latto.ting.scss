@@ -113,7 +113,7 @@
     text-decoration: none;
 }
 .icon-plus-sign:before, .pane-search-backends .expand-more:before, .pane-ding-facetbrowser .expand-more:before, .pane-ting-object .collapsible.collapsed .field-group-format-title:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
-    content: "";
+   content: "";
 }
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
     text-decoration: none;
@@ -139,7 +139,7 @@
     text-decoration: none;
 }
 .icon-minus-sign:before, .pane-search-backends .expand-less:before, .pane-ding-facetbrowser .expand-less:before, .pane-ting-object .collapsible .field-group-format-title:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
-    content: "";
+    content: ""; 
 }
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
     text-decoration: none;

@@ -1522,7 +1522,7 @@ em {
 
 /* line 115, ../sass/latto.ting.scss */
 .icon-plus-sign:before, .pane-search-backends .expand-more:before, .pane-ding-facetbrowser .expand-more:before, .pane-ting-object .collapsible.collapsed .field-group-format-title:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
-  content: "";
+  content: "";
 }
 
 /* line 118, ../sass/latto.ting.scss */
@@ -1556,7 +1556,7 @@ em {
 
 /* line 141, ../sass/latto.ting.scss */
 .icon-minus-sign:before, .pane-search-backends .expand-less:before, .pane-ding-facetbrowser .expand-less:before, .pane-ting-object .collapsible .field-group-format-title:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
-  content: "";
+  content: "";
 }
 
 /* line 144, ../sass/latto.ting.scss */
