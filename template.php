@@ -1,4 +1,12 @@
 <?php
+function latto_odense_preprocess_html(&$variables) {
+
+  $path = drupal_get_path_alias();
+  $pattern = 'event-category/*';
+  if (drupal_match_path($path, $pattern)) {
+     drupal_add_js(drupal_get_path('theme', 'latto_odense') .'/js/jquery.fastLiveFilter.min.js');
+  }
+}
 /**
  * Implements hook_preprocess_table().
  * adds classes table table-striped
