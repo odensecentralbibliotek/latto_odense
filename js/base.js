@@ -5,7 +5,10 @@
  }
 
   $(document).ready(function($) {
+    if($('#search_input').exists()){
     $('#search_input').fastLiveFilter('.floated');
+    }
+    
     //Remove empty columns in user tables
     emptyColumnRemove = $("#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table");   
     if(emptyColumnRemove.exists()){
