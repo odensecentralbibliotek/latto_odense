@@ -6,7 +6,7 @@
 
   $(document).ready(function($) {
     if($('#search_input').exists()){
-    $('#search_input').fastLiveFilter('.floated');
+    $('#search_input').fastLiveFilter('.fastfilter');
     }
     
     //Remove empty columns in user tables
