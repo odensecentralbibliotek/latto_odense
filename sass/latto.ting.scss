@@ -273,7 +273,9 @@ div.availability {
 li.ding-periodical-foldable {
   padding-top: $default-spacing;  
 }
-
+.sidebar-menu li:hover {
+  color: $black;
+}
 .ding-periodical-fold {
   cursor: pointer;
 }
