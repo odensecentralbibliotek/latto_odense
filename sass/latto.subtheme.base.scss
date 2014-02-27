@@ -466,6 +466,7 @@ Search pane styling
     }  
     #adv-reset {
       margin-left:  8px;
+      margin-bottom: 5px;
     }
     .form-text {
       width: 225px;
@@ -487,7 +488,12 @@ Search pane styling
     }
   }
 }
-
+#edit-ccl{
+  width: 83%!important;
+}
+.form-item-ccl{
+  width: 100%!important;
+}
 //
 
 ul.ui-autocomplete { 
