@@ -255,16 +255,15 @@ li a.active {
 .main-menu li a {
   color: white;
   display: block;
-  height: 100%;
   min-width: 90px;
   padding: 15px;
   text-decoration: none;
 }
-/* line 194, ../sass/latto.subtheme.base.scss */
+/* line 193, ../sass/latto.subtheme.base.scss */
 .main-menu li a.active {
   background-color: #999999;
 }
-/* line 197, ../sass/latto.subtheme.base.scss */
+/* line 196, ../sass/latto.subtheme.base.scss */
 .main-menu li a i {
   font-size: 38px;
   padding-top: 15px;
@@ -273,39 +272,39 @@ li a.active {
   margin-right: auto;
 }
 
-/* line 208, ../sass/latto.subtheme.base.scss */
+/* line 207, ../sass/latto.subtheme.base.scss */
 .ding-entity-button {
   margin-left: 7.5px;
 }
 
-/* line 212, ../sass/latto.subtheme.base.scss */
+/* line 211, ../sass/latto.subtheme.base.scss */
 .country {
   padding-right: 7.5px;
 }
 
-/* line 216, ../sass/latto.subtheme.base.scss */
+/* line 215, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-list-image {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 221, ../sass/latto.subtheme.base.scss */
+/* line 220, ../sass/latto.subtheme.base.scss */
 .libraries {
   float: left;
   width: 40%;
 }
 
-/* line 226, ../sass/latto.subtheme.base.scss */
+/* line 225, ../sass/latto.subtheme.base.scss */
 .library-menu ul li:nth-child(2), .library-menu ul li:nth-child(3) {
   Display: none;
 }
 
-/* line 230, ../sass/latto.subtheme.base.scss */
+/* line 229, ../sass/latto.subtheme.base.scss */
 #ding-library-front .panel-separator {
   height: 15px;
 }
 
-/* line 234, ../sass/latto.subtheme.base.scss */
+/* line 233, ../sass/latto.subtheme.base.scss */
 .libraries-opening-hours {
   float: right;
   padding: 0;
@@ -313,34 +312,34 @@ li a.active {
   width: 35%;
 }
 
-/* line 242, ../sass/latto.subtheme.base.scss */
+/* line 241, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .notice-star {
   color: transparent;
   margin-left: 5px;
   margin-right: -25px;
 }
-/* line 248, ../sass/latto.subtheme.base.scss */
+/* line 247, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .notice-star:before {
   font-family: "FontAwesome";
   color: #555555;
   opacity: 0.5;
   font-weight: normal;
 }
-/* line 255, ../sass/latto.subtheme.base.scss */
+/* line 254, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .days {
   padding: 0;
 }
-/* line 259, ../sass/latto.subtheme.base.scss */
+/* line 258, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .times {
   margin-right: 7.5px !important;
 }
 
-/* line 264, ../sass/latto.subtheme.base.scss */
+/* line 263, ../sass/latto.subtheme.base.scss */
 .icon-info-sign:before, .opening-hours-week .notice-star:before {
   content: "";
 }
 
-/* line 268, ../sass/latto.subtheme.base.scss */
+/* line 267, ../sass/latto.subtheme.base.scss */
 .library-list {
   list-style-type: none;
   margin: 0;
@@ -348,33 +347,33 @@ li a.active {
   width: 100%;
 }
 
-/* line 275, ../sass/latto.subtheme.base.scss */
+/* line 274, ../sass/latto.subtheme.base.scss */
 .vcard {
   margin-bottom: 7.5px;
 }
 
-/* line 279, ../sass/latto.subtheme.base.scss */
+/* line 278, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-mail a {
   font-size: 12px;
 }
 
-/* line 283, ../sass/latto.subtheme.base.scss */
+/* line 282, ../sass/latto.subtheme.base.scss */
 .label-info, .badge-info {
   background-color: #69c8cf;
 }
 
-/* line 286, ../sass/latto.subtheme.base.scss */
+/* line 285, ../sass/latto.subtheme.base.scss */
 .label a {
   text-decoration: none !important;
   font-weight: bold;
 }
 
-/* line 290, ../sass/latto.subtheme.base.scss */
+/* line 289, ../sass/latto.subtheme.base.scss */
 .label.label-info a {
   color: white;
 }
 
-/* line 293, ../sass/latto.subtheme.base.scss */
+/* line 292, ../sass/latto.subtheme.base.scss */
 footer .grid-inner {
   margin-top: 15px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -389,11 +388,11 @@ footer .grid-inner {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B3EEEEEE,endColorstr=#B3EEEEEE);
 }
 
-/* line 301, ../sass/latto.subtheme.base.scss */
+/* line 300, ../sass/latto.subtheme.base.scss */
 .footer-menu {
   border-right: 2px solid white;
 }
-/* line 303, ../sass/latto.subtheme.base.scss */
+/* line 302, ../sass/latto.subtheme.base.scss */
 .footer-menu h2 {
   color: #333333 !important;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -402,7 +401,7 @@ footer .grid-inner {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 311, ../sass/latto.subtheme.base.scss */
+/* line 310, ../sass/latto.subtheme.base.scss */
 .footer-menu a {
   color: #333333 !important;
   font-size: 12px;
@@ -410,12 +409,12 @@ footer .grid-inner {
   text-decoration: none;
 }
 
-/* line 319, ../sass/latto.subtheme.base.scss */
+/* line 318, ../sass/latto.subtheme.base.scss */
 .pane-menu-footer-menu-4 {
   border-right: none;
 }
 
-/* line 323, ../sass/latto.subtheme.base.scss */
+/* line 322, ../sass/latto.subtheme.base.scss */
 .fixed-icon-search {
   left: 7px;
   opacity: 0.5;
@@ -424,7 +423,7 @@ footer .grid-inner {
   font-size: 160%;
 }
 
-/* line 331, ../sass/latto.subtheme.base.scss */
+/* line 330, ../sass/latto.subtheme.base.scss */
 .fixed-icon-remove-sign {
   font-size: 160%;
   opacity: 0.5;
@@ -433,7 +432,7 @@ footer .grid-inner {
   top: 40px;
 }
 
-/* line 339, ../sass/latto.subtheme.base.scss */
+/* line 338, ../sass/latto.subtheme.base.scss */
 .icon-remove-sign:before {
   cursor: pointer;
 }
@@ -441,13 +440,13 @@ footer .grid-inner {
 /* ==========================================================================
 Search pane styling
 ========================================================================== */
-/* line 347, ../sass/latto.subtheme.base.scss */
+/* line 346, ../sass/latto.subtheme.base.scss */
 .search-login .grid-inner {
   position: relative;
   margin-bottom: 15px;
 }
 
-/* line 351, ../sass/latto.subtheme.base.scss */
+/* line 350, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-search-form {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -463,20 +462,20 @@ Search pane styling
   min-height: 145px;
 }
 
-/* line 359, ../sass/latto.subtheme.base.scss */
+/* line 358, ../sass/latto.subtheme.base.scss */
 .search-wrapper {
   background-color: #69c8cf;
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69C8CF,endColorstr=#FF69C8CF);
   margin-top: 0px;
 }
-/* line 362, ../sass/latto.subtheme.base.scss */
+/* line 361, ../sass/latto.subtheme.base.scss */
 .search-wrapper form {
   margin: 0px;
   position: relative;
   width: 100%;
 }
-/* line 367, ../sass/latto.subtheme.base.scss */
+/* line 366, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-text {
   font-size: 160%;
   height: 40px;
@@ -484,7 +483,7 @@ Search pane styling
   border-radius: 4px 0px 0px 4px;
   padding-left: 30px;
 }
-/* line 374, ../sass/latto.subtheme.base.scss */
+/* line 373, ../sass/latto.subtheme.base.scss */
 .search-wrapper .btn {
   height: 38px;
   position: static;
@@ -492,7 +491,7 @@ Search pane styling
   padding: 0px 5px 0px 0px;
   margin-right: 15px;
 }
-/* line 381, ../sass/latto.subtheme.base.scss */
+/* line 380, ../sass/latto.subtheme.base.scss */
 .search-wrapper a {
   background: url(../../../../../misc/menu-expanded.png) no-repeat;
   background-position: 95% 50%;
@@ -502,17 +501,17 @@ Search pane styling
   padding-right: 30px;
   line-height: 40px;
 }
-/* line 390, ../sass/latto.subtheme.base.scss */
+/* line 389, ../sass/latto.subtheme.base.scss */
 .search-wrapper .btn a:hover {
   text-decoration: none;
 }
-/* line 393, ../sass/latto.subtheme.base.scss */
+/* line 392, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-item-keys {
   display: block;
   overflow: hidden;
 }
 
-/* line 398, ../sass/latto.subtheme.base.scss */
+/* line 397, ../sass/latto.subtheme.base.scss */
 .form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
@@ -521,29 +520,29 @@ Search pane styling
   margin-top: 0px;
 }
 
-/* line 405, ../sass/latto.subtheme.base.scss */
+/* line 404, ../sass/latto.subtheme.base.scss */
 #edit-search-type {
   height: 30px;
   overflow: hidden;
   display: block;
 }
-/* line 409, ../sass/latto.subtheme.base.scss */
+/* line 408, ../sass/latto.subtheme.base.scss */
 #edit-search-type .form-item-search-type {
   float: left;
   margin-right: 15px;
 }
 
-/* line 415, ../sass/latto.subtheme.base.scss */
+/* line 414, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced {
   margin: 0;
   position: static;
   padding-top: 7.5px;
 }
-/* line 419, ../sass/latto.subtheme.base.scss */
+/* line 418, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced legend {
   display: none;
 }
-/* line 422, ../sass/latto.subtheme.base.scss */
+/* line 421, ../sass/latto.subtheme.base.scss */
 .search-wrapper #edit-advanced .fieldset-wrapper {
   left: -20px;
   padding: 0 10px 0 13px;
@@ -552,7 +551,7 @@ Search pane styling
   z-index: 50;
 }
 
-/* line 431, ../sass/latto.subtheme.base.scss */
+/* line 430, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay {
   z-index: 900;
   background-color: rgba(0, 0, 0, 0.5);
@@ -568,7 +567,7 @@ Search pane styling
   vertical-align: middle;
 }
 
-/* line 437, ../sass/latto.subtheme.base.scss */
+/* line 436, ../sass/latto.subtheme.base.scss */
 .facetbrowser_overlay .spinner {
   z-index: 901;
   position: fixed;
@@ -583,28 +582,28 @@ Search pane styling
 }
 
 /* facet link color */
-/* line 444, ../sass/latto.subtheme.base.scss */
+/* line 443, ../sass/latto.subtheme.base.scss */
 .pane-ding-facetbrowser a, .pane-ding-facetbrowser a:visited {
   color: black;
 }
 
-/* line 445, ../sass/latto.subtheme.base.scss */
+/* line 444, ../sass/latto.subtheme.base.scss */
 .pane-ding-facetbrowser a:hover {
   color: black;
   text-decoration: none;
 }
 
-/* line 449, ../sass/latto.subtheme.base.scss */
+/* line 448, ../sass/latto.subtheme.base.scss */
 #edit-advanced {
   margin: 0;
   position: static;
   padding-top: 7.5px;
 }
-/* line 453, ../sass/latto.subtheme.base.scss */
+/* line 452, ../sass/latto.subtheme.base.scss */
 #edit-advanced legend {
   display: none;
 }
-/* line 456, ../sass/latto.subtheme.base.scss */
+/* line 455, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper {
   left: -20px;
   padding: 0 10px 0 13px;
@@ -612,92 +611,92 @@ Search pane styling
   width: 100%;
   z-index: 50;
 }
-/* line 462, ../sass/latto.subtheme.base.scss */
+/* line 461, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-item {
   width: 50%;
   float: left;
   height: 40px;
 }
-/* line 467, ../sass/latto.subtheme.base.scss */
+/* line 466, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper #adv-reset {
   margin-left: 8px;
   margin-bottom: 5px;
 }
-/* line 471, ../sass/latto.subtheme.base.scss */
+/* line 470, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-text {
   width: 225px;
   height: 30px;
 }
-/* line 475, ../sass/latto.subtheme.base.scss */
+/* line 474, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-select {
   width: 225px;
   height: 30px;
 }
-/* line 479, ../sass/latto.subtheme.base.scss */
+/* line 478, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-type-textfield label {
   float: left;
   padding: 3px 10px 2px;
   width: 80px;
 }
-/* line 484, ../sass/latto.subtheme.base.scss */
+/* line 483, ../sass/latto.subtheme.base.scss */
 #edit-advanced .fieldset-wrapper .form-type-select label {
   float: left;
   padding: 3px 10px 2px;
   width: 85px;
 }
 
-/* line 491, ../sass/latto.subtheme.base.scss */
+/* line 490, ../sass/latto.subtheme.base.scss */
 #edit-ccl {
   width: 83% !important;
 }
 
-/* line 494, ../sass/latto.subtheme.base.scss */
+/* line 493, ../sass/latto.subtheme.base.scss */
 .form-item-ccl {
   width: 100% !important;
 }
 
-/* line 499, ../sass/latto.subtheme.base.scss */
+/* line 498, ../sass/latto.subtheme.base.scss */
 ul.ui-autocomplete {
   max-width: 432px !important;
   z-index: 100;
 }
 
-/* line 504, ../sass/latto.subtheme.base.scss */
+/* line 503, ../sass/latto.subtheme.base.scss */
 .ui-menu .ui-menu-item a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* line 509, ../sass/latto.subtheme.base.scss */
+/* line 508, ../sass/latto.subtheme.base.scss */
 input#edit-search-block-form--2.spinner {
   background-position: 97% !important;
 }
 
-/* line 512, ../sass/latto.subtheme.base.scss */
+/* line 511, ../sass/latto.subtheme.base.scss */
 .search-results .content {
   display: block !important;
 }
 
-/* line 515, ../sass/latto.subtheme.base.scss */
+/* line 514, ../sass/latto.subtheme.base.scss */
 .panel-pane.pane-recommendation-list {
   background: #f6f6f2;
   margin-top: 7.5px;
 }
 
-/* line 519, ../sass/latto.subtheme.base.scss */
+/* line 518, ../sass/latto.subtheme.base.scss */
 .pane-recommendation-list .list-item {
   margin-bottom: 7.5px;
   padding-bottom: 7.5px;
   display: table;
 }
 
-/* line 524, ../sass/latto.subtheme.base.scss */
+/* line 523, ../sass/latto.subtheme.base.scss */
 .subjects.content {
   padding-top: 7.5px;
 }
 
-/* line 529, ../sass/latto.subtheme.base.scss */
+/* line 528, ../sass/latto.subtheme.base.scss */
 .pane-system-user-menu {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -712,7 +711,7 @@ input#edit-search-block-form--2.spinner {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-/* line 537, ../sass/latto.subtheme.base.scss */
+/* line 536, ../sass/latto.subtheme.base.scss */
 .pane-user-login {
   position: relative;
   min-height: 145px;
@@ -728,7 +727,7 @@ input#edit-search-block-form--2.spinner {
   background: #69c8cf;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-/* line 545, ../sass/latto.subtheme.base.scss */
+/* line 544, ../sass/latto.subtheme.base.scss */
 .pane-user-login #user-login-form {
   position: absolute;
   bottom: 28px;
@@ -737,29 +736,29 @@ input#edit-search-block-form--2.spinner {
   height: 60px;
   width: 90%;
 }
-/* line 554, ../sass/latto.subtheme.base.scss */
+/* line 553, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-item-name input {
   width: 90%;
   float: left;
   height: 18px;
 }
-/* line 561, ../sass/latto.subtheme.base.scss */
+/* line 560, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-item-pass input {
   width: 58%;
   float: left;
   height: 18px;
 }
-/* line 567, ../sass/latto.subtheme.base.scss */
+/* line 566, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-actions {
   width: 40px;
   float: left;
   margin-left: 7.5px;
 }
-/* line 571, ../sass/latto.subtheme.base.scss */
+/* line 570, ../sass/latto.subtheme.base.scss */
 .pane-user-login .form-actions input {
   height: 27px;
 }
-/* line 576, ../sass/latto.subtheme.base.scss */
+/* line 575, ../sass/latto.subtheme.base.scss */
 .pane-user-login .icon-user {
   display: block;
   float: left;
@@ -770,7 +769,7 @@ input#edit-search-block-form--2.spinner {
   position: absolute;
   z-index: 3;
 }
-/* line 586, ../sass/latto.subtheme.base.scss */
+/* line 585, ../sass/latto.subtheme.base.scss */
 .pane-user-login .icon-lock {
   display: block;
   float: left;
@@ -782,52 +781,52 @@ input#edit-search-block-form--2.spinner {
   z-index: 3;
 }
 
-/* line 598, ../sass/latto.subtheme.base.scss */
+/* line 597, ../sass/latto.subtheme.base.scss */
 .pane-ding-wayf-login.btn.btn-info {
   position: absolute;
   right: 13px;
   top: 113px;
   padding: 0;
 }
-/* line 603, ../sass/latto.subtheme.base.scss */
+/* line 602, ../sass/latto.subtheme.base.scss */
 .pane-ding-wayf-login.btn.btn-info a {
   color: white !important;
   font-size: 11px;
   line-height: 10px;
   padding: 4px 10px;
 }
-/* line 608, ../sass/latto.subtheme.base.scss */
+/* line 607, ../sass/latto.subtheme.base.scss */
 .pane-ding-wayf-login.btn.btn-info a:link {
   color: white !important;
 }
-/* line 611, ../sass/latto.subtheme.base.scss */
+/* line 610, ../sass/latto.subtheme.base.scss */
 .pane-ding-wayf-login.btn.btn-info a:hover {
   text-decoration: none;
 }
-/* line 614, ../sass/latto.subtheme.base.scss */
+/* line 613, ../sass/latto.subtheme.base.scss */
 .pane-ding-wayf-login.btn.btn-info a:visited {
   color: white !important;
 }
 
 @-moz-document url-prefix() {
   /* firefox-only css goes here */
-  /* line 622, ../sass/latto.subtheme.base.scss */
+  /* line 621, ../sass/latto.subtheme.base.scss */
   .icon-user {
     top: 6px !important;
   }
 
-  /* line 625, ../sass/latto.subtheme.base.scss */
+  /* line 624, ../sass/latto.subtheme.base.scss */
   .icon-lock {
     top: 43px !important;
   }
 }
 
-/* line 630, ../sass/latto.subtheme.base.scss */
+/* line 629, ../sass/latto.subtheme.base.scss */
 .search-login .pane-system-user-menu {
   min-height: 145px;
 }
 
-/* line 633, ../sass/latto.subtheme.base.scss */
+/* line 632, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -842,23 +841,23 @@ input#edit-search-block-form--2.spinner {
   background: #f3f3f3;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
-/* line 640, ../sass/latto.subtheme.base.scss */
+/* line 639, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number a {
   color: inherit;
   font-weight: bold;
 }
 
-/* line 645, ../sass/latto.subtheme.base.scss */
+/* line 644, ../sass/latto.subtheme.base.scss */
 #ding-user-profile {
   margin-bottom: 7.5px;
 }
 
-/* line 648, ../sass/latto.subtheme.base.scss */
+/* line 647, ../sass/latto.subtheme.base.scss */
 .form-item-profile-provider-alma-field-alma-interest-period-und {
   display: none;
 }
 
-/* line 652, ../sass/latto.subtheme.base.scss */
+/* line 651, ../sass/latto.subtheme.base.scss */
 .field-name-field-alma-interest-period {
   display: none;
 }
@@ -866,7 +865,7 @@ input#edit-search-block-form--2.spinner {
 /* ==========================================================================
 custom grid
 ========================================================================== */
-/* line 658, ../sass/latto.subtheme.base.scss */
+/* line 657, ../sass/latto.subtheme.base.scss */
 .grid-11-left {
   float: left;
   margin-left: 0;
@@ -877,22 +876,22 @@ custom grid
   word-wrap: break-word;
 }
 
-/* line 667, ../sass/latto.subtheme.base.scss */
+/* line 666, ../sass/latto.subtheme.base.scss */
 article .grid-inner {
   background-color: white;
 }
 
-/* line 670, ../sass/latto.subtheme.base.scss */
+/* line 669, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-handle {
   background: #999999;
 }
 
-/* line 673, ../sass/latto.subtheme.base.scss */
+/* line 672, ../sass/latto.subtheme.base.scss */
 .collapsall {
   display: block !important;
 }
 
-/* line 678, ../sass/latto.subtheme.base.scss */
+/* line 677, ../sass/latto.subtheme.base.scss */
 .breadcrumb {
   margin-left: 15px;
   margin-right: 15px;
@@ -901,17 +900,17 @@ article .grid-inner {
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
-/* line 686, ../sass/latto.subtheme.base.scss */
+/* line 685, ../sass/latto.subtheme.base.scss */
 #edit-profile-provider-alma-field-alma-phone-id {
   display: none;
 }
 
-/* line 689, ../sass/latto.subtheme.base.scss */
+/* line 688, ../sass/latto.subtheme.base.scss */
 #edit-profile-provider-alma-field-absent-id {
   display: none;
 }
 
-/* line 692, ../sass/latto.subtheme.base.scss */
+/* line 691, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle {
   background-image: url("../images/new_arrow.png");
   background-position: 3px 3px;
@@ -921,18 +920,18 @@ Login pane styling
   width: 21px;
 }
 
-/* line 700, ../sass/latto.subtheme.base.scss */
+/* line 699, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-content {
   padding-top: 10px;
 }
 
-/* line 703, ../sass/latto.subtheme.base.scss */
+/* line 702, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container .ctools-toggle-collapsed {
   background-image: url("../images/new_arrow_collapsed.png");
   background-position: 6px 3px;
 }
 
-/* line 707, ../sass/latto.subtheme.base.scss */
+/* line 706, ../sass/latto.subtheme.base.scss */
 .ctools-collapsible-container h2 {
   font-size: 12px;
   line-height: 20px;
@@ -941,84 +940,84 @@ Login pane styling
 }
 
 /* ***** match placeholder/watermark padding to border+padding for input element ***** */
-/* line 715, ../sass/latto.subtheme.base.scss */
+/* line 714, ../sass/latto.subtheme.base.scss */
 label.placeholder {
   cursor: text;
   padding: 0.4em 0.6em 0.4em 1.6em;
   color: black;
 }
 
-/* line 720, ../sass/latto.subtheme.base.scss */
+/* line 719, ../sass/latto.subtheme.base.scss */
 #edit-keys_placeholder {
   top: 35px !important;
   padding-left: 30px;
 }
 
-/* line 724, ../sass/latto.subtheme.base.scss */
+/* line 723, ../sass/latto.subtheme.base.scss */
 .pane-user-login input[placeholder] {
   padding-left: 18px;
 }
 
 /* html5 placeholder support */
-/* line 728, ../sass/latto.subtheme.base.scss */
+/* line 727, ../sass/latto.subtheme.base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: black;
 }
 
-/* line 732, ../sass/latto.subtheme.base.scss */
+/* line 731, ../sass/latto.subtheme.base.scss */
 input:placeholder, textarea:placeholder {
   color: black;
 }
 
-/* line 736, ../sass/latto.subtheme.base.scss */
+/* line 735, ../sass/latto.subtheme.base.scss */
 .tags a {
   padding: 7.5px;
 }
 
 /* NEWS & EVENTS */
-/* line 741, ../sass/latto.subtheme.base.scss */
+/* line 740, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-news-title-image {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
-/* line 746, ../sass/latto.subtheme.base.scss */
+/* line 745, ../sass/latto.subtheme.base.scss */
 .list-item {
   display: inline-block;
   width: 100%;
 }
 
-/* line 750, ../sass/latto.subtheme.base.scss */
+/* line 749, ../sass/latto.subtheme.base.scss */
 .search-results .list-item {
   width: auto;
 }
 
-/* line 754, ../sass/latto.subtheme.base.scss */
+/* line 753, ../sass/latto.subtheme.base.scss */
 ul.promoted li.list-item.last {
   border-bottom: 1px solid #E7E7E7;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-/* line 760, ../sass/latto.subtheme.base.scss */
+/* line 759, ../sass/latto.subtheme.base.scss */
 div.subheading span {
   padding-right: 3.75px;
   padding-left: 3.75px;
 }
 
-/* line 765, ../sass/latto.subtheme.base.scss */
+/* line 764, ../sass/latto.subtheme.base.scss */
 .view-display-id-ding_event_simple_list .heading {
   padding-left: 15px;
 }
 
-/* line 768, ../sass/latto.subtheme.base.scss */
+/* line 767, ../sass/latto.subtheme.base.scss */
 .list .image-container {
   float: left;
   margin-right: 7.5px;
 }
 
-/* line 772, ../sass/latto.subtheme.base.scss */
+/* line 771, ../sass/latto.subtheme.base.scss */
 .image-container {
   margin-bottom: 0px !important;
 }
@@ -1026,27 +1025,27 @@ div.subheading span {
 /* ==========================================================================
 Content pane styling
 ========================================================================== */
-/* line 779, ../sass/latto.subtheme.base.scss */
+/* line 778, ../sass/latto.subtheme.base.scss */
 .pane-event-category-menu, .pane-news-category-menu {
   padding: 15px;
 }
 
-/* line 782, ../sass/latto.subtheme.base.scss */
+/* line 781, ../sass/latto.subtheme.base.scss */
 .pane-menu-news-category-menu-block {
   margin-bottom: 15px;
 }
 
-/* line 786, ../sass/latto.subtheme.base.scss */
+/* line 785, ../sass/latto.subtheme.base.scss */
 #sliding-popup {
   background: url("../images/gradient.png") repeat-y scroll center center transparent;
 }
 
-/* line 790, ../sass/latto.subtheme.base.scss */
+/* line 789, ../sass/latto.subtheme.base.scss */
 .pane-similarterms-ding-content-tags ul li {
   margin-bottom: 7.5px;
 }
 
-/* line 794, ../sass/latto.subtheme.base.scss */
+/* line 793, ../sass/latto.subtheme.base.scss */
 .fffW-widget, .fffw-dialog {
   margin: 0px !important;
   padding: 0px !important;
@@ -1054,114 +1053,114 @@ Content pane styling
   font-family: inherit !important;
 }
 
-/* line 801, ../sass/latto.subtheme.base.scss */
+/* line 800, ../sass/latto.subtheme.base.scss */
 .fffW-widget {
   color: inherit !important;
   font-size: inherit !important;
 }
 
-/* line 805, ../sass/latto.subtheme.base.scss */
+/* line 804, ../sass/latto.subtheme.base.scss */
 .fffW-title {
   font-size: 18px !important;
   margin: 10px 0 0 !important;
 }
 
-/* line 810, ../sass/latto.subtheme.base.scss */
+/* line 809, ../sass/latto.subtheme.base.scss */
 .fffW-widget p {
   font-size: 12px !important;
 }
 
-/* line 814, ../sass/latto.subtheme.base.scss */
+/* line 813, ../sass/latto.subtheme.base.scss */
 #ding-library-front .rounded-corner {
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
-/* line 818, ../sass/latto.subtheme.base.scss */
+/* line 817, ../sass/latto.subtheme.base.scss */
 .rounded-corner {
   margin-bottom: 7.5px;
 }
 
-/* line 821, ../sass/latto.subtheme.base.scss */
+/* line 820, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form th:nth-child(5) {
   display: none;
 }
 
-/* line 824, ../sass/latto.subtheme.base.scss */
+/* line 823, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form .expire-date {
   display: none;
 }
 
-/* line 827, ../sass/latto.subtheme.base.scss */
+/* line 826, ../sass/latto.subtheme.base.scss */
 .pickup-order-id {
   font-size: 18px;
 }
 
-/* line 833, ../sass/latto.subtheme.base.scss */
+/* line 832, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-title.field-type-ting-title {
   float: left;
   padding-right: 7.5px;
 }
-/* line 836, ../sass/latto.subtheme.base.scss */
+/* line 835, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-title.field-type-ting-title h2 {
   font-size: 14px;
 }
-/* line 840, ../sass/latto.subtheme.base.scss */
+/* line 839, ../sass/latto.subtheme.base.scss */
 .table .field-name-ting-author.field-type-ting-author {
   float: left;
   padding-right: 7.5px;
   padding-top: 7.5px;
 }
-/* line 845, ../sass/latto.subtheme.base.scss */
+/* line 844, ../sass/latto.subtheme.base.scss */
 .table .field.field-name-ting-type.field-type-ting-type {
   padding-top: 7.5px;
 }
 
-/* line 849, ../sass/latto.subtheme.base.scss */
+/* line 848, ../sass/latto.subtheme.base.scss */
 .table .title h2 {
   font-size: 14px;
 }
 
-/* line 853, ../sass/latto.subtheme.base.scss */
+/* line 852, ../sass/latto.subtheme.base.scss */
 .lead {
   margin-top: 7.5px;
   font-size: 16.2px;
 }
 
-/* line 857, ../sass/latto.subtheme.base.scss */
+/* line 856, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-page-body {
   margin-top: 7.5px;
   margin-bottom: 7.5px;
 }
 
-/* line 862, ../sass/latto.subtheme.base.scss */
+/* line 861, ../sass/latto.subtheme.base.scss */
 .day.odd {
   background: none repeat scroll 0 0 #EEEEEE;
   margin-bottom: 7.5px;
   margin-top: 7.5px;
 }
 
-/* line 867, ../sass/latto.subtheme.base.scss */
+/* line 866, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-library-list-image {
   position: relative;
 }
 
-/* line 870, ../sass/latto.subtheme.base.scss */
+/* line 869, ../sass/latto.subtheme.base.scss */
 .library-openstatus.open {
   background: none repeat scroll 0 0 #2C9D01;
 }
 
-/* line 873, ../sass/latto.subtheme.base.scss */
+/* line 872, ../sass/latto.subtheme.base.scss */
 .library-openstatus.closed {
   background: none repeat scroll 0 0 red;
 }
 
-/* line 876, ../sass/latto.subtheme.base.scss */
+/* line 875, ../sass/latto.subtheme.base.scss */
 .library-openstatus.self-service {
   background: none repeat scroll 0 0 orange;
 }
 
-/* line 879, ../sass/latto.subtheme.base.scss */
+/* line 878, ../sass/latto.subtheme.base.scss */
 .library-openstatus {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
@@ -1176,69 +1175,69 @@ Content pane styling
   text-transform: uppercase;
 }
 
-/* line 892, ../sass/latto.subtheme.base.scss */
+/* line 891, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected {
   border-color: transparent #69c8cf transparent transparent;
 }
-/* line 894, ../sass/latto.subtheme.base.scss */
+/* line 893, ../sass/latto.subtheme.base.scss */
 #featured .ui-tabs-nav li.ui-tabs-selected a {
   background-color: #69c8cf;
 }
 
-/* line 898, ../sass/latto.subtheme.base.scss */
+/* line 897, ../sass/latto.subtheme.base.scss */
 .openlayers-popup a {
   color: #69c8cf !important;
 }
 
-/* line 901, ../sass/latto.subtheme.base.scss */
+/* line 900, ../sass/latto.subtheme.base.scss */
 .webform-component {
   margin-top: 1.5em;
 }
 
-/* line 904, ../sass/latto.subtheme.base.scss */
+/* line 903, ../sass/latto.subtheme.base.scss */
 .not-renewable {
   color: red;
 }
 
-/* line 908, ../sass/latto.subtheme.base.scss */
+/* line 907, ../sass/latto.subtheme.base.scss */
 div[class*='pane-aggregator-feed-'], div[class*='pane-aggregator-category-'] {
   padding: 0;
   margin: 0;
   line-height: 1.4;
 }
-/* line 912, ../sass/latto.subtheme.base.scss */
+/* line 911, ../sass/latto.subtheme.base.scss */
 div[class*='pane-aggregator-feed-'] a, div[class*='pane-aggregator-category-'] a {
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 920, ../sass/latto.subtheme.base.scss */
+/* line 919, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] a {
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
 }
-/* line 926, ../sass/latto.subtheme.base.scss */
+/* line 925, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] h2 {
   line-height: 1;
   margin-bottom: 6px;
 }
-/* line 931, ../sass/latto.subtheme.base.scss */
+/* line 930, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] .issues-list ul {
   margin: 2px 0px !important;
 }
-/* line 934, ../sass/latto.subtheme.base.scss */
+/* line 933, ../sass/latto.subtheme.base.scss */
 div[class*='pane-simplenews-'] input {
   width: auto;
 }
 
-/* line 939, ../sass/latto.subtheme.base.scss */
+/* line 938, ../sass/latto.subtheme.base.scss */
 div.more-link a {
   text-decoration: none;
 }
 
-/* line 942, ../sass/latto.subtheme.base.scss */
+/* line 941, ../sass/latto.subtheme.base.scss */
 .back {
   display: block;
   margin-top: 15px;
