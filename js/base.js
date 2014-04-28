@@ -5,6 +5,7 @@
  }
 
   $(document).ready(function($) {
+      $("#subunsubform").attr("target", "_blank")
     if($('#search_input').exists()){
     $('#search_input').fastLiveFilter('.fastfilter');
     }
