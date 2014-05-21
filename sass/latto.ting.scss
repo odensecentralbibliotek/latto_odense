@@ -115,10 +115,6 @@
 .icon-plus-sign:before, .pane-search-backends .expand-more:before, .pane-ding-facetbrowser .expand-more:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
    content: "";
 }
-.pane-ting-object .collapsible.collapsed .field-group-format-title{
-     background: url("../images/plus-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    padding-left: 30px;
-}
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
     text-decoration: none;
 }
@@ -144,10 +140,6 @@
 }
 .icon-minus-sign:before, .pane-search-backends .expand-less:before, .pane-ding-facetbrowser .expand-less:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
     content: ""; 
-}
-.pane-ting-object .collapsible .field-group-format-title{
-      background: url("../images/minus-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    padding-left: 30px;
 }
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
     text-decoration: none;
@@ -362,11 +354,11 @@ div.unreservable {
       padding-right: $default-spacing;}
 }
 
-.view-mode-collection-list .collapsed span.field-group-format-toggler a{
+.view-mode-collection-list .collapsed span.field-group-format-toggler a, .pane-ting-object .collapsible.collapsed .field-group-format-title {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
   }
-.view-mode-collection-list span.field-group-format-toggler a{
+.view-mode-collection-list span.field-group-format-toggler a, .pane-ting-object .collapsible .field-group-format-title {
   background: url(../images/minus-icon.png) no-repeat;
   padding-left: 30px;
   }
