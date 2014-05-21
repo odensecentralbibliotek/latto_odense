@@ -8,7 +8,6 @@
         
         $('#edit-search-type').change("change", function() {
             if ($('#edit-search-type-1:checked').val()) {
-                alert('unbind');
                 $('#edit-keys').autocomplete({disabled: true});
 
             }
