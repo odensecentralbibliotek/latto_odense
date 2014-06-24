@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-06-2014, 14:54:11
+    Author     : Tobias
+*/
+#backtotop {
+  background: url(../images/backtotop_low_arrow.png) no-repeat center center !important;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  height: 75px;
+  position: fixed;
+  right: 20px;
+  width: 70px;
+  z-index: 1;
+  padding-top: 40px !important;
+  text-align:center;
+  text-indent: 0px !important;
+  color: white;
+}
+
+#backtotop:hover {
+  opacity: 0.8;
+}
+
+<!--[if lte IE 6]>
+html {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+* html #backtotop {
+  position:absolute;
+}
+<![endif]-->
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+  #backtotop {
+    background: url(../backtotop2x.png) no-repeat center center;
+    background-size: 70px 70px;
+  }
+}
