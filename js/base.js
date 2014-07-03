@@ -18,6 +18,7 @@
         }).trigger('change');
 
         $("#subunsubform").attr("target", "_blank");
+        $("#ding-library-front iframe").attr("allowfullscreen", "true");
         if ($('#search_input').exists()) {
             $('#search_input').fastLiveFilter('.fastfilter');
         }
