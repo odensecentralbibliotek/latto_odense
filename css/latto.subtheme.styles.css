@@ -482,7 +482,7 @@ Search pane styling
 }
 /* line 368, ../sass/latto.subtheme.base.scss */
 .search-wrapper .form-text {
-  font-size: 160%;
+  font-size: 18px;
   height: 40px;
   width: 100%;
   border-radius: 4px 0px 0px 4px;
