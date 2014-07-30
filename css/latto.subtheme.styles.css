@@ -830,7 +830,13 @@ input#edit-search-block-form--2.spinner {
 .search-login .pane-system-user-menu {
   min-height: 145px;
 }
-
+#ResetPasswordBtn
+{
+    padding: 0;
+    position: absolute;
+    top: 75px;
+    font-size:11px;
+}
 /* line 634, ../sass/latto.subtheme.base.scss */
 .pane-ding-user-frontend-ding-user-loan-number {
   -webkit-box-shadow: 0px 0px 5px #333333;

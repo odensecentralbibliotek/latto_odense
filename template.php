@@ -100,9 +100,11 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
       $form['pass']['#prefix']= '<i class="icon-lock"></i>';
       unset($form['pass']['#title']);
-      $form['links']['#markup'] = "";
       $form['actions']['submit']['#attributes']['class'][] = 'btn';
       $form['actions']['submit']['#attributes']['class'][] = 'btn-info';
+      $form['links']['#markup'] = "";
+      $form['RecoverPass']['#markup'] = '<div id="ResetPasswordBtn">'
+              . '<a href="/user/password">'. t('Glemt kode?').'</a></div>';
       break;
 
     case 'comment_node_ding_news_form':
