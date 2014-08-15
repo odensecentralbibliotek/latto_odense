@@ -14,6 +14,16 @@
 {
     font-size: 12px; 
 }
+#ResetPasswordBtn {
+    font-size: 11px;
+    padding: 0;
+    position: absolute;
+    top: 75px;
+}
+#ResetPasswordBtn a
+{
+    color: white;
+}
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;
