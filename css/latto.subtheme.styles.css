@@ -10,7 +10,7 @@
    ========================================================================== */
 /* equivalent to font-size: 100% */
 /* line 14, ../sass/latto.subtheme.base.scss */
-#admin-menu {
+#admin-menu-wrapper {
   font-size: 12px;
 }
 
