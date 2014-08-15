@@ -10,7 +10,10 @@
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
-
+#admin-menu
+{
+    font-size: 12px; 
+}
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;

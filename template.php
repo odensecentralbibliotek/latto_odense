@@ -80,6 +80,8 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['basic']['keys']['#attributes']['title'] = t('Søg efter materialer fra biblioteket..');
       $form['basic']['keys']['#suffix'] = '<i class="icon-search fixed-icon-search"></i>';      
       $form['basic']['keys']['#attributes']['placeholder'] = t('Søg efter materialer fra biblioteket..');
+      $form['basic']['keys']['#attributes']['spellcheck'] = 'true';
+      
       $form['basic']['adv-shortcut']['#prefix'] = '<div class="btn" onClick=\'jQuery(".search-wrapper .fieldset-title").click()\'><a href="#">';
       $form['advanced']['actions']['reset']['#markup'] = '<input id="adv-reset" class="btn-info" type="button" value='.t('reset').' />';  
       $form['advanced']['ccl']['#maxlength'] = 256;
