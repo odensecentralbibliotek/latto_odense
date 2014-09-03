@@ -156,6 +156,11 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
         var id = val.innerHTML;
         NodeArray.push(id);
     });
+    var spinnerUrl = Drupal.settings.basePath + "files/362.GIF";
+    $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
+        $(val.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
+        $(val.parentNode).removeClass('js-hide');
+    });
     if(NodeArray.length == 0)
     {
         return;
@@ -178,6 +183,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                               if(obj.nid == val.innerHTML)
                               {
                                       $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
+                                      $(val.parentNode).addClass('js-hide');
                                       //return;                  
                               }
                           });
