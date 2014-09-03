@@ -152,18 +152,19 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     $('#search_input').fastLiveFilter('.fastfilter');
     //Update Place2Book Status for list 
     var NodeArray = new Array();
+    Place2BookEvents = [];
     $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]').each(function(index,val){
         var Nodeid = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
         var PlaceHolder = $(val.parentNode.parentNode).find(".views-field-field-place2book-tickets .field-content").text();
         if(Nodeid != undefined && Nodeid != "" && PlaceHolder != "placeholder")
         {
             NodeArray.push(Nodeid);
+            Place2BookEvents.push(val);
         }
     });
-    var Place2BookEvents = $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]');
-    
+
     var spinnerUrl = Drupal.settings.basePath + "files/362.GIF";
-    Place2BookEvents.each(function(index,val){
+    $.each(Place2BookEvents,function(index,val){
         $(val.parentNode.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
         $(val.parentNode.parentNode).removeClass('js-hide');
     });
