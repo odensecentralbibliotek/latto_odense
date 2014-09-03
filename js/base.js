@@ -152,14 +152,19 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     $('#search_input').fastLiveFilter('.fastfilter');
     //Update Place2Book Status for list 
     var NodeArray = new Array();
-    $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
-        var id = val.innerHTML;
-        NodeArray.push(id);
+    $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]').each(function(index,val){
+        var id = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
+        if(id != undefined && id != "")
+        {
+            NodeArray.push(id);
+        }
     });
+    var Place2BookEvents = $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]');
+    
     var spinnerUrl = Drupal.settings.basePath + "files/362.GIF";
-    $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
-        $(val.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
-        $(val.parentNode).removeClass('js-hide');
+    Place2BookEvents.each(function(index,val){
+        $(val.parentNode.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
+        $(val.parentNode.parentNode).removeClass('js-hide');
     });
     if(NodeArray.length == 0)
     {
@@ -184,6 +189,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                               {
                                       $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
                                       $(val.parentNode).addClass('js-hide');
+                                      $(val.parentNode.parentNode).find("#preloader").addClass('js-hide');
                                       //return;                  
                               }
                           });
