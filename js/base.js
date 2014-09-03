@@ -153,10 +153,11 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     //Update Place2Book Status for list 
     var NodeArray = new Array();
     $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]').each(function(index,val){
-        var id = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
-        if(id != undefined && id != "" && id != "placeholder")
+        var Nodeid = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
+        var PlaceHolder = $(val.parentNode.parentNode).find(".views-field-field-place2book-tickets .field-content").text();
+        if(Nodeid != undefined && Nodeid != "" && PlaceHolder != "placeholder")
         {
-            NodeArray.push(id);
+            NodeArray.push(Nodeid);
         }
     });
     var Place2BookEvents = $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]');
