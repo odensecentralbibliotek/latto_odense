@@ -2,7 +2,7 @@
 
     jQuery.fn.exists = function() {
         return this.length > 0;
-    }
+    };
 
     $(document).ready(function($) {
         
@@ -19,10 +19,12 @@
 
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
+        
         if ($('#search_input').exists()) {
             $('#search_input').fastLiveFilter('.fastfilter');
+            UpdatePlace2bookEventStatus(); 
         }
-
+        $(document).ajaxSuccess(UpdatePlace2bookEventStatus);
         //Remove empty columns in user tables
         emptyColumnRemove = $("#ding-reservation-reservations-notready-form table, #ding-reservation-reservations-ready-form table, #ding-loan-loans-form table");
         if (emptyColumnRemove.exists()) {
@@ -50,7 +52,7 @@
                 $('.facetbrowser_overlay').remove();
             }
         });
-        //choose all checkbox on user status list
+        //choose all checkbox on user status list 
         var alle = $('.select-all input[type=checkbox]').attr('title');
         $('<span> ' + alle + '</span>').appendTo('.select-all');
         //$('.search-login .grid-inner').equalize('height');
@@ -63,7 +65,7 @@
         //Insert a counter in search tabs
         viewElem = $('.view-header');
         if (viewElem.exists()) {
-            viewElem.text(viewElem.text().trim());
+            $.trim(viewElem.text(viewElem.text()));
             countNode = viewElem.addClass('navcount');
             $('#search-tabs li:nth-child(2) a').first().append(countNode);
         }
@@ -139,5 +141,41 @@
             }
         }
     };
+    
+function UpdatePlace2bookEventStatus(event, xhr, settings)
+{
+    //Only execute if we are requesting TicketInfo throu ajax.
+    if (settings != undefined && settings.url.indexOf("/ding/place2book/ticketinfo/ajax/") == 0) {
+        return;
+    };
+    //Make sure that live filtering works aswell.
+    $('#search_input').fastLiveFilter('.fastfilter');
+    //Update Place2Book Status for list 
+    var NodeArray = new Array();
+    $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
+        var id = val.innerHTML;
+        NodeArray.push(id);
+    });
 
+    //Retrive shown events status.
+    var json = JSON.stringify(NodeArray);
+    $.ajax({
+        url: "/ding/place2book/ticketinfo/ajax/" + json,
+        cache: false,
+        success: function(data){
+            $.each(data,function(index,obj){
+
+              $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
+                  if(obj.nid == val.innerHTML)
+                  {
+                          $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
+                          //return;                  
+                  }
+              });
+          });
+        }
+        
+      });
+    
+}
 })(jQuery);

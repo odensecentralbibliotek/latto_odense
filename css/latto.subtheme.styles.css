@@ -1999,3 +1999,30 @@ div[class*='ting-cover-'] {
   background: none repeat scroll 0 0 green;
   color: white;
 }
+.btn.btn-primary.btn-small {
+  background: none repeat scroll 0 0 green;
+  color: white;
+ 
+}
+.p2b_event_list_btn_wrap
+{
+    float:right;
+}
+.list-item .content
+{
+    max-width: 100%;
+    width: 500px;
+}
+.view-display-id-ding_event_floated_list select
+{
+  width: 100% !important;   
+}
+.view-display-id-ding_event_floated_list #search_input
+{
+    width: 100% !important;
+}
+#views-exposed-form-ding-event-ding-event-floated-list
+{
+    margin: 0px;
+}
+
