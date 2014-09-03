@@ -156,26 +156,37 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
         var id = val.innerHTML;
         NodeArray.push(id);
     });
+    if(NodeArray.length == 0)
+    {
+        return;
+    }
+    //Retrive shown events status. ( Making it appear more responsive loading to user)
+    $.each(NodeArray,function(index,obj){
+        if(obj == "")
+        {
+            return;
+        } 
+        setTimeout(function(){
+                  var json = JSON.stringify([obj]);
+                    $.ajax({
+                    url: "/ding/place2book/ticketinfo/ajax/" + json,
+                    cache: false,
+                    success: function(data){
+                        $.each(data,function(index,obj){
 
-    //Retrive shown events status.
-    var json = JSON.stringify(NodeArray);
-    $.ajax({
-        url: "/ding/place2book/ticketinfo/ajax/" + json,
-        cache: false,
-        success: function(data){
-            $.each(data,function(index,obj){
+                          $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
+                              if(obj.nid == val.innerHTML)
+                              {
+                                      $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
+                                      //return;                  
+                              }
+                          });
+                      });
+                    }
 
-              $('.fastfilter .list-item .views-field-nid .field-content').each(function(index,val){
-                  if(obj.nid == val.innerHTML)
-                  {
-                          $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
-                          //return;                  
-                  }
-              });
-          });
-        }
-        
-      });
-    
+                  });
+        }, 1000*index);
+  
+    });
 }
 })(jQuery);
