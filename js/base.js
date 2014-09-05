@@ -20,7 +20,7 @@
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
-        if ($('#search_input').exists()) {
+if ($('#search_input').exists() && $.fn.fastLiveFilter == undefined ) {
             $('#search_input').fastLiveFilter('.fastfilter');
             UpdatePlace2bookEventStatus(); 
         }
@@ -149,7 +149,9 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
         return;
     };
     //Make sure that live filtering works aswell.
+    if ($('#search_input').exists() && $.fn.fastLiveFilter == undefined ) {
     $('#search_input').fastLiveFilter('.fastfilter');
+}
     //Update Place2Book Status for list 
     var NodeArray = new Array();
     Place2BookEvents = [];
