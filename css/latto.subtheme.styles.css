@@ -2008,11 +2008,6 @@ div[class*='ting-cover-'] {
 {
     float:right;
 }
-.list-item .content
-{
-    max-width: 100%;
-    width: 500px;
-}
 .view-display-id-ding_event_floated_list select
 {
   width: 100% !important;   
