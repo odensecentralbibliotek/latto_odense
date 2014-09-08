@@ -2020,4 +2020,10 @@ div[class*='ting-cover-'] {
 {
     margin: 0px;
 }
+.view-display-id-ding_event_floated_list .view-content .list .list-item .content
+{
+    max-width: 100%;
+    width: 500px;
+    
+}
 
