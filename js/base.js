@@ -9,11 +9,11 @@
         $('#edit-search-type').change("change", function() {
             if ($('#edit-search-type-1:checked').val()) {
                 $('#edit-keys').autocomplete({disabled: true});
-
+                 $('#edit-keys').addClass('node_autocomplete');
             }
             else if ($('#edit-search-type-0:checked').val()) {
                 $('#edit-keys').autocomplete({disabled: false});
-
+                $('#edit-keys').removeClass('node_autocomplete');
             }
         }).trigger('change');
 
@@ -111,17 +111,6 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
 
     });
 
-
-    Drupal.behaviors.resetSearch = {
-        attach: function(context) {
-            $("#reset, #adv-reset").click(function() {
-                $("#search-form select, #search-form input[type=text]").each(function() {
-                    $(this).val("");
-                    $(".ui-autocomplete").remove();
-                });
-            });
-        }
-    };
 
     Drupal.behaviors.localeDatepicker = {
         attach: function(context, settings) {
