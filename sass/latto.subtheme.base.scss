@@ -178,7 +178,9 @@ li {
     
   }
 }
-
+.field-item.even > ul{
+    list-style: inside;
+}
 .expanded .menu {
   margin-left: $default-spacing;
 }
