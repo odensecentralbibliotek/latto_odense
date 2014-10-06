@@ -110,7 +110,17 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
         });
 
     });
-
+    
+    Drupal.behaviors.resetSearch = {
+        attach: function(context) {
+            $("#reset, #adv-reset").click(function() {
+                $("#search-form select, #search-form input[type=text]").each(function() {
+                    $(this).val("");
+                    $(".ui-autocomplete").remove();
+                });
+            });
+        }
+    };
 
     Drupal.behaviors.localeDatepicker = {
         attach: function(context, settings) {
