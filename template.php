@@ -1,4 +1,5 @@
 <?php
+
 function latto_odense_preprocess_html(&$variables) {
 
   $path = drupal_get_path_alias();

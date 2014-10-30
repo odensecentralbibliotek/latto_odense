@@ -154,10 +154,10 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     //Update Place2Book Status for list 
     var NodeArray = new Array();
     Place2BookEvents = [];
-    $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content[innerHTML!=""]').each(function(index,val){
+    $('.fastfilter .list-item .views-field-field-place2book-tickets .field-content').each(function(index,val){
         var Nodeid = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
         var PlaceHolder = $(val.parentNode.parentNode).find(".views-field-field-place2book-tickets .field-content").text();
-        if(Nodeid != undefined && Nodeid != "" && PlaceHolder != "placeholder")
+        if(Nodeid != undefined && Nodeid != "")
         {
             NodeArray.push(Nodeid);
             Place2BookEvents.push(val);
@@ -200,7 +200,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                     }
 
                   });
-        }, 1000*index);
+        }, 100);
   
     });
 }

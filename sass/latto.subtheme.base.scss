@@ -954,11 +954,67 @@ div[class*='pane-simplenews-'] {
     width: auto;
   }
 }
-
 div.more-link a {
   text-decoration: none;
 }
 .back {
     display: block;
     margin-top: 15px;
+}
+#views-exposed-form-ding-event-ding-event-floated-list
+{
+  margin: 0px;
+    div
+    {
+        .views-exposed-form
+        {
+            .views-exposed-widgets
+            {
+                .views-exposed-widget
+                {
+                    width: 30%;
+                    padding-rigth: 5px;
+                    .views-widget
+                    {
+                        .form-item{
+                            select
+                            {
+                                width: 140px;
+                                                                
+                            }
+                        }
+                    }
+                }
+                
+                #edit-field-klub-tilbud-value-wrapper{
+                
+                }
+            }
+        }
+        
+    }
+}
+.view-content
+{
+    #search_input_wrapper
+    {
+        #search_input{
+            width: 95%;
+        }
+    }
+}
+.btn.btn-primary.btn-small
+{
+    background: none repeat scroll 0 0 green;
+    color: white;
+}
+.p2b_event_list_btn_wrap
+{
+    max-width: 100%;
+    width: 350px;
+    float: right;
+}
+.p2b_event_list_btn_wrap .btn-small
+{
+    float: right;
 }
