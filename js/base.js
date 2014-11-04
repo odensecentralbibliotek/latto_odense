@@ -6,17 +6,6 @@
 
     $(document).ready(function($) {
         
-        $('#edit-search-type').change("change", function() {
-            if ($('#edit-search-type-1:checked').val()) {
-                $('#edit-keys').autocomplete({disabled: true});
-                 $('#edit-keys').addClass('node_autocomplete');
-            }
-            else if ($('#edit-search-type-0:checked').val()) {
-                $('#edit-keys').autocomplete({disabled: false});
-                $('#edit-keys').removeClass('node_autocomplete');
-            }
-        }).trigger('change');
-
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
