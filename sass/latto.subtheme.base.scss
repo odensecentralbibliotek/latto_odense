@@ -179,7 +179,7 @@ li {
   }
 }
 .field-item.even > ul{
-    list-style: inside;
+    list-style: inherit;
 }
 .expanded .menu {
   margin-left: $default-spacing;

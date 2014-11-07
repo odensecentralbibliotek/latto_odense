@@ -249,7 +249,7 @@ li a.active {
 
 /* line 181, ../sass/latto.subtheme.base.scss */
 .field-item.even > ul {
-  list-style: inside;
+  list-style: inherit;
 }
 
 /* line 184, ../sass/latto.subtheme.base.scss */
