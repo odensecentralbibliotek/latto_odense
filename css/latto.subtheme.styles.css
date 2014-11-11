@@ -133,7 +133,7 @@ section ul {
 Basic elements
 ========================================================================== */
 /* line 104, ../sass/latto.subtheme.base.scss */
-.pane-print-print-links {
+.pane-print-print-links, .pane-print-ui-print-links {
   float: right;
 }
 
