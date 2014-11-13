@@ -1759,16 +1759,22 @@ div.availability {
   color: #333333;
 }
 
-/* line 252, ../sass/latto.ting.scss */
+/* line 251, ../sass/latto.ting.scss */
+.ting-relation .meta {
+  border-bottom: none;
+  border-top: 1px solid #cccccc;
+}
+
+/* line 255, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors {
   margin-bottom: 15px;
 }
-/* line 254, ../sass/latto.ting.scss */
+/* line 257, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types li, .pane-ting-ting-object-types li, .pane-ting-ting-relation-anchors li {
   margin: 5px 0px;
 }
 
-/* line 259, ../sass/latto.ting.scss */
+/* line 262, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #333;
@@ -1776,140 +1782,140 @@ div.availability {
   font-size: 19.5px;
 }
 
-/* line 267, ../sass/latto.ting.scss */
+/* line 270, ../sass/latto.ting.scss */
 .ting-relation h2, .field-name-ding-availability-holdings h2, .group-material-details h2 {
   font-size: 19.5px;
 }
 
-/* line 274, ../sass/latto.ting.scss */
+/* line 277, ../sass/latto.ting.scss */
 .field-name-ding-periodical-issues {
   margin-top: 15px;
 }
 
-/* line 278, ../sass/latto.ting.scss */
+/* line 281, ../sass/latto.ting.scss */
 li.ding-periodical-foldable {
   padding-top: 15px;
 }
 
-/* line 281, ../sass/latto.ting.scss */
+/* line 284, ../sass/latto.ting.scss */
 .sidebar-menu li:hover {
   color: black;
 }
 
-/* line 284, ../sass/latto.ting.scss */
+/* line 287, ../sass/latto.ting.scss */
 .ding-periodical-fold {
   cursor: pointer;
 }
 
-/* line 287, ../sass/latto.ting.scss */
+/* line 290, ../sass/latto.ting.scss */
 .ding-periodical-fold:hover {
   text-decoration: underline;
 }
 
-/* line 296, ../sass/latto.ting.scss */
+/* line 299, ../sass/latto.ting.scss */
 .availability.processed {
   background-color: #0077a2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 301, ../sass/latto.ting.scss */
+/* line 304, ../sass/latto.ting.scss */
 .availability.processed a {
   color: white;
 }
 
-/* line 303, ../sass/latto.ting.scss */
+/* line 306, ../sass/latto.ting.scss */
 .availability.available.reservable {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 308, ../sass/latto.ting.scss */
+/* line 311, ../sass/latto.ting.scss */
 .availability.available.reservable a {
   color: #FFF;
 }
 
-/* line 310, ../sass/latto.ting.scss */
+/* line 313, ../sass/latto.ting.scss */
 .availability.reservable {
   background-color: #CC0000;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 315, ../sass/latto.ting.scss */
+/* line 318, ../sass/latto.ting.scss */
 .availability.reservable a {
   color: white;
 }
 
-/* line 317, ../sass/latto.ting.scss */
+/* line 320, ../sass/latto.ting.scss */
 .availability.available {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 322, ../sass/latto.ting.scss */
+/* line 325, ../sass/latto.ting.scss */
 .availability.available a {
   color: white;
 }
 
-/* line 325, ../sass/latto.ting.scss */
+/* line 328, ../sass/latto.ting.scss */
 .availability-legend {
   border-top: none;
   border-bottom: 1px solid #999999;
 }
 
-/* line 330, ../sass/latto.ting.scss */
+/* line 333, ../sass/latto.ting.scss */
 .availability-legend-item.available img {
   background-color: #40854B;
 }
 
-/* line 334, ../sass/latto.ting.scss */
+/* line 337, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
   background-color: #0077a2;
 }
 
-/* line 338, ../sass/latto.ting.scss */
+/* line 341, ../sass/latto.ting.scss */
 .availability-legend-item.on-loan img {
   background-color: #CC0000;
 }
 
-/* line 341, ../sass/latto.ting.scss */
+/* line 344, ../sass/latto.ting.scss */
 div.unreservable {
   display: none;
 }
 
-/* line 345, ../sass/latto.ting.scss */
+/* line 348, ../sass/latto.ting.scss */
 .availability-legend-item .availability-label {
   font-size: 1em;
   font-weight: normal;
 }
 
-/* line 352, ../sass/latto.ting.scss */
+/* line 355, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-group-format {
   clear: none;
 }
 
-/* line 357, ../sass/latto.ting.scss */
+/* line 360, ../sass/latto.ting.scss */
 .group-material-details .field-label {
   width: 132px;
   padding-right: 15px;
 }
 
-/* line 362, ../sass/latto.ting.scss */
+/* line 365, ../sass/latto.ting.scss */
 .view-mode-collection-list .collapsed span.field-group-format-toggler a, .pane-ting-object .collapsible.collapsed .field-group-format-title {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 366, ../sass/latto.ting.scss */
+/* line 369, ../sass/latto.ting.scss */
 .view-mode-collection-list span.field-group-format-toggler a, .pane-ting-object .collapsible .field-group-format-title {
   background: url(../images/minus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 370, ../sass/latto.ting.scss */
+/* line 373, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a {
   border-right: 1px solid #112338;
   margin-left: 10px;
@@ -1917,45 +1923,45 @@ div.unreservable {
   text-decoration: none;
 }
 
-/* line 376, ../sass/latto.ting.scss */
+/* line 379, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
   border-right: medium none;
 }
 
-/* line 381, ../sass/latto.ting.scss */
+/* line 384, ../sass/latto.ting.scss */
 div[class*='ting-cover-'] {
   float: left;
   padding-right: 15px;
 }
 
-/* line 385, ../sass/latto.ting.scss */
+/* line 388, ../sass/latto.ting.scss */
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
   display: block;
 }
 
-/* line 392, ../sass/latto.ting.scss */
+/* line 395, ../sass/latto.ting.scss */
 .view-mode-collection-list .search-ting-cover:after {
   right: 15px;
 }
 
-/* line 396, ../sass/latto.ting.scss */
+/* line 399, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover {
   margin-right: 0;
 }
 
-/* line 400, ../sass/latto.ting.scss */
+/* line 403, ../sass/latto.ting.scss */
 .pane-ting-object {
   margin-top: 15px;
 }
 
-/* line 404, ../sass/latto.ting.scss */
+/* line 407, ../sass/latto.ting.scss */
 .view-mode-user-list .ting-cover {
   width: 8%;
 }
 
-/* line 409, ../sass/latto.ting.scss */
+/* line 412, ../sass/latto.ting.scss */
 .order-id {
   display: none;
 }
