@@ -30,7 +30,12 @@
     }
   }
 }
-
+.unavailable {
+    color: #cc0000;
+}
+.available {
+    color: #40854b;
+}
 .field-name-ting-details-version .field-label{
   float: left;
 }
