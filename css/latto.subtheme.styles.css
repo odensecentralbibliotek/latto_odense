@@ -1486,12 +1486,12 @@ em {
 }
 
 /* line 33, ../sass/latto.ting.scss */
-.unavailable {
+tbody tr.unavailable {
   color: #cc0000;
 }
 
 /* line 36, ../sass/latto.ting.scss */
-.available {
+tbody tr.available {
   color: #40854b;
 }
 
