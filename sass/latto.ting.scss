@@ -30,7 +30,12 @@
     }
   }
 }
-
+tbody tr.unavailable {
+    color: #cc0000;
+}
+tbody tr.available {
+    color: #40854b;
+}
 .field-name-ting-details-version .field-label{
   float: left;
 }
@@ -243,7 +248,10 @@ div.availability {
   width: 141px;
   color: $gray-dark;
 }  
- 
+.ting-relation .meta {
+    border-bottom: none;
+    border-top: 1px solid #cccccc;
+} 
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors { 
   margin-bottom: $default-spacing; 
   li {
