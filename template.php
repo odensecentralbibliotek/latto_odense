@@ -7,8 +7,14 @@ function latto_odense_preprocess_html(&$variables) {
   if (drupal_match_path($path, $pattern)) {
      drupal_add_js(drupal_get_path('theme', 'latto_odense') .'/js/jquery.fastLiveFilter.min.js',array('weight' => 999));
   }
+  /*Add Questionaire code to all pages , in case of direct links.*/
+  drupal_add_css("http://popin.survey-xact.dk/popin/popin.css", 'external');
+  drupal_add_js(drupal_get_path('theme', 'latto_odense') ."/js/popintest.js");
+  drupal_add_js("http://popin.survey-xact.dk/dynjs/8MK7X6PX921J/popin.js", 'external');
+  drupal_add_js("http://popin.survey-xact.dk/cookies.js" , 'external');
+  drupal_add_js(drupal_get_path('theme', 'latto_odense') ."/js/survey.js",array('weight' => 999));
 }
-/**
+/*
  * Implements hook_preprocess_table().
  * adds classes table table-striped
  */
