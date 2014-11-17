@@ -76,6 +76,7 @@ function xact_loadPopIn() {
 }
 
 function xact_checkShowPopIn() {
+
     var a = window.xact_surveyKey;
     if (xact_isRelevant(a)) {
         return xact_determineShowPopIn()
@@ -116,7 +117,7 @@ function xact_doPopIn() {
     xact_initPopUp(window.xact_baseURL.replace("http://", "https://"));
     xact_post_initPopIn(b);
     var a = xact_cookieOptOut || xact_BPNPopin;
-    xact_showPopWin(xact_gIntroURL.replace("http://", "https://"), window.xact_width, window.xact_height, null, a)
+    xact_showPopWin(xact_gIntroURL.replace("http://", "https://"), window.xact_width, window.xact_height, null, true)
 }
 
 function determineLanguage() {
@@ -211,21 +212,37 @@ function xact_post_initPopIn(d) {
                 window.xact_allowCookie = false
             }
         };
+      
+        /* OC HACK  START */
+        var c = document.createElement("div");
+        c.innerHTML = "<span>" + "Ønsker du at deltage i undersøgelsen?" + "<span><br/>";
+        c.id = "xact_popText";
+        e.appendChild(c);
+        
+        /* OC HACK  STOP */
+        
         e.appendChild(g);
         var c = document.createElement("div");
-        c.innerHTML = "<label for='xact_popCheck'>" + j.cookie + "</label></label>";
+        c.innerHTML = "<span>" + j.cookie + "</span>";
         c.id = "xact_popText";
         e.appendChild(c);
         e.id = "xact_popContainer"
     }
     var b = document.createElement("button");
     b.id = "xact_popInYes";
+    b.style.width = "50px";
+    b.style.height = "35px";
+    b.style.cursor = "pointer";
     b.onclick = function() {
         xact_doHidePopIn(true, xact_allowCookie)
     };
     b.innerHTML = j.yes;
+    
     var a = document.createElement("button");
     a.id = "xact_popInNo";
+    a.style.width = "25px";
+    a.style.height = "35px";
+    a.style.cursor = "pointer";
     a.onclick = function() {
         xact_doHidePopIn(false, xact_allowCookie)
     };
