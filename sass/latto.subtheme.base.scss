@@ -1015,8 +1015,10 @@ div.more-link a {
 {
     float: right;
 }
-.field-name-field-ding-news-body ul
+.field-name-field-ding-news-body ul ,
+.field-name-field-ding-event-body ul,
+field-name-field-ding-page-body ul
 {
-    list-style: disc;
+    list-style: disc !important;
     padding-left: 15px;
 }
