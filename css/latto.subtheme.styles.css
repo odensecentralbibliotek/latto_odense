@@ -1307,6 +1307,12 @@ div.more-link a {
   float: right;
 }
 
+/* line 1019, ../sass/latto.subtheme.base.scss */
+.field-name-field-ding-news-body ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {

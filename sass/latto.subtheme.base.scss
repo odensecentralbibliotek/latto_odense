@@ -1003,7 +1003,7 @@ div.more-link a {
 .btn.btn-primary.btn-small
 {
     background: none repeat scroll 0 0 green;
-    color: white;
+    color: white; 
 }
 .p2b_event_list_btn_wrap
 {
@@ -1014,4 +1014,9 @@ div.more-link a {
 .p2b_event_list_btn_wrap .btn-small
 {
     float: right;
+}
+.field-name-field-ding-news-body ul
+{
+    list-style: disc;
+    padding-left: 15px;
 }
