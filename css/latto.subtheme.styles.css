@@ -1324,6 +1324,14 @@ div.more-link a {
   float: right;
 }
 
+/* line 1021, ../sass/latto.subtheme.base.scss */
+.field-name-field-ding-news-body ul,
+.field-name-field-ding-event-body ul,
+field-name-field-ding-page-body ul {
+  list-style: disc !important;
+  padding-left: 15px;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
