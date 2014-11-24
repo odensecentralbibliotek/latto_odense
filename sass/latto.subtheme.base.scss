@@ -867,16 +867,16 @@ Content pane styling
   .field-name-ting-author.field-type-ting-author {
     float: left;
     padding-right: $default-spacing / 2;
-    margin-top: 8px;
   }
   .field.field-name-ting-type.field-type-ting-type {
-    margin-top: $default-spacing / 2;
+    margin-top: -4px;
     padding-right: $default-spacing / 2;
     float: right;
   }
 }
-.table  .title h2 {
-  font-size: 14px;
+.field-name-ting-title h2{
+    line-height: 16px;
+    font-size: 13px;
 }
 .table th, .table td{
   padding: 0px!important;

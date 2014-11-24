@@ -71,13 +71,15 @@ tbody tr.available {
 
 .field-name-ting-details-classification{
   float: left;
-  padding-top: 8px;
 }
 .created-date{
     min-width: 70px;
 }
 .expire-date{
     min-width: 70px;
+}
+.select-all{
+    min-width: 46px;
 }
 #ting-search-records-per-page > a:after{
     content: " ";
