@@ -1324,7 +1324,7 @@ div.more-link a {
   float: right;
 }
 
-/* line 1021, ../sass/latto.subtheme.base.scss */
+/* line 1036, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-news-body ul,
 .field-name-field-ding-event-body ul,
 field-name-field-ding-page-body ul {
@@ -1572,7 +1572,7 @@ tbody tr.available {
 
 /* line 76, ../sass/latto.ting.scss */
 .created-date {
-  min-width: 8%;
+  min-width: 70px;
 }
 
 /* line 79, ../sass/latto.ting.scss */
