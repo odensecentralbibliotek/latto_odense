@@ -70,7 +70,11 @@ tbody tr.available {
   }
 
 .field-name-ting-details-classification{
-  display: inline-block;
+  float: left;
+  padding-top: 8px;
+}
+.created-date{
+    min-width: 8%;
 }
 #ting-search-records-per-page > a:after{
     content: " ";
@@ -408,7 +412,3 @@ div[class*='ting-cover-'] {
    width: 8%;
 }
 }
-
-.order-id{
-  display: none;
-  }
