@@ -10,11 +10,11 @@ function latto_odense_preprocess_html(&$variables) {
   if(strpos($GLOBALS['base_url'],'odensebib.dk') !== false )
   {
       /*Add Questionaire code to all pages , in case of direct links.*/
-      drupal_add_css("https://popin.survey-xact.dk/popin/popin.css", 'external');
-      drupal_add_js(drupal_get_path('theme', 'latto_odense') . "/js/popintest.js");
-      drupal_add_js("https://popin.survey-xact.dk/dynjs/8MK7X6PX921J/popin.js", 'external');
-      drupal_add_js("https://popin.survey-xact.dk/cookies.js" , 'external');
-      drupal_add_js(drupal_get_path('theme', 'latto_odense') ."/js/survey.js");
+      //drupal_add_css("https://popin.survey-xact.dk/popin/popin.css", 'external');
+      //drupal_add_js(drupal_get_path('theme', 'latto_odense') . "/js/popintest.js");
+      //drupal_add_js("https://popin.survey-xact.dk/dynjs/8MK7X6PX921J/popin.js", 'external');
+      //drupal_add_js("https://popin.survey-xact.dk/cookies.js" , 'external');
+      //drupal_add_js(drupal_get_path('theme', 'latto_odense') ."/js/survey.js");
   }
   
 }
