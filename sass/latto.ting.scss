@@ -70,7 +70,16 @@ tbody tr.available {
   }
 
 .field-name-ting-details-classification{
-  display: inline-block;
+  float: left;
+}
+.created-date{
+    min-width: 70px;
+}
+.expire-date{
+    min-width: 70px;
+}
+.select-all{
+    min-width: 46px;
 }
 #ting-search-records-per-page > a:after{
     content: " ";
@@ -408,7 +417,3 @@ div[class*='ting-cover-'] {
    width: 8%;
 }
 }
-
-.order-id{
-  display: none;
-  }
