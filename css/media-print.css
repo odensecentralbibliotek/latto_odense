@@ -17,9 +17,6 @@ div.search-login,aside {
 .grid-full {
   padding: 0;
 }
-.order-id{
-  display: none;
-}
 /** Stuff specific for user status */
 /** Hide the form input specific stuff */
 form .table td:first-child,

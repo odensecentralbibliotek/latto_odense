@@ -9,9 +9,6 @@ body {
 input {
   display: none;
 }
-.order-id{
-  display: none;
-}
 /* Hide the print block */
 .print_html {
   display: none;
