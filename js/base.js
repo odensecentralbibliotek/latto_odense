@@ -5,7 +5,7 @@
     };
 
     $(document).ready(function($) {
-        $(document).snowfall();
+        
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
@@ -33,7 +33,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
                 });
             });
         }
-
+        
         $('.pane-pane-header').wrap('<a href="/" />');
 
         $(document).keyup(function(e) {
@@ -51,6 +51,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             count = $('.ting-search-amount-block em:eq(2)').clone().addClass('navcount');
             $('.nav li a').first().append(count);
         }
+        
         //Insert a counter in search tabs
         viewElem = $('.view-header');
         if (viewElem.exists()) {
@@ -68,23 +69,24 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             $('.profile2_provider_reservation_pause div.form-item label:contains("Start")').parent().removeClass('list-item');
             $('.profile2_provider_reservation_pause div.form-item label:contains("Stop")').parent().addClass('list-item');
         });
-
+        
         $('#user-profile-form').addClass('list');
         $('#user-profile-form').each(function() {
             $('.form-item-mail, .form-type-password-confirm, .smsservice, #profile-provider-alma-field-alma-mobile-phone-add-more-wrapper, .fieldset-wrapper').addClass('list-item');
         });
-
+        
         interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
 
         if (interestperiod.exists()) {
             $(interestperiod).parent().parent().remove();
         }
-        input = jQuery('#ding-loan-loans-form .table .form-type-checkbox');
-        disabled = jQuery('#ding-loan-loans-form .table .form-type-checkbox.form-disabled');
+        
+        var input = jQuery('#ding-loan-loans-form .table .form-type-checkbox');
+        var disabled = jQuery('#ding-loan-loans-form .table .form-type-checkbox.form-disabled');
         if (input.length == disabled.length) {
             $("#ding-loan-loans-form .select-all .form-checkbox").attr("disabled", "disabled");
         }
-
+        
         $("a.infomedia_group").addClass("btn");
         $("#edit-submit").css('display', '');
 
@@ -93,11 +95,11 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
         $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function() {
             $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
         });
-
+        
         $(window).load(function() {
             $('footer .grid-inner').equalize('height');
         });
-
+        
     });
     
     Drupal.behaviors.resetSearch = {
