@@ -1,5 +1,5 @@
 (function($) {
-
+    $(document).snowfall();
     jQuery.fn.exists = function() {
         return this.length > 0;
     };
