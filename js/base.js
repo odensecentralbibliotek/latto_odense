@@ -1,11 +1,11 @@
 (function($) {
-    $(document).snowfall();
+  
     jQuery.fn.exists = function() {
         return this.length > 0;
     };
 
     $(document).ready(function($) {
-        
+        $(document).snowfall();
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
