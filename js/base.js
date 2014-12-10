@@ -75,7 +75,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             $('.form-item-mail, .form-type-password-confirm, .smsservice, #profile-provider-alma-field-alma-mobile-phone-add-more-wrapper, .fieldset-wrapper').addClass('list-item');
         });
         
-        interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
+        var interestperiod = $(".profile .form-item label b:contains('Interesseperiode')");
 
         if (interestperiod.exists()) {
             $(interestperiod).parent().parent().remove();

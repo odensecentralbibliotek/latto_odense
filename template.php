@@ -6,7 +6,7 @@ function latto_odense_preprocess_html(&$variables) {
   $pattern = "event-category/*\nnews-category/*";
   if (drupal_match_path($path, $pattern)) {
      drupal_add_js(drupal_get_path('theme', 'latto_odense') .'/js/jquery.fastLiveFilter.min.js',array('weight' => 999));
-  }
+  }  
   if(strpos($GLOBALS['base_url'],'odensebib.dk') !== false )
   {
       /*Add Questionaire code to all pages , in case of direct links.*/

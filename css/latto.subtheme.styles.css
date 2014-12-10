@@ -1567,34 +1567,35 @@ tbody tr.available {
 /* line 72, ../sass/latto.ting.scss */
 .field-name-ting-details-classification {
   float: left;
+  width: 100%;
 }
 
-/* line 75, ../sass/latto.ting.scss */
+/* line 76, ../sass/latto.ting.scss */
 .created-date {
   min-width: 70px;
 }
 
-/* line 78, ../sass/latto.ting.scss */
+/* line 79, ../sass/latto.ting.scss */
 .expire-date {
   min-width: 70px;
 }
 
-/* line 81, ../sass/latto.ting.scss */
+/* line 82, ../sass/latto.ting.scss */
 .select-all {
   min-width: 46px;
 }
 
-/* line 84, ../sass/latto.ting.scss */
+/* line 85, ../sass/latto.ting.scss */
 #ting-search-records-per-page > a:after {
   content: " ";
 }
 
-/* line 88, ../sass/latto.ting.scss */
+/* line 89, ../sass/latto.ting.scss */
 .field-group-format {
   clear: both;
 }
 
-/* line 92, ../sass/latto.ting.scss */
+/* line 93, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types h2, .pane-ting-ting-object-types h2, .pane-ting-ting-relation-anchors h2 {
   font-size: 1.2em;
   font-weight: bold;
@@ -1606,7 +1607,7 @@ tbody tr.available {
 /* ==========================================================================
   Facets styling
   ========================================================================== */
-/* line 107, ../sass/latto.ting.scss */
+/* line 108, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser legend {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1619,12 +1620,12 @@ tbody tr.available {
   margin-bottom: 7.5px;
   border-bottom: 0px;
 }
-/* line 115, ../sass/latto.ting.scss */
+/* line 116, ../sass/latto.ting.scss */
 .pane-ding-facetbrowser fieldset {
   margin-bottom: 15px;
 }
 
-/* line 120, ../sass/latto.ting.scss */
+/* line 121, ../sass/latto.ting.scss */
 .pane-search-backends .expand:before, .pane-ding-facetbrowser .expand:before, .pane-search-backends .selected-checkbox-group .unselect:before, .pane-ding-facetbrowser .selected-checkbox-group .unselect:before, .pane-search-backends .expand-facets:before, .pane-ding-facetbrowser .expand-facets:before {
   float: left;
   font-family: "FontAwesome";
@@ -1635,30 +1636,30 @@ tbody tr.available {
   text-decoration: none;
 }
 
-/* line 129, ../sass/latto.ting.scss */
+/* line 130, ../sass/latto.ting.scss */
 .icon-plus-sign:before, .pane-search-backends .expand-more:before, .pane-ding-facetbrowser .expand-more:before, .pane-ting-object .expand-more:before, .opening-hours-toggle.js-collapsed:before {
   content: "";
 }
 
-/* line 132, ../sass/latto.ting.scss */
+/* line 133, ../sass/latto.ting.scss */
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
   text-decoration: none;
 }
 
-/* line 135, ../sass/latto.ting.scss */
+/* line 136, ../sass/latto.ting.scss */
 .pane-search-backends .expand-more, .pane-ding-facetbrowser .expand-more {
   display: block;
   float: left;
 }
 
-/* line 139, ../sass/latto.ting.scss */
+/* line 140, ../sass/latto.ting.scss */
 .pane-search-backends .expand, .pane-ding-facetbrowser .expand, .pane-search-backends .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-search-backends .expand-facets, .pane-ding-facetbrowser .expand-facets {
   margin-right: 10px;
   margin-top: 5px;
   vertical-align: top;
 }
 
-/* line 146, ../sass/latto.ting.scss */
+/* line 147, ../sass/latto.ting.scss */
 .pane-search-backends .expand:before, .pane-ding-facetbrowser .expand:before, .pane-search-backends .selected-checkbox-group .unselect:before, .pane-ding-facetbrowser .selected-checkbox-group .unselect:before, .pane-search-backends .expand-facets:before, .pane-ding-facetbrowser .expand-facets:before {
   float: left;
   font-family: "FontAwesome";
@@ -1669,23 +1670,23 @@ tbody tr.available {
   text-decoration: none;
 }
 
-/* line 155, ../sass/latto.ting.scss */
+/* line 156, ../sass/latto.ting.scss */
 .icon-minus-sign:before, .pane-search-backends .expand-less:before, .pane-ding-facetbrowser .expand-less:before, .pane-ting-object .expand-less:before, .opening-hours-toggle.js-expanded:before {
   content: "";
 }
 
-/* line 158, ../sass/latto.ting.scss */
+/* line 159, ../sass/latto.ting.scss */
 .pane-search-backends a:link, .pane-ding-facetbrowser a:link {
   text-decoration: none;
 }
 
-/* line 161, ../sass/latto.ting.scss */
+/* line 162, ../sass/latto.ting.scss */
 .pane-search-backends .expand-less, .pane-ding-facetbrowser .expand-less {
   display: block;
   float: left;
 }
 
-/* line 165, ../sass/latto.ting.scss */
+/* line 166, ../sass/latto.ting.scss */
 .pane-search-backends .expand, .pane-ding-facetbrowser .expand, .pane-search-backends .selected-checkbox-group .unselect, .pane-ding-facetbrowser .selected-checkbox-group .unselect, .pane-search-backends .expand-facets, .pane-ding-facetbrowser .expand-facets {
   margin-right: 10px;
   margin-top: 5px;
@@ -1695,52 +1696,52 @@ tbody tr.available {
 /* ==========================================================================
   Filter styling
   ========================================================================== */
-/* line 177, ../sass/latto.ting.scss */
+/* line 178, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page {
   float: left;
 }
 
-/* line 181, ../sass/latto.ting.scss */
+/* line 182, ../sass/latto.ting.scss */
 #ting-search-records-per-page {
   font-weight: bold;
   margin-top: 4px;
 }
-/* line 184, ../sass/latto.ting.scss */
+/* line 185, ../sass/latto.ting.scss */
 #ting-search-records-per-page a {
   margin-left: 7.5px;
 }
 
-/* line 190, ../sass/latto.ting.scss */
+/* line 191, ../sass/latto.ting.scss */
 .pane-ting-search-sort-form {
   float: right;
 }
 
-/* line 194, ../sass/latto.ting.scss */
+/* line 195, ../sass/latto.ting.scss */
 #ting-search-sort-form {
   margin-bottom: 0px;
 }
-/* line 196, ../sass/latto.ting.scss */
+/* line 197, ../sass/latto.ting.scss */
 #ting-search-sort-form label {
   display: inline;
   font-weight: bold;
 }
-/* line 200, ../sass/latto.ting.scss */
+/* line 201, ../sass/latto.ting.scss */
 #ting-search-sort-form select {
   width: 9em;
   margin-bottom: 0px;
   height: 2em;
 }
-/* line 205, ../sass/latto.ting.scss */
+/* line 206, ../sass/latto.ting.scss */
 #ting-search-sort-form input {
   visibility: hidden;
 }
 
-/* line 210, ../sass/latto.ting.scss */
+/* line 211, ../sass/latto.ting.scss */
 .form-item .description {
   display: none;
 }
 
-/* line 215, ../sass/latto.ting.scss */
+/* line 216, ../sass/latto.ting.scss */
 #search-query-display {
   font-size: 1em;
   border-top: 0px;
@@ -1750,38 +1751,38 @@ tbody tr.available {
 /* ==========================================================================
   Search results
   ========================================================================== */
-/* line 224, ../sass/latto.ting.scss */
+/* line 225, ../sass/latto.ting.scss */
 #search-counter {
   display: none;
 }
 
-/* line 227, ../sass/latto.ting.scss */
+/* line 228, ../sass/latto.ting.scss */
 .view-ding-node-search .view-header {
   display: none;
 }
 
-/* line 230, ../sass/latto.ting.scss */
+/* line 231, ../sass/latto.ting.scss */
 .nav > li > a {
   display: inline-table;
 }
 
-/* line 233, ../sass/latto.ting.scss */
+/* line 234, ../sass/latto.ting.scss */
 div.pane-search-result {
   margin-top: 15px;
 }
 
-/* line 237, ../sass/latto.ting.scss */
+/* line 238, ../sass/latto.ting.scss */
 .pane-search-result h2 {
   font-size: 19.5px;
   color: #cccccc;
 }
 
-/* line 242, ../sass/latto.ting.scss */
+/* line 243, ../sass/latto.ting.scss */
 div.availability {
   margin-top: 7.5px;
 }
 
-/* line 248, ../sass/latto.ting.scss */
+/* line 249, ../sass/latto.ting.scss */
 .ting-collection-types-header, .ting-object-types-header, .ting-relations-header {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
@@ -1799,22 +1800,22 @@ div.availability {
   color: #333333;
 }
 
-/* line 260, ../sass/latto.ting.scss */
+/* line 261, ../sass/latto.ting.scss */
 .ting-relation .meta {
   border-bottom: none;
   border-top: 1px solid #cccccc;
 }
 
-/* line 264, ../sass/latto.ting.scss */
+/* line 265, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types, .pane-ting-ting-object-types, .pane-ting-ting-relation-anchors {
   margin-bottom: 15px;
 }
-/* line 266, ../sass/latto.ting.scss */
+/* line 267, ../sass/latto.ting.scss */
 .pane-ting-ting-collection-types li, .pane-ting-ting-object-types li, .pane-ting-ting-relation-anchors li {
   margin: 5px 0px;
 }
 
-/* line 271, ../sass/latto.ting.scss */
+/* line 272, ../sass/latto.ting.scss */
 .view-mode-full > div > div > div > h2 {
   border-bottom: 1px solid #E7ECEB;
   color: #333;
@@ -1822,140 +1823,140 @@ div.availability {
   font-size: 19.5px;
 }
 
-/* line 279, ../sass/latto.ting.scss */
+/* line 280, ../sass/latto.ting.scss */
 .ting-relation h2, .field-name-ding-availability-holdings h2, .group-material-details h2 {
   font-size: 19.5px;
 }
 
-/* line 286, ../sass/latto.ting.scss */
+/* line 287, ../sass/latto.ting.scss */
 .field-name-ding-periodical-issues {
   margin-top: 15px;
 }
 
-/* line 290, ../sass/latto.ting.scss */
+/* line 291, ../sass/latto.ting.scss */
 li.ding-periodical-foldable {
   padding-top: 15px;
 }
 
-/* line 293, ../sass/latto.ting.scss */
+/* line 294, ../sass/latto.ting.scss */
 .sidebar-menu li:hover {
   color: black;
 }
 
-/* line 296, ../sass/latto.ting.scss */
+/* line 297, ../sass/latto.ting.scss */
 .ding-periodical-fold {
   cursor: pointer;
 }
 
-/* line 299, ../sass/latto.ting.scss */
+/* line 300, ../sass/latto.ting.scss */
 .ding-periodical-fold:hover {
   text-decoration: underline;
 }
 
-/* line 308, ../sass/latto.ting.scss */
+/* line 309, ../sass/latto.ting.scss */
 .availability.processed {
   background-color: #0077a2;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 313, ../sass/latto.ting.scss */
+/* line 314, ../sass/latto.ting.scss */
 .availability.processed a {
   color: white;
 }
 
-/* line 315, ../sass/latto.ting.scss */
+/* line 316, ../sass/latto.ting.scss */
 .availability.available.reservable {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: #FFF;
 }
-/* line 320, ../sass/latto.ting.scss */
+/* line 321, ../sass/latto.ting.scss */
 .availability.available.reservable a {
   color: #FFF;
 }
 
-/* line 322, ../sass/latto.ting.scss */
+/* line 323, ../sass/latto.ting.scss */
 .availability.reservable {
   background-color: #CC0000;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 327, ../sass/latto.ting.scss */
+/* line 328, ../sass/latto.ting.scss */
 .availability.reservable a {
   color: white;
 }
 
-/* line 329, ../sass/latto.ting.scss */
+/* line 330, ../sass/latto.ting.scss */
 .availability.available {
   background-color: #40854B;
   padding: 3.75px;
   margin-right: 7.5px;
   color: white;
 }
-/* line 334, ../sass/latto.ting.scss */
+/* line 335, ../sass/latto.ting.scss */
 .availability.available a {
   color: white;
 }
 
-/* line 337, ../sass/latto.ting.scss */
+/* line 338, ../sass/latto.ting.scss */
 .availability-legend {
   border-top: none;
   border-bottom: 1px solid #999999;
 }
 
-/* line 342, ../sass/latto.ting.scss */
+/* line 343, ../sass/latto.ting.scss */
 .availability-legend-item.available img {
   background-color: #40854B;
 }
 
-/* line 346, ../sass/latto.ting.scss */
+/* line 347, ../sass/latto.ting.scss */
 .availability-legend-item.unavailable img {
   background-color: #0077a2;
 }
 
-/* line 350, ../sass/latto.ting.scss */
+/* line 351, ../sass/latto.ting.scss */
 .availability-legend-item.on-loan img {
   background-color: #CC0000;
 }
 
-/* line 353, ../sass/latto.ting.scss */
+/* line 354, ../sass/latto.ting.scss */
 div.unreservable {
   display: none;
 }
 
-/* line 357, ../sass/latto.ting.scss */
+/* line 358, ../sass/latto.ting.scss */
 .availability-legend-item .availability-label {
   font-size: 1em;
   font-weight: normal;
 }
 
-/* line 364, ../sass/latto.ting.scss */
+/* line 365, ../sass/latto.ting.scss */
 .view-mode-collection-list .field-group-format {
   clear: none;
 }
 
-/* line 369, ../sass/latto.ting.scss */
+/* line 370, ../sass/latto.ting.scss */
 .group-material-details .field-label {
   width: 132px;
   padding-right: 15px;
 }
 
-/* line 374, ../sass/latto.ting.scss */
+/* line 375, ../sass/latto.ting.scss */
 .view-mode-collection-list .collapsed span.field-group-format-toggler a, .pane-ting-object .collapsible.collapsed .field-group-format-title {
   background: url(../images/plus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 378, ../sass/latto.ting.scss */
+/* line 379, ../sass/latto.ting.scss */
 .view-mode-collection-list span.field-group-format-toggler a, .pane-ting-object .collapsible .field-group-format-title {
   background: url(../images/minus-icon.png) no-repeat;
   padding-left: 30px;
 }
 
-/* line 382, ../sass/latto.ting.scss */
+/* line 383, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a, .pane-ding-toggle-format-toggle a {
   border-right: 1px solid #112338;
   margin-left: 10px;
@@ -1963,40 +1964,40 @@ div.unreservable {
   text-decoration: none;
 }
 
-/* line 388, ../sass/latto.ting.scss */
+/* line 389, ../sass/latto.ting.scss */
 .pane-ting-search-records-per-page a:last-child, .pane-ding-toggle-format-toggle a:last-child {
   border-right: medium none;
 }
 
-/* line 393, ../sass/latto.ting.scss */
+/* line 394, ../sass/latto.ting.scss */
 div[class*='ting-cover-'] {
   float: left;
   padding-right: 15px;
 }
 
-/* line 397, ../sass/latto.ting.scss */
+/* line 398, ../sass/latto.ting.scss */
 .pane-search-result .search-results .list .list-item {
   background-color: #F3F3F3;
   padding: 15px;
   display: block;
 }
 
-/* line 404, ../sass/latto.ting.scss */
+/* line 405, ../sass/latto.ting.scss */
 .view-mode-collection-list .search-ting-cover:after {
   right: 15px;
 }
 
-/* line 408, ../sass/latto.ting.scss */
+/* line 409, ../sass/latto.ting.scss */
 .view-mode-collection-list .ting-cover {
   margin-right: 0;
 }
 
-/* line 412, ../sass/latto.ting.scss */
+/* line 413, ../sass/latto.ting.scss */
 .pane-ting-object {
   margin-top: 15px;
 }
 
-/* line 416, ../sass/latto.ting.scss */
+/* line 417, ../sass/latto.ting.scss */
 .view-mode-user-list .ting-cover {
   width: 8%;
 }
