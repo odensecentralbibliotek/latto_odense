@@ -18,6 +18,20 @@ function latto_odense_preprocess_html(&$variables) {
   }
   
 }
+function latto_odense_webform_submission_render_alter(&$renderable) {
+  /**
+   * Double space %email_values in webform emails
+   */
+    foreach ($renderable as $key) {   
+      $renderable[$key]['#title'] = "\n" . $renderable[$key]['#title'];
+      if (isset($renderable[$key]['#webform_component']['type']) && $renderable[$key]['#webform_component']['type'] == 'fieldset') {
+        $fieldset = &$renderable[$key];     
+        foreach (element_children($fieldset) as $key2) {
+          $fieldset[$key2]['#title'] = "\n" . $fieldset[$key2]['#title'];
+      }
+    }
+  }
+}
 /*
  * Implements hook_preprocess_table().
  * adds classes table table-striped
