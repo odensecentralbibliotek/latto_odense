@@ -124,7 +124,7 @@
                         }
                         else
                         {
-                            $(obj).css('color','#555555').css('font-weight','normal');
+                            $(obj).css('color','#555555').css('font-size','13px').css('font-weight','normal');
                         }
                 });
               }
