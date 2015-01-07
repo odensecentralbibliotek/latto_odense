@@ -255,7 +255,7 @@ li {
   .notice-star {
     color: transparent;
     margin-left: 5px;
-    margin-right: -25px;
+    margin-right: -27px;
   }
   
   .notice-star:before {
@@ -1036,4 +1036,12 @@ field-name-field-ding-page-body ul
 {
     list-style: disc !important;
     padding-left: 15px;
+}
+.opening-hours-week .next
+{
+   float:right; 
+}
+.opening-hours-week .prev {
+  font-size: 150%;
+  float: left;
 }

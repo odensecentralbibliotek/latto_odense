@@ -339,7 +339,7 @@ li a.active {
 .opening-hours-week .notice-star {
   color: transparent;
   margin-left: 5px;
-  margin-right: -25px;
+  margin-right: -27px;
 }
 /* line 261, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .notice-star:before {
@@ -1330,6 +1330,17 @@ div.more-link a {
 field-name-field-ding-page-body ul {
   list-style: disc !important;
   padding-left: 15px;
+}
+
+/* line 1041, ../sass/latto.subtheme.base.scss */
+.opening-hours-week .next {
+  float: right;
+}
+
+/* line 1044, ../sass/latto.subtheme.base.scss */
+.opening-hours-week .prev {
+  font-size: 150%;
+  float: left;
 }
 
 /* equivalent to font-size: 100% */

@@ -12,6 +12,7 @@
       self.constructor = function () {
         self.isOpen = false;
         self.isselfService = false;
+        self.CurrentOpenInstanceIndex = -1;
         self.options = options;
 
         self.date = options.date;
@@ -21,6 +22,10 @@
         // remote calls, and is not computationally intensive, so it should
         // not be a burden on either server or client.
         self.updateInterval = window.setInterval(self.update, 10000);
+        
+        //Added Next/previous hooks. Appending original ones.
+        var tmp = $('.opening-hours-week[data-nid="'+ self.nid +'"]').find('.prev');
+        tmp.click(self.goToPreviousWeek);
 
         return self;
       };
@@ -42,23 +47,24 @@
       self.calculateOpenStatus = function () {
         var instances, isOpen = false;
         var instances, isselfService = false;
-
+        self.CurrentOpenInstanceIndex = -1;
+        
         // Get opening hours instances for the date in question.
         instances = Drupal.OpeningHours.dataStore[self.nid][self.date.getISODate()] || [];
-
-        $.each(instances, function () {
+        
+        $.each(instances, function (index,value) {
           var open = self.splitTime(this.start_time),
           close = self.splitTime(this.end_time),
           hours = self.date.getHours(),
           minutes = self.date.getMinutes();
 
-          // Now we have all the data we need, figure out if we're open.
-          
+        // Now we have all the data we need, figure out if we're open.
         if ((hours > open.hours ||
           hours === open.hours && minutes >= open.minutes) &&
         (hours < close.hours ||
           hours === close.hours && minutes < close.minutes)) {
           isOpen = true;
+          self.CurrentOpenInstanceIndex = index; //Log the index of the open instance.
           if (this.notice) {
             isselfService = true;
           }
@@ -68,20 +74,62 @@
           self.isselfService = isselfService;
           self.isOpen = isOpen;
         };
-       
-    //Added color for today
-    var date = new Date();
-    var weekday=new Array("Sunday","Monday","Tuesday" ,"Wednesday","Thursday","Friday","Saturday");
-
-    $('.name').each(function( ) {
-      if ($(this).text() == Drupal.t(weekday[date.getDay()])){
-        $(this).parent().css( "font-weight", "bold" );
-      }
-    });
+    //Get a week number from date.    
+    self.getWeekNumber = function(d) {
+        // Copy date so don't modify original
+        d = new Date(+d);
+        d.setHours(0,0,0);
+        // Set to nearest Thursday: current date + 4 - current day number
+        // Make Sunday's day number 7
+        d.setDate(d.getDate() + 4 - (d.getDay()||7));
+        // Get first day of year
+        var yearStart = new Date(d.getFullYear(),0,1);
+        // Calculate full weeks to nearest Thursday
+        var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7)
+        // Return array of year and week number
+        return [d.getFullYear(), weekNo];
+    }    
     // Render the current opening status.
       self.render = function () {
+        
         if (Drupal.OpeningHours.dataStore[self.nid]) {
           self.calculateOpenStatus();
+          
+            //Added color coding for open now. 
+            var date = new Date();
+            var weekday=new Array("Sunday","Monday","Tuesday" ,"Wednesday","Thursday","Friday","Saturday");
+            var OpenHoursCurrentNode = $('.opening-hours-week[data-nid="'+ self.nid +'"] .name');
+            $(OpenHoursCurrentNode).each(function( ) {
+              if ($(this).text() === Drupal.t(weekday[date.getDay()])){
+                //Set Day name Css.
+                $(this).css('font-weight','bold').css('font-size','14px');
+                var tmp = $(this).next();
+                $(".name").css('color','#555555');   
+                
+                if(tmp.children.length == 0 || self.CurrentOpenInstanceIndex == -1)
+                {
+                    //There is no children. And we did not find a open timeslot.
+                    tmp.css('font-size','14px').css('font-weight','bold');
+                    $.each(tmp.children(),function(index,obj){
+                        $(obj).css('font-size','14px').css('font-weight','bold');
+                    });
+                    return;
+                }
+                $.each(tmp.children(),function(index,obj){
+ 
+                        if(index == self.CurrentOpenInstanceIndex)
+                        {
+                            //timeslot Found
+                            $(obj).css('font-size','14px').css('font-weight','bold');
+                        }
+                        else
+                        {
+                            $(obj).css('color','#555555').css('font-weight','normal');
+                        }
+                });
+              }
+              
+            });
         }
 
         // Add our element to the DOM, if neccessary.
@@ -113,19 +161,30 @@
 
         // Trigger an evert so other scripts can react to the change.
         $(window).trigger('DingLibraryStatusChange', [self.nid, self.isOpen, self.isselfService]);
+         
+          
       };
 
       // Update our display with a new date value.
       self.update = function (date) {
+          
         var currentState = self.isOpen;
         var currentState = self.isselfService;
 
         // Make sure we have a proper date object (Firefox gives us a
         // lateness parameter, where we'd normally get undefined).
+        var OpenHoursCurrentWeek = $('.opening-hours-week[data-nid="'+ self.nid +'"] .header .week_num').html();
+        var NowWeek = self.getWeekNumber(self.date);
+        
+        //Check if the date is the current one. if not skip rendering open instance marker.
+        if(NowWeek[1] != OpenHoursCurrentWeek)
+        {
+            return;
+        }
+
         if (!_.isDate(date)) {
           date = new Date();
         }
-
         // Overwrite the date and recalculate status.
         self.date = date;
         self.calculateOpenStatus();
@@ -140,6 +199,16 @@
         }
       };
 
+        self.goToPreviousWeek = function (event) {
+            
+       //If disabled we are back @ original date.
+      if ($(this).hasClass('disabled')) {
+        self.render();
+        return false;
+      }
+
+      event.preventDefault();
+    };
       return self.constructor();
     };
 
