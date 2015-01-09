@@ -23,11 +23,11 @@ function latto_odense_webform_submission_render_alter(&$renderable) {
    * Double space %email_values in webform emails
    */
     foreach (element_children($renderable) as $key) {   
-      $renderable[$key]['#title'] = "\n" . $renderable[$key]['#title'];
+      $renderable[$key]['#title'] = "<br>" . $renderable[$key]['#title'];
       if (isset($renderable[$key]['#webform_component']['type']) && $renderable[$key]['#webform_component']['type'] == 'fieldset') {
         $fieldset = &$renderable[$key];     
         foreach (element_children($fieldset) as $key2) {
-          $fieldset[$key2]['#title'] = "\n" . $fieldset[$key2]['#title'];
+          $fieldset[$key2]['#title'] = "</br>" . $fieldset[$key2]['#title'];
       }
     }
   }
