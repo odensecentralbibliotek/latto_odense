@@ -16,7 +16,8 @@ function latto_odense_preprocess_html(&$variables) {
       //drupal_add_js("https://popin.survey-xact.dk/cookies.js" , 'external');
       //drupal_add_js(drupal_get_path('theme', 'latto_odense') ."/js/survey.js");
   }
-  
+  //Google translate
+  drupal_add_js("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",array('weight' => 999));
 }
 function latto_odense_webform_submission_render_alter(&$renderable) {
   /**

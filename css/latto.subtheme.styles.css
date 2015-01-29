@@ -1343,6 +1343,11 @@ field-name-field-ding-page-body ul {
   float: left;
 }
 
+/* line 1049, ../sass/latto.subtheme.base.scss */
+.ui-dialog-titlebar {
+  background: #69c8cf;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
