@@ -22,7 +22,7 @@ function latto_odense_preprocess_html(&$variables) {
       '#markup' => '<meta name="google-translate-customization" content="fdb71287571f3a3f-c9706368dadbbb25-g267b673532f38d5e-10"></meta>',
     );
   drupal_add_html_head($element, "Google translate");  
-  drupal_add_js("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",array('weight' => 999));
+  drupal_add_js("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", 'external');
 }
 function latto_odense_webform_submission_render_alter(&$renderable) {
   /**
