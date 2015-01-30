@@ -7,11 +7,12 @@ jQuery(document).ready(function(){
     //Add the link to top of page.
     CloseTranslationDialogHooks = false;
     var TranslateLink = jQuery("#page").children();
-    TranslateLink.first().prepend('<div class="grid-inner" style="background:none !important;box-shadow: none !important;text-align:right;"><a onclick="ShowTranslationDialog()" >Translate</a></div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
+    TranslateLink.first().prepend('<div class="grid-inner" style="background:none !important;box-shadow: none !important;text-align:right;"><a onclick="ShowTranslationDialog()" >Translate</a>\n\
+                                   </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
 });
 //Callback after google translate init.
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'da', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false}, 'google_translate_element');  
+  new google.translate.TranslateElement({pageLanguage: 'da', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
 }
 function ShowTranslationDialog(e)
 {
@@ -21,7 +22,6 @@ function ShowTranslationDialog(e)
          jQuery( "#Translation_dialog" ).dialog( "close" );
      });
     });
-    
     jQuery( "#Translation_dialog" ).dialog({
         modal: true,
         buttons: {
