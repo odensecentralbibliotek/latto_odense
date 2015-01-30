@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
     //Add the link to top of page.
     CloseTranslationDialogHooks = false;
     var TranslateLink = jQuery("#page").children();
-    TranslateLink.first().prepend('<div class="grid-inner" style="background:none !important;box-shadow: none !important;text-align:right;"><a onclick="ShowTranslationDialog()" >Translate</a>\n\
+    TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >Translate</a>\n\
                                    </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
 });
 //Callback after google translate init.

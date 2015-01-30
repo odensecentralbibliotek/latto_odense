@@ -1348,6 +1348,13 @@ field-name-field-ding-page-body ul {
   background: #69c8cf;
 }
 
+/* line 1053, ../sass/latto.subtheme.base.scss */
+#Translation_Menu_Addon {
+  background: none !important;
+  box-shadow: none !important;
+  text-align: right;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
