@@ -1343,6 +1343,12 @@ field-name-field-ding-page-body ul {
   float: left;
 }
 
+/* line 1049, ../sass/latto.subtheme.base.scss */
+#ding-reservation-reservations-notready-form .title h2 {
+  font-size: 15px !important;
+  margin-left: 2px;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
