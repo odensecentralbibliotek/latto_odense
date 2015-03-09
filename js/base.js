@@ -92,8 +92,14 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
 
         $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
 
-        $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function() {
-            $('<div class="facetbrowser_overlay"><div class="spinner"></div></div>').prependTo('body');
+        $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function(e) {
+            //This is done to make sure loadscreen is crossbrowser compatible.
+            var string = Drupal.t('Vent mens din søgning bliver udført.');
+            e.preventDefault(); 
+            $('<div class="facetbrowser_overlay"><div class="spinner"><div class="spinner_inner_wrap"><img src="/sites/all/themes/latto_odense/images/spinner.gif" /><div>'+string+'</div></div></div></div>').prependTo('body');
+            setTimeout(function(){
+                $('.search-form').submit();
+            },1);
         });
         
         $(window).load(function() {
