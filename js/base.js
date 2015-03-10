@@ -225,16 +225,24 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
 })(jQuery);
 // A $( document ).ready() block.
 jQuery( document ).ready(function() {
+    var preloader = '<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>';
     jQuery('.search-results').find('a').click(function(e){
-        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+        jQuery(preloader).prependTo('body');
     });
     jQuery('.field-type-ting-title').find('a').click(function(e){
-        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+        jQuery(preloader).prependTo('body');
     });
     jQuery('.group-material-details').find('a').click(function(e){
-        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+        jQuery(preloader).prependTo('body');
+    });
+    //Series are not inside the material details block
+    jQuery('.field-name-ting-series').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
+    });
+    jQuery('.field-name-ting-author').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
     });
     jQuery('.field-name-ting-subjects').find('a').click(function(e){
-        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+        jQuery(preloader).prependTo('body');
     });
 });
