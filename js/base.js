@@ -110,7 +110,13 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
     });
     //If user wants to cancel his search.
     $('.search-overlay--wrapper .cancel').live('click', function (e) {
-        window.stop();
+        try{
+            window.stop();
+        }
+        catch(e)
+        {
+            document.execCommand('Stop');
+        } 
         $('.search-overlay--wrapper').remove();
     });
     // Remove overlay on page unload, so it's not shown when back button is used
