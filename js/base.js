@@ -38,7 +38,8 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
 
         $(document).keyup(function(e) {
             if (e.keyCode == 27) {
-                $('.facetbrowser_overlay').remove();
+                //$('.facetbrowser_overlay').remove();
+                $('search-overlay--wrapper').remove();
             }
         });
         //choose all checkbox on user status list 
@@ -96,7 +97,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             //This is done to make sure loadscreen is crossbrowser compatible.
             var string = Drupal.t('Vent mens din søgning bliver udført.');
             e.preventDefault(); 
-            $('<div class="facetbrowser_overlay"><div class="spinner"><div class="spinner_inner_wrap"><img src="/sites/all/themes/latto_odense/images/spinner.gif" /><div>'+string+'</div></div></div></div>').prependTo('body');
+            $('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
             setTimeout(function(){
                 $('.search-form').submit();
             },1);
@@ -106,6 +107,19 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             $('footer .grid-inner').equalize('height');
         });
         
+    });
+    //If user wants to cancel his search.
+    $('.search-overlay--wrapper .cancel').live('click', function (e) {
+        window.stop();
+        $('.search-overlay--wrapper').remove();
+    });
+    // Remove overlay on page unload, so it's not shown when back button is used
+    // in the browser.
+    $(window).unload(function (e) {
+        var overlay = $('.search-overlay--wrapper');
+        if (overlay.length) {
+            $('.search-overlay--wrapper').remove();
+        }
     });
     
     Drupal.behaviors.resetSearch = {
