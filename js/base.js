@@ -1,5 +1,6 @@
 (function($) {
-  
+      //Make so the preloader is shown everytime we interact with the well.
+
     jQuery.fn.exists = function() {
         return this.length > 0;
     };
@@ -95,7 +96,6 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
 
         $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function(e) {
             //This is done to make sure loadscreen is crossbrowser compatible.
-            var string = Drupal.t('Vent mens din søgning bliver udført.');
             e.preventDefault(); 
             $('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
             setTimeout(function(){
@@ -108,6 +108,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
         });
         
     });
+
     //If user wants to cancel his search.
     $('.search-overlay--wrapper .cancel').live('click', function (e) {
         try{
@@ -222,3 +223,22 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     });
 }
 })(jQuery);
+// A $( document ).ready() block.
+jQuery( document ).ready(function() {
+    jQuery('.search-results').find('a').click(function(e){
+        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+    });
+    jQuery('.field-type-ting-title').find('a').click(function(e){
+        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+    });
+    jQuery('.field-name-ting-details-subjects').find('a').click(function(e){
+        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+    });
+    jQuery('.field-name-ting-subjects').find('a').click(function(e){
+        jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
+    });
+    
+    
+    
+    
+});
