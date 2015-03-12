@@ -93,8 +93,9 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
         $("#edit-submit").css('display', '');
 
         $(".field-type-ting-details-uri a").addClass("btn").text('Hent online');
-
-        $(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function(e) {
+        
+        //$(".pane-search-form input[type=submit], .form-type-checkbox .option a").click(function(e) { -> was conflicting with facetbrowser.
+        $(".pane-search-form input[type=submit]").click(function(e) {
             //This is done to make sure loadscreen is crossbrowser compatible.
             e.preventDefault(); 
             $('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Searching please wait...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Cancel') + '</a></p></div></div>').prependTo('body');
