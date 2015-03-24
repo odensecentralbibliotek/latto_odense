@@ -156,6 +156,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
     case 'user_profile_form':
        $form['account']['mail']['#required'] = false; 
       break;
+    case 'user-login':
+        $form['name']['#type'] = 'password';
+      break;
   }
 }
 
@@ -166,7 +169,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
 function search_form_alter_submit($form, &$form_state) {
 
   if ($form_state['input']['search_type'] == '0') {
-    return ting_search_submit($form, $form_state);
+      return ting_search_submit($form, $form_state);
   }
   elseif ($form_state['input']['search_type'] == '1') {
     $form_state['redirect'] = 'search/node/' . trim($form_state['values']['keys']);
