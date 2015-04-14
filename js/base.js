@@ -42,7 +42,12 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
                 //$('.facetbrowser_overlay').remove();
                 $('search-overlay--wrapper').remove();
             }
+            
         });
+        function testselect(event, ui)
+        {
+            return false;
+        }
         //choose all checkbox on user status list 
         var alle = $('.select-all input[type=checkbox]').attr('title');
         $('<span> ' + alle + '</span>').appendTo('.select-all');
@@ -233,7 +238,7 @@ jQuery( document ).ready(function() {
     jQuery('.field-type-ting-title').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
-    jQuery('.group-material-details').find('a').click(function(e){
+    jQuery('.group-material-details .field-group-format-wrapper').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
     //Series are not inside the material details block
