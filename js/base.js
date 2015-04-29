@@ -1,12 +1,11 @@
 (function($) {
       //Make so the preloader is shown everytime we interact with the well.
-
     jQuery.fn.exists = function() {
         return this.length > 0;
     };
 
     $(document).ready(function($) {
-        
+        Klubtilbud_tooltips();
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
@@ -164,7 +163,35 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             }
         }
     };
-    
+function Klubtilbud_tooltips()
+{
+    //Select all events containing a club offer.
+    $('.list-item:has(.views-field-field-klub-tilbud)').each(function(i,e){
+        debugger;
+        var obj = $(e.firstChild);
+        var clubOffer = obj.text();
+        $(e.firstChild).empty();
+        switch(clubOffer)
+        {
+            case 0:
+            case 'Nysgerrig Fyn':
+            {
+                obj.css({
+                    'float' : 'right',
+                    'width' : '50px',
+                    'height' : '50px',
+                    'background-image': "url('/sites/all/themes/latto_odense/images/øje2.png')",
+                 });
+                 obj.attr('title','Nysgerrig Fyn');
+                break;
+            }
+            default:
+                break;
+        }
+        console.log('Event.');
+    })
+        //Add tooltip information and appropriate background/css.
+}
 function UpdatePlace2bookEventStatus(event, xhr, settings)
 {
     //Only execute if we are requesting TicketInfo throu ajax.
