@@ -187,7 +187,7 @@ function Klubtilbud_tooltips()
                     'background-image': "url('/sites/all/themes/latto_odense/images/øje2.png')",
                  });
                 obj.attr('title','Nysgerrig Fyn');
-                obj.wrap('<a href="'+Drupal.settings.oc_template_overwrites.nysfyn_link+'"></a>');
+                obj.wrap('<a target="_blank" href="'+Drupal.settings.oc_template_overwrites.nysfyn_link+'"></a>');
                 obj.empty();
                 break;
             }
