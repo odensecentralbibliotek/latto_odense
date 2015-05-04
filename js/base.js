@@ -167,7 +167,7 @@ function Klubtilbud_tooltips()
 {
     //Check if the neccesary variables exists. else dont run at all.
     if(typeof Drupal.settings.oc_template_overwrites.is_active === 'undefined' 
-        || !Drupal.settings.oc_template_overwrites.is_active)
+        || Drupal.settings.oc_template_overwrites.is_active == "0")
     {
         return;
     }
