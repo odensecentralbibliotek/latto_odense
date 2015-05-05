@@ -166,37 +166,41 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
 function Klubtilbud_tooltips()
 {
     //Check if the neccesary variables exists. else dont run at all.
-    if(typeof Drupal.settings.oc_template_overwrites.is_active === 'undefined' 
+        try {
+                if(typeof Drupal.settings.oc_template_overwrites.is_active === 'undefined' 
         || Drupal.settings.oc_template_overwrites.is_active == "0")
-    {
-        return;
-    }
-    //Select all events containing a club offer.
-    $('.list-item:has(.views-field-field-klub-tilbud):not(:empty)').each(function(i,e){
-        var obj = $(e.firstChild);
-        var clubOffer = obj.text();
-        switch(clubOffer)
-        {
-            case 0:
-            case 'Nysgerrig Fyn':
             {
-                obj.css({
-                    'float' : 'right',
-                    'width' : '50px',
-                    'height' : '50px',
-                    'background-image': "url('/sites/all/themes/latto_odense/images/øje2.png')",
-                 });
-                obj.attr('title','Nysgerrig Fyn');
-                obj.wrap('<a target="_blank" href="'+Drupal.settings.oc_template_overwrites.nysfyn_link+'"></a>');
-                obj.empty();
-                break;
+                return;
             }
-            default:
-                break;
+            //Add tooltip information and appropriate background/css.
+            //Select all events containing a club offer.
+            $('.list-item:has(.views-field-field-klub-tilbud):not(:empty)').each(function(i,e){
+                var obj = $(e.firstChild);
+                var clubOffer = obj.text();
+                switch(clubOffer)
+                {
+                    case 0:
+                    case 'Nysgerrig Fyn':
+                    {
+                        obj.css({
+                            'float' : 'right',
+                            'width' : '50px',
+                            'height' : '50px',
+                            'background-image': "url('/sites/all/themes/latto_odense/images/øje2.png')",
+                         });
+                        obj.attr('title','Nysgerrig Fyn');
+                        obj.wrap('<a target="_blank" href="'+Drupal.settings.oc_template_overwrites.nysfyn_link+'"></a>');
+                        obj.empty();
+                        break;
+                    }
+                    default:
+                        break;
+                }
+                console.log('Event.');
+            });
+        } catch (e) {
+            
         }
-        console.log('Event.');
-    })
-        //Add tooltip information and appropriate background/css.
 }
 function UpdatePlace2bookEventStatus(event, xhr, settings)
 {
