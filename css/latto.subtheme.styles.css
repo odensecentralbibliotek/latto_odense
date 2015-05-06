@@ -1354,6 +1354,7 @@ field-name-field-ding-page-body ul {
   float: left;
 }
 
+
 /* line 1056, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form .title h2 {
   font-size: 15px !important;
@@ -1391,6 +1392,18 @@ field-name-field-ding-page-body ul {
   position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.75);
+}
+/* line 1049, ../sass/latto.subtheme.base.scss */
+.ui-dialog-titlebar {
+  background: #69c8cf;
+}
+
+/* line 1053, ../sass/latto.subtheme.base.scss */
+#Translation_Menu_Addon {
+  background: none !important;
+  box-shadow: none !important;
+  text-align: right;
+
 }
 
 /* equivalent to font-size: 100% */
