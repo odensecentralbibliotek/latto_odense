@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
            Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
     {
         var TranslateLink = jQuery("#page").children();
-        TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >'+ Drupal.t('Translate')+'</a>\n\
+        TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >'+ 'Translate'+'</a>\n\
                                    </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
     }
     
