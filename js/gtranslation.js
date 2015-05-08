@@ -4,19 +4,35 @@
  * the language.
  */
 jQuery(document).ready(function(){
+    
     //Add the link to top of page.
     //CloseTranslationDialogHooks = false;
     if(typeof Drupal.settings.oc_template_overwrites !== 'undefined' &&
            Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
     {
-        var TranslateLink = jQuery("#page").children();
-        TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >'+ 'Translate'+'</a>\n\
-                                   </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
+
+    }
+    setTimeout(function(){ 
+    if(!jQuery('#google_translate_element').length || jQuery('#google_translate_element').is(':empty') )
+    {
+        /*
+         * This is required only for IE. The callback function is not always triggerd
+         * But the translate object is loaded fine and we can just init it then.
+         * the timeout can be tweaked for bedst possible user experiance.
+         */
+        googleTranslateElementInit();
     }
     
+    }, 1000);
 });
 //Callback after google translate init.
 function googleTranslateElementInit() {
+    if(!jQuery('#Translation_Menu_Addon').length)
+    {
+         var TranslateLink = jQuery("#page").children();
+        TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >'+ 'Translate'+'</a>\n\
+                                   </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
+    }
     var languages = '';
     try {
         languages = Drupal.settings.oc_template_overwrites.google_translate_languages;
