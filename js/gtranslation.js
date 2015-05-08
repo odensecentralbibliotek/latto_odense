@@ -31,7 +31,8 @@ function googleTranslateElementInit() {
     {
          var TranslateLink = jQuery("#page").children();
         TranslateLink.first().prepend('<div id="Translation_Menu_Addon" class="grid-inner" style=""><a onclick="ShowTranslationDialog()" >'+ 'Translate'+'</a>\n\
-                                   </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div></div>');
+                                   </div><div onclick="" id="Translation_dialog" title="Vælg Sprog" style="display:none;"><div id="google_translate_element"></div>\n\
+                                   <br/><div style="font-size:12px;">'+Drupal.t('Vi gør opmærksom på, at denne funktion er en maskinel oversættelse og derfor ikke altid er helt korrekt.')+'</div></div>');
     }
     var languages = '';
     try {
