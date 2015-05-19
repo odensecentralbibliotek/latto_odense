@@ -5,12 +5,10 @@
  */
 jQuery(document).ready(function(){
     
-    //Add the link to top of page.
-    //CloseTranslationDialogHooks = false;
     if(typeof Drupal.settings.oc_template_overwrites !== 'undefined' &&
-           Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
+    Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
     {
-
+        googleTranslateElementInit();
     }
     setTimeout(function(){ 
     if(!jQuery('#google_translate_element').length || jQuery('#google_translate_element').is(':empty') )
@@ -20,13 +18,23 @@ jQuery(document).ready(function(){
          * But the translate object is loaded fine and we can just init it then.
          * the timeout can be tweaked for bedst possible user experiance.
          */
-        googleTranslateElementInit();
+        //Add the link to top of page.
+        //CloseTranslationDialogHooks = false;
+        if(typeof Drupal.settings.oc_template_overwrites !== 'undefined' &&
+               Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
+        {
+            googleTranslateElementInit();
+        }
+        
     }
     
     }, 1000);
 });
 //Callback after google translate init.
 function googleTranslateElementInit() {
+    if(typeof Drupal.settings.oc_template_overwrites !== 'undefined' &&
+    Drupal.settings.oc_template_overwrites.google_translate_enabled == 1 )
+{
     if(!jQuery('#Translation_Menu_Addon').length)
     {
          var TranslateLink = jQuery("#page").children();
@@ -41,6 +49,8 @@ function googleTranslateElementInit() {
         
     }  
     new google.translate.TranslateElement({pageLanguage: 'da', includedLanguages: languages, layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
+}
+    
 }
 function ShowTranslationDialog(e)
 {
