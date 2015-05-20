@@ -45,10 +45,11 @@ function googleTranslateElementInit() {
     var languages = '';
     try {
         languages = Drupal.settings.oc_template_overwrites.google_translate_languages;
+        new google.translate.TranslateElement({pageLanguage: 'da', includedLanguages: languages, autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
     } catch (e) {
         
     }  
-    new google.translate.TranslateElement({pageLanguage: 'da', includedLanguages: languages, autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
+    
 }
     
 }
