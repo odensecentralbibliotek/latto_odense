@@ -48,7 +48,7 @@ function googleTranslateElementInit() {
     } catch (e) {
         
     }  
-    new google.translate.TranslateElement({pageLanguage: 'da', includedLanguages: languages, layout: google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
+    new google.translate.TranslateElement({pageLanguage: 'da', includedLanguages: languages, autoDisplay: false, gaTrack: true, gaId: 'UA-3030685-7'}, 'google_translate_element');  
 }
     
 }
