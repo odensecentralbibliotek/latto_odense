@@ -25,7 +25,6 @@ jQuery(document).ready(function(){
         {
             googleTranslateElementInit();
         }
-        
     }
     
     }, 1000);
@@ -49,18 +48,14 @@ function googleTranslateElementInit() {
     } catch (e) {
         
     }  
-    
 }
     
 }
 function ShowTranslationDialog(e)
 {
-    var Languages = jQuery('.goog-te-menu-frame').contents().find('.goog-te-menu2-item');
-    jQuery.each(Languages,function(index,value){
-        value.addEventListener("click", function(){
-         jQuery( "#Translation_dialog" ).dialog( "close" );
-     });
-    });
+   jQuery('.goog-te-combo').on('change',function(){
+       jQuery( "#Translation_dialog" ).dialog( "close" );
+   });
     jQuery( "#Translation_dialog" ).dialog({
         modal: true,
         buttons: {
