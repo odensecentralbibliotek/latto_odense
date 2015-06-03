@@ -327,5 +327,25 @@ function latto_odense_links__library_menu($variables) {
 
   return $output;
 }
+function latto_odense_preprocess_field(&$vars) {
+    if($vars['element']['#bundle'] == "ding_library")
+    {
+        /*
+         * Add no translate css class to fields rendered 
+         * in library information pages.
+         * prevents funny street names when using google translate.
+         */
+         $notranslate_fields = array('field_ding_library_addresse','field_ding_library_mail',
+        'field_ding_library_phone_number','field_ding_library_cvr'
+        ,'field_ding_library_cvr');
+         
+        if(in_array($vars['element']['#field_name'],$notranslate_fields))
+        {
+            $content_classes = &$vars['classes_array'];
+            $content_classes[] = "notranslate";
+        }
+    }
+   
+    return;
+}
 
-?>
