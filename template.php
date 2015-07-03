@@ -345,7 +345,6 @@ function latto_odense_preprocess_field(&$vars) {
             $content_classes[] = "notranslate";
         }
     }
-   
     return;
 }
 
