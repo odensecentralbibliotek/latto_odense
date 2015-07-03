@@ -348,3 +348,16 @@ function latto_odense_preprocess_field(&$vars) {
     return;
 }
 
+/**
+ * Implements hook_theme().
+ */
+function latto_odense_theme($existing, $type, $theme, $path) {
+  return array(
+    'opening_hours_presentation' => array(
+      'variables' => array(),
+      'path' => $path . '/templates',
+      'template' => 'opening_hours_presentation',
+    ),
+  );
+}
+
