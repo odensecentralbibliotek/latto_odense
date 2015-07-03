@@ -24,7 +24,14 @@ function latto_odense_preprocess_html(&$variables) {
   drupal_add_html_head($element, "Google translate");  
   drupal_add_js("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", 'external');
   drupal_add_css('https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css','external'); //This is needed for the dialog to show with styling on all pages. the Jquery module seems to have issue.
-  
+    /* Add custom disable of the tableselect field for when using tablesort , it makes no sense to sort it.
+   * Requires tablesort metatag enabled.
+   * 
+   */
+   drupal_add_js("
+   jQuery('.select-all').toggleClass('{sorter: false}');",
+    array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
+  ); 
 }
 function latto_odense_webform_submission_render_alter(&$renderable) {
   /**
