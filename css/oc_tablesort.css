@@ -19,7 +19,7 @@ table.tablesorter thead tr th, table.tablesorter tfoot tr th {
 	padding: 4px;
 }
 table.tablesorter thead tr .header {
-	background-image: url(/sites/all/libraries/tablesorter/themes/blue/bg.gif);
+	background-image: none !important;
 	background-repeat: no-repeat;
 	background-position: center right;
 	cursor: pointer;
@@ -35,10 +35,10 @@ table.tablesorter tbody tr.odd td {
 	background-color: white !important;
 }
 table.tablesorter thead tr .headerSortUp {
-	background-image: url(/sites/all/libraries/tablesorter/themes/blue/asc.gif);
+	/*background-image: url(/sites/all/libraries/tablesorter/themes/blue/asc.gif)*/;
 }
 table.tablesorter thead tr .headerSortDown {
-	background-image: url(/sites/all/libraries/tablesorter/themes/blue/desc.gif);
+	/*background-image: url(/sites/all/libraries/tablesorter/themes/blue/desc.gif)*/;
 }
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
 /*border-color: #8dbdd8 !important;*/
