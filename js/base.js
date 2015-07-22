@@ -195,6 +195,7 @@ function Klubtilbud_tooltips()
                         break;
                     }
                     default:
+                        obj.toggle();
                         break;
                 }
                 console.log('Event.');
