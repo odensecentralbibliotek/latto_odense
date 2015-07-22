@@ -50,6 +50,7 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
         //choose all checkbox on user status list 
         var alle = $('.select-all input[type=checkbox]').attr('title');
         $('<span> ' + alle + '</span>').appendTo('.select-all');
+        
         //$('.search-login .grid-inner').equalize('height');
 
         $('input[placeholder],textarea[placeholder]').placeholder();
@@ -177,10 +178,10 @@ function Klubtilbud_tooltips()
             $('.list-item:has(.views-field-field-klub-tilbud):not(:empty)').each(function(i,e){
                 var obj = $(e.firstChild);
                 var clubOffer = obj.text();
-                switch(clubOffer)
+                var KlubValue = clubOffer.indexOf('Nysgerrig Fyn') != -1 ? 0 : -1;
+                switch(KlubValue)
                 {
-                    case 0:
-                    case 'Nysgerrig Fyn':
+                    case 0: //Nysgerrig Fyn
                     {
                         obj.css({
                             'float' : 'right',
