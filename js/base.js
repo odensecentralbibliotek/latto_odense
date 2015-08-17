@@ -195,7 +195,10 @@ function Klubtilbud_tooltips()
                         break;
                     }
                     default:
-                        obj.toggle();
+                        if(!obj.has('a').length)
+                        {
+                           obj.toggle();
+                        }
                         break;
                 }
                 console.log('Event.');
@@ -212,8 +215,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
 
         return;
     };
-    //Make sure the new events loaded are also marked with club offer.
-    Klubtilbud_tooltips();
+
     
     //Make sure that live filtering works aswell.
     if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
