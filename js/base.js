@@ -212,10 +212,10 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
 
     //Only execute if we are requesting TicketInfo throu ajax.
     if (settings != undefined && settings.url.indexOf("/ding/place2book/ticketinfo/ajax/") == 0) {
-        
+        Klubtilbud_tooltips();
         return;
     };
-    Klubtilbud_tooltips();
+    
     //Make sure that live filtering works aswell.
     if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
     $('#search_input').fastLiveFilter('.fastfilter');
