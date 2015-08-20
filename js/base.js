@@ -195,9 +195,9 @@ function Klubtilbud_tooltips()
                         break;
                     }
                     default:
-                        if(!obj.has('a').length)
+                        if(!KlubValue == -1)
                         {
-                           obj.toggle();
+                           obj.empy();
                         }
                         break;
                 }
