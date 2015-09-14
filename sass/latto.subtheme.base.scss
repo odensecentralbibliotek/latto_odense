@@ -850,7 +850,10 @@ Content pane styling
 .pickup-order-id {
   font-size: 18px;
 }
-
+table {
+  width: 100%!important;
+  table-layout: fixed!important;
+}
 //logged in table list fixes.
 .table {
   .field.field-name-ting-title.field-type-ting-title {
