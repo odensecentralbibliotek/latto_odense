@@ -1411,6 +1411,11 @@ field-name-field-ding-page-body ul {
   text-align: right;
 }
 
+/* line 1102, ../sass/latto.subtheme.base.scss */
+.webform-container-inline.webform-datepicker div.form-item.form-type-select {
+  display: none;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
