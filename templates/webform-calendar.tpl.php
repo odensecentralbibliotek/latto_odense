@@ -8,9 +8,9 @@ function getFormKeys($components, $component) {
   $myReturn = array();
   $pid = $component['pid'];
   if(!empty($pid)) {
-    $myReturn += getFormKeys($components, $components[$pid]);
+    array_merge($myReturn,getFormKeys($components, $components[$pid]));
   }// end of if(!empty($pid));
-  $myReturn[] = $component['form_key'];
+  array_push($myReturn,$component['form_key']);
   return $myReturn;
 }// end of function getFormKeys($components, $component);
 $node = node_load($component['nid']);
