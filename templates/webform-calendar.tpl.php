@@ -3,19 +3,7 @@
 * This replaces the webform date selectors with a single text box & date popup.
 */
 /** Recursive function to return an array containing form_keys of component and all parent components **/
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-error_reporting(-1);
-
-function getFormKeys($components, $component) {
-  $myReturn = array();
-  $pid = $component['pid'];
-  if(!empty($pid)) {
-    $myReturn =array_merge($myReturn,getFormKeys($components, $components[$pid]));
-  }// end of if(!empty($pid));
-  array_push($myReturn,$component['form_key']);
-  return $myReturn;
-}// end of function getFormKeys($components, $component);
+// end of function getFormKeys($components, $component);
 $node = node_load($component['nid']);
 $form_keys = getFormKeys($node->webform['components'], $component);
 $form_key = join('-', $form_keys);
