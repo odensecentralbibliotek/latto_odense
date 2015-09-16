@@ -379,4 +379,21 @@ function latto_odense_theme($existing, $type, $theme, $path) {
     ),
   );
 }
+/*
+ * Helper function for webform calender fields
+ * to make them display like node date field.
+ */
+function getFormKeys($components, $component) {
+  $myReturn = array();
+  $pid = $component['pid'];
+  if(!empty($pid)) {
+    try
+    {
+      $myReturn = array_merge($myReturn,getFormKeys($components, $components[$pid]));
+    } catch (Exception $ex) {
 
+    }
+  }// end of if(!empty($pid));
+  array_push($myReturn,$component['form_key']);
+  return $myReturn;
+}
