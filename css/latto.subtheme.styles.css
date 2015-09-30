@@ -1324,24 +1324,30 @@ div.more-link a {
 }
 
 /* line 1029, ../sass/latto.subtheme.base.scss */
+btn-p2b-waitinglist {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* line 1034, ../sass/latto.subtheme.base.scss */
 .btn.btn-primary.btn-small {
   background: none repeat scroll 0 0 green;
   color: white;
 }
 
-/* line 1034, ../sass/latto.subtheme.base.scss */
+/* line 1039, ../sass/latto.subtheme.base.scss */
 .p2b_event_list_btn_wrap {
   max-width: 100%;
   width: 350px;
   float: right;
 }
 
-/* line 1040, ../sass/latto.subtheme.base.scss */
+/* line 1045, ../sass/latto.subtheme.base.scss */
 .p2b_event_list_btn_wrap .btn-small {
   float: right;
 }
 
-/* line 1046, ../sass/latto.subtheme.base.scss */
+/* line 1051, ../sass/latto.subtheme.base.scss */
 .field-name-field-ding-news-body ul,
 .field-name-field-ding-event-body ul,
 field-name-field-ding-page-body ul {
@@ -1349,25 +1355,25 @@ field-name-field-ding-page-body ul {
   padding-left: 15px;
 }
 
-/* line 1051, ../sass/latto.subtheme.base.scss */
+/* line 1056, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .next {
   float: right;
 }
 
-/* line 1054, ../sass/latto.subtheme.base.scss */
+/* line 1059, ../sass/latto.subtheme.base.scss */
 .opening-hours-week .prev {
   font-size: 150%;
   float: left;
 }
 
-/* line 1059, ../sass/latto.subtheme.base.scss */
+/* line 1064, ../sass/latto.subtheme.base.scss */
 #ding-reservation-reservations-notready-form .title h2 {
   font-size: 15px !important;
   margin-left: 2px;
 }
 
 /* New Search loading wrapper.... */
-/* line 1064, ../sass/latto.subtheme.base.scss */
+/* line 1069, ../sass/latto.subtheme.base.scss */
 .search-overlay--wrapper {
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
@@ -1380,7 +1386,7 @@ field-name-field-ding-page-body ul {
   text-align: center;
 }
 
-/* line 1075, ../sass/latto.subtheme.base.scss */
+/* line 1080, ../sass/latto.subtheme.base.scss */
 .search-overlay--inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1399,21 +1405,16 @@ field-name-field-ding-page-body ul {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 1093, ../sass/latto.subtheme.base.scss */
+/* line 1098, ../sass/latto.subtheme.base.scss */
 .ui-dialog-titlebar {
   background: #69c8cf;
 }
 
-/* line 1097, ../sass/latto.subtheme.base.scss */
+/* line 1102, ../sass/latto.subtheme.base.scss */
 #Translation_Menu_Addon {
   background: none !important;
   box-shadow: none !important;
   text-align: right;
-}
-
-/* line 1102, ../sass/latto.subtheme.base.scss */
-.webform-container-inline.webform-datepicker div.form-item.form-type-select {
-  display: none;
 }
 
 /* equivalent to font-size: 100% */
