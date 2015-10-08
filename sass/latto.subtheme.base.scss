@@ -1025,15 +1025,14 @@ div.more-link a {
         }
     }
 }
-btn-p2b-waitinglist
-{
-    color: white !important;
-    text-decoration: none !important;
-}
 .btn.btn-primary.btn-small
 {
     background: none repeat scroll 0 0 green;
     color: white; 
+}
+.btn-warning.btn-small,.btn-warning.btn-large{
+    color: white !important;
+    text-decoration: none !important;
 }
 .p2b_event_list_btn_wrap
 {
