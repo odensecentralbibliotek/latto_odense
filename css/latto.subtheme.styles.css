@@ -1017,7 +1017,7 @@ input:placeholder, textarea:placeholder {
 .field-name-field-ding-news-title-image {
   float: left;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
 }
 
 /* line 769, ../sass/latto.subtheme.base.scss */
@@ -1415,6 +1415,13 @@ field-name-field-ding-page-body ul {
   background: none !important;
   box-shadow: none !important;
   text-align: right;
+}
+
+/* line 1107, ../sass/latto.subtheme.base.scss */
+.field_kilde {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 /* equivalent to font-size: 100% */
