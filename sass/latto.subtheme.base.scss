@@ -930,7 +930,7 @@ table {
   line-height: 17px;
   text-transform: uppercase;
 }
-#featured .ui-tabs-nav li.ui-tabs-selected {
+#featured .ui-tabs-nav li.ui-tabs-active {
   border-color: transparent $theme-tertiary-color transparent transparent;
   & a {
     background-color: $theme-tertiary-color;

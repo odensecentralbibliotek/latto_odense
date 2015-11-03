@@ -1237,11 +1237,11 @@ table {
 }
 
 /* line 933, ../sass/latto.subtheme.base.scss */
-#featured .ui-tabs-nav li.ui-tabs-selected {
+#featured .ui-tabs-nav li.ui-tabs-active {
   border-color: transparent #69c8cf transparent transparent;
 }
 /* line 935, ../sass/latto.subtheme.base.scss */
-#featured .ui-tabs-nav li.ui-tabs-selected a {
+#featured .ui-tabs-nav li.ui-tabs-active a {
   background-color: #69c8cf;
 }
 
