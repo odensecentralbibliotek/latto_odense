@@ -13,8 +13,17 @@ if($output != "" &&
 
     foreach ($dom->getElementsByTagName('img') as $item) {
         $photo_source = $row->field_field_ding_news_list_image[0]['raw']['field_kilde']['und'][0]['value'];
-        $item->setAttribute('title', t('Photo: ') . $photo_source);
-        $item->setAttribute('alt', t('Photo: ') . $photo_source);
+        if($item->hasAttribute('title'))
+        {
+            $old_string =  $item->getAttribute('title');
+            $old_string = $old_string ."\r\n" .t('Photo: ') . $photo_source;
+            $item->setAttribute('title', $old_string);
+        }
+        else
+        {
+           $item->setAttribute('title', t('Photo: ') . $photo_source);
+        }
+        
         echo $dom->saveHTML();
         break;
     }
