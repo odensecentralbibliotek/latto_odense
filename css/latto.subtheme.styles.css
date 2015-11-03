@@ -1419,7 +1419,7 @@ field-name-field-ding-page-body ul {
 
 /* line 1107, ../sass/latto.subtheme.base.scss */
 .field_kilde {
-  float: left;
+  font-size: 11px;
   width: 100%;
   margin-bottom: 15px;
 }
