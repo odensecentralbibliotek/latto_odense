@@ -5,6 +5,11 @@
     };
 
     $(document).ready(function($) {
+        if ($('#edit-mail-confirm').exists()) {
+            $('#edit-mail, #edit-mail-confirm').on('copy paste cut', function (e) {
+                e.preventDefault();
+            });
+        }
         //Klubtilbud_tooltips();
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
