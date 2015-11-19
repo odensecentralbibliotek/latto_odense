@@ -854,6 +854,10 @@ table {
   width: 100%!important;
   table-layout: fixed!important;
 }
+.tablesorter
+{
+    table-layout: auto !important;
+}
 //logged in table list fixes.
 .table {
   .field.field-name-ting-title.field-type-ting-title {
