@@ -27,6 +27,7 @@
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;
+  background-size: cover; 
 }
 .node-unpublished {
     background-color: $white !important;
