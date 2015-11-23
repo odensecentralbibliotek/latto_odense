@@ -148,6 +148,8 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['RecoverPass']['#markup'] = '<div id="ResetPasswordBtn">'
               . '<a href="/user/password">'. t('Glemt kode?').'</a></div>';
       if (variable_get('nemid_button', 0) == 1) {
+      /* Make form submit on enter work , with nemid button enabled.*/
+      $form['pass']['#attributes']['onkeypress'][]='if(event.keyCode==13){this.form.submit();}';
       $form['nemid']['submit'] = array(
           '#type' => 'submit',
           '#ajax' => array(
