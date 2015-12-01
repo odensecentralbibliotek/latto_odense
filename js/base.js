@@ -5,6 +5,7 @@
     };
 
     $(document).ready(function($) {
+        Add_google_events_tracker();
         if ($('#edit-mail-confirm').exists()) {
             $('#edit-mail, #edit-mail-confirm').on('copy paste cut', function (e) {
                 e.preventDefault();
@@ -169,6 +170,26 @@ if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             }
         }
     };
+/*
+ * 
+ * @returns {undefined}
+ */
+function Add_google_events_tracker()
+{
+    //Register how many clicks the "spørg biblioteket"
+    $('body').on('click','.ask-vopros-tab',function(){
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Biblioteksvagten',
+            eventAction: 'Spørg Biblioteksvagten',
+            eventLabel: window.location.href
+          });
+    });
+
+}
+/*
+ * Handle adding badges to events.
+ */
 function Klubtilbud_tooltips()
 {
     //Check if the neccesary variables exists. else dont run at all.
