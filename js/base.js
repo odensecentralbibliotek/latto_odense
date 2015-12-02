@@ -5,6 +5,13 @@
     };
 
     $(document).ready(function($) {
+        $('#edit-name').focus(function(){
+            $(this).val('');
+        });
+        $('#edit-pass').focus(function(){
+            $(this).val('');
+        });
+        
         Add_google_events_tracker();
         if ($('#edit-mail-confirm').exists()) {
             $('#edit-mail, #edit-mail-confirm').on('copy paste cut', function (e) {
@@ -182,10 +189,10 @@ function Add_google_events_tracker()
             hitType: 'event',
             eventCategory: 'Biblioteksvagten',
             eventAction: 'Spørg Biblioteksvagten',
-            eventLabel: window.location.href
+            eventLabel: window.location.href,
+            hitCallback: function(){debugger},
           });
     });
-
 }
 /*
  * Handle adding badges to events.
