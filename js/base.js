@@ -5,9 +5,17 @@
     };
 
     $(document).ready(function($) {
+        debugger;
+        var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
+        if(pass_hack != undefined && pass_hack.length > 0)
+        {
+            $('#edit-name').val('');
+            $('#edit-pass').val(pass_hack );
+        }
         $('#edit-name').focus(function(){
             $(this).val('');
         });
+        
         $('#edit-pass').focus(function(){
             $(this).val('');
         });
@@ -22,7 +30,7 @@
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
         
-if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
+        if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             $('#search_input').fastLiveFilter('.fastfilter');
             UpdatePlace2bookEventStatus(); 
         }

@@ -1430,6 +1430,11 @@ field-name-field-ding-page-body ul {
   margin-bottom: 15px;
 }
 
+/* line 1118, ../sass/latto.subtheme.base.scss */
+.field-name-ding-availability-holdings table {
+  table-layout: auto !important;
+}
+
 /* equivalent to font-size: 100% */
 /* line 5, ../sass/latto.subtheme.typography.scss */
 body {
