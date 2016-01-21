@@ -5,7 +5,7 @@
     };
 
     $(document).ready(function($) {
-        debugger;
+
         var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
         if(pass_hack != undefined && pass_hack.length > 0)
         {
@@ -29,10 +29,13 @@
         //Klubtilbud_tooltips();
         $("#subunsubform").attr("target", "_blank");
         $("#ding-library-front iframe").attr("allowfullscreen", "true");
-        
         if ($('#search_input').exists() && $.fn.fastLiveFilter != undefined ) {
             $('#search_input').fastLiveFilter('.fastfilter');
             UpdatePlace2bookEventStatus(); 
+        }          
+        else if($('.view-display-id-library_featured_event_list_view').exists())
+        {
+            UpdatePlace2bookEventStatus();
         }
         $(document).ajaxSuccess(UpdatePlace2bookEventStatus);
         //Remove empty columns in user tables
