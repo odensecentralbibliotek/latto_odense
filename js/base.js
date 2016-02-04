@@ -5,7 +5,7 @@
     };
 
     $(document).ready(function($) {
-
+        
         var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
         if(pass_hack != undefined && pass_hack.length > 0)
         {
@@ -67,10 +67,6 @@
             }
             
         });
-        function testselect(event, ui)
-        {
-            return false;
-        }
         //choose all checkbox on user status list 
         var alle = $('.select-all input[type=checkbox]').attr('title');
         $('<span> ' + alle + '</span>').appendTo('.select-all');
@@ -136,9 +132,9 @@
         $(window).load(function() {
             $('footer .grid-inner').equalize('height');
         });
-        
+         bind_user_profile_spinners();
     });
-
+   
     //If user wants to cancel his search.
     $('.search-overlay--wrapper .cancel').live('click', function (e) {
         try{
@@ -188,6 +184,52 @@
             }
         }
     };
+/*
+ * 
+ * @returns {undefined}
+ */
+function bind_user_profile_spinners()
+{
+    debugger;
+    jQuery('body').on('click','#ding-user-loan-amount a',function(){
+        trigger_profilerSpinner();
+    });
+    jQuery('body').on('click','#ding-user-reservation-amount a',function(){
+        trigger_profilerSpinner();
+    });
+    jQuery('body').on('click','#ding-user-debt-amount a',function(){
+        trigger_profilerSpinner();
+    });
+    jQuery('body').on('click','#ding-user-bookmark-amount a',function(){
+        trigger_profilerSpinner();
+    });
+    jQuery('body').on('submit','#user-login-form',function(){
+        trigger_loginSpinner();
+    });
+    
+    var profile_btn = jQuery('#ding-user-profile a');
+    profile_btn.first().on('click',function(){
+        trigger_profilerSpinner();
+    });
+    
+    profile_btn.last().on('click',function(){
+        trigger_logoutSpinner();
+    });
+    
+    
+}
+function trigger_profilerSpinner()
+{
+    jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('Henter oversigt...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Luk') + '</a></p></div></div>').prependTo('body');
+}
+function trigger_loginSpinner()
+{
+    jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('logger ind...') + '</p><p class="cancel"><a href="#">' + Drupal.t('Luk') + '</a></p></div></div>').prependTo('body');
+}
+function trigger_logoutSpinner()
+{
+    jQuery('<div class="search-overlay--wrapper"><div class="search-overlay--inner"><i class="icon-spinner icon-spin search-overlay--icon"></i><p class="search-overlay--text">' + Drupal.t('logger ud') + '</p><p class="cancel"><a href="#">' + Drupal.t('Luk') + '</a></p></div></div>').prependTo('body');
+}
 /*
  * 
  * @returns {undefined}
