@@ -190,7 +190,6 @@
  */
 function bind_user_profile_spinners()
 {
-    debugger;
     jQuery('body').on('click','#ding-user-loan-amount a',function(){
         trigger_profilerSpinner();
     });
