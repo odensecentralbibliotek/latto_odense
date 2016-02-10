@@ -10,7 +10,7 @@ if(isset($content['file']['#attributes']['title']) && !empty($content['file']['#
 }
 else
 {
-    $content['file']['#title'] = isset($field_kilde['und'][0]['value']) && !empty($field_kilde['und'][0]['value']) ? "Photo: " . $field_kilde['und'][0]['value'] : '';
+    $content['file']['#title'] = isset($field_kilde['und'][0]['value']) && !empty($field_kilde['und'][0]['value']) ? "Photo: " . $field_kilde['und'][0]['value'] : $content['file']['#title'];
 }
 hide($content['links']);
 print render($content);
