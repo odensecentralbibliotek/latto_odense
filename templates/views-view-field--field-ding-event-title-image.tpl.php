@@ -6,13 +6,13 @@
  * and open the template in the editor.
  */
 if($output != "" &&
-isset($row->field_field_ding_event_list_image[0]['raw']['field_kilde']['und'][0]['value']))
+isset($row->field_field_ding_event_title_image[0]['raw']['field_kilde']['und'][0]['value']))
 {
     $dom = new DOMDocument();
     $dom->loadHTML($output);
 
     foreach ($dom->getElementsByTagName('img') as $item) {
-        $photo_source = $row->field_field_ding_event_list_image[0]['raw']['field_kilde']['und'][0]['value'];
+        $photo_source = $row->field_field_ding_event_title_image[0]['raw']['field_kilde']['und'][0]['value'];
         if($item->hasAttribute('title'))
         {
             $old_string =  $item->getAttribute('title');
