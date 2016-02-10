@@ -16,8 +16,8 @@ isset($row->field_field_ding_event_list_image[0]['raw']['field_kilde']['und'][0]
         if($item->hasAttribute('title'))
         {
             $old_string =  $item->getAttribute('title');
-            $old_string = $old_string ."\r\n" .t('Photo: ') . $photo_source;
-            $item->setAttribute('title', $old_string);
+            $old_string = utf8_decode($old_string) ."\r\n" .t('Photo: ') . $photo_source;
+            $item->setAttribute('title',  $old_string);
         }
         else
         {
