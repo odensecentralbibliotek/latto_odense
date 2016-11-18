@@ -6,7 +6,7 @@ css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "scripts"
-additional_import_paths = ["/var/lib/gems/1.9.1/gems/zen-grids-1.4/stylesheets"]
+additional_import_paths = ["/var/aegir/platforms/drupal-7.51/profiles/ding2/libraries/zen-grids/stylesheets/"]
 output_style = :expanded
 environment = :development
 

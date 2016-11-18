@@ -1,64 +1,77 @@
 /*
-Syntax error: Undefined variable: "$theme-background".
+Error: Undefined variable: "$theme-background".
         on line 28 of /var/aegir/platforms/odense-734/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss
+
+23: #ResetPasswordBtn a
+24: {
+25:     color: white;
+26: }
+27: body {
+28:   background: $theme-background fixed no-repeat;
+29:   color: rgba(0, 0, 0, 0.7)!important;
+30:   background-size: cover;
+31: }
+32: .node-unpublished {
+33:     background-color: $white !important;
 
 Backtrace:
 /var/aegir/platforms/odense-734/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss:28
-/usr/lib/ruby/vendor_ruby/sass/script/variable.rb:49:in `_perform'
-/usr/lib/ruby/vendor_ruby/sass/script/node.rb:40:in `perform'
-/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `block in _perform'
-/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `map'
-/usr/lib/ruby/vendor_ruby/sass/script/list.rb:71:in `_perform'
-/usr/lib/ruby/vendor_ruby/sass/script/node.rb:40:in `perform'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:128:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:7:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:20:in `render'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:140:in `block (2 levels) in compile'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:139:in `block in compile'
-/usr/lib/ruby/vendor_ruby/compass/logger.rb:45:in `red'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:138:in `compile'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:118:in `compile_if_required'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:103:in `block (2 levels) in run'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:101:in `each'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:101:in `block in run'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/vendor_ruby/compass/compiler.rb:100:in `run'
-/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:147:in `recompile'
-/usr/lib/ruby/vendor_ruby/compass/commands/watch_project.rb:68:in `perform'
-/usr/lib/ruby/vendor_ruby/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/lib/ruby/vendor_ruby/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/bin/compass:30:in `block in <main>'
-/usr/bin/compass:44:in `call'
-/usr/bin/compass:44:in `<main>'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/bin/compass:44:in `call'
+/var/lib/gems/1.9.1/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$theme-background\".\A         on line 28 of /var/aegir/platforms/odense-734/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss"; }
+  content: "Error: Undefined variable: \"$theme-background\".\A         on line 28 of /var/aegir/platforms/odense-734/sites/all/themes/latto_odense/sass/latto.subtheme.base.scss\A \A 23: #ResetPasswordBtn a\A 24: {\A 25:     color: white;\A 26: }\A 27: body {\A 28:   background: $theme-background fixed no-repeat;\A 29:   color: rgba(0, 0, 0, 0.7)!important;\A 30:   background-size: cover;\A 31: }\A 32: .node-unpublished {\A 33:     background-color: $white !important;"; }
