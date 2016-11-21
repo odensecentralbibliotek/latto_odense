@@ -12,7 +12,7 @@
 @import 'compass/css3/box-shadow';
 #admin-menu-wrapper
 {
-    font-size: 12px; 
+    font-size: 12px;
 }
 #ResetPasswordBtn {
     font-size: 11px;
@@ -27,7 +27,7 @@
 body {
   background: $theme-background fixed no-repeat;
   color: rgba(0, 0, 0, 0.7)!important;
-  background-size: cover; 
+  background-size: cover;
 }
 .node-unpublished {
     background-color: $white !important;
@@ -58,7 +58,7 @@ header {
     padding-bottom: 0px;
     padding-top: $default-spacing / 2;
     margin-left: 0px;
-  } 
+  }
   .grid-inner {
     @include single-box-shadow;
     @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
@@ -66,7 +66,7 @@ header {
     @include rgba-background($theme-secondary-color, 0.8);
     background: $theme-secondary-color;
     @include gradient-reset-filter();
-  } 
+  }
 }
 
 .rs-carousel-tabs ul li.active {
@@ -91,7 +91,7 @@ Theme specific grid styling
 ========================================================================== */
 section ul{
    list-style: outside!important;
-   margin-left: 25px; 
+   margin-left: 25px;
  }
 .pane-page-content {
   padding: $default-spacing / 2;
@@ -131,23 +131,23 @@ hr {
 
 /* ==========================================================================
 Date
-========================================================================== */   
+========================================================================== */
 
-.date-list .date-wrapper {   
+.date-list .date-wrapper {
   margin-right: 2px;
   .day {
     background-color: $theme-secondary-color;
     color: $date-list-text-color;
     font-weight: bold;
   }
-} 
+}
 .list-compact .date{
   margin-right: $default-spacing;
 }
 
 /* ==========================================================================
 Navigation
-========================================================================== */ 
+========================================================================== */
 // The navigation bar used for the main-menu.
 // No styleguide reference
 ul {
@@ -176,7 +176,7 @@ li {
   }
   a.active {
     text-decoration: underline;
-    
+
   }
 }
 .expanded .menu {
@@ -258,18 +258,18 @@ li {
     margin-left: 5px;
     margin-right: -27px;
   }
-  
+
   .notice-star:before {
     font-family: "FontAwesome";
     color: #555555;
     opacity: 0.5;
     font-weight: normal;
   }
-  
-  .days{ 
+
+  .days{
     padding: 0;
   }
-  
+
   .times {
     margin-right: $default-spacing /2!important;
   }
@@ -294,7 +294,7 @@ li {
   font-size: 12px;
 }
 
-.label-info, .badge-info {    
+.label-info, .badge-info {
   background-color: $theme-tertiary-color;
 }
 .label a{
@@ -315,7 +315,7 @@ footer .grid-inner {
 .footer-menu {
   border-right: 2px solid white;
   & h2 {
-    color: $theme-footer-color!important; 
+    color: $theme-footer-color!important;
     font-family: $theme-font-family;
     font-size: $theme-font-size * 1.05;
     font-weight: normal;
@@ -323,7 +323,7 @@ footer .grid-inner {
     text-transform: uppercase;
   }
   & a {
-    color: $theme-footer-color!important; 
+    color: $theme-footer-color!important;
     font-size: 12px;
     list-style: none;
     text-decoration: none;
@@ -391,7 +391,7 @@ Search pane styling
     float: right;
     padding: 0px 5px 0px 0px;
     margin-right: 15px;
-  }          
+  }
   & a {
     background: url(../../../../../misc/menu-expanded.png) no-repeat;
     background-position: 95% 50%;
@@ -403,12 +403,12 @@ Search pane styling
   }
   .btn a:hover {
     text-decoration: none;
-  }   
+  }
   .form-item-keys {
     display: block;
     overflow: hidden;
   }
-}    
+}
 .form-item, .form-actions {
   background-color: transparent;
   border-top: 0px solid transparent;
@@ -417,14 +417,14 @@ Search pane styling
   margin-top: 0px;
 }
 #edit-search-type {
-  height: 30px; 
-  overflow: hidden; 
+  height: 30px;
+  overflow: hidden;
   display: block;
   .form-item-search-type{
     float: left;
     margin-right: $default-spacing;
-  }    
-}  
+  }
+}
 
 .search-wrapper #edit-advanced {
   margin: 0;
@@ -456,7 +456,7 @@ Search pane styling
   position:fixed; top:0px; left:0px; width:100%; height:100%; color: $white; text-align:center; vertical-align:middle;
 }
 .facetbrowser_overlay .spinner .spinner_inner_wrap{
-  margin-top: 21%; 
+  margin-top: 21%;
   margin-left: 35%;
   margin-right: 35%;
   text-align:center;
@@ -477,7 +477,7 @@ Search pane styling
   legend {
     display: none;
   }
-  .fieldset-wrapper {   
+  .fieldset-wrapper {
     left: -20px;
     padding: 0 10px 0 13px;
     position: relative;;
@@ -487,7 +487,7 @@ Search pane styling
       width: 50%;
       float: left;
       height: 40px;
-    }  
+    }
     #adv-reset {
       margin-left:  8px;
       margin-bottom: 5px;
@@ -495,11 +495,11 @@ Search pane styling
     .form-text {
       width: 225px;
       height: 30px;
-    }    
+    }
     .form-select {
       width: 225px;
       height: 30px;
-    }         
+    }
     .form-type-textfield label {
       float: left;
       padding: 3px 10px 2px;
@@ -520,7 +520,7 @@ Search pane styling
 }
 //
 
-ul.ui-autocomplete { 
+ul.ui-autocomplete {
   max-width: 432px!important;
   z-index:100;
 }
@@ -540,7 +540,7 @@ input#edit-search-block-form--2.spinner {
   background: $recommendation-list;
   margin-top: $default-spacing /2;
 }
-.pane-recommendation-list .list-item {      
+.pane-recommendation-list .list-item {
   margin-bottom: $default-spacing /2;
   padding-bottom: $default-spacing /2;
   display: table;
@@ -595,8 +595,8 @@ input#edit-search-block-form--2.spinner {
     input {
       height: 27px;
     }
-  } 
-  
+  }
+
   .icon-user {
     display: block;
     float: left;
@@ -653,7 +653,7 @@ input#edit-search-block-form--2.spinner {
 
 .search-login .pane-system-user-menu {
   min-height: 145px;
-}  
+}
 .pane-ding-user-frontend-ding-user-loan-number {
   @include single-box-shadow;
   @include box-shadow(rgba(black, .2) 0 4px 15px -2px);
@@ -672,7 +672,7 @@ input#edit-search-block-form--2.spinner {
 .form-item-profile-provider-alma-field-alma-interest-period-und {
   display: none;
 }
-  
+
 .field-name-field-alma-interest-period{
   display: none;
 }
@@ -702,7 +702,7 @@ article .grid-inner {
 .breadcrumb {
   margin-left: $default-spacing;
   margin-right: $default-spacing;
-} 
+}
 /* ==========================================================================
 Login pane styling
 ========================================================================== */
@@ -718,7 +718,7 @@ Login pane styling
   background-position: 3px 3px;
   background-repeat: no-repeat;
   cursor: pointer;
-  float: left;  
+  float: left;
   width: 21px;
 }
 .ctools-collapsible-content {
@@ -738,7 +738,7 @@ Login pane styling
 
 label.placeholder {
   cursor: text;
-  padding: 0.4em 0.6em 0.4em 1.6em;   
+  padding: 0.4em 0.6em 0.4em 1.6em;
   color: $black;
 }
 #edit-keys_placeholder {
@@ -787,21 +787,21 @@ div.subheading span {
 }
 
 .view-display-id-ding_event_simple_list .heading {
-  padding-left: $default-spacing;  
+  padding-left: $default-spacing;
 }
 .list .image-container{
   float: left;
-  margin-right: $default-spacing / 2; 
+  margin-right: $default-spacing / 2;
 }
 .image-container {
   margin-bottom: 0px!important;
-} 
+}
 /* ==========================================================================
 Content pane styling
 ========================================================================== */
 
 .pane-event-category-menu, .pane-news-category-menu {
-  padding: $default-spacing;   
+  padding: $default-spacing;
 }
 .pane-menu-news-category-menu-block{
     margin-bottom: $default-spacing;
@@ -809,7 +809,7 @@ Content pane styling
 //cookie slider
 #sliding-popup {
   background: url("../images/gradient.png") repeat-y scroll center center transparent;
-}     
+}
 
 .pane-similarterms-ding-content-tags ul li {
   margin-bottom: $default-spacing / 2;
@@ -968,12 +968,12 @@ div[class*='pane-simplenews-'] {
     display: block;
     margin-bottom: 10px;
   }
-  
+
   h2 {
     line-height: 1;
     margin-bottom: 6px;
   }
-  
+
   .issues-list ul {
     margin: 2px 0px !important;
   }
@@ -987,6 +987,10 @@ div.more-link a {
 .back {
     display: block;
     margin-top: 15px;
+}
+.views-field-field-ding-event-title-image .field-content > img {
+    float: left;
+    margin-right: 5px;
 }
 #views-exposed-form-ding-event-ding-event-floated-list
 {
@@ -1007,18 +1011,18 @@ div.more-link a {
                             select
                             {
                                 width: 140px;
-                                                                
+
                             }
                         }
                     }
                 }
-                
+
                 #edit-field-klub-tilbud-value-wrapper{
-                
+
                 }
             }
         }
-        
+
     }
 }
 .view-content
@@ -1033,7 +1037,7 @@ div.more-link a {
 .btn.btn-primary.btn-small
 {
     background: none repeat scroll 0 0 green;
-    color: white; 
+    color: white;
 }
 .btn-warning.btn-small,.btn-warning.btn-large{
     color: white !important;
@@ -1058,7 +1062,7 @@ field-name-field-ding-page-body ul
 }
 .opening-hours-week .next
 {
-   float:right; 
+   float:right;
 }
 .opening-hours-week .prev {
   font-size: 150%;
@@ -1101,7 +1105,7 @@ field-name-field-ding-page-body ul
 .ui-dialog-titlebar
 {
     background: #69c8cf;
-} 
+}
 #Translation_Menu_Addon
 {
     background:none !important;
@@ -1113,7 +1117,7 @@ field-name-field-ding-page-body ul
     font-size: 10px;
     width:100%;
     margin-bottom: 15px;
-} 
+}
 .field-name-ding-availability-holdings table
 {
     table-layout: auto !important;

@@ -9,7 +9,7 @@
   <div id="ding-user-profile">
     <span><?php print l(t('My profile'), 'user/'); ?></span>
     <?php if (variable_get('nemid_button', 0) == 1) { ?>
-    <span style="float:right;"><?php print '<a href="/wayf/logout">'.t('Logout').'</a>'; ?></span>
+    <span style="float:right;"><?php print '<a href="/gatewayf/logout">'.t('Logout').'</a>'; ?></span>
     <?php } else { ?>
     <span style="float:right;"><?php print '<a href="javascript: Drupal.ninja_logout();">'.t('Logout').'</a>'; ?></span>
     <?php } ?>
