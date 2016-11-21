@@ -399,3 +399,9 @@ function getFormKeys($components, $component) {
   array_push($myReturn,$component['form_key']);
   return $myReturn;
 }
+/*
+ * Alter the breadcrumb home text.
+ */
+function latto_odense_menu_breadcrumb_alter(&$active_trail, $item){
+$active_trail[0]['title'] = t('Forside');
+}
