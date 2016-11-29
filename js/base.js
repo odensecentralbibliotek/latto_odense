@@ -6,23 +6,6 @@
 
     $(document).ready(function($) {
         
-        $(".ting-cover-processed > img").click(function () {
-            var cloned = $(this).clone().attr("src").replace("styles/ding_large/public/", "").replace("styles/ding_medium/public/", "");
-            $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
-            $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
-        });
-
-        //If user wants to cancel his search.
-        $('.search-overlay--wrapper > img').live('click', function (e) {
-            try {
-                window.stop();
-            } catch (e)
-            {
-                document.execCommand('Stop');
-            }
-            $('.search-overlay--wrapper').remove();
-        });
-        
         var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
         if(pass_hack != undefined && pass_hack.length > 0)
         {
@@ -179,6 +162,27 @@
                     $(this).val("");
                     $(".ui-autocomplete").remove();
                 });
+            });
+        }
+    };
+
+    Drupal.behaviors.bigCover = {
+        attach: function(context) {
+            $(".ting-cover-processed > img").click(function () {
+                var cloned = $(this).clone().attr("src").replace("styles/ding_large/public/", "").replace("styles/ding_medium/public/", "");
+                $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
+                $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
+            });
+
+            //If user wants to cancel his search.
+            $('.search-overlay--wrapper > img').live('click', function (e) {
+                try {
+                    window.stop();
+                } catch (e)
+                {
+                    document.execCommand('Stop');
+                }
+                $('.search-overlay--wrapper').remove();
             });
         }
     };
