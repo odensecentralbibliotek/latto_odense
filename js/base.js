@@ -167,11 +167,19 @@
     };
 
     Drupal.behaviors.bigCover = {
-        attach: function(context) {
+        attach: function (context) {
             $(".ting-cover-processed > img").live('click', function (e) {
                 var cloned = $(this).clone().attr("src").replace("styles/ding_large/public/", "").replace("styles/ding_medium/public/", "");
                 $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
                 $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
+                $('.search-overlay--wrapper > img').css({
+                    'position': 'absolute',
+                    'left': '50%',
+                    'top': '50%',
+                    'margin-left': -$('.search-overlay--wrapper > img').outerWidth() / 2,
+                    'margin-top': -$('.search-overlay--wrapper > img').outerHeight() / 2
+                });
+
             });
 
             //If user wants to cancel his search.
