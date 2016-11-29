@@ -349,7 +349,11 @@ footer .grid-inner {
   right: 270px;
   top: 40px;
 }
-
+.ting-cover-processed > img {
+    cursor: zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+}
 .icon-remove-sign:before {
   cursor:pointer;
 }
