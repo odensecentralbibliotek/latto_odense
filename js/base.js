@@ -168,7 +168,7 @@
 
     Drupal.behaviors.bigCover = {
         attach: function(context) {
-            $(".ting-cover-processed > img").click(function () {
+            $(".ting-cover-processed > img").live('click', function (e) {
                 var cloned = $(this).clone().attr("src").replace("styles/ding_large/public/", "").replace("styles/ding_medium/public/", "");
                 $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
                 $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
