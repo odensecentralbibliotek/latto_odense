@@ -173,7 +173,7 @@
                 $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
                 $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
                 $('.search-overlay--wrapper > img').css({
-                    'margin-top': $('.search-overlay--wrapper > img').outerHeight() / 2
+                    'margin-top': $('.search-overlay--wrapper > img').outerHeight() / 4
                 });
 
             });
