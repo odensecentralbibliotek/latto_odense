@@ -6,7 +6,7 @@ css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "scripts"
-additional_import_paths = ["/var/aegir/platforms/drupal-7.51/profiles/ding2/libraries/zen-grids/stylesheets/"]
+additional_import_paths = ["/var/aegir/platforms/ddb-2.5.1/profiles/ding2/libraries/zen-grids/stylesheets/"]
 output_style = :expanded
 environment = :development
 
@@ -14,7 +14,7 @@ environment = :development
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 color_output = false
 
 

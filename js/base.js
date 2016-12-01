@@ -168,6 +168,38 @@
         }
     };
 
+    Drupal.behaviors.bigCover = {
+        attach: function (context) {
+            $(".ting-cover-processed > img").live('click', function (e) {
+                var cloned = $(this).clone().attr("src").replace("styles/ding_large/public/", "").replace("styles/ding_medium/public/", "");
+                $('<div class="search-overlay--wrapper">').html('</div>').prependTo('body');
+                $('<i class="fa fa-times" aria-hidden="true"></i>').prependTo('.search-overlay--wrapper');
+                $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
+                $('.search-overlay--wrapper > img').css({
+                    'margin-top': $('.search-overlay--wrapper > img').outerHeight() / 4
+                });
+                $('.search-overlay--wrapper .fa').css({
+                    'position': 'absolute',
+                    'font-size': '5em',
+                    'cursor': 'pointer',
+                    'right': '0'
+                });
+
+            });
+
+            //If user wants to cancel his search.
+            $('.search-overlay--wrapper .fa-times, .search-overlay--wrapper > img').live('click', function (e) {
+                try {
+                    window.stop();
+                } catch (e)
+                {
+                    document.execCommand('Stop');
+                }
+                $('.search-overlay--wrapper').remove();
+            });
+        }
+    };
+
     Drupal.behaviors.localeDatepicker = {
         attach: function(context, settings) {
             //Added overdue for expire-date
