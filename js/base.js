@@ -6,7 +6,7 @@
 
     $(document).ready(function($) {
         //prevent download of library videos
-        $('video').bind('contextmenu',function() { return false; });
+         $('video').attr('oncontextmenu','return false');
 
         var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
         if(pass_hack != undefined && pass_hack.length > 0)
