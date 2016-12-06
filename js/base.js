@@ -288,12 +288,22 @@ function Klubtilbud_tooltips()
             {
                 return;
             }
+            
             //Add tooltip information and appropriate background/css.
             //Select all events containing a club offer.
             $('.list-item:has(.views-field-field-klub-tilbud):not(:empty)').each(function(i,e){
+                debugger;
                 var obj = $(e.firstChild);
                 var clubOffer = obj.text();
                 var KlubValue = clubOffer.indexOf('Nysgerrig Fyn') != -1 ? 0 : -1;
+                if(KlubValue == -1 && clubOffer.indexOf('Svendborg Graphic') != -1)
+                {
+                    /*
+                     * Only other logo vi have is svbg graphic. 
+                     * if more are needed , we need to rewrite this js a bit more.
+                     */
+                    var KlubValue = 1;
+                }
                 switch(KlubValue)
                 {
                     case 0: //Nysgerrig Fyn
@@ -306,6 +316,19 @@ function Klubtilbud_tooltips()
                          });
                         obj.attr('title','Nysgerrig Fyn');
                         obj.wrap('<a target="_blank" href="'+Drupal.settings.oc_template_overwrites.nysfyn_link+'"></a>');
+                        obj.empty();
+                        break;
+                    }
+                    case 1:
+                    {
+                        obj.css({
+                            'float' : 'right',
+                            'width' : '50px',
+                            'height' : '50px',
+                            'background-image': "url('/sites/all/themes/latto_odense/images/raketikon.png')",
+                         });
+                        obj.attr('title','Svendborg Graphic');
+                        obj.wrap('<a target="_blank" href="http://svendborg-graphic.dk/"></a>');
                         obj.empty();
                         break;
                     }
