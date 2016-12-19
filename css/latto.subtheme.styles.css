@@ -1233,6 +1233,11 @@ field-name-field-ding-page-body ul {
   table-layout: auto !important;
 }
 
+.field-name-field-ding-news-files .field-items {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
 /* equivalent to font-size: 100% */
 body {
   color: #000;
