@@ -1238,6 +1238,12 @@ field-name-field-ding-page-body ul {
   padding-top: 5px;
 }
 
+.field-name-field-ding-news-materials .field-items .field-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 5px;
+}
+
 /* equivalent to font-size: 100% */
 body {
   color: #000;
