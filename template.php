@@ -176,6 +176,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'ding_reservation_reserve_form':
+      if (isset($form['#token'])) {
+        $form_state['input']['form_token'] = drupal_get_token($form['#token']);
+      }
       $form['submit']['#attributes']['class'][] = 'btn';
       break;
     
