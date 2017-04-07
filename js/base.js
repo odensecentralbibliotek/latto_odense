@@ -7,6 +7,10 @@
     $(document).ready(function($) {
         //prevent download of library videos
          $('video').attr('oncontextmenu','return false');
+  
+        $('.list-item > p > a').text(function (text) {
+            return $(this).text().replace(/&amp;/g, "&");
+        });
 
         var pass_hack = $('#edit-name').val(); // this is hack to help users with pass
         if(pass_hack != undefined && pass_hack.length > 0)
