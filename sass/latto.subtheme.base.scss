@@ -10,6 +10,16 @@
 @import 'latto.mixins.scss';
 @import 'compass/css3/box-sizing';
 @import 'compass/css3/box-shadow';
+#digital_artikelservice_main_div {
+    border: 2px solid #ddd;
+    padding-left: 5px;
+}
+#digital_artikelservice_top {
+    width: 95%;
+}
+img[name="digital_artikelservice_image"] {
+    width: 95%;
+}
 #admin-menu-wrapper
 {
     font-size: 12px;
