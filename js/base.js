@@ -8,7 +8,7 @@
         //prevent download of library videos
          $('video').attr('oncontextmenu','return false');
   
-        $('.list-item > a, .super-heading > a, .grid-row > a').text(function (text) {
+        $('.list-item p > a, .field-item.even > a, .grid-row p > a').text(function (text) {
             return $(this).text().replace(/&amp;/g, "&");
         });
 
