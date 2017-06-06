@@ -135,11 +135,13 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'user_login_block':
+      if (variable_get('oc_fbs_enabled', 0)) {
       unset($form['name']);
-      unset($form['pass']);
+        unset($form['pass']);
       unset($form['nemid']);
       $form['links']['#markup'] = 'Grundet skifte til nyt bibliotekssystem kan du den 6/6 og 6/7 ikke bruge alle funktioner på hjemmesiden. <a href="/news/d-6-7-juni-kan-hverken-besoege-biblioteket-soege-litteratur-via-vores-hjemmeside">Se mere her.</a>';
       unset($form['actions']['submit']);
+      }
       break;
 
     case 'comment_node_ding_news_form':

@@ -5,8 +5,6 @@
     };
 
     $(document).ready(function($) {
-        $('#flag-confirm').remove();
-        $('#ding-reservation-reserve-form').remove();
         //prevent download of library videos
          $('video').attr('oncontextmenu','return false');
   
