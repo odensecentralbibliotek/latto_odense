@@ -20,7 +20,7 @@ global $user;
 jQuery(document).ready(function () {
     // Handler for .ready() called.
     window.setTimeout(function () {
-        location.href = "<?php echo "/user" . $user->uid . "/status/debts/"; ?>";
+        location.href = "<?php echo "/user/" . $user->uid . "/status/debts/"; ?>";
     }, 2000);
 });
 </script>
