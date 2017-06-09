@@ -5,6 +5,8 @@
     };
 
     $(document).ready(function($) {
+        $("label[for=edit-profile-provider-fbs-field-fbs-phone-notification-und]").html("SMS påmindelser");
+        jQuery("label[for=edit-profile-provider-fbs-field-fbs-mail-notification-und]").html("Email påmindelser");
         //prevent download of library videos
          $('video').attr('oncontextmenu','return false');
   
