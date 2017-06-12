@@ -420,6 +420,9 @@ jQuery( document ).ready(function() {
     jQuery('.search-results').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
+    jQuery('.li.pager-item').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
+    });
     jQuery('.field-type-ting-title').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
