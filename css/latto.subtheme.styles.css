@@ -1563,6 +1563,7 @@ tbody tr.available {
   ========================================================================== */
 .pane-ting-search-records-per-page {
   float: left;
+  z-index: 100;
 }
 
 #ting-search-records-per-page {
