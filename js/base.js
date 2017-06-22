@@ -420,6 +420,10 @@ jQuery( document ).ready(function() {
     jQuery('.search-results').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
+    jQuery('#ting-search-records-per-page').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
+    });
+    
     jQuery('.field-type-ting-title').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
