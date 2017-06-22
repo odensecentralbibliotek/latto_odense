@@ -1831,6 +1831,21 @@ div[class*='ting-cover-'] {
   content: ":";
 }
 
+/* See: http://zengrids.com/help/#vars-legacy */
+.grid-9-center {
+  float: left;
+  width: 56.25%;
+  margin-left: 18.75%;
+  margin-right: -75%;
+  padding-left: 7px;
+  padding-right: 8px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
 .btn {
   background-color: #eeeeee;
   background-image: -moz-linear-gradient(top, #fff, #d5d5d5);
