@@ -1574,6 +1574,10 @@ tbody tr.available {
 #ting-search-records-per-page a {
   margin-left: 7.5px;
 }
+#ting-search-records-per-page .selected {
+  font-weight: bold;
+  color: black;
+}
 
 .pane-ting-search-sort-form {
   float: right;

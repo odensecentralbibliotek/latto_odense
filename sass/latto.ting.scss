@@ -187,6 +187,11 @@ tbody tr.available {
     a {
       margin-left: $default-spacing / 2;
     }
+    .selected
+    {
+        font-weight: bold;
+        color:black;
+    }
   }   
   
 //sort
