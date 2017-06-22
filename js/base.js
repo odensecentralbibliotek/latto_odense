@@ -439,6 +439,9 @@ jQuery( document ).ready(function() {
     jQuery('.field-name-ting-subjects').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
+    jQuery('#ting-search-records-per-page').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
+    });
 });
 function trigger_loginSpinner()
 {
