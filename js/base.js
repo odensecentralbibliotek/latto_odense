@@ -442,6 +442,9 @@ jQuery( document ).ready(function() {
     jQuery('.field-name-ting-subjects').find('a').click(function(e){
         jQuery(preloader).prependTo('body');
     });
+    jQuery('li.pager-item, li.pager-previous, li.pager-first.first, li.pager-last.last, li.pager-next').find('a').click(function(e){
+        jQuery(preloader).prependTo('body');
+    });
 });
 function trigger_loginSpinner()
 {
