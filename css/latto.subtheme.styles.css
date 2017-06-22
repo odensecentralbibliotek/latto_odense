@@ -1134,7 +1134,7 @@ div.more-link a {
   margin-top: 15px;
 }
 
-.views-field-field-ding-event-title-image .field-content > img {
+.views-field-field-ding-event-title-image .field-content > img, .views-field-field-ding-event-title-image .field-content a > img {
   float: left;
   margin-right: 5px;
 }
