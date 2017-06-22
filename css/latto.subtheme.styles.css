@@ -10,15 +10,18 @@
    ========================================================================== */
 /* equivalent to font-size: 100% */
 #digital_artikelservice_main_div {
-    border: 2px solid #ddd;
-    padding-left: 5px;
+  border: 2px solid #ddd;
+  padding-left: 5px;
 }
+
 #digital_artikelservice_top {
-    width: 95%;
+  width: 95%;
 }
+
 img[name="digital_artikelservice_image"] {
-    width: 95%;
+  width: 95%;
 }
+
 #admin-menu-wrapper {
   font-size: 12px;
 }
@@ -1248,7 +1251,7 @@ field-name-field-ding-page-body ul {
   padding-top: 5px;
 }
 
-.field-name-field-ding-news-materials .field-items .field-item .ting-object {
+.field-name-field-ding-news-materials .field-items .field-item {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 5px;
@@ -1562,6 +1565,9 @@ tbody tr.available {
   ========================================================================== */
 .pane-ting-search-records-per-page {
   float: left;
+  float: left;
+  z-index: 100;
+  width: 50%;
 }
 
 #ting-search-records-per-page {
