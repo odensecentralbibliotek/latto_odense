@@ -383,7 +383,30 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
         return;
     }
     //Retrive shown events status. ( Making it appear more responsive loading to user)
-    $.each(NodeArray,function(index,obj){
+    var Data = JSON.stringify(NodeArray);
+    $.ajax({
+                    url: "/ding/place2book/ticketinfo/ajax/" + Data,
+                    cache: false,
+                    success: function(data){
+                        debugger;
+                       $.each(data,function(index,obj){
+
+                          $('.list-item .views-field-nid .field-content').each(function(index,val){
+                              if(obj.nid == val.innerHTML)
+                              {
+                                      $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
+                                      $(val.parentNode).addClass('js-hide');
+                                      $(val.parentNode.parentNode).find("#preloader").addClass('js-hide');
+                                      //return;                  
+                              }
+                          });
+                    
+                    
+                        });
+                    }
+        });
+    /*$.each(NodeArray,function(index,obj){
+    
         if(obj == "")
         {
             return;
@@ -411,7 +434,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                   });
         }, 100);
   
-    });
+    });*/
 }
 })(jQuery);
 // A $( document ).ready() block.
