@@ -9,6 +9,10 @@
    influence the layout of your site.
    ========================================================================== */
 /* equivalent to font-size: 100% */
+.views-field.views-field-field-ding-event-title-image {
+    float: left;
+    margin-right: 5px;
+}
 #digital_artikelservice_main_div {
   border: 2px solid #ddd;
   padding-left: 5px;
