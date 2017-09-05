@@ -8,8 +8,20 @@
         if($('#user-profile-form') != undefined)
         {
             debugger;
-            $('#user-profile-form').find('.form-wrapper').css('padding-bottom','5px');
+            $('#user-profile-form').find('.form-item').css('padding-bottom','20px');
+            //$('#edit-profile-provider-fbs-field-fbs-phone');
+            if($('#edit-profile-provider-fbs-field-fbs-phone-notification').is(':hidden'))
+            {
+                $('#edit-profile-provider-fbs-field-fbs-phone-notification').css('border-bottom','1px solid #e7e7e7').css('padding-bottom','10px;');
+            }
+            else
+            {
+                $('#edit-profile-provider-fbs-field-fbs-phone').css('border-bottom','1px solid #e7e7e7').css('padding-bottom','10px;');
+            }
+            //$('#edit-profile-provider-fbs-field-fbs-mail').prepend('<hr/>');
+            $('#edit-profile-provider-fbs-field-fbs-mail-notification').css('border-bottom','1px solid #e7e7e7').css('padding-bottom','10px;');
         }
+        
         $("label[for=edit-profile-provider-fbs-field-fbs-phone-notification-und]").html("Modtag meddelelser pr. SMS (Bemærk: Fjernes markeringen modtager du ingen typer meddelelser pr. sms fra biblioteket)");
         jQuery("label[for=edit-profile-provider-fbs-field-fbs-mail-notification-und]").html("Modtag meddelelser pr. e-mail (Bemærk: Fjernes markeringen modtager du ingen typer meddelelser pr. mail fra biblioteket)");
         //prevent download of library videos
