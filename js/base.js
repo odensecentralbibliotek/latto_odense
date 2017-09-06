@@ -5,9 +5,20 @@
     };
 
     $(document).ready(function($) {
+        $("body").on("change","select[name='provider_options[interest_period]']",function(){
+            if($('select[name="provider_options[interest_period]"]').val() == '')
+            {
+                $(".form-item-provider-options-interest-period label").css("color","red");  
+                $('input[value="Reservér"]').removeAttr('disabled');
+            }
+            else
+            {
+                 $(".form-item-provider-options-interest-period label").css("color","green");
+                 $('select[name="provider_options[interest_period]"]').removeClass('error');
+            }
+        });
         if($('#user-profile-form') != undefined)
         {
-            debugger;
             $('#user-profile-form').find('.form-item').css('padding-bottom','10px');
             //$('#edit-profile-provider-fbs-field-fbs-phone');
             if($('#edit-profile-provider-fbs-field-fbs-phone-notification').is(':visible'))
@@ -369,6 +380,15 @@ function Klubtilbud_tooltips()
 }
 function UpdatePlace2bookEventStatus(event, xhr, settings)
 {
+    if($('select[name="provider_options[interest_period]"]').val() == '')
+    {
+        $(".form-item-provider-options-interest-period label").css("color","red"); 
+        
+    }
+    else
+    {
+         $(".form-item-provider-options-interest-period label").css("color","green").removeClass('error');
+    }
     //Only execute if we are requesting TicketInfo throu ajax.
     if (settings != undefined && settings.url.indexOf("/ding/place2book/ticketinfo/ajax/") == 0) {
         
