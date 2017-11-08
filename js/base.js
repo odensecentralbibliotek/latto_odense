@@ -412,10 +412,16 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
         }
     });
 
-    var spinnerUrl = Drupal.settings.basePath + "files/362.GIF";
     $.each(Place2BookEvents,function(index,val){
-        $(val.parentNode.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
-        $(val.parentNode.parentNode).removeClass('js-hide');
+        debugger;
+            if(Drupal.settings.ding_place2book.pre_loader_url != undefined)
+            {
+                $(val.parentNode.parentNode).append("<div class='p2b_preloader' style='float:right;'><a target='_blank' href='"+Drupal.settings.ding_place2book.pre_loader_url+"'>Bestil billet(ter)</a><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
+            }
+            else
+            {
+                $(val.parentNode.parentNode).append("<div class='p2b_preloader' style='float:right;'><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
+            }
     });
     if(NodeArray.length == 0)
     {
@@ -441,7 +447,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                               {
                                       $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
                                       $(val.parentNode).addClass('js-hide');
-                                      $(val.parentNode.parentNode).find("#preloader").addClass('js-hide');
+                                      $(val.parentNode.parentNode).find(".p2b_preloader").addClass('js-hide');
                                       //return;                  
                               }
                           });
