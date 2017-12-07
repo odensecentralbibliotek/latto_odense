@@ -1267,29 +1267,8 @@ field-name-field-ding-page-body ul {
   font-family: 'dotsfont';
   src: url("dotsfont.woff");
 }
-#edit-name:-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#edit-name::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#edit-name:-ms-input-placeholder {
-  /* IE 10+ */
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#edit-name:-moz-placeholder {
-  /* Firefox 18- */
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-input#edit-name {
-  font-family: dotsfont;
-  font-size: 10px;
+.hidetext {
+  font-family: dotsfont !important;
 }
 
 /* equivalent to font-size: 100% */
