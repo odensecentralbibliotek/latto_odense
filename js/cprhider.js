@@ -11,6 +11,10 @@ jQuery(document).ready(function($) {
                 debugger;
                 $('#edit-name').removeClass('hidetext')
             }
+            else if(e.which == 13)
+            {
+                $("#user-login-form").trigger("submit");
+            }
     });
     $('#edit-name').on('blur input', function() {
             if(!$('#edit-name').hasClass('hidetext') &&  $('#edit-name').val() != "")
