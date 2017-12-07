@@ -25,7 +25,7 @@ scripts[] = js/openhours.js
 scripts[] = js/jquery.placeholder.js
 scripts[] = js/onlinebooking.js
 scripts[] = js/gtranslation.js
-
+scripts[] = js/secure_username.js
 
 settings[load_selectivizr ] = 1
 

@@ -147,7 +147,9 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
         $form['name']['#prefix']= '<i class="icon-user"></i>';
         unset($form['name']['#title']);
         $form['name']['#attributes']['placeholder'] = t('Cpr- eller kortnummer:');
-        $form['name']['#type'] = 'password';
+        $form['name']['#type'] = 'textfield';
+        $form['name']['#attributes']['name'] = '';
+        
         $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
         $form['pass']['#prefix']= '<i class="icon-lock"></i>';
         unset($form['pass']['#title']);
@@ -161,7 +163,7 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
         }
         if (variable_get('nemid_button', 0) == 1) {
         /* Make form submit on enter work , with nemid button enabled.*/
-        $form['pass']['#attributes']['onkeypress'][]='if(event.keyCode==13){this.form.submit();trigger_loginSpinner();}';
+        $form['pass']['#attributes']['onkeypress'][]='if(event.keyCode==13){trigger_loginSpinner();jQuery("#user-login-form").trigger("submit")}';
         $form['nemid']['submit'] = array(
             '#type' => 'submit',
             '#ajax' => array(
