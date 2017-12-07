@@ -148,7 +148,6 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
         unset($form['name']['#title']);
         $form['name']['#attributes']['placeholder'] = t('Cpr- eller kortnummer:');
         $form['name']['#type'] = 'textfield';
-        $form['name']['#attributes']['name'] = '';
         
         $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
         $form['pass']['#prefix']= '<i class="icon-lock"></i>';
