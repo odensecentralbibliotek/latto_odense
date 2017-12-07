@@ -28,12 +28,6 @@ jQuery(document).ready(function($) {
              $('#edit-name').removeClass('hidetext');
          }
      });
-     $('#edit-name').unfocus(function(e){
-         if( $('#edit-name').val() == "")
-         {
-             $('#edit-name').removeClass('hidetext');
-         }
-     });
 });
 
 
