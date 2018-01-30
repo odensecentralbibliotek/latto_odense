@@ -1272,6 +1272,21 @@ field-name-field-ding-page-body ul {
   font-size: 4px !important;
 }
 
+/*
+* ding debt form styling
+*/
+.ding_debt_table .feedate, .ding_debt_table .feetype, .ding_debt_table .feeamount {
+  width: 13%;
+}
+
+.ding_debt_table td {
+  padding: 5px !important;
+}
+
+.ding_debt_table .feeamount-total, .ding_debt_table .feedate-total {
+  padding: 5px !important;
+}
+
 /* equivalent to font-size: 100% */
 body {
   color: #000;
