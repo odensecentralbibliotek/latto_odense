@@ -201,6 +201,14 @@
             });
         }
     };
+    
+    Drupal.behaviors.ansat_table = {
+        attach: function (context, settings) {
+          
+          $("#edit-field-bibliotek-tid option:contains('Borgerservice'):selected").parents().find("table").remove();
+          
+        }
+    };
 
     Drupal.behaviors.bigCover = {
         attach: function (context) {
