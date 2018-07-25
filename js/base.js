@@ -201,6 +201,14 @@
             });
         }
     };
+    
+    Drupal.behaviors.ansat_table = {
+        attach: function (context, settings) {
+          
+          $("#edit-field-bibliotek-tid option:contains('Borgerservice'):selected").parents().find('#views-exposed-form-ansat-page').once().append('<h3>Borgerservice Tlf.: 60811091</h3>');
+          
+        }
+    };
 
     Drupal.behaviors.bigCover = {
         attach: function (context) {
