@@ -1294,6 +1294,12 @@ field-name-field-ding-page-body ul {
   background: none !important;
   float: left;
   width: 88px;
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.advanced-form-link-overwrite:hover {
+  color: #002c3c !important;
 }
 
 /* equivalent to font-size: 100% */
