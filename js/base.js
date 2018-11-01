@@ -328,7 +328,6 @@ function Add_google_events_tracker()
     });
      $('body').on('change','#edit-advanced select',function(e){
         var select = $(e.currentTarget);
-        debugger;
         //only track if user selects
         if(select.val() != "")
         {
@@ -342,7 +341,6 @@ function Add_google_events_tracker()
       }
     });
     $('body').on('unfocus','#edit-advanced input',function(e){
-        debugger;
         var select = $(e.currentTarget);
         //only log if user filled it out.
         if(select.val().length != 0)
@@ -375,7 +373,6 @@ function Klubtilbud_tooltips()
             //Add tooltip information and appropriate background/css.
             //Select all events containing a club offer.
             $('.list-item:has(.views-field-field-klub-tilbud):not(:empty)').each(function(i,e){
-                debugger;
                 var obj = $(e.firstChild);
                 var clubOffer = obj.text();
                 var KlubValue = clubOffer.indexOf('Nysgerrig Fyn') != -1 ? 0 : -1;
@@ -462,7 +459,6 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     });
 
     $.each(Place2BookEvents,function(index,val){
-        debugger;
             if(Drupal.settings.ding_place2book.pre_loader_url != undefined)
             {
                 $(val.parentNode.parentNode).append("<div class='p2b_preloader' style='float:right;'><a target='_blank' href='"+Drupal.settings.ding_place2book.pre_loader_url+"'>Bestil billet(ter)</a><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
