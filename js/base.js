@@ -340,7 +340,7 @@ function Add_google_events_tracker()
           });
       }
     });
-    $('body').on('unfocus','#edit-advanced input',function(e){
+    $('body').on('blur','#edit-advanced input',function(e){
         var select = $(e.currentTarget);
         //only log if user filled it out.
         if(select.val().length != 0)
