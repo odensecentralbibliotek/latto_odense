@@ -314,9 +314,50 @@ function Add_google_events_tracker()
             eventCategory: 'Biblioteksvagten',
             eventAction: 'Spørg Biblioteksvagten',
             eventLabel: window.location.href,
-            hitCallback: function(){debugger},
+            hitCallback: function(){},
           });
     });
+    $('body').on('click','#edit-basic .btn',function(){
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Avanceret søgning',
+            eventAction: 'Open',
+            eventLabel:'Avanceret søg',
+            hitCallback: function(){},
+          });
+    });
+     $('body').on('change','#edit-advanced select',function(e){
+        var select = $(e.currentTarget);
+        debugger;
+        //only track if user selects
+        if(select.val() != "")
+        {
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Avanceret søgning',
+            eventAction: 'facet.' + select.attr('name') ,
+            eventLabel: 'facet valg',
+            hitCallback: function(){},
+          });
+      }
+    });
+    $('body').on('unfocus','#edit-advanced input',function(e){
+        debugger;
+        var select = $(e.currentTarget);
+        //only log if user filled it out.
+        if(select.val().length != 0)
+        {
+          ga('send', {
+            hitType: 'event',
+            eventCategory: 'Avanceret søgning',
+            eventAction: 'facet.' + select.attr('name') ,
+            eventLabel: 'facet valg',
+            hitCallback: function(){},
+          });
+      }
+    });
+    
+    
 }
 /*
  * Handle adding badges to events.
