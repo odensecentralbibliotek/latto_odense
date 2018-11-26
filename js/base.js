@@ -5,8 +5,8 @@
     };
 
     $(document).ready(function($) {
-        $('#edit-name').attr('name',"name-"+ (Date.now() + "-" + Math.floor(Math.random() * 100) + 1) );
-        $('#edit-pass').attr('name',"pass-"+ (Date.now() + "-" + Math.floor(Math.random() * 100) + 1) );
+        $('#edit-name').attr('name',"name-"+ (Date.now()) );
+        $('#edit-pass').attr('name',"pass-"+ (Date.now()) );
         $('#user-login-form').submit(function(){
             $('#edit-name').attr('name',"name");
             $('#edit-pass').attr('name',"pass");
