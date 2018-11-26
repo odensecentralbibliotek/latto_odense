@@ -142,14 +142,13 @@ function latto_odense_form_alter(&$form, &$form_state, $form_id) {
       $form['links']['#markup'] = 'Grundet skifte til nyt bibliotekssystem kan du ikke bruge alle funktioner på hjemmesiden. <a href="/hvadbibskerder">Se mere her.</a>';
         unset($form['actions']['submit']);
       }
-      else
       {
         $form['name']['#prefix']= '<i class="icon-user"></i>';
         unset($form['name']['#title']);
         $form['name']['#attributes']['placeholder'] = t('Cpr- eller kortnummer:');
-        $form['name']['#type'] = 'textfield';
         
         $form['pass']['#attributes']['placeholder'] = t('Adgangskode:');
+        $form['pass']['#type'] = "textfield";
         $form['pass']['#prefix']= '<i class="icon-lock"></i>';
         unset($form['pass']['#title']);
         $form['actions']['submit']['#attributes']['class'][] = 'btn';
