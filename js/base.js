@@ -5,8 +5,8 @@
     };
 
     $(document).ready(function($) {
-        $('#edit-name').attr('name',"name-"+ (Date.now()) );
-        $('#edit-pass').attr('name',"pass-"+ (Date.now()) );
+        $('#user-login-form').find('#edit-name').attr('name',"name-"+ (Date.now()) );
+        $('#user-login-form').find('#edit-pass').attr('name',"pass-"+ (Date.now()) );
         $('#user-login-form').submit(function(){
             $('#edit-name').attr('name',"name");
             $('#edit-pass').attr('name',"pass");
