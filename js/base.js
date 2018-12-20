@@ -224,7 +224,8 @@
                 $('<i class="fa fa-times" aria-hidden="true"></i>').prependTo('.search-overlay--wrapper');
                 $(this).clone().attr("src", cloned).prependTo('.search-overlay--wrapper');
                 $('.search-overlay--wrapper > img').css({
-                    'margin-top': $('.search-overlay--wrapper > img').outerHeight() / 4
+                    'margin-top': $('.search-overlay--wrapper > img').outerHeight() / 4 ,
+                    'max-heigth':'90vh',
                 });
                 $('.search-overlay--wrapper .fa').css({
                     'position': 'absolute',
