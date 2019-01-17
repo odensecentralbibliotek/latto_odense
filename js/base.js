@@ -5,8 +5,8 @@
     };
 
     $(document).ready(function($) {
-        $('#user-login-form').find('#edit-name').attr('name',"name-"+ (Date.now()) );
-        $('#user-login-form').find('#edit-pass').attr('name',"pass-"+ (Date.now()) );
+        $('#user-login-form').find('#edit-name').attr('name',"name-"+ (Date.now()) ).val('');
+        $('#user-login-form').find('#edit-pass').attr('name',"pass-"+ (Date.now()) ).val('');
         $('#user-login-form').submit(function(){
             $('#edit-name').attr('name',"name");
             $('#edit-pass').attr('name',"pass");
