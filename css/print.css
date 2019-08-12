@@ -1,3 +1,13 @@
+.panel-pane.pane-menu-tree.pane-menu-event-category-menu-block, .panel-pane.pane-menu-tree.pane-menu-news-category-menu-block, .panel-panel.panel-col-last {
+    display: none;
+}
+.views-exposed-form{
+    display: none;
+}
+#search_input_wrapper {
+    display: none;
+}
+
 body {
   margin: 1em;
   background-color: #fff;
