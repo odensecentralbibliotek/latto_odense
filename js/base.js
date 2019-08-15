@@ -210,9 +210,22 @@
     
     Drupal.behaviors.ansat_table = {
         attach: function (context, settings) {
-          
-          $("#edit-field-bibliotek-tid option:contains('Borgerservice'):selected").parents().find('#views-exposed-form-ansat-page').once().append('<h3>Borgerservice Tlf.: 60811091</h3>');
-          
+            // sort holding placment
+            var url = window.location.pathname;
+            if (url.indexOf("/ting/") === 0) {
+                $(document).ajaxComplete(function (e, xhr, settings) {
+                    var mylist = $('table');
+                    var listitems = mylist.find('tr').not(':has(> th)').siblings();
+                    listitems.sort(function (a, b) {
+                        return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase());
+                    });
+                    $.each(listitems, function (idx, itm) {
+                        mylist.append(itm);
+                    });
+                });
+            }
+            $("#edit-field-bibliotek-tid option:contains('Borgerservice'):selected").parents().find('#views-exposed-form-ansat-page').once().append('<h3>Borgerservice Tlf.: 60811091</h3>');
+
         }
     };
 
